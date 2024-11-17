@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microreactor Ecosystem Overview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <style>
+    body {
+    font-family: 'Optima', 'Segoe UI', 'Candara', 'Calibri', 'Arial', sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .menu {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        .menu a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 1.3em;
+        }
+        .menu-line {
+            border-top: 1px solid #ddd;
+            margin-bottom: 20px;}
+
+canvas {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bg-gray-100">
+<div class="menu">
+    <a href="origins.html">Origins</a>
+    <a href="team.html">Team</a>
+    <a href="microreactors.html">Microreactors</a>
+    <a href="salon.html">Salon</a>
+ <!--   <a href="faq.html">FAQ</a> -->
+    <a href="donate.html">Donate</a>
+</div>
+
+    <div class="menu-line"></div>
+
+    <div class="max-w-6xl mx-auto p-6 bg-gray-100 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold mb-6 text-center">Microreactor Ecosystem Overview</h1>
+
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Max output and refueling duration for top microreactor companies</h2>
+            <p>10MWe is enough electricity each year to power about 8,000 American homes, charge 25,000 electric vehicles (EVs), operate a medium-scale data center, or desalinate enough water to fill the Empire State Building 18 times.</p>
+<br>           
+ <p>Microreactors will be fueled prior to arrival on site. After some number of years, the fuel will begin to run low, at which point a new reactor is shipped and installed.</p>
+            <canvas id="companyChart"></canvas>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Reactor Types</h2>
+            <p>All large-scale nuclear reactors use pressurized water to keep the uranium reaction at a constant temperature and to transfer heat from the uranium reaction to turbines that generate electricity. Most of the leading microreactor developers take a different approach, as described below. (So far, none of the leading developers uses molten salt.)</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 685 400" class="w-full">
+                <style>
+                    text { font-family: 'Inter', sans-serif; }
+                    .company-name { font-size: 14px; fill: #333; }
+                    .reactor-type { font-size: 14px; font-weight: bold; }
+                    .description { font-size: 14px; }
+                </style>
+                
+                <!-- Companies -->
+                <g>
+                    <text x="10" y="50" class="company-name">Aalo Atomics</text>
+                    <text x="10" y="80" class="company-name">Antares Nuclear</text>
+                    <text x="10" y="110" class="company-name">BWXT</text>
+                    <text x="10" y="140" class="company-name">HolosGen</text>
+                    <text x="10" y="170" class="company-name">Last Energy</text>
+                    <text x="10" y="200" class="company-name">Oklo - 15MWe</text>
+                    <text x="10" y="230" class="company-name">Oklo - 50MWe</text>
+                    <text x="10" y="260" class="company-name">Radiant</text>
+                    <text x="10" y="290" class="company-name">USNC</text>
+                    <text x="10" y="320" class="company-name">Westinghouse</text>
+                    <text x="10" y="350" class="company-name">X-energy</text>
+                </g>
+
+                <!-- Reactor Type Boxes -->
+                <g>
+                    <rect x="300" y="20" width="365" height="105" fill="#e6f5e6" stroke="green" stroke-width="2" rx="10" ry="10" />
+                    <text x="310" y="40" class="reactor-type">Liquid Metal Reactor (LM):</text>
+                    <text x="310" y="60" class="description">Uses liquid metal, like sodium or lead, as a</text>
+                    <text x="310" y="80" class="description">coolant to efficiently transfer heat at low</text>
+                    <text x="310" y="100" class="description">pressure.</text>
+
+                    <rect x="300" y="145" width="365" height="105" fill="#fce9eb" stroke="#E63946" stroke-width="2" rx="10" ry="10" />
+                    <text x="310" y="165" class="reactor-type">High-Temperature Gas-cooled Reactor (HTGR):</text>
+                    <text x="310" y="185" class="description">Uses a gas, typically helium, as a coolant</text>
+                    <text x="310" y="205" class="description">and operates at very high temperatures (but</text>
+                    <text x="310" y="225" class="description">low pressure) for increased efficiency.</text>
+
+                    <rect x="300" y="270" width="365" height="105" fill="#eaf2f7" stroke="#457B9D" stroke-width="2" rx="10" ry="10" />
+                    <text x="310" y="290" class="reactor-type">Pressurized Water Reactor (PWR):</text>
+                    <text x="310" y="310" class="description">Uses water as both a coolant and moderator</text>
+                    <text x="310" y="330" class="description">under high pressure to keep it liquid at high</text>
+                    <text x="310" y="350" class="description">temperatures.</text>
+                </g>
+
+                <!-- Connecting Lines -->
+                <g stroke-width="1">
+                    <!-- LM (Green) -->
+                    <line x1="120" y1="45" x2="300" y2="72.5" stroke="green" />
+                    <line x1="120" y1="75" x2="300" y2="72.5" stroke="green" />
+                    <line x1="120" y1="195" x2="300" y2="72.5" stroke="green" />
+                    <line x1="120" y1="225" x2="300" y2="72.5" stroke="green" />
+
+                    <!-- HTGR (Red: #E63946) -->
+                    <line x1="120" y1="105" x2="300" y2="197.5" stroke="#E63946" />
+                    <line x1="120" y1="135" x2="300" y2="197.5" stroke="#E63946" />
+                    <line x1="120" y1="255" x2="300" y2="197.5" stroke="#E63946" />
+                    <line x1="120" y1="285" x2="300" y2="197.5" stroke="#E63946" />
+                    <line x1="120" y1="315" x2="300" y2="197.5" stroke="#E63946" />
+                    <line x1="120" y1="345" x2="300" y2="197.5" stroke="#E63946" />
+
+                    <!-- PWR (Blue: #457B9D) -->
+                    <line x1="120" y1="165" x2="300" y2="322.5" stroke="#457B9D" />
+                </g>
+            </svg>
+        </div>
+
+<div class="mb-8">
+    <h2 class="text-2xl font-semibold mb-4">Reactor Fuel</h2>
+    <p class="mb-2">Broadly speaking, reactor fuels govern the performance and safety of nuclear reactors, with different fuels offering different advantages depending on the reactor design.</p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 35 635 630" class="w-full"> 
+                  <style>
+                    text { font-family: 'Inter', sans-serif; }
+                    .company-name { font-size: 14px; fill: #333; }
+                    .fuel-type { font-size: 14px; font-weight: bold; fill: #000; }
+                    .description { font-size: 14px; fill: #333; }
+                </style>
+                
+                <!-- Companies -->
+                <g>
+                    <text x="10" y="80" class="company-name">Aalo Atomics</text>
+                    <text x="10" y="110" class="company-name">Antares Nuclear</text>
+                    <text x="10" y="140" class="company-name">BWX Technologies</text>
+                    <text x="10" y="170" class="company-name">HolosGen</text>
+                    <text x="10" y="200" class="company-name">Last Energy</text>
+                    <text x="10" y="230" class="company-name">Oklo - 15MWe</text>
+                    <text x="10" y="260" class="company-name">Oklo - 50MWe</text>
+                    <text x="10" y="290" class="company-name">Radiant</text>
+                    <text x="10" y="320" class="company-name">USNC</text>
+                    <text x="10" y="350" class="company-name">Westinghouse</text>
+                    <text x="10" y="380" class="company-name">X-energy</text>
+                </g>
+
+                <!-- Fuel Type Boxes -->
+                <g>
+                    <rect x="285" y="70" width="330" height="100" fill="#FFB74D" stroke="#EF6C00" stroke-width="2" rx="10" ry="10" />
+                    <text x="295" y="90" class="fuel-type">UZrH:</text>
+                    <text x="295" y="110" class="description">A nuclear fuel combining uranium with</text>
+                    <text x="295" y="130" class="description">zirconium hydride, used in compact</text>
+                    <text x="295" y="150" class="description">microreactors for efficient moderation.</text>
+
+                    <rect x="285" y="190" width="330" height="150" fill="#FFE0B2" stroke="#FB8C00" stroke-width="2" rx="10" ry="10" />
+                    <text x="295" y="210" class="fuel-type">TRISO:</text>
+                    <text x="295" y="230" class="description">Uranium particles, often made from HALEU,</text>
+                    <text x="295" y="250" class="description">are coated in ceramics, providing high</text>
+                    <text x="295" y="270" class="description">resilience to heat and radiation for</text>
+                    <text x="295" y="290" class="description">advanced reactors. (X-energy uses a</text>
+                    <text x="295" y="310" class="description">proprietary form of TRISO they call</text>
+                    <text x="295" y="330" class="description">TRISO-X.)</text>
+
+                    <rect x="285" y="360" width="330" height="100" fill="#FFA726" stroke="#E65100" stroke-width="2" rx="10" ry="10" />
+                    <text x="295" y="380" class="fuel-type">UO₂:</text>
+                    <text x="295" y="400" class="description">Common nuclear fuel made of uranium</text>
+                    <text x="295" y="420" class="description">oxide pellets, widely used in both</text>
+                    <text x="295" y="440" class="description">traditional and microreactors.</text>
+
+                    <rect x="285" y="480" width="330" height="120" fill="#FFCC80" stroke="#F57C00" stroke-width="2" rx="10" ry="10" />
+                    <text x="295" y="500" class="fuel-type">HALEU (non-TRISO):</text>
+                    <text x="295" y="520" class="description">Uranium enriched to 5-20% U-235,</text>
+                    <text x="295" y="540" class="description">offering higher energy density and</text>
+                    <text x="295" y="560" class="description">efficiency for advanced microreactors,</text>
+                    <text x="295" y="580" class="description">used outside the TRISO format.</text>
+                </g>
+
+                <!-- Connecting Lines -->
+                <g stroke-width="1">
+                    <!-- UZrH -->
+                    <line x1="105" y1="75" x2="285" y2="120" stroke="#EF6C00" />
+
+                    <!-- TRISO -->
+                    <line x1="105" y1="105" x2="285" y2="265" stroke="#FB8C00" />
+                    <line x1="105" y1="135" x2="285" y2="265" stroke="#FB8C00" />
+                    <line x1="105" y1="165" x2="285" y2="265" stroke="#FB8C00" />
+                    <line x1="105" y1="285" x2="285" y2="265" stroke="#FB8C00" />
+                    <line x1="105" y1="315" x2="285" y2="265" stroke="#FB8C00" />
+                    <line x1="105" y1="345" x2="285" y2="265" stroke="#FB8C00" />
+                    <line x1="105" y1="375" x2="285" y2="265" stroke="#FB8C00" />
+
+                    <!-- UO₂ -->
+                    <line x1="105" y1="195" x2="285" y2="410" stroke="#E65100" />
+
+                    <!-- HALEU -->
+                    <line x1="105" y1="225" x2="285" y2="540" stroke="#F57C00" />
+                    <line x1="105" y1="255" x2="285" y2="540" stroke="#F57C00" />
+                </g>
+            </svg>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('companyChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Aalo Atomics', 'Antares Nuclear', 'BWXT', 'HolosGen', 'Last Energy', 'Oklo - 15MWe', 'Oklo - 50MWe', 'Radiant', 'USNC', 'Westinghouse', 'X-energy'],
+                    datasets: [{
+                        label: 'Min Output (MWe)',
+                        data: [null, null, null, null, null, null, null, null, null, null, null],
+                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1,
+                        hidden: true
+                    },
+                    {
+                        label: 'Max Output (MWe)',
+                        data: [10, 0.3, 5, 13, 20, 15, 50, 1.2, 5, 5, 7],
+                        backgroundColor: 'rgba(70, 130, 180, 0.5)',
+                        borderColor: 'rgba(70, 130, 180, 1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Years of operation before refueling',
+                        data: [10, 3, 20, 20, 2, 10, 10, 5, 20, 8, 3],
+                        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            max: 60,
+                            title: {
+                                display: true,
+                                text: 'Output (MWe) / Years of operation before refueling'
+                            },
+                            ticks: {
+                                stepSize: 10
+                            }
+                        },
+                        y: {
+                            stacked: false,
+                            ticks: {
+                                stepSize: 15
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                            labels: {
+                                filter: function(item, chart) {
+                                    return !chart.datasets[item.datasetIndex].hidden;
+                                }
+                            }
+                        },
+                        title: {
+                            display: true,
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

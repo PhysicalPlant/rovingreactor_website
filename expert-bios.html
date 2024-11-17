@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expert Bios</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Optima', 'Segoe UI', 'Candara', 'Calibri', 'Arial', sans-serif;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    .menu {
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    .menu a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+        font-size: 1.3em;
+    }
+    .menu a:hover {
+        color: #71797E;
+    }
+    .menu-line {
+        border-top: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+    .container {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    .bio-row {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+    .bio-image {
+        width: 150px;
+        height: auto;
+        margin-right: 20px;
+        border-radius: 8px;
+    }
+    .bio-content {
+        flex-grow: 1;
+    }
+    hr {
+        border: none;
+        border-top: 1px solid #ddd;
+        margin: 40px 0;
+    }
+    footer {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 0.9em;
+        color: #666;
+        padding: 20px 0;
+        border-top: 1px solid #ddd;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+    h3 {
+        color: #505050;
+        margin-top: 0;
+    }
+    @media screen and (max-width: 768px) {
+        .bio-row {
+            flex-direction: column;
+            align-items: center;
+        }
+        .bio-image {
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+        .menu a {
+            margin: 0 10px;
+            font-size: 1em;
+        }
+        .container {
+            padding: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="header">
+    <a href="index.html">
+        <img src="RR-logo-crop.png" alt="Roving Reactor Logo" class="logo">
+    </a>
+    <div class="menu">
+        <a href="origins.html">Origins</a>
+        <a href="team.html">Team</a>
+        <a href="microreactors.html">Microreactors</a>
+        <a href="salon.html">Salon</a>
+     <!--   <a href="faq.html">FAQ</a> -->
+        <a href="donate.html">Donate</a>
+    </div>
+</div>
+<div class="menu-line"></div>
+<div class="container">
+    <h1>Expert Bios</h1>
+
+    <div id="amy" class="bio-row">
+        <img src="amy-cropped.png" alt="Amy Roma" class="bio-image">
+        <div class="bio-content">
+            <h3>Amy Roma</h3>
+            <p>Amy Roma is the Global Energy Practice Leader at Hogan Lovells, advising on legal, business, and policy issues in the nuclear energy sector. Known for her work with advanced reactors, she has guided groundbreaking projects through complex regulations. An advocate for innovative nuclear solutions, Roma supports microreactors as a scalable, low-carbon option to tackle climate and energy security challenges. Her expertise is frequently sought by government bodies and industry leaders shaping the future of nuclear energy.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="elizabeth" class="bio-row">
+        <img src="elizabeth-cropped.png" alt="Elizabeth Helvey" class="bio-image">
+        <div class="bio-content">
+            <h3>Elizabeth Helvey</h3>
+            <p>Elizabeth Helvey is a Project Manager at North Wind Services, LLC, with over 30 years of experience in nuclear energy, specializing in stakeholder engagement and the transportation of spent nuclear fuel (SNF). She has led initiatives for the U.S. Department of Energy and private industry, including advising on the siting of nuclear facilities and SNF transport logistics. Her expertise in working with state and tribal governments has been critical in ensuring public safety and effective communication around nuclear infrastructure.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="jacopo" class="bio-row">
+        <img src="jacopo-cropped.png" alt="Dr. Jacopo Buongiorno" class="bio-image">
+        <div class="bio-content">
+            <h3>Dr. Jacopo Buongiorno</h3>
+            <p>Dr. Jacopo Buongiorno is the Battelle Energy Alliance Professor in Nuclear Engineering at MIT and Director of the Center for Advanced Nuclear Energy Systems (CANES). A Member of the National Academy of Engineering and Fellow of the American Nuclear Society, he focuses on next-generation fission reactors that are small, affordable, and versatile. Professor Buongiorno makes an acutely convincing case that a clean-energy future will need these next-gen reactors in the mix.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="katy" class="bio-row">
+        <img src="katy-cropped.png" alt="Dr. Kathryn Huff" class="bio-image">
+        <div class="bio-content">
+            <h3>Dr. Kathryn Huff</h3>
+            <p>Dr. Kathryn Huff is an Associate Professor of Nuclear Engineering at the University of Illinois and former Assistant Secretary for Nuclear Energy at the U.S. Department of Energy. A leader in advanced reactor modeling and fuel cycle simulation, she advocates for safe, sustainable nuclear solutions to combat climate change, emphasizing the importance of open, reproducible science and advanced reactors in a clean-energy future.</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; <span id="year"></span> Roving Reactor. All rights reserved.
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
