@@ -4,6 +4,7 @@ import {useState, useEffect, useRef} from "react";
 interface Section {
   id: string;
   content: JSX.Element;
+  type?: "fade" | "scroll";
 }
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
   const sections: Section[] = [
     {
       id: "intro",
+      type: "fade",
       content: (
         <div className="h-full flex flex-col justify-center">
           <h1 className="text-4xl  mb-6">
@@ -34,6 +36,7 @@ export default function Home() {
     },
     {
       id: "subhead",
+      type: "fade",
       content: (
         <div className="h-full flex flex-col justify-center">
           <h1 className="text-4xl  mb-6">
@@ -49,6 +52,7 @@ export default function Home() {
     },
     {
       id: "subhead2",
+      type: "fade",
       content: (
         <div className="h-full flex flex-col justify-center">
           <h1 className="text-4xl mb-6">
@@ -65,6 +69,7 @@ export default function Home() {
     },
     {
       id: "subhead3",
+      type: "fade",
       content: (
         <div className="h-full flex flex-col justify-center">
           <h1 className="text-4xl mb-6">
@@ -78,6 +83,7 @@ export default function Home() {
     },
     {
       id: "video",
+      type: "fade",
       content: (
         <div className="h-full flex flex-col justify-center">
           <h1 className="text-4xl  mb-6">
@@ -115,85 +121,102 @@ export default function Home() {
         </div>
       ),
     },
+    {
+      id: "scrolling-content-1",
+      type: "scroll",
+      content: (
+        <div className="min-h-screen flex flex-col justify-center">
+          <h1 className="text-4xl mb-6">Scrolling panels will go here.</h1>
+        </div>
+      ),
+    },
   ];
 
   useEffect(() => {
     const handleWheel = (e: WheelEvent) => {
-      e.preventDefault();
+      const scrollSectionIndex = sections.findIndex((s) => s.type === "scroll");
 
-      // Keep original 500ms throttle
-      const now = Date.now();
-      if (now - lastScrollTime.current < 500) {
-        console.log("Throttled - skipping scroll event");
+      // If we're in scroll sections...
+      if (activeSection >= scrollSectionIndex) {
+        // Only intercept wheel events when we're at the top and trying to scroll up
+        if (window.scrollY === 0 && e.deltaY < 0) {
+          e.preventDefault();
+
+          const now = Date.now();
+          if (now - lastScrollTime.current < 500) return;
+          lastScrollTime.current = now;
+
+          // Transition back to fade sections
+          document.body.style.overflow = "hidden";
+          setActiveSection(scrollSectionIndex - 1);
+
+          // Re-enable scrolling after transition
+          setTimeout(() => {
+            document.body.style.overflow = "auto";
+          }, 700);
+        }
         return;
       }
+
+      // Normal fade section handling
+      e.preventDefault();
+
+      const wheelThreshold = 50;
+      if (Math.abs(e.deltaY) < wheelThreshold) return;
+
+      const now = Date.now();
+      if (now - lastScrollTime.current < 500) return;
       lastScrollTime.current = now;
 
-      // Log the current state and scroll direction
-      console.log("Processing wheel event:", {
-        deltaY: e.deltaY,
-        currentSection: activeSection,
-        totalSections: sections.length,
-        direction: e.deltaY > 0 ? "down" : "up",
-        timestamp: now,
-      });
-
-      // Track scroll direction and accumulate
-      if (e.deltaY > 0) {
-        lastScrollDirection.current += 1;
-      } else {
-        lastScrollDirection.current -= 1;
-      }
-
-      // Keep original threshold of 3
-      if (
-        lastScrollDirection.current >= 3 &&
-        activeSection < sections.length - 1
-      ) {
-        console.log(
-          `Scrolling DOWN from section ${activeSection} to ${activeSection + 1}`
-        );
-        setActiveSection(activeSection + 1);
-        lastScrollDirection.current = 0;
-      } else if (lastScrollDirection.current <= -3 && activeSection > 0) {
-        console.log(
-          `Scrolling UP from section ${activeSection} to ${activeSection - 1}`
-        );
-        setActiveSection(activeSection - 1);
-        lastScrollDirection.current = 0;
+      if (e.deltaY > 0 && activeSection < sections.length - 1) {
+        setActiveSection((prev) => prev + 1);
+      } else if (e.deltaY < 0 && activeSection > 0) {
+        setActiveSection((prev) => prev - 1);
       }
     };
 
-    window.addEventListener("wheel", handleWheel, {passive: false});
-
-    // Add touch event handlers
     const handleTouchStart = (e: TouchEvent) => {
       touchStartY.current = e.touches[0].clientY;
     };
 
     const handleTouchEnd = (e: TouchEvent) => {
+      const scrollSectionIndex = sections.findIndex((s) => s.type === "scroll");
       touchEndY.current = e.changedTouches[0].clientY;
       const deltaY = touchStartY.current - touchEndY.current;
 
-      // Similar throttling as wheel events
-      const now = Date.now();
-      if (now - lastScrollTime.current < 500) {
+      // If we're in scroll sections...
+      if (activeSection >= scrollSectionIndex) {
+        // Only intercept touch when we're at the top and trying to scroll up
+        if (window.scrollY === 0 && deltaY < 0) {
+          const now = Date.now();
+          if (now - lastScrollTime.current < 500) return;
+          lastScrollTime.current = now;
+
+          setActiveSection(scrollSectionIndex - 1);
+          document.body.style.overflow = "hidden";
+          setTimeout(() => {
+            document.body.style.overflow = "auto";
+          }, 700);
+        }
         return;
       }
+
+      // Normal fade section handling
+      const touchThreshold = 50;
+      if (Math.abs(deltaY) < touchThreshold) return;
+
+      const now = Date.now();
+      if (now - lastScrollTime.current < 500) return;
       lastScrollTime.current = now;
 
-      // Determine scroll direction based on touch movement
-      if (Math.abs(deltaY) > 50) {
-        // Minimum swipe distance threshold
-        if (deltaY > 0 && activeSection < sections.length - 1) {
-          setActiveSection(activeSection + 1);
-        } else if (deltaY < 0 && activeSection > 0) {
-          setActiveSection(activeSection - 1);
-        }
+      if (deltaY > 0 && activeSection < sections.length - 1) {
+        setActiveSection((prev) => prev + 1);
+      } else if (deltaY < 0 && activeSection > 0) {
+        setActiveSection((prev) => prev - 1);
       }
     };
 
-    // Add touch event listeners
+    window.addEventListener("wheel", handleWheel, {passive: false});
     window.addEventListener("touchstart", handleTouchStart);
     window.addEventListener("touchend", handleTouchEnd);
 
@@ -201,30 +224,62 @@ export default function Home() {
       window.removeEventListener("wheel", handleWheel);
       window.removeEventListener("touchstart", handleTouchStart);
       window.removeEventListener("touchend", handleTouchEnd);
+      document.body.style.overflow = "auto";
     };
   }, [activeSection, sections.length]);
 
   return (
-    <main className="relative h-full overflow-hidden">
+    <main className="relative">
+      {/* Fixed background */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15"
+        className="fixed inset-0 bg-cover bg-center bg-no-repeat opacity-15 z-0"
         style={{backgroundImage: "url('/img/rr-hero-image.jpg')"}}
       />
-      <div className="relative h-full">
-        {sections.map((section, index) => (
-          <div
-            key={section.id}
-            className={`
-              absolute inset-0 transition-opacity duration-500
-              ${index === activeSection ? "opacity-100 z-10" : "opacity-0 z-0"}
-            `}>
-            <div className="mx-auto max-w-5xl px-4 h-full sm:px-6 lg:px-8 text-white">
-              {section.content}
+
+      {/* Fade sections */}
+      <div className="fixed inset-0 z-10">
+        {sections
+          .filter((section) => section.type !== "scroll")
+          .map((section, index) => (
+            <div
+              key={section.id}
+              className={`
+                absolute inset-0 transition-opacity duration-500
+                ${index === activeSection ? "opacity-100" : "opacity-0"}
+              `}>
+              <div className="mx-auto max-w-5xl px-4 h-full sm:px-6 lg:px-8 text-white">
+                {section.content}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
       </div>
-      <div className="fixed bottom-4 right-4 text-white bg-black p-2">
+
+      {/* Scroll sections */}
+      <div
+        className="fixed w-full transition-transform duration-700"
+        style={{
+          transform: `translateY(${
+            activeSection >= sections.findIndex((s) => s.type === "scroll")
+              ? "0"
+              : "100%"
+          })`,
+          top: "0",
+          left: "0",
+          right: "0",
+          zIndex: 20,
+        }}>
+        {sections
+          .filter((section) => section.type === "scroll")
+          .map((section) => (
+            <div key={section.id} className="min-h-screen">
+              <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6 lg:px-8 text-white">
+                {section.content}
+              </div>
+            </div>
+          ))}
+      </div>
+
+      <div className="fixed bottom-4 right-4 text-white bg-black p-2 z-30">
         Current Section: {activeSection}
       </div>
     </main>
