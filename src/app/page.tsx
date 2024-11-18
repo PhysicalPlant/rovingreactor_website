@@ -17,7 +17,7 @@ export default function Home() {
       id: "intro",
       content: (
         <div className="h-full flex flex-col justify-center">
-          <h1 className="text-4xl font-bold mb-6">
+          <h1 className="text-4xl  mb-6">
             The Roving Reactor is an ambitious traveling exhibit about nuclear
             energy{" "}
             <span className="text-gray-700">
@@ -33,7 +33,7 @@ export default function Home() {
       id: "subhead",
       content: (
         <div className="h-full flex flex-col justify-center">
-          <h1 className="text-4xl font-bold mb-6">
+          <h1 className="text-4xl  mb-6">
             The Roving Reactor is an ambitious traveling exhibit about nuclear
             energy designed to welcome thousands of visitors
             <span className="text-gray-700">
@@ -48,7 +48,7 @@ export default function Home() {
       id: "subhead2",
       content: (
         <div className="h-full flex flex-col justify-center">
-          <h1 className="text-4xl font-bold mb-6">
+          <h1 className="text-4xl mb-6">
             The Roving Reactor is an ambitious traveling exhibit about nuclear
             energy designed to welcome thousands of visitors — and spark
             thousands of conversations —{" "}
@@ -64,7 +64,7 @@ export default function Home() {
       id: "subhead3",
       content: (
         <div className="h-full flex flex-col justify-center">
-          <h1 className="text-4xl font-bold mb-6">
+          <h1 className="text-4xl mb-6">
             The Roving Reactor is an ambitious traveling exhibit about nuclear
             energy designed to welcome thousands of visitors — and spark
             thousands of conversations — at events like SXSW, the Daytona 500,
@@ -77,7 +77,7 @@ export default function Home() {
       id: "video",
       content: (
         <div className="h-full flex flex-col justify-center">
-          <h1 className="text-4xl font-bold mb-6">
+          <h1 className="text-4xl  mb-6">
             This 15-minute video tells the story of the project and its origins…
           </h1>
           <div className="relative pt-[56.25%] w-full">
