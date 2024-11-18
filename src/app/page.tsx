@@ -12,6 +12,9 @@ export default function Home() {
   const lastScrollTime = useRef(0);
   const lastScrollDirection = useRef<number>(0);
 
+  const touchStartY = useRef<number>(0);
+  const touchEndY = useRef<number>(0);
+
   const sections: Section[] = [
     {
       id: "intro",
@@ -163,8 +166,41 @@ export default function Home() {
 
     window.addEventListener("wheel", handleWheel, {passive: false});
 
+    // Add touch event handlers
+    const handleTouchStart = (e: TouchEvent) => {
+      touchStartY.current = e.touches[0].clientY;
+    };
+
+    const handleTouchEnd = (e: TouchEvent) => {
+      touchEndY.current = e.changedTouches[0].clientY;
+      const deltaY = touchStartY.current - touchEndY.current;
+
+      // Similar throttling as wheel events
+      const now = Date.now();
+      if (now - lastScrollTime.current < 500) {
+        return;
+      }
+      lastScrollTime.current = now;
+
+      // Determine scroll direction based on touch movement
+      if (Math.abs(deltaY) > 50) {
+        // Minimum swipe distance threshold
+        if (deltaY > 0 && activeSection < sections.length - 1) {
+          setActiveSection(activeSection + 1);
+        } else if (deltaY < 0 && activeSection > 0) {
+          setActiveSection(activeSection - 1);
+        }
+      }
+    };
+
+    // Add touch event listeners
+    window.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("touchend", handleTouchEnd);
+
     return () => {
       window.removeEventListener("wheel", handleWheel);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchend", handleTouchEnd);
     };
   }, [activeSection, sections.length]);
 
