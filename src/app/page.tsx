@@ -278,10 +278,6 @@ export default function Home() {
             </div>
           ))}
       </div>
-
-      <div className="fixed bottom-4 right-4 text-white bg-black p-2 z-30">
-        Current Section: {activeSection}
-      </div>
     </main>
   );
 }
