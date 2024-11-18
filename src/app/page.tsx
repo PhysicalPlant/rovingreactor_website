@@ -51,7 +51,7 @@ export default function Home() {
           <h1 className="text-4xl mb-6">
             The Roving Reactor is an ambitious traveling exhibit about nuclear
             energy designed to welcome thousands of visitors — and spark
-            thousands of conversations —{" "}
+            thousands of conversations —
             <span className="text-gray-700">
               at events like SXSW, the Daytona 500, the Minnesota State Fair,
               and more.
