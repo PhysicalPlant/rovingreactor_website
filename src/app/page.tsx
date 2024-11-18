@@ -11,7 +11,6 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState(0);
 
   const lastScrollTime = useRef(0);
-  const lastScrollDirection = useRef<number>(0);
 
   const touchStartY = useRef<number>(0);
   const touchEndY = useRef<number>(0);
