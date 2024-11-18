@@ -19,7 +19,12 @@ export default function Home() {
         <div className="h-full flex flex-col justify-center">
           <h1 className="text-4xl font-bold mb-6">
             The Roving Reactor is an ambitious traveling exhibit about nuclear
-            energy
+            energy{" "}
+            <span className="text-gray-700">
+              designed to welcome thousands of visitors — and spark thousands of
+              conversations — at events like SXSW, the Daytona 500, the
+              Minnesota State Fair, and more.
+            </span>
           </h1>
         </div>
       ),
@@ -29,11 +34,12 @@ export default function Home() {
       content: (
         <div className="h-full flex flex-col justify-center">
           <h1 className="text-4xl font-bold mb-6">
-            <span className="text-gray-500">
-              The Roving Reactor is an ambitious traveling exhibit about nuclear
-              energy
-            </span>{" "}
-            designed to welcome thousands of visitors
+            The Roving Reactor is an ambitious traveling exhibit about nuclear
+            energy designed to welcome thousands of visitors
+            <span className="text-gray-700">
+              — and spark thousands of conversations — at events like SXSW, the
+              Daytona 500, the Minnesota State Fair, and more.
+            </span>
           </h1>
         </div>
       ),
@@ -43,11 +49,13 @@ export default function Home() {
       content: (
         <div className="h-full flex flex-col justify-center">
           <h1 className="text-4xl font-bold mb-6">
-            <span className="text-gray-500">
-              The Roving Reactor is an ambitious traveling exhibit about nuclear
-              energy designed to welcome thousands of visitors
-            </span>{" "}
-            — and spark thousands of conversations —
+            The Roving Reactor is an ambitious traveling exhibit about nuclear
+            energy designed to welcome thousands of visitors — and spark
+            thousands of conversations —{" "}
+            <span className="text-gray-700">
+              at events like SXSW, the Daytona 500, the Minnesota State Fair,
+              and more.
+            </span>
           </h1>
         </div>
       ),
@@ -57,12 +65,10 @@ export default function Home() {
       content: (
         <div className="h-full flex flex-col justify-center">
           <h1 className="text-4xl font-bold mb-6">
-            <span className="text-gray-500">
-              The Roving Reactor is an ambitious traveling exhibit about nuclear
-              energy designed to welcome thousands of visitors
-            </span>{" "}
-            at events like SXSW, the Daytona 500, the Minnesota State Fair, and
-            more.
+            The Roving Reactor is an ambitious traveling exhibit about nuclear
+            energy designed to welcome thousands of visitors — and spark
+            thousands of conversations — at events like SXSW, the Daytona 500,
+            the Minnesota State Fair, and more.
           </h1>
         </div>
       ),
