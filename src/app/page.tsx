@@ -28,7 +28,42 @@ export default function Home() {
       id: "subhead",
       content: (
         <div className="h-full flex flex-col justify-center">
-          <h1 className="text-4xl font-bold mb-6">What the deally-yo?</h1>
+          <h1 className="text-4xl font-bold mb-6">
+            <span className="text-gray-500">
+              The Roving Reactor is an ambitious traveling exhibit about nuclear
+              energy
+            </span>{" "}
+            designed to welcome thousands of visitors
+          </h1>
+        </div>
+      ),
+    },
+    {
+      id: "subhead2",
+      content: (
+        <div className="h-full flex flex-col justify-center">
+          <h1 className="text-4xl font-bold mb-6">
+            <span className="text-gray-500">
+              The Roving Reactor is an ambitious traveling exhibit about nuclear
+              energy designed to welcome thousands of visitors
+            </span>{" "}
+            — and spark thousands of conversations —
+          </h1>
+        </div>
+      ),
+    },
+    {
+      id: "subhead3",
+      content: (
+        <div className="h-full flex flex-col justify-center">
+          <h1 className="text-4xl font-bold mb-6">
+            <span className="text-gray-500">
+              The Roving Reactor is an ambitious traveling exhibit about nuclear
+              energy designed to welcome thousands of visitors
+            </span>{" "}
+            at events like SXSW, the Daytona 500, the Minnesota State Fair, and
+            more.
+          </h1>
         </div>
       ),
     },
@@ -36,6 +71,9 @@ export default function Home() {
       id: "video",
       content: (
         <div className="h-full flex flex-col justify-center">
+          <h1 className="text-4xl font-bold mb-6">
+            This 15-minute video tells the story of the project and its origins…
+          </h1>
           <div className="relative pt-[56.25%] w-full">
             <iframe
               className="absolute top-0 left-0 w-full h-full pointer-events-none"
