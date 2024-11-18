@@ -38,20 +38,31 @@ export default function Home() {
         <div className="h-full flex flex-col justify-center">
           <div className="relative pt-[56.25%] w-full">
             <iframe
-              className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/2FRqVq971qU"
+              className="absolute top-0 left-0 w-full h-full pointer-events-none"
+              src="https://www.youtube.com/embed/2FRqVq971qU?enablejsapi=1"
               title="Roving Reactor Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
             <div
-              className="absolute inset-0 bg-transparent"
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.pointerEvents = "none")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.pointerEvents = "auto")
-              }
+              className="absolute inset-0 bg-transparent z-10"
+              onClick={(e) => {
+                const iframe = e.currentTarget
+                  .previousElementSibling as HTMLIFrameElement;
+                iframe.classList.remove("pointer-events-none");
+                iframe.focus();
+
+                // Add event listener to detect when user is done with video
+                window.addEventListener(
+                  "click",
+                  function reEnableOverlay(event) {
+                    if (!iframe.contains(event.target as Node)) {
+                      iframe.classList.add("pointer-events-none");
+                      window.removeEventListener("click", reEnableOverlay);
+                    }
+                  }
+                );
+              }}
             />
           </div>
         </div>
