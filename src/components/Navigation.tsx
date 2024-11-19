@@ -17,20 +17,31 @@ export default function Navigation() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-14">
         <div className="flex items-center justify-between h-full">
           {/* Logo and company name */}
-          <Link href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3 group">
             <img
-              src="/img/RR-logo-crop.png"
+              src="/img/RR-logo-vector.svg"
               alt="Roving Reactor Logo"
-              className="h-10 w-auto"
+              className="h-10 w-auto transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
             />
             <span
-              className={`${comfortaaBold.className} text-white text-xl hidden uppercase sm:block`}>
+              className={`${comfortaaBold.className} text-white text-xl uppercase transition-all duration-300`}
+              style={{
+                textShadow: "none",
+                transition: "text-shadow 0.3s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.textShadow =
+                  "0 0 8px rgba(255, 255, 255, 0.5)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.textShadow = "none";
+              }}>
               Roving Reactor
             </span>
           </Link>
 
           {/* Desktop navigation */}
-          <ul className="hidden md:flex gap-6">
+          <ul className="hidden md:flex gap-6 ml-12">
             <li>
               <Link href="/" className="hover:text-slate-300">
                 Home
@@ -54,6 +65,7 @@ export default function Navigation() {
           </ul>
 
           {/* Hamburger button */}
+          <div className="md:flex-1"></div>
           <button
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
