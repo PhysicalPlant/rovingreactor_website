@@ -15,7 +15,7 @@ export default function Home() {
   const touchStartY = useRef<number>(0);
   const touchEndY = useRef<number>(0);
 
-  const sections: Section[] = [
+  const getSections = (currentActiveSection: number): Section[] => [
     {
       id: "intro",
       type: "fade",
@@ -84,37 +84,23 @@ export default function Home() {
       id: "video",
       type: "fade",
       content: (
-        <div className="h-full flex flex-col justify-center">
-          <h1 className="text-4xl  mb-6">
+        <div
+          className="h-full flex flex-col justify-center relative"
+          style={{isolation: "isolate"}}>
+          <h1 className="text-4xl mb-6">
             This 15-minute video tells the story of the project and its origins…
           </h1>
           <div className="relative pt-[56.25%] w-full">
             <iframe
-              className="absolute top-0 left-0 w-full h-full pointer-events-none"
+              className="absolute top-0 left-0 w-full h-full"
+              style={{
+                pointerEvents: activeSection === 4 ? "auto" : "none",
+                zIndex: 100,
+              }}
               src="https://www.youtube.com/embed/2FRqVq971qU?enablejsapi=1"
               title="Roving Reactor Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            />
-            <div
-              className="absolute inset-0 bg-transparent z-10"
-              onClick={(e) => {
-                const iframe = e.currentTarget
-                  .previousElementSibling as HTMLIFrameElement;
-                iframe.classList.remove("pointer-events-none");
-                iframe.focus();
-
-                // Add event listener to detect when user is done with video
-                window.addEventListener(
-                  "click",
-                  function reEnableOverlay(event) {
-                    if (!iframe.contains(event.target as Node)) {
-                      iframe.classList.add("pointer-events-none");
-                      window.removeEventListener("click", reEnableOverlay);
-                    }
-                  }
-                );
-              }}
             />
           </div>
         </div>
@@ -131,33 +117,26 @@ export default function Home() {
     },
   ];
 
+  const sections = getSections(activeSection);
+
   useEffect(() => {
     const handleWheel = (e: WheelEvent) => {
+      // Always allow natural scrolling in scroll sections
       const scrollSectionIndex = sections.findIndex((s) => s.type === "scroll");
-
-      // If we're in scroll sections...
       if (activeSection >= scrollSectionIndex) {
-        // Only intercept wheel events when we're at the top and trying to scroll up
+        // Only handle when at top and scrolling up
         if (window.scrollY === 0 && e.deltaY < 0) {
-          e.preventDefault();
-
           const now = Date.now();
           if (now - lastScrollTime.current < 500) return;
           lastScrollTime.current = now;
 
-          // Transition back to fade sections
-          document.body.style.overflow = "hidden";
           setActiveSection(scrollSectionIndex - 1);
-
-          // Re-enable scrolling after transition
-          setTimeout(() => {
-            document.body.style.overflow = "auto";
-          }, 700);
         }
         return;
       }
 
-      // Normal fade section handling
+      // For fade sections, only prevent the default scroll
+      // but don't stop propagation or prevent other events
       e.preventDefault();
 
       const wheelThreshold = 50;
@@ -174,64 +153,30 @@ export default function Home() {
       }
     };
 
-    const handleTouchStart = (e: TouchEvent) => {
-      touchStartY.current = e.touches[0].clientY;
-    };
-
-    const handleTouchEnd = (e: TouchEvent) => {
-      const scrollSectionIndex = sections.findIndex((s) => s.type === "scroll");
-      touchEndY.current = e.changedTouches[0].clientY;
-      const deltaY = touchStartY.current - touchEndY.current;
-
-      // If we're in scroll sections...
-      if (activeSection >= scrollSectionIndex) {
-        // Only intercept touch when we're at the top and trying to scroll up
-        if (window.scrollY === 0 && deltaY < 0) {
-          const now = Date.now();
-          if (now - lastScrollTime.current < 500) return;
-          lastScrollTime.current = now;
-
-          setActiveSection(scrollSectionIndex - 1);
-          document.body.style.overflow = "hidden";
-          setTimeout(() => {
-            document.body.style.overflow = "auto";
-          }, 700);
-        }
-        return;
-      }
-
-      // Normal fade section handling
-      const touchThreshold = 50;
-      if (Math.abs(deltaY) < touchThreshold) return;
-
-      const now = Date.now();
-      if (now - lastScrollTime.current < 500) return;
-      lastScrollTime.current = now;
-
-      if (deltaY > 0 && activeSection < sections.length - 1) {
-        setActiveSection((prev) => prev + 1);
-      } else if (deltaY < 0 && activeSection > 0) {
-        setActiveSection((prev) => prev - 1);
-      }
-    };
-
     window.addEventListener("wheel", handleWheel, {passive: false});
-    window.addEventListener("touchstart", handleTouchStart);
-    window.addEventListener("touchend", handleTouchEnd);
 
     return () => {
       window.removeEventListener("wheel", handleWheel);
-      window.removeEventListener("touchstart", handleTouchStart);
-      window.removeEventListener("touchend", handleTouchEnd);
-      document.body.style.overflow = "auto";
     };
   }, [activeSection, sections.length]);
 
   return (
-    <main className="relative">
+    <main
+      className="relative h-screen"
+      style={{
+        overflowY:
+          activeSection >= sections.findIndex((s) => s.type === "scroll")
+            ? "auto"
+            : "hidden",
+        touchAction:
+          activeSection >= sections.findIndex((s) => s.type === "scroll")
+            ? "auto"
+            : "none",
+        isolation: "isolate",
+      }}>
       {/* Fixed background */}
       <div
-        className="fixed inset-0 bg-cover bg-center bg-no-repeat opacity-15 z-0"
+        className="fixed inset-0 bg-cover bg-center bg-no-repeat opacity-25 z-0"
         style={{backgroundImage: "url('/img/rr-hero-image.jpg')"}}
       />
 
@@ -243,10 +188,10 @@ export default function Home() {
             <div
               key={section.id}
               className={`
-                absolute inset-0 transition-opacity duration-500
+                absolute inset-0 transition-opacity duration-500 flex items-center
                 ${index === activeSection ? "opacity-100" : "opacity-0"}
               `}>
-              <div className="mx-auto max-w-5xl px-4 h-full sm:px-6 lg:px-8 text-white">
+              <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-white w-full">
                 {section.content}
               </div>
             </div>
@@ -266,16 +211,28 @@ export default function Home() {
           left: "0",
           right: "0",
           zIndex: 20,
+          height: "100vh",
+          overflowY:
+            activeSection >= sections.findIndex((s) => s.type === "scroll")
+              ? "auto"
+              : "hidden",
         }}>
         {sections
           .filter((section) => section.type === "scroll")
           .map((section) => (
-            <div key={section.id} className="min-h-screen">
-              <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6 lg:px-8 text-white">
+            <div key={section.id} className="min-h-screen flex items-center">
+              <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6 lg:px-8 text-white w-full">
                 {section.content}
               </div>
             </div>
           ))}
+      </div>
+
+      {/* Navigation */}
+      <div className="fixed top-0 left-0 right-0 z-[9999]">
+        <nav className="relative" style={{isolation: "isolate"}}>
+          {/* Your nav content */}
+        </nav>
       </div>
     </main>
   );

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navigation() {
   return (
-    <nav className="bg-slate-800 h-14">
+    <nav className="bg-slate-800 h-14 interactive">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 flex justify-between items-center h-full">
         <div className="flex items-center">
           <Link href="/">
