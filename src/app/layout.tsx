@@ -1,5 +1,5 @@
 import type {Metadata} from "next";
-import Navigation from "@/app/components/Navigation";
+import Navigation from "./components/Navigation";
 import {Comfortaa} from "next/font/google";
 import "./globals.css";
 
