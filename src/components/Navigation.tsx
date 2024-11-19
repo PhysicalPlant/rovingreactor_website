@@ -1,40 +1,119 @@
+"use client";
 import Link from "next/link";
+import {useState} from "react";
+import {Comfortaa} from "next/font/google";
+
+const comfortaaBold = Comfortaa({
+  weight: "700",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function Navigation() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <nav className="bg-slate-800 h-14 interactive">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 flex justify-between items-center h-full">
-        <div className="flex items-center">
-          <Link href="/">
+    <nav className="bg-slate-800 shadow-md w-full fixed top-0 left-0 z-50">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-14">
+        <div className="flex items-center justify-between h-full">
+          {/* Logo and company name */}
+          <Link href="/" className="flex items-center gap-3">
             <img
               src="/img/RR-logo-crop.png"
               alt="Roving Reactor Logo"
               className="h-10 w-auto"
             />
+            <span
+              className={`${comfortaaBold.className} text-white text-xl hidden uppercase sm:block`}>
+              Roving Reactor
+            </span>
           </Link>
+
+          {/* Desktop navigation */}
+          <ul className="hidden md:flex gap-6">
+            <li>
+              <Link href="/" className="hover:text-slate-300">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/timeline" className="hover:text-slate-300">
+                Timeline
+              </Link>
+            </li>
+            <li>
+              <Link href="/coalition" className="hover:text-slate-300">
+                Coalition
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="hover:text-slate-300">
+                Contact
+              </Link>
+            </li>
+          </ul>
+
+          {/* Hamburger button */}
+          <button
+            className="md:hidden p-2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu">
+            <svg
+              className="w-6 h-6 text-white"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              {isMenuOpen ? (
+                <path d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
         </div>
-        <ul className="flex gap-6 justify-end">
-          <li>
-            <Link href="/" className="hover:text-slate-300">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/timeline" className="hover:text-slate-300">
-              Timeline
-            </Link>
-          </li>
-          <li>
-            <Link href="/coalition" className="hover:text-slate-300">
-              Coalition
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" className="hover:text-slate-300">
-              Contact
-            </Link>
-          </li>
-        </ul>
+
+        {/* Mobile menu */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-slate-800 py-4 shadow-md">
+            <ul className="flex flex-col space-y-4 px-4">
+              <li>
+                <Link
+                  href="/"
+                  className="block hover:text-slate-300"
+                  onClick={() => setIsMenuOpen(false)}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/timeline"
+                  className="block hover:text-slate-300"
+                  onClick={() => setIsMenuOpen(false)}>
+                  Timeline
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/coalition"
+                  className="block hover:text-slate-300"
+                  onClick={() => setIsMenuOpen(false)}>
+                  Coalition
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="block hover:text-slate-300"
+                  onClick={() => setIsMenuOpen(false)}>
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
     </nav>
   );

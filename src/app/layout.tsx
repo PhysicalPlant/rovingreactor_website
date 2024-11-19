@@ -1,10 +1,9 @@
 import type {Metadata} from "next";
 import Navigation from "@/components/Navigation";
-import {Roboto} from "next/font/google";
+import {Comfortaa} from "next/font/google";
 import "./globals.css";
 
-const roboto = Roboto({
-  weight: ["300", "400", "500", "700"],
+const comfortaa = Comfortaa({
   subsets: ["latin"],
   display: "swap",
 });
@@ -17,12 +16,10 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
-      <body className="m-0 p-0 bg-black">
-        <div className={roboto.className}>
+      <body className="m-0 p-0 bg-black min-h-screen">
+        <div className={comfortaa.className}>
           <Navigation />
-          <div className="fixed left-0 right-0 top-[56px] bottom-0">
-            {children}
-          </div>
+          <div className="min-h-screen">{children}</div>
         </div>
       </body>
     </html>
