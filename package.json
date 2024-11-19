@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "vercel-build": "npm install --legacy-peer-deps && next build"
+    "vercel-build": "npm install --save-dev typescript @types/react @types/node --legacy-peer-deps && npm install --legacy-peer-deps && next build"
   },
   "dependencies": {
     "framer-motion": "^11.11.17",
