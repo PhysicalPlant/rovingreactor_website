@@ -15,14 +15,14 @@ export default function Home() {
         }}
       />
 
-      {/* Mobile gradient (more transparent) */}
+      {/* Mobile gradient (even more transparent) */}
       <div
         className="fixed inset-0 w-full h-full -z-10 md:hidden"
         style={{
           background: `linear-gradient(90deg, 
-            rgba(0,0,0,0.75) 0%, 
-            rgba(0,0,0,0.65) 65%, 
-            rgba(0,0,0,0.55) 100%
+            rgba(0,0,0,0.65) 0%, 
+            rgba(0,0,0,0.55) 65%, 
+            rgba(0,0,0,0.45) 100%
           )`,
         }}
       />
