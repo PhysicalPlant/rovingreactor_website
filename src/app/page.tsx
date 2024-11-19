@@ -42,33 +42,134 @@ export default function Home() {
       <main className="relative pt-[calc(3.5rem+1px)] md:pt-14 mt-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            <div className="col-span-1 lg:col-span-7">
+            <div className="col-span-1 lg:col-span-6">
               <div
                 className="text-2xl sm:text-3xl md:text-4xl text-white mb-4 md:mb-6 opacity-0 animate-fade-in-up"
                 style={{animationDelay: "0s"}}>
-                <Typewriter
-                  options={{
-                    delay: 38,
-                    cursor: "|",
-                    deleteSpeed: 38,
-                  }}
-                  onInit={(typewriter) => {
-                    typewriter
-                      .typeString(
-                        "The Roving Reactor is an ambitious traveling exhibit about " +
-                          "nuclear energy designed to welcome thousands of visitors — and " +
-                          "spark thousands of conversations — at events like SXSW, the " +
-                          "Daytona 500, the Minnesota State Fair, and more."
-                      )
-                      .start();
-                  }}
-                />
+                <h1>
+                  <Typewriter
+                    options={{
+                      delay: 0,
+                      cursor: "|",
+                      deleteSpeed: 38,
+                      cursorClassName: "typing-cursor",
+                    }}
+                    onInit={(typewriter) => {
+                      typewriter
+                        .typeString("The")
+                        .pauseFor(200)
+                        .typeString(" Roving")
+                        .pauseFor(200)
+                        .typeString(" Reactor")
+                        .pauseFor(200)
+                        .typeString(" is")
+                        .pauseFor(200)
+                        .typeString(" an")
+                        .pauseFor(200)
+                        .typeString(" ambitious")
+                        .pauseFor(200)
+                        .typeString(" traveling")
+                        .pauseFor(200)
+                        .typeString(" exhibit")
+                        .pauseFor(200)
+                        .typeString(" about")
+                        .pauseFor(200)
+                        .typeString(" nuclear")
+                        .pauseFor(200)
+                        .typeString(" energy.")
+                        .callFunction(() => {
+                          document
+                            .querySelector(".typing-cursor")
+                            ?.classList.add("hidden");
+                          document
+                            .querySelector(".second-paragraph")
+                            ?.classList.remove("hidden");
+                        })
+                        .start();
+                    }}
+                  />
+                </h1>
+                <h2
+                  className="mt-8 text-lg sm:text-xl md:text-2xl second-paragraph hidden opacity-0 animate-fade-in-up"
+                  style={{animationDelay: "0s"}}>
+                  <Typewriter
+                    options={{
+                      delay: 0,
+                      cursor: "|",
+                      deleteSpeed: 38,
+                      cursorClassName: "typing-cursor-2",
+                    }}
+                    onInit={(typewriter) => {
+                      typewriter
+                        .pauseFor(2500)
+                        .typeString("It's")
+                        .pauseFor(200)
+                        .typeString(" designed")
+                        .pauseFor(200)
+                        .typeString(" to")
+                        .pauseFor(200)
+                        .typeString(" welcome")
+                        .pauseFor(200)
+                        .typeString(" thousands")
+                        .pauseFor(200)
+                        .typeString(" of")
+                        .pauseFor(200)
+                        .typeString(" visitors")
+                        .pauseFor(200)
+                        .typeString(" —")
+                        .pauseFor(200)
+                        .typeString(" and")
+                        .pauseFor(200)
+                        .typeString(" spark")
+                        .pauseFor(200)
+                        .typeString(" thousands")
+                        .pauseFor(200)
+                        .typeString(" of")
+                        .pauseFor(200)
+                        .typeString(" conversations")
+                        .pauseFor(200)
+                        .typeString(" —")
+                        .pauseFor(200)
+                        .typeString(" at")
+                        .pauseFor(200)
+                        .typeString(" events")
+                        .pauseFor(200)
+                        .typeString(" like")
+                        .pauseFor(200)
+                        .typeString(" SXSW,")
+                        .pauseFor(200)
+                        .typeString(" the")
+                        .pauseFor(200)
+                        .typeString(" Daytona")
+                        .pauseFor(200)
+                        .typeString(" 500,")
+                        .pauseFor(200)
+                        .typeString(" the")
+                        .pauseFor(200)
+                        .typeString(" Minnesota")
+                        .pauseFor(200)
+                        .typeString(" State")
+                        .pauseFor(200)
+                        .typeString(" Fair,")
+                        .pauseFor(200)
+                        .typeString(" and")
+                        .pauseFor(200)
+                        .typeString(" more.")
+                        .callFunction(() => {
+                          document
+                            .querySelector(".typing-cursor-2")
+                            ?.classList.add("hidden");
+                        })
+                        .start();
+                    }}
+                  />
+                </h2>
               </div>
 
               <div
-                className="mt-8 md:mt-12 opacity-0"
+                className="mt-12 md:mt-12 opacity-0"
                 style={{
-                  animation: "fadeInUp 2s ease forwards 13s",
+                  animation: "fadeInUp 2s ease forwards 10s",
                 }}>
                 <h2 className="text-xl sm:text-2xl text-white mb-4 md:mb-6">
                   This 15-minute video tells the story of the project and its

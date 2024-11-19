@@ -4,7 +4,7 @@ import {useState} from "react";
 import {Comfortaa} from "next/font/google";
 
 const comfortaaBold = Comfortaa({
-  weight: "700",
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -24,7 +24,7 @@ export default function Navigation() {
               className="h-10 w-auto transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
             />
             <span
-              className={`${comfortaaBold.className} text-white text-xl uppercase transition-all duration-300`}
+              className={`${comfortaaBold.className} text-white text-xl uppercase  transition-all duration-300`}
               style={{
                 textShadow: "none",
                 transition: "text-shadow 0.3s ease",
