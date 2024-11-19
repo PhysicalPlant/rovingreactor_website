@@ -51,7 +51,7 @@ export default function Home() {
                     options={{
                       delay: 0,
                       cursor: "|",
-                      deleteSpeed: 38,
+                      deleteSpeed: 0,
                       cursorClassName: "typing-cursor",
                     }}
                     onInit={(typewriter) => {
@@ -96,7 +96,7 @@ export default function Home() {
                     options={{
                       delay: 0,
                       cursor: "|",
-                      deleteSpeed: 38,
+                      deleteSpeed: 0,
                       cursorClassName: "typing-cursor-2",
                     }}
                     onInit={(typewriter) => {
