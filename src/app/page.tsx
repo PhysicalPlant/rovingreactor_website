@@ -114,7 +114,7 @@ export default function Home() {
     },
   ];
 
-  const sections = getSections(activeSection);
+  const sections = getSections();
 
   useEffect(() => {
     const handleWheel = (e: WheelEvent) => {
