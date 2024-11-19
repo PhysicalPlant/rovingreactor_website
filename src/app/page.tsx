@@ -12,10 +12,7 @@ export default function Home() {
 
   const lastScrollTime = useRef(0);
 
-  const touchStartY = useRef<number>(0);
-  const touchEndY = useRef<number>(0);
-
-  const getSections = (currentActiveSection: number): Section[] => [
+  const getSections = (): Section[] => [
     {
       id: "intro",
       type: "fade",
