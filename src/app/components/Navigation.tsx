@@ -2,6 +2,7 @@
 import Link from "next/link";
 import {useState} from "react";
 import {Comfortaa} from "next/font/google";
+import Image from "next/image";
 
 const comfortaaBold = Comfortaa({
   weight: ["300", "400", "500", "600", "700"],
@@ -18,10 +19,12 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-full">
           {/* Logo and company name */}
           <Link href="/" className="flex items-center gap-3 group">
-            <img
+            <Image
               src="/img/RR-logo-vector.svg"
               alt="Roving Reactor Logo"
               className="h-10 w-auto transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
+              width={40}
+              height={40}
             />
             <span
               className={`${comfortaaBold.className} text-white text-xl uppercase  transition-all duration-300`}

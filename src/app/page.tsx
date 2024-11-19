@@ -27,6 +27,8 @@ export default function Home() {
   ];
 
   useEffect(() => {
+    if (texts[currentTextIndex] === undefined) return;
+
     console.log("Processing text:", texts[currentTextIndex]);
 
     const words = texts[currentTextIndex]
@@ -74,7 +76,7 @@ export default function Home() {
     }, 175);
 
     return () => clearInterval(wordInterval);
-  }, [currentTextIndex]);
+  }, [currentTextIndex, texts]);
 
   useEffect(() => {
     const startDelay = setTimeout(() => {
