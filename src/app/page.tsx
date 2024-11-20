@@ -21,31 +21,35 @@ export default function Home() {
   const videoText =
     "This 15-minute video tells the story of the project and its origins…";
 
-  const texts = [
-    "The Roving Reactor is an ambitious traveling exhibit about nuclear energy.",
-    "It's designed to welcome thousands of visitors — and spark thousands of conversations — at events like SXSW, the Daytona 500, the Minnesota State Fair, and more.",
-  ];
+  const texts = React.useMemo(
+    () => [
+      "The Roving Reactor is an ambitious traveling exhibit about nuclear energy.",
+      "It's designed to welcome thousands of visitors — and spark thousands of conversations — at events like SXSW, the Daytona 500, the Minnesota State Fair, and more.",
+    ],
+    []
+  );
 
   useEffect(() => {
-    if (texts[currentTextIndex] === undefined) return;
+    if (currentTextIndex >= texts.length) return;
 
     console.log("Processing text:", texts[currentTextIndex]);
 
-    const words = texts[currentTextIndex]
-      .match(/[\w']+|[.,!?;]|\s+/g)
-      .filter((word) => word.trim().length > 0)
-      .map((word, i, arr) => {
-        // If this word is punctuation, attach it to the previous word
-        if (/^[.,!?;]$/.test(word) && i > 0) {
-          return null; // We'll filter these out
-        }
-        // If the next word is punctuation, combine them
-        if (i < arr.length - 1 && /^[.,!?;]$/.test(arr[i + 1])) {
-          return word + arr[i + 1];
-        }
-        return word;
-      })
-      .filter(Boolean); // Remove null values
+    const words =
+      texts[currentTextIndex]
+        .match(/[\w']+|[.,!?;]|\s+/g)
+        ?.filter((word): word is string => {
+          return word !== null && word.trim().length > 0;
+        })
+        ?.map((word, i, arr) => {
+          if (/^[.,!?;]$/.test(word) && i > 0) {
+            return null;
+          }
+          if (i < arr.length - 1 && /^[.,!?;]$/.test(arr[i + 1])) {
+            return word + arr[i + 1];
+          }
+          return word;
+        })
+        .filter((word): word is string => word !== null) || [];
 
     console.log("Split into words:", words);
 
@@ -80,19 +84,22 @@ export default function Home() {
 
   useEffect(() => {
     const startDelay = setTimeout(() => {
-      const words = videoText
-        .match(/[\w']+|[.,!?;…]|\s+/g)
-        .filter((word) => word.trim().length > 0)
-        .map((word, i, arr) => {
-          if (/^[.,!?;…]$/.test(word) && i > 0) {
-            return null;
-          }
-          if (i < arr.length - 1 && /^[.,!?;…]$/.test(arr[i + 1])) {
-            return word + arr[i + 1];
-          }
-          return word;
-        })
-        .filter(Boolean);
+      const words =
+        videoText
+          .match(/[\w']+|[.,!?;…]|\s+/g)
+          ?.filter((word): word is string => {
+            return word !== null && word.trim().length > 0;
+          })
+          ?.map((word, i, arr) => {
+            if (/^[.,!?;…]$/.test(word) && i > 0) {
+              return null;
+            }
+            if (i < arr.length - 1 && /^[.,!?;…]$/.test(arr[i + 1])) {
+              return word + arr[i + 1];
+            }
+            return word;
+          })
+          .filter((word): word is string => word !== null) || [];
 
       let currentWordIndex = 0;
       const wordInterval = setInterval(() => {
