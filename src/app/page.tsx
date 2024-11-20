@@ -159,7 +159,7 @@ export default function Home() {
           }}
         />
 
-        <main className="relative pt-[calc(3.5rem+1px)] md:pt-14 mt-9 md:mt-12">
+        <main className="relative pt-[calc(3.5rem+1px)] md:pt-14 mt-6 md:mt-8">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
               <div className="col-span-1 lg:col-span-6">
@@ -176,7 +176,8 @@ export default function Home() {
                         index === 0
                           ? "text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-white"
                           : "text-[1.1rem] sm:text-[1.35rem] text-white"
-                      }`}>
+                      }`}
+                      style={index === 0 ? {lineHeight: "1.1"} : undefined}>
                       {paragraph.map((word, wordIndex) => (
                         <span
                           key={wordIndex}
