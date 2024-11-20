@@ -1,5 +1,6 @@
 "use client";
 import React, {useState, useEffect} from "react";
+import VideoPlayer from "./components/VideoPlayer";
 
 const fadeInAnimation = `
   @keyframes fadeInWord {
@@ -193,7 +194,7 @@ export default function Home() {
                 <div
                   className="mt-4 md:mt-4 opacity-0"
                   style={{
-                    animation: "fadeInUp 2s ease forwards 10s",
+                    animation: "fadeIn 2s ease forwards 10s",
                   }}>
                   <h2 className="text-xl sm:text-2xl text-white mb-4 md:mb-6">
                     {videoTextVisible.map((word, wordIndex) => (
@@ -208,19 +209,14 @@ export default function Home() {
                       </span>
                     ))}
                   </h2>
-                  <div
-                    className="relative pt-[56.25%] w-full opacity-0"
+                  <VideoPlayer
+                    thumbnailSrc="/img/video-thumb.jpg"
+                    videoId="2FRqVq971qU"
+                    className="opacity-0"
                     style={{
-                      animation: "fadeIn 2s ease forwards 13s", // Delay video until after text animation
-                    }}>
-                    <iframe
-                      className="absolute top-0 left-0 w-full h-full"
-                      src="https://www.youtube.com/embed/2FRqVq971qU?enablejsapi=1"
-                      title="Roving Reactor Video"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
-                  </div>
+                      animation: "fadeIn 2s ease forwards 13s",
+                    }}
+                  />
                 </div>
               </div>
             </div>
