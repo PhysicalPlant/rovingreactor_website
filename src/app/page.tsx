@@ -24,8 +24,9 @@ export default function Home() {
 
   const texts = React.useMemo(
     () => [
-      "The Roving Reactor is an ambitious traveling exhibit about nuclear energy.",
-      "It's designed to welcome thousands of visitors — and spark thousands of conversations — at events like SXSW, the Daytona 500, the Minnesota State Fair, and more.",
+      "The Roving Reactor is an ambitious traveling exhibit to celebrate nuclear energy.",
+      "It's time for nuclear energy to come out of the shadows.",
+      "It's time to let people see it up close, to understand the problems it can solve, and to imagine the future it enables.",
     ],
     []
   );
@@ -113,7 +114,7 @@ export default function Home() {
       }, 175);
 
       return () => clearInterval(wordInterval);
-    }, 10000);
+    }, 13000);
 
     return () => clearTimeout(startDelay);
   }, []);
@@ -134,14 +135,14 @@ export default function Home() {
           }}
         />
 
-        {/* Mobile gradient (even more transparent) */}
+        {/* Mobile gradient (darker) */}
         <div
           className="fixed inset-0 w-full h-full -z-10 md:hidden"
           style={{
             background: `linear-gradient(90deg, 
-              rgba(0,0,0,0.65) 0%, 
-              rgba(0,0,0,0.55) 65%, 
-              rgba(0,0,0,0.45) 100%
+              rgba(0,0,0,0.85) 0%, 
+              rgba(0,0,0,0.75) 65%, 
+              rgba(0,0,0,0.65) 100%
             )`,
           }}
         />
@@ -158,7 +159,7 @@ export default function Home() {
           }}
         />
 
-        <main className="relative pt-[calc(3.5rem+1px)] md:pt-14 mt-12">
+        <main className="relative pt-[calc(3.5rem+1px)] md:pt-14 mt-9 md:mt-12">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
               <div className="col-span-1 lg:col-span-6">
@@ -173,8 +174,8 @@ export default function Home() {
                       key={index}
                       className={`mb-4 ${
                         index === 0
-                          ? "text-2xl sm:text-3xl md:text-4xl text-white"
-                          : "text-xl sm:text-2xl text-white"
+                          ? "text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-white"
+                          : "text-[1.1rem] sm:text-[1.35rem] text-white"
                       }`}>
                       {paragraph.map((word, wordIndex) => (
                         <span
@@ -194,9 +195,9 @@ export default function Home() {
                 <div
                   className="mt-4 md:mt-4 opacity-0"
                   style={{
-                    animation: "fadeIn 2s ease forwards 10s",
+                    animation: "fadeIn 2s ease forwards 13s",
                   }}>
-                  <h2 className="text-xl sm:text-2xl text-white mb-4 md:mb-6">
+                  <h2 className="text-lg sm:text-xl md:text-2xl text-white mb-4 md:mb-6">
                     {videoTextVisible.map((word, wordIndex) => (
                       <span
                         key={wordIndex}
@@ -214,7 +215,7 @@ export default function Home() {
                     videoId="2FRqVq971qU"
                     className="opacity-0"
                     style={{
-                      animation: "fadeInUp 2s ease forwards 13s",
+                      animation: "fadeInUp 2s ease forwards 15.5s",
                     }}
                   />
                 </div>
