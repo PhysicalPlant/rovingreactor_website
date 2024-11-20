@@ -18,15 +18,13 @@ const fadeInAnimation = `
 export default function Home() {
   const [currentTextIndex, setCurrentTextIndex] = React.useState(0);
   const [visibleParagraphs, setVisibleParagraphs] = useState<string[][]>([]);
-  const [videoTextVisible, setVideoTextVisible] = useState<string[]>([]);
-  const videoText =
-    "This 15-minute video tells the story of the project and its origins…";
 
   const texts = React.useMemo(
     () => [
       "The Roving Reactor is an ambitious traveling exhibit to celebrate nuclear energy.",
       "It's time for nuclear energy to come out of the shadows.",
       "It's time to let people see it up close, to understand the problems it can solve, and to imagine the future it enables.",
+      "This 15-minute video tells the story of the project and its origins…",
     ],
     []
   );
@@ -83,41 +81,6 @@ export default function Home() {
 
     return () => clearInterval(wordInterval);
   }, [currentTextIndex, texts]);
-
-  useEffect(() => {
-    const startDelay = setTimeout(() => {
-      const words =
-        videoText
-          .match(/[\w']+|[.,!?;…]|\s+/g)
-          ?.filter((word): word is string => {
-            return word !== null && word.trim().length > 0;
-          })
-          ?.map((word, i, arr) => {
-            if (/^[.,!?;…]$/.test(word) && i > 0) {
-              return null;
-            }
-            if (i < arr.length - 1 && /^[.,!?;…]$/.test(arr[i + 1])) {
-              return word + arr[i + 1];
-            }
-            return word;
-          })
-          .filter((word): word is string => word !== null) || [];
-
-      let currentWordIndex = 0;
-      const wordInterval = setInterval(() => {
-        if (currentWordIndex < words.length) {
-          setVideoTextVisible(words.slice(0, currentWordIndex + 1));
-          currentWordIndex++;
-        } else {
-          clearInterval(wordInterval);
-        }
-      }, 175);
-
-      return () => clearInterval(wordInterval);
-    }, 13000);
-
-    return () => clearTimeout(startDelay);
-  }, []);
 
   useEffect(() => {
     const checkContent = () => {
@@ -224,27 +187,14 @@ export default function Home() {
                 <div
                   className="mt-4 md:mt-4 opacity-0"
                   style={{
-                    animation: "fadeIn 2s ease forwards 13s",
+                    animation: "fadeIn 2s ease forwards 12s",
                   }}>
-                  <h2 className="text-[1.1rem] sm:text-[1.35rem] text-white mb-4 md:mb-6">
-                    {videoTextVisible.map((word, wordIndex) => (
-                      <span
-                        key={wordIndex}
-                        style={{
-                          display: "inline-block",
-                          animation: "fadeInWord 0.5s ease forwards",
-                          marginRight: "0.25em",
-                        }}>
-                        {word}
-                      </span>
-                    ))}
-                  </h2>
                   <VideoPlayer
                     thumbnailSrc="/img/video-thumb.jpg"
                     videoId="2FRqVq971qU"
                     className="opacity-0"
                     style={{
-                      animation: "fadeInUp 2s ease forwards 15.5s",
+                      animation: "fadeInUp 2s ease forwards 14.5s",
                     }}
                   />
                 </div>
@@ -252,9 +202,6 @@ export default function Home() {
             </div>
           </div>
         </main>
-
-        {/* Test if this div is present */}
-        <div className="relative">{/* Your lorem ipsum text */}</div>
       </div>
     </>
   );
