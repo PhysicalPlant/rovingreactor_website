@@ -198,7 +198,7 @@ export default function Home() {
                   style={{
                     animation: "fadeIn 2s ease forwards 13s",
                   }}>
-                  <h2 className="text-lg sm:text-xl md:text-2xl text-white mb-4 md:mb-6">
+                  <h2 className="text-[1.1rem] sm:text-[1.35rem] text-white mb-4 md:mb-6">
                     {videoTextVisible.map((word, wordIndex) => (
                       <span
                         key={wordIndex}
