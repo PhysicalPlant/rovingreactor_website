@@ -77,7 +77,7 @@ export default function Home() {
           if (currentTextIndex < texts.length - 1) {
             setCurrentTextIndex((prev) => prev + 1);
           }
-        }, 2000);
+        }, 1400);
       }
     }, 175);
 
