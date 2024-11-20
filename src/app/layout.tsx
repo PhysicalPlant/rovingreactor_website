@@ -16,10 +16,10 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
-      <body className="m-0 p-0 bg-black h-screen overflow-hidden">
-        <div className={comfortaa.className}>
+      <body className="m-0 p-0 bg-black overflow-auto">
+        <div className={`${comfortaa.className} h-screen`}>
           <Navigation />
-          <div className="h-full">{children}</div>
+          {children}
         </div>
       </body>
     </html>

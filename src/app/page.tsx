@@ -77,7 +77,7 @@ export default function Home() {
           if (currentTextIndex < texts.length - 1) {
             setCurrentTextIndex((prev) => prev + 1);
           }
-        }, 1400);
+        }, 1000);
       }
     }, 175);
 
@@ -124,7 +124,7 @@ export default function Home() {
       <style jsx global>
         {fadeInAnimation}
       </style>
-      <div className="h-screen">
+      <div className="h-screen overflow-auto">
         {/* Background elements remain the same */}
         <div
           className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-0"
@@ -228,6 +228,9 @@ export default function Home() {
             </div>
           </div>
         </main>
+
+        {/* Test if this div is present */}
+        <div className="relative">{/* Your lorem ipsum text */}</div>
       </div>
     </>
   );
