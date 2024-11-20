@@ -214,7 +214,7 @@ export default function Home() {
                     videoId="2FRqVq971qU"
                     className="opacity-0"
                     style={{
-                      animation: "fadeIn 2s ease forwards 13s",
+                      animation: "fadeInUp 2s ease forwards 13s",
                     }}
                   />
                 </div>
