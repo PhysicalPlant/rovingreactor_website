@@ -119,6 +119,30 @@ export default function Home() {
     return () => clearTimeout(startDelay);
   }, []);
 
+  useEffect(() => {
+    const checkContent = () => {
+      if (window.innerWidth <= 767) {
+        // Mobile only
+        const contentHeight = document.documentElement.scrollHeight;
+        const viewportHeight = window.innerHeight;
+
+        if (contentHeight > viewportHeight) {
+          document.body.classList.add("can-scroll");
+        } else {
+          document.body.classList.remove("can-scroll");
+        }
+      }
+    };
+
+    checkContent();
+    window.addEventListener("resize", checkContent);
+
+    return () => {
+      window.removeEventListener("resize", checkContent);
+      document.body.classList.remove("can-scroll");
+    };
+  }, []);
+
   return (
     <>
       <style jsx global>
