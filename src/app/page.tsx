@@ -124,7 +124,7 @@ export default function Home() {
       <style jsx global>
         {fadeInAnimation}
       </style>
-      <div className="min-h-screen">
+      <div className="h-screen">
         {/* Background elements remain the same */}
         <div
           className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-0"
@@ -132,6 +132,11 @@ export default function Home() {
             backgroundImage: "url('/img/rr-hero-image.jpg')",
             animation: "fadeIn 13s ease-in forwards",
             zIndex: -20,
+            backgroundAttachment: "fixed",
+            transform: "translate3d(0,0,0)",
+            WebkitBackfaceVisibility: "hidden",
+            WebkitPerspective: 1000,
+            WebkitTransform: "translate3d(0,0,0)",
           }}
         />
 
@@ -167,7 +172,6 @@ export default function Home() {
                   className="mb-4 md:mb-6 opacity-0 animate-fade-in-up"
                   style={{
                     animationDelay: "0s",
-                    minHeight: "200px",
                   }}>
                   {visibleParagraphs.map((paragraph, index) => (
                     <div
