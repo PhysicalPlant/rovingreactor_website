@@ -22,7 +22,7 @@ export default function Navigation() {
             href="/"
             className="flex items-center space-x-2 group opacity-90 hover:opacity-100 transition-all duration-300">
             <Image
-              src="/img/rr-logo-vector.svg"
+              src="/img/RR-logo-vector.svg"
               alt="Roving Reactor Logo"
               width={40}
               height={40}
