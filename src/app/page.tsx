@@ -24,7 +24,7 @@ export default function Home() {
       "The Roving Reactor is an ambitious traveling exhibit to celebrate nuclear energy.",
       "It's time for nuclear energy to come out of the shadows.",
       "It's time to let people see it up close, to understand the problems it can solve, and to imagine the future it enables.",
-      "This 15-minute video tells the story of the project and its origins…",
+      "This 15-minute video tells the story of the project and its origins...",
     ],
     []
   );

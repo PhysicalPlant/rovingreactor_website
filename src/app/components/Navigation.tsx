@@ -1,14 +1,7 @@
 "use client";
 import Link from "next/link";
 import {useState} from "react";
-import {Tourney} from "next/font/google";
 import Image from "next/image";
-
-const tourney = Tourney({
-  subsets: ["latin"],
-  weight: "300",
-  display: "swap",
-});
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,9 +21,7 @@ export default function Navigation() {
               height={40}
               className="transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
             />
-            <span
-              className={`${tourney.className} text-white text-2xl transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]`}
-              style={{fontWeight: 900}}>
+            <span className="text-white text-2xl transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
               Roving Reactor
             </span>
           </Link>
