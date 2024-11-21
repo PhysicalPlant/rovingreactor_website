@@ -80,7 +80,7 @@ export default function Navigation() {
               <li>
                 <Link
                   href="/"
-                  className="block hover:text-slate-300"
+                  className="block text-white hover:text-slate-300"
                   onClick={() => setIsMenuOpen(false)}>
                   Home
                 </Link>
@@ -88,7 +88,7 @@ export default function Navigation() {
               <li>
                 <Link
                   href="/timeline"
-                  className="block hover:text-slate-300"
+                  className="block text-white hover:text-slate-300"
                   onClick={() => setIsMenuOpen(false)}>
                   Timeline
                 </Link>
@@ -96,7 +96,7 @@ export default function Navigation() {
               <li>
                 <Link
                   href="/coalition"
-                  className="block hover:text-slate-300"
+                  className="block text-white hover:text-slate-300"
                   onClick={() => setIsMenuOpen(false)}>
                   Coalition
                 </Link>
@@ -104,7 +104,7 @@ export default function Navigation() {
               <li>
                 <Link
                   href="/contact"
-                  className="block hover:text-slate-300"
+                  className="block text-white hover:text-slate-300"
                   onClick={() => setIsMenuOpen(false)}>
                   Contact
                 </Link>

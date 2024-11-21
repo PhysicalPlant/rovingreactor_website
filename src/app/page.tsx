@@ -22,8 +22,7 @@ export default function Home() {
   const texts = React.useMemo(
     () => [
       "The Roving Reactor is an ambitious traveling exhibit to celebrate nuclear energy.",
-      "It's time for nuclear energy to come out of the shadows.",
-      "It's time to let people see it up close, to understand the problems it can solve, and to imagine the future it enables.",
+      "It's time for nuclear energy to come out of the shadows. It's time to let people see it up close, to understand the problems it can solve, and to imagine the future it enables.",
       "This 15-minute video tells the story of the project and its origins...",
     ],
     []
@@ -36,15 +35,15 @@ export default function Home() {
 
     const words =
       texts[currentTextIndex]
-        .match(/[\w']+|[.,!?;]|\s+/g)
+        .match(/[\w'-]+|[.,!?;…]|\s+/g)
         ?.filter((word): word is string => {
           return word !== null && word.trim().length > 0;
         })
         ?.map((word, i, arr) => {
-          if (/^[.,!?;]$/.test(word) && i > 0) {
+          if (/^[.,!?;…]$/.test(word) && i > 0) {
             return null;
           }
-          if (i < arr.length - 1 && /^[.,!?;]$/.test(arr[i + 1])) {
+          if (i < arr.length - 1 && /^[.,!?;…]$/.test(arr[i + 1])) {
             return word + arr[i + 1];
           }
           return word;
@@ -75,7 +74,7 @@ export default function Home() {
           if (currentTextIndex < texts.length - 1) {
             setCurrentTextIndex((prev) => prev + 1);
           }
-        }, 1000);
+        }, 600);
       }
     }, 175);
 
@@ -194,7 +193,7 @@ export default function Home() {
                     videoId="2FRqVq971qU"
                     className="opacity-0"
                     style={{
-                      animation: "fadeInUp 2s ease forwards 14.5s",
+                      animation: "fadeInUp 2s ease forwards 12s",
                     }}
                   />
                 </div>
