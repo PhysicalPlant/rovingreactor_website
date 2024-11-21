@@ -1,12 +1,12 @@
 "use client";
 import Link from "next/link";
 import {useState} from "react";
-import {Comfortaa} from "next/font/google";
+import {Tourney} from "next/font/google";
 import Image from "next/image";
 
-const comfortaaBold = Comfortaa({
-  weight: ["300", "400", "500", "600", "700"],
+const tourney = Tourney({
   subsets: ["latin"],
+  weight: "300",
   display: "swap",
 });
 
@@ -18,27 +18,19 @@ export default function Navigation() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-14">
         <div className="flex items-center justify-between h-full">
           {/* Logo and company name */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link
+            href="/"
+            className="flex items-center space-x-2 group opacity-90 hover:opacity-100 transition-all duration-300">
             <Image
-              src="/img/RR-logo-vector.svg"
+              src="/img/rr-logo-vector.svg"
               alt="Roving Reactor Logo"
-              className="h-10 w-auto transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
               width={40}
               height={40}
+              className="transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
             />
             <span
-              className={`${comfortaaBold.className} text-white text-xl uppercase  transition-all duration-300`}
-              style={{
-                textShadow: "none",
-                transition: "text-shadow 0.3s ease",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.textShadow =
-                  "0 0 8px rgba(255, 255, 255, 0.5)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.textShadow = "none";
-              }}>
+              className={`${tourney.className} text-white text-2xl transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]`}
+              style={{fontWeight: 900}}>
               Roving Reactor
             </span>
           </Link>
