@@ -1,6 +1,7 @@
 "use client";
 import React, {useState, useEffect} from "react";
 import VideoPlayer from "./components/VideoPlayer";
+import Footer from "./components/Footer";
 
 const fadeInAnimation = `
   @keyframes fadeInWord {
@@ -196,6 +197,7 @@ export default function Home() {
                       animation: "fadeInUp 2s ease forwards 12s",
                     }}
                   />
+                  <Footer />
                 </div>
               </div>
             </div>

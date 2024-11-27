@@ -1,13 +1,14 @@
 import React from "react";
-
+import Footer from "../components/Footer";
 export default function Contact() {
   return (
     <div className="min-h-screen">
-      <main className="relative pt-14">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <main className="relative pt-[calc(3.5rem+1px)] md:pt-14 mt-6 md:mt-8 pb-0">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-0">
           <h1 className="text-4xl text-white mb-6">Contact</h1>
-          {/* Contact form or content here */}
+          {/* Coalition content here */}
         </div>
+        <Footer />
       </main>
     </div>
   );

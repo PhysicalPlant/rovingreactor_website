@@ -16,23 +16,8 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
-      <head>
-        <style>{`
-          @media (max-width: 767px) {
-            body {
-              position: fixed;
-              width: 100%;
-              height: 100%;
-            }
-            
-            body.can-scroll {
-              position: static;
-            }
-          }
-        `}</style>
-      </head>
-      <body className="m-0 p-0 bg-black overflow-auto">
-        <div className={`${comfortaa.className} h-screen`}>
+      <body className="m-0 p-0 bg-black">
+        <div className={comfortaa.className}>
           <Navigation />
           {children}
         </div>
