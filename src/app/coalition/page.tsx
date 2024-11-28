@@ -124,10 +124,12 @@ export default function Coalition() {
               is an artist from Austin, Texas where he runs{" "}
               <a href="https://physicalplant.org/about/">Physical Plant Arts</a>
               . Now in its 30th year, the company&apos;s work has been featured
-              in the New York Times, American Theatre Magazine, Variety, and
-              elsewhere. Along the way, Steve spent 10 years at IBM, first as a
-              Senior Technical Writer and eventually as the company&apos;s Story
-              Strategist. In 2020, he joined the creative team at{" "}
+              in the <i>New York Times</i>, <i>American Theatre Magazine</i>
+              ,&nbsp;
+              <i>Variety</i>, and elsewhere. Along the way, Steve spent 10 years
+              at IBM, first as a Senior Technical Writer and eventually as the
+              company&apos;s Story Strategist. In 2020, he joined the creative
+              team at{" "}
               <a href="https://www.thesphere.com/">the Sphere in Las Vegas</a>.
             </p>
             <p className="text-white mb-6">
