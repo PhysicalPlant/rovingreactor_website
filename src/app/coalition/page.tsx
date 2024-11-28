@@ -54,15 +54,27 @@ export default function Coalition() {
             </p>
             <ul className="list-disc text-white mb-6 pl-5">
               <li>
-                <strong>Dr. Abdalla Abou Jaoude</strong> &mdash; R&D Staff
-                Scientist, Idaho National Lab
+                <strong>
+                  <a href="https://www.linkedin.com/in/ajabdalla/">
+                    Dr. Abdalla Abou Jaoude
+                  </a>
+                </strong>{" "}
+                &mdash; R&D Staff Scientist, Idaho National Lab
                 <br />
-                <strong>Dr. Todd Allen</strong> &mdash; Professor of Nuclear
-                Engineering, University of Michigan
+                <strong>
+                  <a href="https://ners.engin.umich.edu/people/allen-todd/">
+                    Dr. Todd Allen
+                  </a>
+                </strong>{" "}
+                &mdash; Professor of Nuclear Engineering, University of Michigan
               </li>
               <li>
-                <strong>Dr. Jacopo Buongiorno</strong> &mdash; Professor of
-                Nuclear Engineering, MIT
+                <strong>
+                  <a href="https://web.mit.edu/nse/people/faculty/buongiorno.html">
+                    Dr. Jacopo Buongiorno
+                  </a>
+                </strong>{" "}
+                &mdash; Professor of Nuclear Engineering, MIT
               </li>
             </ul>
             <p className="text-white mb-6 font-bold">
@@ -70,28 +82,55 @@ export default function Coalition() {
             </p>
             <ul className="list-disc text-white mb-6 pl-5">
               <li>
-                <strong>Jennifer Hayden</strong> &mdash; President & CEO,
-                National Museum of Nuclear Science & History (Smithsonian)
+                <strong>
+                  <a href="https://www.linkedin.com/in/jennifer-hayden-1b341429/">
+                    Jennifer Hayden
+                  </a>
+                </strong>{" "}
+                &mdash; President & CEO, National Museum of Nuclear Science &
+                History (Smithsonian)
               </li>
               <li>
-                <strong>Heather Hoff</strong> &mdash; Co-Founder, Mothers for
-                Nuclear
+                <strong>
+                  <a href="https://www.linkedin.com/in/heather-hoff-mom4nuclear/">
+                    Heather Hoff
+                  </a>
+                </strong>{" "}
+                &mdash; Co-Founder, Mothers for Nuclear
               </li>
               <li>
-                <strong>Jordan Houghton</strong> &mdash; Senior Media Relations
-                Manager, Nuclear Energy Institute Energy Institute
+                <strong>
+                  <a href="https://www.linkedin.com/in/jtthoughton/">
+                    Jordan Houghton
+                  </a>
+                </strong>{" "}
+                &mdash; Senior Media Relations Manager, Nuclear Energy Institute
+                Energy Institute
               </li>
               <li>
-                <strong>Eric Meyer</strong> &mdash; Founder & Executive
-                Director, Generation Atomic
+                <strong>
+                  <a href="https://www.linkedin.com/in/eric-g-meyer-44800a50/">
+                    Eric Meyer
+                  </a>
+                </strong>{" "}
+                &mdash; Founder & Executive Director, Generation Atomic
               </li>
               <li>
-                <strong>Jon-Michael Murray</strong> &mdash; REPOWER Program
-                Director, Terra Praxis
+                <strong>
+                  <a href="https://www.linkedin.com/in/jon-michael-murray/">
+                    Jon-Michael Murray
+                  </a>
+                </strong>{" "}
+                &mdash; REPOWER Program Director, Terra Praxis
               </li>
               <li>
-                <strong>Jon Wentzel</strong> &mdash; Vice President,
-                Communications, Nuclear Energy Institute Energy Institute
+                <strong>
+                  <a href="https://www.linkedin.com/in/jon-wentzel-0a31bb1/">
+                    Jon Wentzel
+                  </a>
+                </strong>{" "}
+                &mdash; Vice President, Communications, Nuclear Energy Institute
+                Energy Institute
               </li>
             </ul>
             <p className="text-white mb-6 font-bold">
@@ -99,29 +138,58 @@ export default function Coalition() {
             </p>
             <ul className="list-disc text-white mb-6 pl-5">
               <li>
-                <strong>Yvonne Boudreaux</strong> &mdash; Production Designer,
-                Yellowstone (tv series)
+                <strong>
+                  <a href="https://www.yvonneboudreaux.com/aboutplus">
+                    Yvonne Boudreaux
+                  </a>
+                </strong>{" "}
+                &mdash; Production Designer, Yellowstone (tv series)
               </li>
               <li>
-                <strong>Ursula Emery McClure</strong> &mdash; Founding Partner,
-                emc architecture
+                <strong>
+                  <a href="https://www.linkedin.com/in/ursula-emery-mcclure-faia-faar-leed-ap-bd-and-c-ncidq-340291106/">
+                    Ursula Emery McClure
+                  </a>
+                </strong>{" "}
+                &mdash; Founding Partner, emc architecture
               </li>
               <li>
-                <strong>Anna Gallagher-Ross</strong> &mdash; Co-Artistic
-                Director, The Bentway, Toronto
+                <strong>
+                  <a href="https://thebentway.ca/people/anna-gallagher-ross/">
+                    Anna Gallagher-Ross
+                  </a>
+                </strong>{" "}
+                &mdash; Co-Artistic Director, The Bentway, Toronto
               </li>
               <li>
-                <strong>Josh Jones-Dilworth</strong> &mdash; Founder and CEO,
-                Jones-Dilworth, Inc.
+                <strong>
+                  <a href="https://www.linkedin.com/in/joshjonesdilworth/">
+                    Josh Jones-Dilworth
+                  </a>
+                </strong>{" "}
+                &mdash; Founder and CEO, Jones-Dilworth, Inc.
               </li>
               <li>
-                <strong>April Litz</strong> &mdash; Director of Art Production,
-                Dr. Carra Martinez &mdash; Co-Artistic Director, Fusebox
-                Festival / Live in America
+                <strong>
+                  <a href="https://www.linkedin.com/in/alitz/">April Litz</a>
+                </strong>{" "}
+                &mdash; Director of Art Production,{" "}
               </li>
               <li>
-                <strong>Auro Trini Castelli</strong> &mdash; Chief Strategy &
-                Sustainability Officer, Otherworldly
+                <strong>
+                  <a href="https://www.linkedin.com/in/carra-martinez-phd-684a37ab/">
+                    Dr. Carra Martinez
+                  </a>
+                </strong>{" "}
+                &mdash; Co-Artistic Director, Fusebox Festival / Live in America
+              </li>
+              <li>
+                <strong>
+                  <a href="https://www.linkedin.com/in/aurotrinicastelli/">
+                    Auro Trini Castelli
+                  </a>
+                </strong>{" "}
+                &mdash; Chief Strategy & Sustainability Officer, Otherworldly
               </li>
             </ul>
             <div className="border border-gray-500 my-6"></div>
