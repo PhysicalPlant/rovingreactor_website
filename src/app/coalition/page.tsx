@@ -8,32 +8,38 @@ export default function Coalition() {
           <div className="max-w-2xl" style={{fontSize: "1.2rem"}}>
             <h1 className="text-4xl text-white mb-6">Coalition</h1>
             <p className="text-white mb-6">
-              The Roving Reactor Project is building a coalition that includes
+              he Roving Reactor Project is building a coalition that includes
               advocacy groups, government agencies (especially the national
-              labs), academia, and industry. The list below is aspirational.
-              We&apos;ll continue to reach out to these phenomenal institutions
-              in the coming months.
+              labs), academia, and industry.
             </p>
             <p className="text-white mb-6">
               We&apos;re grateful for generous grants from&nbsp;
-              <a href="https://www.generationatomic.org/">Generation Atomic</a>
+              <a href="https://www.generationatomic.org/">
+                <span className="text-2xl">Generation Atomic</span>
+              </a>
               ,&nbsp;
               <a href="https://www.mothersfornuclear.org/">
-                Mothers for Nuclear
+                <span className="text-2xl">Mothers for Nuclear</span>
               </a>
               , and&nbsp;
               <a href="https://anthropoceneinstitute.com/">
-                the Anthropocene Institute
+                <span className="text-2xl">the Anthropocene Institute</span>
               </a>
               , as well as an artist residency from the&nbsp;
               <a href="https://www.nuclearmuseum.org/">
-                National Museum of Nuclear Science and History
+                <span className="text-2xl">
+                  National Museum of Nuclear Science and History
+                </span>
               </a>
               .
             </p>
+            <p className="text-white mb-6">
+              The list below is aspirational. We&apos;ll continue to reach out
+              to these phenomenal institutions in the coming months.
+            </p>
             <Image
               src="/img/wishlist-coalition.png"
-              className="my-8"
+              className="my-8 rounded-lg"
               alt="Coalition"
               width={1000}
               height={1000}
@@ -48,15 +54,15 @@ export default function Coalition() {
             </p>
             <ul className="list-disc text-white mb-6 pl-5">
               <li>
-                Dr. Abdalla Abou Jaoude &mdash; R&D Staff Scientist, Idaho
-                National Lab
+                <strong>Dr. Abdalla Abou Jaoude</strong> &mdash; R&D Staff
+                Scientist, Idaho National Lab
                 <br />
-                Dr. Todd Allen &mdash; Professor of Nuclear Engineering,
-                University of Michigan
+                <strong>Dr. Todd Allen</strong> &mdash; Professor of Nuclear
+                Engineering, University of Michigan
               </li>
               <li>
-                Dr. Jacopo Buongiorno &mdash; Professor of Nuclear Engineering,
-                MIT
+                <strong>Dr. Jacopo Buongiorno</strong> &mdash; Professor of
+                Nuclear Engineering, MIT
               </li>
             </ul>
             <p className="text-white mb-6 font-bold">
@@ -64,25 +70,28 @@ export default function Coalition() {
             </p>
             <ul className="list-disc text-white mb-6 pl-5">
               <li>
-                Jennifer Hayden &mdash; President & CEO, National Museum of
-                Nuclear Science & History (Smithsonian)
-              </li>
-              <li>Heather Hoff &mdash; Co-Founder, Mothers for Nuclear</li>
-              <li>
-                Jordan Houghton &mdash; Senior Media Relations Manager, Nuclear
-                Energy Institute
+                <strong>Jennifer Hayden</strong> &mdash; President & CEO,
+                National Museum of Nuclear Science & History (Smithsonian)
               </li>
               <li>
-                Eric Meyer &mdash; Founder & Executive Director, Generation
-                Atomic
+                <strong>Heather Hoff</strong> &mdash; Co-Founder, Mothers for
+                Nuclear
               </li>
               <li>
-                Jon-Michael Murray &mdash; REPOWER Program Director, Terra
-                Praxis
+                <strong>Jordan Houghton</strong> &mdash; Senior Media Relations
+                Manager, Nuclear Energy Institute Energy Institute
               </li>
               <li>
-                Jon Wentzel &mdash; Vice President, Communications, Nuclear
-                Energy Institute
+                <strong>Eric Meyer</strong> &mdash; Founder & Executive
+                Director, Generation Atomic
+              </li>
+              <li>
+                <strong>Jon-Michael Murray</strong> &mdash; REPOWER Program
+                Director, Terra Praxis
+              </li>
+              <li>
+                <strong>Jon Wentzel</strong> &mdash; Vice President,
+                Communications, Nuclear Energy Institute Energy Institute
               </li>
             </ul>
             <p className="text-white mb-6 font-bold">
@@ -90,30 +99,32 @@ export default function Coalition() {
             </p>
             <ul className="list-disc text-white mb-6 pl-5">
               <li>
-                Yvonne Boudreaux &mdash; Production Designer, Yellowstone (tv
-                series)
+                <strong>Yvonne Boudreaux</strong> &mdash; Production Designer,
+                Yellowstone (tv series)
               </li>
               <li>
-                Ursula Emery McClure &mdash; Founding Partner, emc architecture
+                <strong>Ursula Emery McClure</strong> &mdash; Founding Partner,
+                emc architecture
               </li>
               <li>
-                Anna Gallagher-Ross &mdash; Co-Artistic Director, The Bentway,
-                Toronto
+                <strong>Anna Gallagher-Ross</strong> &mdash; Co-Artistic
+                Director, The Bentway, Toronto
               </li>
               <li>
-                Josh Jones-Dilworth &mdash; Founder and CEO, Jones-Dilworth,
-                Inc.
+                <strong>Josh Jones-Dilworth</strong> &mdash; Founder and CEO,
+                Jones-Dilworth, Inc.
               </li>
-              <li>April Litz &mdash; Director of Art Production, SXSW</li>
               <li>
+                <strong>April Litz</strong> &mdash; Director of Art Production,
                 Dr. Carra Martinez &mdash; Co-Artistic Director, Fusebox
                 Festival / Live in America
               </li>
               <li>
-                Auro Trini Castelli &mdash; Chief Strategy & Sustainability
-                Officer, Otherworldly
+                <strong>Auro Trini Castelli</strong> &mdash; Chief Strategy &
+                Sustainability Officer, Otherworldly
               </li>
             </ul>
+            <div className="border border-gray-500 my-6"></div>
             <p className="text-white mb-6 font-bold">
               <b>Roving Reactor Creative Lead</b>
             </p>
@@ -143,7 +154,7 @@ export default function Coalition() {
             </p>
             <Image
               src="/img/100-faces.png"
-              className="my-8"
+              className="my-8 rounded-lg"
               alt="Faces"
               width={1000}
               height={1000}
