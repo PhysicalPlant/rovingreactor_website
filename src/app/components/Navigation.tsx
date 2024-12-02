@@ -2,6 +2,7 @@
 import Link from "next/link";
 import {useState} from "react";
 import Image from "next/image";
+import EmailSignup from "./EmailSignup";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,31 +28,43 @@ export default function Navigation() {
           </Link>
 
           {/* Desktop navigation */}
-          <ul className="hidden md:flex gap-6 ml-12">
-            <li>
-              <Link href="/" className="hover:text-slate-300">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/timeline" className="hover:text-slate-300">
-                Timeline
-              </Link>
-            </li>
-            <li>
-              <Link href="/coalition" className="hover:text-slate-300">
-                Coalition
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="hover:text-slate-300">
-                Contact
-              </Link>
-            </li>
-          </ul>
+          <div className="hidden md:flex items-center flex-1 justify-between ml-12">
+            <ul className="flex gap-6">
+              <li>
+                <Link href="/" className="hover:text-slate-300">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/timeline" className="hover:text-slate-300">
+                  Timeline
+                </Link>
+              </li>
+              <li>
+                <Link href="/coalition" className="hover:text-slate-300">
+                  Coalition
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-slate-300">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+
+            <div className="ml-6">
+              <EmailSignup
+                buttonText="Subscribe"
+                placeholderText="Email address"
+                onSubmit={async (email) => {
+                  // TODO: Implement email subscription
+                  console.log("Email submitted:", email);
+                }}
+              />
+            </div>
+          </div>
 
           {/* Hamburger button */}
-          <div className="md:flex-1"></div>
           <button
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -108,6 +121,16 @@ export default function Navigation() {
                   onClick={() => setIsMenuOpen(false)}>
                   Contact
                 </Link>
+              </li>
+              <li className="pt-2">
+                <EmailSignup
+                  buttonText="Subscribe"
+                  placeholderText="Email address"
+                  onSubmit={async (email) => {
+                    // TODO: Implement email subscription
+                    console.log("Email submitted:", email);
+                  }}
+                />
               </li>
             </ul>
           </div>

@@ -2,6 +2,7 @@
 import React, {useState, useEffect} from "react";
 import VideoPlayer from "./components/VideoPlayer";
 import Footer from "./components/Footer";
+import EmailSignup from "./components/EmailSignup";
 
 const fadeInAnimation = `
   @keyframes fadeInWord {
@@ -261,6 +262,16 @@ export default function Home() {
                         {paragraph}
                       </p>
                     ))}
+                  </div>
+
+                  <div className="mt-6 mb-12">
+                    <EmailSignup
+                      buttonText="Subscribe"
+                      placeholderText="Enter your email"
+                      onSubmit={async (email) => {
+                        console.log("Email submitted:", email);
+                      }}
+                    />
                   </div>
 
                   <Footer />
