@@ -29,6 +29,13 @@ export default function Home() {
     []
   );
 
+  const additionalText = [
+    "Nuclear energy is abundant, reliable, and uses minimal land and water — yet it faces public skepticism rooted in fear and misunderstanding. That's why we're creating the Roving Reactor.",
+    "At iconic events like SXSW, the Daytona 500, and the Minnesota State Fair, the Roving Reactor will showcase a scale model of a nuclear reactor surrounded by interactive exhibits for visitors of all ages. It's not just a technical display; it's a bold spectacle built to inspire curiosity, spark dialogue, and address concerns head-on.",
+    "It's about connecting with people emotionally, offering a vision of nuclear energy as a safe, transformative solution for our future. Over the next decade, we'll bring this conversation to communities nationwide, building the public support needed to unlock the enormous potential of nuclear energy.",
+    "Sign up to receive our quarterly updates.",
+  ];
+
   useEffect(() => {
     if (currentTextIndex >= texts.length) return;
 
@@ -197,6 +204,25 @@ export default function Home() {
                       animation: "fadeInUp 2s ease forwards 12s",
                     }}
                   />
+
+                  <div
+                    className="mt-8 space-y-4 opacity-0"
+                    style={{
+                      animation: "fadeIn 2s ease forwards 14s",
+                    }}>
+                    {additionalText.map((paragraph, index) => (
+                      <p
+                        key={index}
+                        className={`text-white text-[1.1rem] sm:text-[1.35rem] ${
+                          index === additionalText.length - 1
+                            ? "font-semibold"
+                            : ""
+                        }`}>
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+
                   <Footer />
                 </div>
               </div>
