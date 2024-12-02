@@ -17,6 +17,7 @@ const fadeInAnimation = `
 `;
 
 export default function Home() {
+  const [hasAnimationPlayed, setHasAnimationPlayed] = useState(false);
   const [currentTextIndex, setCurrentTextIndex] = React.useState(0);
   const [visibleParagraphs, setVisibleParagraphs] = useState<string[][]>([]);
 
@@ -37,9 +38,32 @@ export default function Home() {
   ];
 
   useEffect(() => {
-    if (currentTextIndex >= texts.length) return;
+    const animationPlayed = sessionStorage.getItem("animationPlayed");
+    if (animationPlayed) {
+      setHasAnimationPlayed(true);
+      const processedTexts = texts.map(
+        (text) =>
+          text
+            .match(/[\w'-]+|[.,!?;…]|\s+/g)
+            ?.filter((word) => word !== null && word.trim().length > 0)
+            ?.map((word, i, arr) => {
+              if (/^[.,!?;…]$/.test(word) && i > 0) {
+                return null;
+              }
+              if (i < arr.length - 1 && /^[.,!?;…]$/.test(arr[i + 1])) {
+                return word + arr[i + 1];
+              }
+              return word;
+            })
+            .filter((word): word is string => word !== null) || []
+      );
+      setVisibleParagraphs(processedTexts);
+      setCurrentTextIndex(texts.length - 1);
+    }
+  }, [texts]);
 
-    console.log("Processing text:", texts[currentTextIndex]);
+  useEffect(() => {
+    if (hasAnimationPlayed || currentTextIndex >= texts.length) return;
 
     const words =
       texts[currentTextIndex]
@@ -57,8 +81,6 @@ export default function Home() {
           return word;
         })
         .filter((word): word is string => word !== null) || [];
-
-    console.log("Split into words:", words);
 
     let currentWordIndex = 0;
 
@@ -86,8 +108,13 @@ export default function Home() {
       }
     }, 175);
 
-    return () => clearInterval(wordInterval);
-  }, [currentTextIndex, texts]);
+    return () => {
+      clearInterval(wordInterval);
+      if (currentTextIndex === texts.length - 1) {
+        sessionStorage.setItem("animationPlayed", "true");
+      }
+    };
+  }, [currentTextIndex, texts, hasAnimationPlayed]);
 
   useEffect(() => {
     const checkContent = () => {
@@ -162,11 +189,7 @@ export default function Home() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-0">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
               <div className="col-span-1 lg:col-span-6">
-                <div
-                  className="mb-4 md:mb-6 opacity-0 animate-fade-in-up"
-                  style={{
-                    animationDelay: "0s",
-                  }}>
+                <div className="mb-4 md:mb-6">
                   {visibleParagraphs.map((paragraph, index) => (
                     <div
                       key={index}
@@ -175,14 +198,23 @@ export default function Home() {
                           ? "text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-white"
                           : "text-[1.1rem] sm:text-[1.35rem] text-white"
                       }`}
-                      style={index === 0 ? {lineHeight: "1.1"} : undefined}>
+                      style={{
+                        lineHeight: index === 0 ? "1.1" : undefined,
+                        opacity: hasAnimationPlayed ? 1 : 0,
+                        animation: hasAnimationPlayed
+                          ? "none"
+                          : "fadeInWord 0.5s ease forwards",
+                      }}>
                       {paragraph.map((word, wordIndex) => (
                         <span
                           key={wordIndex}
                           style={{
                             display: "inline-block",
-                            animation: "fadeInWord 0.5s ease forwards",
                             marginRight: "0.25em",
+                            opacity: hasAnimationPlayed ? 1 : undefined,
+                            animation: hasAnimationPlayed
+                              ? "none"
+                              : "fadeInWord 0.5s ease forwards",
                           }}>
                           {word}
                         </span>
@@ -192,23 +224,31 @@ export default function Home() {
                 </div>
 
                 <div
-                  className="mt-4 md:mt-4 opacity-0"
+                  className="mt-4 md:mt-4"
                   style={{
-                    animation: "fadeIn 2s ease forwards 12s",
+                    opacity: hasAnimationPlayed ? 1 : 0,
+                    animation: hasAnimationPlayed
+                      ? "none"
+                      : "fadeIn 2s ease forwards 12s",
                   }}>
                   <VideoPlayer
                     thumbnailSrc="/img/video-thumb.jpg"
                     videoId="2FRqVq971qU"
-                    className="opacity-0"
+                    className={hasAnimationPlayed ? "" : "opacity-0"}
                     style={{
-                      animation: "fadeInUp 2s ease forwards 12s",
+                      animation: hasAnimationPlayed
+                        ? "none"
+                        : "fadeInUp 2s ease forwards 12s",
                     }}
                   />
 
                   <div
-                    className="mt-8 space-y-4 opacity-0"
+                    className="mt-8 space-y-4"
                     style={{
-                      animation: "fadeIn 2s ease forwards 14s",
+                      opacity: hasAnimationPlayed ? 1 : 0,
+                      animation: hasAnimationPlayed
+                        ? "none"
+                        : "fadeIn 2s ease forwards 14s",
                     }}>
                     {additionalText.map((paragraph, index) => (
                       <p
