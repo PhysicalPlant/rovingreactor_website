@@ -8,7 +8,7 @@ export default function Coalition() {
           <div className="max-w-2xl" style={{fontSize: "1.2rem"}}>
             <h1 className="text-4xl text-white mb-6">Coalition</h1>
             <p className="text-white mb-6">
-              he Roving Reactor Project is building a coalition that includes
+              The Roving Reactor Project is building a coalition that includes
               advocacy groups, government agencies (especially the national
               labs), academia, and industry.
             </p>
