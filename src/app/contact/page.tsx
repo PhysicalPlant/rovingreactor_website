@@ -50,7 +50,7 @@ export default function Contact() {
       } else {
         throw new Error("Failed to submit form");
       }
-    } catch (error) {
+    } catch {
       setStatus("error");
       setErrorMessage("Failed to send message. Please try again.");
     }
