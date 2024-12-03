@@ -180,7 +180,8 @@ export default function Contact() {
               <label
                 htmlFor="subscribe"
                 className="ml-2 block text-sm text-white">
-                Sign me up for updates about the Roving Reactor project
+                Sign me up for quarterly updates about the Roving Reactor
+                project
               </label>
             </div>
 
