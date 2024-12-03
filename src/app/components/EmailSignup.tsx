@@ -76,17 +76,23 @@ export default function EmailSignup({
         </span>
         {status !== "success" && (
           <div className="flex-grow">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder={placeholderText}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm text-gray-800 bg-gray-200"
-              disabled={status === "loading"}
-            />
-            {status === "error" && (
-              <p className="mt-1 text-red-500 text-sm">{errorMessage}</p>
-            )}
+            <div className="relative">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder={
+                  status === "error" ? errorMessage : placeholderText
+                }
+                className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm text-gray-800 bg-gray-200
+                  ${
+                    status === "error"
+                      ? "border-red-500 placeholder-red-500"
+                      : "border-gray-300"
+                  }`}
+                disabled={status === "loading"}
+              />
+            </div>
           </div>
         )}
         {status !== "success" && (
