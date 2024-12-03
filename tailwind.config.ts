@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ["var(--font-roboto)"],
+        // removed doto font family
       },
       keyframes: {
         fadeIn: {
