@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        // removed doto font family
+        gabarito: ["var(--font-gabarito)", "sans-serif"],
       },
       keyframes: {
         fadeIn: {
@@ -29,6 +29,9 @@ export default {
         "fade-in": "fadeIn 0.8s ease-out forwards",
         "fade-in-up": "fadeInUp 1s ease-out forwards",
         typing: "typing 1s steps(50, end) forwards",
+      },
+      textShadow: {
+        DEFAULT: "0 0 1px rgba(0,0,0,0.5)",
       },
     },
   },

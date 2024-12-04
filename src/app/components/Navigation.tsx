@@ -22,31 +22,39 @@ export default function Navigation() {
               height={40}
               className="transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
             />
-            <span className="text-white text-2xl transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
+            <span className="text-white text-2xl font-gabarito uppercase transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
               Roving Reactor
             </span>
           </Link>
 
           {/* Desktop navigation */}
           <div className="hidden md:flex items-center flex-1 justify-between ml-12">
-            <ul className="flex gap-6">
+            <ul className="flex gap-6 font-gabarito uppercase text-sm">
               <li>
-                <Link href="/" className="hover:text-slate-300">
+                <Link
+                  href="/"
+                  className="transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] text-shadow-[0_0_1px_rgba(0,0,0,0.5)]">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/timeline" className="hover:text-slate-300">
+                <Link
+                  href="/timeline"
+                  className="transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] text-shadow-[0_0_1px_rgba(0,0,0,0.5)]">
                   Timeline
                 </Link>
               </li>
               <li>
-                <Link href="/coalition" className="hover:text-slate-300">
+                <Link
+                  href="/coalition"
+                  className="transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] text-shadow-[0_0_1px_rgba(0,0,0,0.5)]">
                   Coalition
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-slate-300">
+                <Link
+                  href="/contact"
+                  className="transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] text-shadow-[0_0_1px_rgba(0,0,0,0.5)]">
                   Contact
                 </Link>
               </li>

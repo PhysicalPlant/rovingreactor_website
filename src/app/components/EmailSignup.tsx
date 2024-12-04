@@ -66,7 +66,7 @@ export default function EmailSignup({
   return (
     <form onSubmit={handleSubmit} className="max-w-md">
       <div className="flex flex-col sm:flex-row items-center gap-2">
-        <span className="text-sm whitespace-nowrap">
+        <span className="text-sm whitespace-nowrap font-gabarito">
           <span className="text-white">Stay updated:</span>
           {status === "success" && (
             <span className="text-green-500 ml-2">
@@ -84,7 +84,7 @@ export default function EmailSignup({
                 placeholder={
                   status === "error" ? errorMessage : placeholderText
                 }
-                className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm text-gray-800 bg-gray-200
+                className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm text-gray-800 bg-gray-200 font-gabarito
                   ${
                     status === "error"
                       ? "border-red-500 placeholder-red-500"
@@ -99,7 +99,7 @@ export default function EmailSignup({
           <button
             type="submit"
             disabled={status === "loading"}
-            className={`px-6 py-2 text-white font-medium rounded-md text-sm
+            className={`px-6 py-2 text-white font-medium rounded-md text-sm font-gabarito
               ${
                 status === "loading"
                   ? "bg-transparent border border-gray-400 text-gray-400"
