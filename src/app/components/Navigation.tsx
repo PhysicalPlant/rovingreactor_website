@@ -20,9 +20,9 @@ export default function Navigation() {
               alt="Roving Reactor Logo"
               width={40}
               height={40}
-              className="transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
+              className="transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]"
             />
-            <span className="text-white text-2xl font-gabarito uppercase transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
+            <span className="text-white text-2xl font-gabarito uppercase transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
               Roving Reactor
             </span>
           </Link>
@@ -33,28 +33,28 @@ export default function Navigation() {
               <li>
                 <Link
                   href="/"
-                  className="transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] text-shadow-[0_0_1px_rgba(0,0,0,0.5)]">
+                  className="transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
                   Home
                 </Link>
               </li>
               <li>
                 <Link
                   href="/timeline"
-                  className="transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] text-shadow-[0_0_1px_rgba(0,0,0,0.5)]">
+                  className="transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
                   Timeline
                 </Link>
               </li>
               <li>
                 <Link
                   href="/coalition"
-                  className="transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] text-shadow-[0_0_1px_rgba(0,0,0,0.5)]">
+                  className="transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
                   Coalition
                 </Link>
               </li>
               <li>
                 <Link
                   href="/contact"
-                  className="transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] text-shadow-[0_0_1px_rgba(0,0,0,0.5)]">
+                  className="transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
                   Contact
                 </Link>
               </li>

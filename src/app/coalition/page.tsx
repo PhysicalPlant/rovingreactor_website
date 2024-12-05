@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 export default function Coalition() {
+  I;
   return (
     <div className="min-h-screen">
       <main className="relative pt-[calc(3.5rem+1px)] md:pt-14 mt-6 md:mt-8 pb-0">
