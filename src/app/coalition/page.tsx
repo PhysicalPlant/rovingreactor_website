@@ -1,13 +1,12 @@
 import React from "react";
 import Image from "next/image";
 export default function Coalition() {
-  I;
   return (
     <div className="min-h-screen">
       <main className="relative pt-[calc(3.5rem+1px)] md:pt-14 mt-6 md:mt-8 pb-0">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-0">
           <div className="max-w-2xl" style={{fontSize: "1.2rem"}}>
-            <h1 className="text-4xl text-white mb-6">Coalition</h1>
+            <h1 className="text-5xl text-white mb-6">Coalition</h1>
             <p className="text-white mb-6">
               The Roving Reactor Project is building a coalition that includes
               advocacy groups, government agencies (especially the national
