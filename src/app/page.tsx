@@ -268,8 +268,8 @@ export default function Home() {
                     <EmailSignup
                       buttonText="Subscribe"
                       placeholderText="Enter your email"
-                      onSubmit={async (email) => {
-                        console.log("Email submitted:", email);
+                      onSubmit={async () => {
+                        // Mailchimp submission is handled in EmailSignup component
                       }}
                     />
                   </div>

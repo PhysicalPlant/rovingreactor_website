@@ -64,9 +64,8 @@ export default function Navigation() {
               <EmailSignup
                 buttonText="Subscribe"
                 placeholderText="Email address"
-                onSubmit={async (email) => {
-                  // TODO: Implement email subscription
-                  console.log("Email submitted:", email);
+                onSubmit={async () => {
+                  // Mailchimp submission is handled in EmailSignup component
                 }}
               />
             </div>
@@ -134,9 +133,8 @@ export default function Navigation() {
                 <EmailSignup
                   buttonText="Subscribe"
                   placeholderText="Email address"
-                  onSubmit={async (email) => {
-                    // TODO: Implement email subscription
-                    console.log("Email submitted:", email);
+                  onSubmit={async () => {
+                    // Mailchimp submission is handled in EmailSignup component
                   }}
                 />
               </li>
