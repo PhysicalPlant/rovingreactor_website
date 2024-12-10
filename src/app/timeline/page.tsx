@@ -63,8 +63,8 @@ export default function Timeline() {
               <li className="mb-4">
                 <span className="font-bold">November 2024&nbsp;</span>
                 Expanded our advisory board to include top experts in nuclear
-                science, policy, and communications, enhancing the project's
-                credibility and network.
+                science, policy, and communications, enhancing the
+                project&apos;s credibility and network.
               </li>
               <li className="mb-4">
                 <span className="font-bold">October 2024</span> Secured $51,000
