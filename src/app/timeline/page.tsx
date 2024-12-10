@@ -8,19 +8,19 @@ export default function Timeline() {
           <div className="max-w-2xl">
             <h1 className="text-5xl text-white mb-6">Timeline</h1>
             <h2 className="text-3xl text-white mb-6">Project Roadmap</h2>
-            <p className="text-white text-xl">
+            <p className="text-white text-xl mb-6">
               This roadmap outlines our journey from inception to future goals,
               ensuring Roving Reactor&apos;s growth as a nationwide initiative
               for nuclear energy awareness.
             </p>
             <ul className="list-disc list-inside text-white text-xl">
-              <li>
+              <li className="mb-4">
                 <span className="font-bold">Year 1 - Foundation</span> Initial
                 project development, securing early funding, and establishing
                 partnerships with key organizations and experts in nuclear
                 energy. Launch website and initial exhibit concepts.
               </li>
-              <li>
+              <li className="mb-4">
                 <span className="font-bold">
                   Years 2-4 - Fundraising and Fabrication&nbsp;
                 </span>
@@ -28,13 +28,13 @@ export default function Timeline() {
                 fundraising effort, build the traveling exhibit, and establish a
                 schedule for touring.
               </li>
-              <li>
+              <li className="mb-4">
                 <span className="font-bold">Years 5-6 - National Tour </span>
                 Roving Reactor will appear at major public events like SXSW,
                 Daytona 500, and state fairs, engaging diverse audiences and
                 encouraging nuclear energy conversations.
               </li>
-              <li>
+              <li className="mb-4">
                 <span className="font-bold">
                   Years 7-10 - Community Outreach&nbsp;
                 </span>
@@ -44,34 +44,35 @@ export default function Timeline() {
               </li>
             </ul>
           </div>
-          <div className="max-w-2xl mt-12 mb-12">
-            <h2 className="text-3xl text-white mb-6">
-              Progress Updates (Reverse Chronological Order)
-            </h2>
-            <p className="text-white text-xl">
+          <div className="max-w-2xl mt-14 mb-12 border-t border-white pt-6">
+            <h2 className="text-3xl text-white mt-6 ">Progress Updates</h2>
+            <h3 className="text-2xl text-white mb-6">
+              (Reverse Chronological Order)
+            </h3>
+            <p className="text-white text-xl mb-6">
               Recent milestones that showcase the growth and support behind
               Roving Reactor.
             </p>
             <ul className="list-disc list-inside text-white text-xl">
-              <li>
+              <li className="mb-4">
                 <span className="font-bold">December 2024</span> Finalizing
                 plans for a residency at the National Museum of Nuclear Science
                 and History to develop the exhibit&apos;s educational
                 components.
               </li>
-              <li>
+              <li className="mb-4">
                 <span className="font-bold">November 2024&nbsp;</span>
                 Expanded our advisory board to include top experts in nuclear
-                science, policy, and communications, enhancing the project’s
+                science, policy, and communications, enhancing the project's
                 credibility and network.
               </li>
-              <li>
+              <li className="mb-4">
                 <span className="font-bold">October 2024</span> Secured $51,000
                 in additional funding, including a major contribution from the
                 Anthropocene Institute, to support exhibit development and
                 public engagement initiatives.
               </li>
-              <li>
+              <li className="mb-4">
                 <span className="font-bold">August 2024&nbsp;</span>
                 Secured a grant from Mothers for Nuclear and raised an
                 additional $50K from private donors. Funds are allocated for web
@@ -82,7 +83,7 @@ export default function Timeline() {
                 secured a residency at the National Museum of Nuclear Science
                 and History.
               </li>
-              <li>
+              <li className="mb-4">
                 <span className="font-bold">May 2024&nbsp;</span>
                 Decided to shift to a land-based traveling exhibit model to
                 increase deployment speed and flexibility. Prepared a 15-minute
