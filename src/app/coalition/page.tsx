@@ -61,6 +61,8 @@ export default function Coalition() {
                 </strong>{" "}
                 &mdash; R&D Staff Scientist, Idaho National Lab
                 <br />
+              </li>
+              <li>
                 <strong>
                   <a href="https://ners.engin.umich.edu/people/allen-todd/">
                     Dr. Todd Allen
