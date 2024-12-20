@@ -29,32 +29,32 @@ export default function Navigation() {
 
           {/* Desktop navigation */}
           <div className="hidden md:flex items-center flex-1 justify-between ml-12">
-            <ul className="flex gap-6 font-gabarito uppercase text-sm">
+            <ul className="flex gap-6 font-gabarito uppercase text-sm text-white">
               <li>
                 <Link
                   href="/"
-                  className="transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
+                  className="text-white transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
                   Home
                 </Link>
               </li>
               <li>
                 <Link
                   href="/timeline"
-                  className="transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
+                  className="text-white transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
                   Timeline
                 </Link>
               </li>
               <li>
                 <Link
                   href="/coalition"
-                  className="transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
+                  className="text-white transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
                   Coalition
                 </Link>
               </li>
               <li>
                 <Link
                   href="/contact"
-                  className="transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
+                  className="text-white transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
                   Contact
                 </Link>
               </li>
