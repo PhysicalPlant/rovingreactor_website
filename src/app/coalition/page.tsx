@@ -175,7 +175,7 @@ export default function Coalition() {
                 <strong>
                   <a href="https://www.linkedin.com/in/alitz/">April Litz</a>
                 </strong>{" "}
-                &mdash; Director of Art Production,{" "}
+                &mdash; Director of Art Production, SXSW&nbsp;
               </li>
               <li>
                 <strong>
