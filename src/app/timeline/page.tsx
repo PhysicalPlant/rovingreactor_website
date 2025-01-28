@@ -55,7 +55,7 @@ export default function Timeline() {
             </p>
             <ul className="list-disc list-inside text-white text-xl">
             <li className="mb-4">
-                <span className="font-bold">January 2025</span>  Partnered with Ann Mehra to submit major DoE workforce proposal for Nuclear Reactor Safety Training Program, secured backing from MIT, University of Michigan, and two multi-state nuclear consortia to address 350,000-job sector shortage. Advanced technical capabilities through Idaho National Lab's CAD microreactor model, deepened relationships with DoE leadership including OCED, launched rovingreactor.org, and initiated video content development with Jared Hoffman.
+                <span className="font-bold">January 2025</span>  Partnered with Ann Mehra to submit major DoE workforce proposal for Nuclear Reactor Safety Training Program, secured backing from MIT, University of Michigan, and two multi-state nuclear consortia to address 350,000-job sector shortage. Advanced technical capabilities through Idaho National Lab&apos;s CAD microreactor model, deepened relationships with DoE leadership including OCED, launched rovingreactor.org, and initiated video content development with Jared Hoffman.
               </li>
               <li className="mb-4">
                 <span className="font-bold">December 2024</span> Finalizing
