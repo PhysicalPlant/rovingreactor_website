@@ -10,6 +10,9 @@
     "vercel-build": "next build"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.4.2",
     "framer-motion": "^11.11.17",
     "next": "15.0.3",
     "react": "^18.2.0",

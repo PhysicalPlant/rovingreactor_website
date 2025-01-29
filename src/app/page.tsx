@@ -1,5 +1,5 @@
 "use client";
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import VideoPlayer from "./components/VideoPlayer";
 import Footer from "./components/Footer";
 import EmailSignup from "./components/EmailSignup";
@@ -205,7 +205,8 @@ export default function Home() {
                         animation: hasAnimationPlayed
                           ? "none"
                           : "fadeInWord 0.5s ease forwards",
-                      }}>
+                      }}
+                    >
                       {paragraph.map((word, wordIndex) => (
                         <span
                           key={wordIndex}
@@ -216,7 +217,8 @@ export default function Home() {
                             animation: hasAnimationPlayed
                               ? "none"
                               : "fadeInWord 0.5s ease forwards",
-                          }}>
+                          }}
+                        >
                           {word}
                         </span>
                       ))}
@@ -231,7 +233,8 @@ export default function Home() {
                     animation: hasAnimationPlayed
                       ? "none"
                       : "fadeIn 2s ease forwards 12s",
-                  }}>
+                  }}
+                >
                   <VideoPlayer
                     thumbnailSrc="/img/video-thumb.jpg"
                     videoId="2FRqVq971qU"
@@ -250,7 +253,8 @@ export default function Home() {
                       animation: hasAnimationPlayed
                         ? "none"
                         : "fadeIn 2s ease forwards 14s",
-                    }}>
+                    }}
+                  >
                     {additionalText.map((paragraph, index) => (
                       <p
                         key={index}
@@ -258,7 +262,8 @@ export default function Home() {
                           index === additionalText.length - 1
                             ? "font-semibold"
                             : ""
-                        }`}>
+                        }`}
+                      >
                         {paragraph}
                       </p>
                     ))}

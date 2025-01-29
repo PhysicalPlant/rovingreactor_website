@@ -1,6 +1,6 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import Navigation from "./components/Navigation";
-import {Comfortaa, Gabarito} from "next/font/google";
+import { Comfortaa, Gabarito } from "next/font/google";
 import "./globals.css";
 
 const comfortaa = Comfortaa({
@@ -20,7 +20,11 @@ export const metadata: Metadata = {
   description: "Roving Reactor website",
 };
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={`${gabarito.variable}`}>
       <body className="m-0 p-0 bg-black">
