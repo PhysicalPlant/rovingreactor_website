@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 import VideoPlayer from "./components/VideoPlayer";
 import Footer from "./components/Footer";
 import EmailSignup from "./components/EmailSignup";
+import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Box } from "@mui/material";
 
 const fadeInAnimation = `
   @keyframes fadeInWord {
@@ -278,6 +281,167 @@ export default function Home() {
                       }}
                     />
                   </div>
+
+                  {/* FAQ Accordion Section */}
+                  <Box sx={{ paddingRight: 2, paddingTop: 2, paddingBottom: 2 }} className="mt-8 mb-8">
+                    <h2 className="text-3xl text-white mb-6">Some common questions:</h2>
+                    <Accordion 
+                      sx={{
+                        backgroundColor: 'transparent',
+                        color: 'white',
+                        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+                        '&:before': {
+                          display: 'none',
+                        },
+                        '& .MuiAccordionDetails-root': {
+                          paddingRight: '16px',
+                          paddingTop: '16px',
+                          paddingBottom: '16px',
+                          paddingLeft: '0',
+                        },
+                        '& .MuiAccordionSummary-root': {
+                          paddingLeft: '0',
+                        },
+                      }}
+                    >
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
+                        sx={{
+                          '& .MuiAccordionSummary-content': {
+                            fontFamily: 'Gabarito',
+                            fontSize: '1.25rem',
+                          }
+                        }}
+                      >
+                        1. Is nuclear energy safe?
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <div className="text-white space-y-4">
+                          <p className="text-[1.15rem]">
+                            Nuclear energy has one of the strongest safety records in electricity production. Modern plants have extensive safety systems and careful oversight. The technology maintains clean air and water, with remarkably few health impacts for the amount of energy generated.
+                          </p>
+                        </div>
+                      </AccordionDetails>
+                    </Accordion>
+
+                    <Accordion 
+                      sx={{
+                        backgroundColor: 'transparent',
+                        color: 'white',
+                        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+                        '&:before': {
+                          display: 'none',
+                        },
+                        '& .MuiAccordionDetails-root': {
+                          paddingRight: '16px',
+                          paddingTop: '16px',
+                          paddingBottom: '16px',
+                          paddingLeft: '0',
+                        },
+                        '& .MuiAccordionSummary-root': {
+                          paddingLeft: '0',
+                        },
+                      }}
+                    >
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
+                        sx={{
+                          '& .MuiAccordionSummary-content': {
+                            fontFamily: 'Gabarito',
+                            fontSize: '1.25rem',
+                          }
+                        }}
+                      >
+                        2. How does nuclear energy benefit the environment? 
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <div className="text-white space-y-4">
+                          <p className="text-[1.15rem]">
+                            Nuclear power generates significant electricity while keeping our air pristine and watersheds healthy. A single plant can power hundreds of thousands of homes while requiring minimal land use. This helps preserve natural spaces while ensuring communities have reliable power.
+                          </p>
+                        </div>
+                      </AccordionDetails>
+                    </Accordion>
+
+                    <Accordion 
+                      sx={{
+                        backgroundColor: 'transparent',
+                        color: 'white',
+                        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+                        '&:before': {
+                          display: 'none',
+                        },
+                        '& .MuiAccordionDetails-root': {
+                          paddingRight: '16px',
+                          paddingTop: '16px',
+                          paddingBottom: '16px',
+                          paddingLeft: '0',
+                        },
+                        '& .MuiAccordionSummary-root': {
+                          paddingLeft: '0',
+                        },
+                      }}
+                    >
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
+                        sx={{
+                          '& .MuiAccordionSummary-content': {
+                            fontFamily: 'Gabarito',
+                            fontSize: '1.25rem',
+                          }
+                        }}
+                      >
+                        3. How does nuclear compare to other options? 
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <div className="text-white space-y-4">
+                          <p className="text-[1.15rem]">
+                            Nuclear energy offers distinct advantages. The plants operate reliably 24/7 and generate significant power in a compact footprint - a single facility can power about 850,000 homes. Modern nuclear plants typically operate for 60-80 years, and with advances in factory fabrication they're becoming one of the most cost-effective ways to generate electricity over their lifetimes.
+                          </p>
+                        </div>
+                      </AccordionDetails>
+                    </Accordion>
+
+                    <Accordion 
+                      sx={{
+                        backgroundColor: 'transparent',
+                        color: 'white',
+                        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+                        '&:before': {
+                          display: 'none',
+                        },
+                        '& .MuiAccordionDetails-root': {
+                          paddingRight: '16px',
+                          paddingTop: '16px',
+                          paddingBottom: '16px',
+                          paddingLeft: '0',
+                        },
+                        '& .MuiAccordionSummary-root': {
+                          paddingLeft: '0',
+                        },
+                      }}
+                    >
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
+                        sx={{
+                          '& .MuiAccordionSummary-content': {
+                            fontFamily: 'Gabarito',
+                            fontSize: '1.25rem',
+                          }
+                        }}
+                      >
+                        4. Why is it called the Roving Reactor?
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <div className="text-white space-y-4"> 
+                          <p className="text-[1.15rem]">
+                            This initiative brings nuclear energy education directly to communities across the country. Drawing inspiration from portable microreactor designs, the Roving Reactor helps people explore nuclear technology through interactive exhibits, including Augmented Reality (AR) and Virtual Reality (VR) that let visitors experience reactor operations firsthand. These hands-on demonstrations not only showcase different reactor types - from large-scale to compact modular designs - but also introduce visitors to the diverse career opportunities in nuclear technology, from engineering and operations to maintenance and safety oversight.
+                            The timing is right: Public support has reached 57% of Americans and continues to rise, with communities increasingly open to nuclear power to meet their energy needs.
+                          </p>
+                        </div>
+                      </AccordionDetails>
+                    </Accordion>
+                  </Box>
 
                   <Footer />
                 </div>
