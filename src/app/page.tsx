@@ -323,7 +323,7 @@ export default function Home() {
                       <AccordionDetails>
                         <div className="text-white space-y-4">
                           <p className="text-[1.15rem]">
-                            Nuclear energy has one of the strongest safety records in electricity production. Modern plants have extensive safety systems and careful oversight. The technology maintains clean air and water, with remarkably few health impacts for the amount of energy generated.
+                            Nuclear energy has one of the <a href="https://ourworldindata.org/nuclear-energy" className="text-blue-500">strongest safety records</a> in electricity production. Modern plants have extensive safety systems and careful oversight. The technology maintains clean air and water, with <a href="https://ourworldindata.org/safest-sources-of-energy" className="text-blue-500">remarkably few health impacts</a>  for the amount of energy generated.
                           </p>
                         </div>
                       </AccordionDetails>
@@ -366,7 +366,7 @@ export default function Home() {
                       <AccordionDetails>
                         <div className="text-white space-y-4">
                           <p className="text-[1.15rem]">
-                            Nuclear power generates significant electricity while keeping our air pristine and watersheds healthy. A single plant can power hundreds of thousands of homes while requiring minimal land use. This helps preserve natural spaces while ensuring communities have reliable power.
+                            Nuclear power generates significant electricity while <a href="https://www.eia.gov/energyexplained/nuclear/nuclear-power-and-the-environment.php" className="text-blue-500">keeping our air pristine</a> and watersheds healthy. A single plant can power hundreds of thousands of homes while requiring minimal land use. This helps <a href="https://www.energy.gov/ne/articles/3-reasons-why-nuclear-clean-and-sustainable" className="text-blue-500">preserve natural spaces</a> while ensuring communities have reliable power.
                           </p>
                         </div>
                       </AccordionDetails>
@@ -376,7 +376,7 @@ export default function Home() {
                       sx={{
                         backgroundColor: 'transparent',
                         color: 'white',
-                        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderTop: '1px solid rgba(149, 97, 97, 0.1)',
                         '&:before': {
                           display: 'none',
                         },
@@ -409,7 +409,7 @@ export default function Home() {
                       <AccordionDetails>
                         <div className="text-white space-y-4">
                           <p className="text-[1.15rem]">
-                            Nuclear energy offers distinct advantages. The plants operate reliably 24/7 and generate significant power in a compact footprint - a single facility can power about 850,000 homes. Modern nuclear plants typically operate for 60-80 years, and with advances in factory fabrication they're becoming one of the most cost-effective ways to generate electricity over their lifetimes.
+                            Nuclear energy offers <a href="https://www.energy.gov/ne/articles/advantages-and-challenges-nuclear-energy"  className="text-blue-500">distinct advantages</a>. The plants operate reliably 24/7 and generate significant power in a compact footprint - a single facility can power about <a href="https://www.eia.gov/energyexplained/nuclear/nuclear-power-and-the-environment.php" className="text-blue-500">850,000 homes</a>. Modern nuclear plants typically operate for 60-80 years, and with advances in factory fabrication they're becoming one of the most <a href="https://www.iea.org/reports/nuclear-power-in-a-clean-energy-system" className="text-blue-500">cost-effective ways</a>  to generate electricity over their lifetimes.
                           </p>
                         </div>
                       </AccordionDetails>
@@ -452,8 +452,8 @@ export default function Home() {
                       <AccordionDetails>
                         <div className="text-white space-y-4"> 
                           <p className="text-[1.15rem]">
-                            This initiative brings nuclear energy education directly to communities across the country. Drawing inspiration from portable microreactor designs, the Roving Reactor helps people explore nuclear technology through interactive exhibits, including Augmented Reality (AR) and Virtual Reality (VR) that let visitors experience reactor operations firsthand.</p><p> These hands-on demonstrations not only showcase different reactor types - from large-scale to compact modular designs - but also introduce visitors to the diverse career opportunities in nuclear technology, from engineering and operations to maintenance and safety oversight.</p><p>
-                            The timing is right: Public support has reached 57% of Americans and continues to rise, with communities increasingly open to nuclear power to meet their energy needs.
+                            This initiative brings nuclear energy education directly to communities across the country. Drawing inspiration from portable microreactor designs, the Roving Reactor helps people explore nuclear technology through interactive exhibits, including Augmented Reality (AR) and Virtual Reality (VR) that let visitors experience reactor operations firsthand.</p><p> These hands-on demonstrations not only showcase <a href="https://www.energy.gov/sites/prod/files/2020/01/f70/011620%20Advanced%20Reactor%20Types%20Factsheet.pdf" className="text-blue-500">different reactor types</a> - from large-scale to compact modular designs - but also introduce visitors to the diverse career opportunities in nuclear technology, from engineering and operations to maintenance and safety oversight.</p><p>
+                            The timing is right: Public support has reached <a href="https://www.pewresearch.org/short-reads/2024/08/05/majority-of-americans-support-more-nuclear-power-in-the-country/" className="text-blue-500">57% of Americans</a> and continues to rise, with communities increasingly open to nuclear power to meet their energy needs.
                           </p>
                         </div>
                       </AccordionDetails>
