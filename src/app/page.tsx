@@ -6,6 +6,7 @@ import EmailSignup from "./components/EmailSignup";
 import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Box } from "@mui/material";
+import AddIcon from '@mui/icons-material/Add';
 
 const fadeInAnimation = `
   @keyframes fadeInWord {
@@ -310,10 +311,14 @@ export default function Home() {
                           '& .MuiAccordionSummary-content': {
                             fontFamily: 'Gabarito',
                             fontSize: '1.25rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '8px'
                           }
                         }}
                       >
-                        1. Is nuclear energy safe?
+                        <AddIcon sx={{ color: 'white' }} />
+                        Is nuclear energy safe?
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="text-white space-y-4">
@@ -349,10 +354,14 @@ export default function Home() {
                           '& .MuiAccordionSummary-content': {
                             fontFamily: 'Gabarito',
                             fontSize: '1.25rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '8px'
                           }
                         }}
                       >
-                        2. How does nuclear energy benefit the environment? 
+                        <AddIcon sx={{ color: 'white' }} />
+                        How does nuclear energy benefit the environment? 
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="text-white space-y-4">
@@ -388,10 +397,14 @@ export default function Home() {
                           '& .MuiAccordionSummary-content': {
                             fontFamily: 'Gabarito',
                             fontSize: '1.25rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '8px'
                           }
                         }}
                       >
-                        3. How does nuclear compare to other options? 
+                        <AddIcon sx={{ color: 'white' }} />
+                        How does nuclear compare to other options? 
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="text-white space-y-4">
@@ -427,15 +440,19 @@ export default function Home() {
                           '& .MuiAccordionSummary-content': {
                             fontFamily: 'Gabarito',
                             fontSize: '1.25rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '8px'
                           }
                         }}
                       >
-                        4. Why is it called the Roving Reactor?
+                        <AddIcon sx={{ color: 'white' }} />
+                        Why is it called the Roving Reactor?
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="text-white space-y-4"> 
                           <p className="text-[1.15rem]">
-                            This initiative brings nuclear energy education directly to communities across the country. Drawing inspiration from portable microreactor designs, the Roving Reactor helps people explore nuclear technology through interactive exhibits, including Augmented Reality (AR) and Virtual Reality (VR) that let visitors experience reactor operations firsthand. These hands-on demonstrations not only showcase different reactor types - from large-scale to compact modular designs - but also introduce visitors to the diverse career opportunities in nuclear technology, from engineering and operations to maintenance and safety oversight.
+                            This initiative brings nuclear energy education directly to communities across the country. Drawing inspiration from portable microreactor designs, the Roving Reactor helps people explore nuclear technology through interactive exhibits, including Augmented Reality (AR) and Virtual Reality (VR) that let visitors experience reactor operations firsthand.</p><p> These hands-on demonstrations not only showcase different reactor types - from large-scale to compact modular designs - but also introduce visitors to the diverse career opportunities in nuclear technology, from engineering and operations to maintenance and safety oversight.</p><p>
                             The timing is right: Public support has reached 57% of Americans and continues to rise, with communities increasingly open to nuclear power to meet their energy needs.
                           </p>
                         </div>
