@@ -16,8 +16,32 @@ const gabarito = Gabarito({
 });
 
 export const metadata: Metadata = {
-  title: "Roving Reactor",
-  description: "Roving Reactor website",
+  title: "The Roving Reactor",
+  description: "An ambitious traveling exhibit to celebrate nuclear energy and inspire the next generation.",
+  metadataBase: new URL('https://rovingreactor.org'),
+  openGraph: {
+    title: 'The Roving Reactor',
+    description: 'An ambitious traveling exhibit to celebrate nuclear energy and inspire the next generation.',
+    url: 'https://rovingreactor.org',
+    siteName: 'The Roving Reactor',
+    images: [
+      {
+        url: '/img/social-share-image.jpg',  // You'll need to add this image
+        width: 1200,
+        height: 630,
+        alt: 'The Roving Reactor - Nuclear Energy Education',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Roving Reactor',
+    description: 'An ambitious traveling exhibit to celebrate nuclear energy and inspire the next generation.',
+    images: ['/img/social-share-image.jpg'],  // Same image as OG
+   
+  },
 };
 
 export default function RootLayout({
