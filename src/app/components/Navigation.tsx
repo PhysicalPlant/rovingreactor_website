@@ -22,45 +22,21 @@ export default function Navigation() {
               height={40}
               className="transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]"
             />
-            <span className="text-white text-2xl font-gabarito uppercase transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
+            <span className="text-white text-2xl font-gabarito uppercase whitespace-nowrap lg:inline-block md:hidden">
               Roving Reactor
             </span>
           </Link>
 
           {/* Desktop navigation */}
-          <div className="hidden md:flex items-center flex-1 justify-between ml-12">
+          <div className="hidden md:flex items-center flex-1 justify-end ml-12 space-x-8">
             <ul className="flex gap-6 font-gabarito uppercase text-sm text-white">
-              <li>
-                <Link
-                  href="/"
-                  className="text-white transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/timeline"
-                  className="text-white transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
-                  Timeline
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/coalition"
-                  className="text-white transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
-                  Coalition
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-white transition-all duration-300 hover:filter hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]">
-                  Contact
-                </Link>
-              </li>
+              <li><Link href="/" className="text-white hover:text-gray-300">Home</Link></li>
+              <li><Link href="/timeline" className="text-white hover:text-gray-300">Timeline</Link></li>
+              <li><Link href="/coalition" className="text-white hover:text-gray-300">Coalition</Link></li>
+              <li><Link href="/contact" className="text-white hover:text-gray-300">Contact</Link></li>
             </ul>
 
-            <div className="ml-6">
+            <div className="flex items-center min-w-[300px]">
               <EmailSignup
                 buttonText="Subscribe"
                 placeholderText="Email address"
@@ -97,38 +73,10 @@ export default function Navigation() {
         {isMenuOpen && (
           <div className="md:hidden bg-slate-800 py-4 shadow-md">
             <ul className="flex flex-col space-y-4 px-4">
-              <li>
-                <Link
-                  href="/"
-                  className="block text-white hover:text-slate-300"
-                  onClick={() => setIsMenuOpen(false)}>
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/timeline"
-                  className="block text-white hover:text-slate-300"
-                  onClick={() => setIsMenuOpen(false)}>
-                  Timeline
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/coalition"
-                  className="block text-white hover:text-slate-300"
-                  onClick={() => setIsMenuOpen(false)}>
-                  Coalition
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="block text-white hover:text-slate-300"
-                  onClick={() => setIsMenuOpen(false)}>
-                  Contact
-                </Link>
-              </li>
+              <li><Link href="/" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
+              <li><Link href="/timeline" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Timeline</Link></li>
+              <li><Link href="/coalition" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Coalition</Link></li>
+              <li><Link href="/contact" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
               <li className="pt-2">
                 <EmailSignup
                   buttonText="Subscribe"

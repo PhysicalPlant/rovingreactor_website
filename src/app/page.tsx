@@ -9,10 +9,10 @@ import { Box } from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 
 const fadeInAnimation = `
-  @keyframes fadeInWord {
+  @keyframes fadeInParagraph {
     from {
       opacity: 0;
-      transform: translateY(10px);
+      transform: translateY(20px);
     }
     to {
       opacity: 1;
@@ -22,104 +22,21 @@ const fadeInAnimation = `
 `;
 
 export default function Home() {
-  const [hasAnimationPlayed, setHasAnimationPlayed] = useState(false);
-  const [currentTextIndex, setCurrentTextIndex] = React.useState(0);
-  const [visibleParagraphs, setVisibleParagraphs] = useState<string[][]>([]);
-
-  const texts = React.useMemo(
-    () => [
-      "The Roving Reactor is an ambitious traveling exhibit to celebrate nuclear energy.",
-      "It's time for nuclear energy to come out of the shadows. It's time to let people see it up close, to understand the problems it can solve, and to imagine the future it enables.",
-      "This 15-minute video tells the story of the project and its origins...",
-    ],
-    []
-  );
-
-  const additionalText = [
-    "Nuclear energy is abundant, reliable, and uses minimal land and water — yet it faces public skepticism rooted in fear and misunderstanding. That's why we're creating the Roving Reactor.",
-    "At iconic events like SXSW, the Daytona 500, and the Minnesota State Fair, the Roving Reactor will showcase a scale model of a nuclear reactor surrounded by interactive exhibits for visitors of all ages. It's not just a technical display; it's a bold spectacle built to inspire curiosity, spark dialogue, and address concerns head-on.",
-    "It's about connecting with people emotionally, offering a vision of nuclear energy as a safe, transformative solution for our future. Over the next decade, we'll bring this conversation to communities nationwide, building the public support needed to unlock the enormous potential of nuclear energy.",
-    "Sign up to receive our quarterly updates.",
-  ];
+  const [currentStep, setCurrentStep] = useState(0);
 
   useEffect(() => {
-    const animationPlayed = sessionStorage.getItem("animationPlayed");
-    if (animationPlayed) {
-      setHasAnimationPlayed(true);
-      const processedTexts = texts.map(
-        (text) =>
-          text
-            .match(/[\w'-]+|[.,!?;…]|\s+/g)
-            ?.filter((word) => word !== null && word.trim().length > 0)
-            ?.map((word, i, arr) => {
-              if (/^[.,!?;…]$/.test(word) && i > 0) {
-                return null;
-              }
-              if (i < arr.length - 1 && /^[.,!?;…]$/.test(arr[i + 1])) {
-                return word + arr[i + 1];
-              }
-              return word;
-            })
-            .filter((word): word is string => word !== null) || []
-      );
-      setVisibleParagraphs(processedTexts);
-      setCurrentTextIndex(texts.length - 1);
-    }
-  }, [texts]);
+    const timer = setInterval(() => {
+      setCurrentStep(step => {
+        if (step >= 4) {
+          clearInterval(timer);
+          return step;
+        }
+        return step + 1;
+      });
+    }, 1000);
 
-  useEffect(() => {
-    if (hasAnimationPlayed || currentTextIndex >= texts.length) return;
-
-    const words =
-      texts[currentTextIndex]
-        .match(/[\w'-]+|[.,!?;…]|\s+/g)
-        ?.filter((word): word is string => {
-          return word !== null && word.trim().length > 0;
-        })
-        ?.map((word, i, arr) => {
-          if (/^[.,!?;…]$/.test(word) && i > 0) {
-            return null;
-          }
-          if (i < arr.length - 1 && /^[.,!?;…]$/.test(arr[i + 1])) {
-            return word + arr[i + 1];
-          }
-          return word;
-        })
-        .filter((word): word is string => word !== null) || [];
-
-    let currentWordIndex = 0;
-
-    const wordInterval = setInterval(() => {
-      if (currentWordIndex < words.length) {
-        setVisibleParagraphs((prev) => {
-          const newParagraphs = [...prev];
-          if (!newParagraphs[currentTextIndex]) {
-            newParagraphs[currentTextIndex] = [];
-          }
-          newParagraphs[currentTextIndex] = words.slice(
-            0,
-            currentWordIndex + 1
-          );
-          return newParagraphs;
-        });
-        currentWordIndex++;
-      } else {
-        clearInterval(wordInterval);
-        setTimeout(() => {
-          if (currentTextIndex < texts.length - 1) {
-            setCurrentTextIndex((prev) => prev + 1);
-          }
-        }, 600);
-      }
-    }, 175);
-
-    return () => {
-      clearInterval(wordInterval);
-      if (currentTextIndex === texts.length - 1) {
-        sessionStorage.setItem("animationPlayed", "true");
-      }
-    };
-  }, [currentTextIndex, texts, hasAnimationPlayed]);
+    return () => clearInterval(timer);
+  }, []);
 
   useEffect(() => {
     const checkContent = () => {
@@ -195,82 +112,69 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
               <div className="col-span-1 lg:col-span-6">
                 <div className="mb-4 md:mb-6">
-                  {visibleParagraphs.map((paragraph, index) => (
-                    <div
-                      key={index}
-                      className={`mb-4 ${
-                        index === 0
-                          ? "text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-white"
-                          : "text-[1.1rem] sm:text-[1.35rem] text-white"
-                      }`}
-                      style={{
-                        lineHeight: index === 0 ? "1.1" : undefined,
-                        opacity: hasAnimationPlayed ? 1 : 0,
-                        animation: hasAnimationPlayed
-                          ? "none"
-                          : "fadeInWord 0.5s ease forwards",
-                      }}
-                    >
-                      {paragraph.map((word, wordIndex) => (
-                        <span
-                          key={wordIndex}
-                          style={{
-                            display: "inline-block",
-                            marginRight: "0.25em",
-                            opacity: hasAnimationPlayed ? 1 : undefined,
-                            animation: hasAnimationPlayed
-                              ? "none"
-                              : "fadeInWord 0.5s ease forwards",
-                          }}
-                        >
-                          {word}
-                        </span>
-                      ))}
-                    </div>
-                  ))}
+                  <div
+                    className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-white mb-4"
+                    style={{
+                      lineHeight: "1.1",
+                      opacity: 0,
+                      animation: 'fadeInParagraph 0.8s ease forwards'
+                    }}
+                  >
+                    The Roving Reactor is an ambitious traveling exhibit to celebrate nuclear energy.
+                  </div>
+
+                  <div
+                    className="text-[1.1rem] sm:text-[1.35rem] text-white mb-4"
+                    style={{
+                      opacity: 0,
+                      animation: currentStep >= 1 ? 'fadeInParagraph 1s ease forwards' : 'none'
+                    }}
+                  >
+                    It's time for nuclear energy to come out of the shadows. It's time to let people see it up close, to understand the problems it can solve, and to imagine the future it enables.
+                  </div>
+
+                  <div
+                    className="text-[1.1rem] sm:text-[1.35rem] text-white mb-4"
+                    style={{
+                      opacity: 0,
+                      animation: currentStep >= 2 ? 'fadeInParagraph 1s ease forwards' : 'none'
+                    }}
+                  >
+                    This 15-minute video tells the story of the project and its origins...
+                  </div>
                 </div>
 
                 <div
                   className="mt-4 md:mt-4"
                   style={{
-                    opacity: hasAnimationPlayed ? 1 : 0,
-                    animation: hasAnimationPlayed
-                      ? "none"
-                      : "fadeIn 2s ease forwards 12s",
+                    opacity: currentStep >= 3 ? 1 : 0,
+                    transition: 'opacity 1s ease'
                   }}
                 >
                   <VideoPlayer
                     thumbnailSrc="/img/video-thumb.jpg"
                     videoId="2FRqVq971qU"
-                    className={hasAnimationPlayed ? "" : "opacity-0"}
-                    style={{
-                      animation: hasAnimationPlayed
-                        ? "none"
-                        : "fadeInUp 2s ease forwards 12s",
-                    }}
                   />
 
                   <div
                     className="mt-8 space-y-4"
                     style={{
-                      opacity: hasAnimationPlayed ? 1 : 0,
-                      animation: hasAnimationPlayed
-                        ? "none"
-                        : "fadeIn 2s ease forwards 14s",
+                      opacity: currentStep >= 4 ? 1 : 0,
+                      transition: 'opacity 1s ease'
                     }}
                   >
-                    {additionalText.map((paragraph, index) => (
-                      <p
-                        key={index}
-                        className={`text-white text-[1.1rem] sm:text-[1.35rem] ${
-                          index === additionalText.length - 1
-                            ? "font-semibold"
-                            : ""
-                        }`}
-                      >
-                        {paragraph}
-                      </p>
-                    ))}
+                    <p className="text-white text-[1.1rem] sm:text-[1.35rem]">
+                      Nuclear energy is abundant, reliable, and uses minimal land and water — yet it faces public skepticism rooted in fear and misunderstanding. That's why we're creating the Roving Reactor.
+                    </p>
+                    <p className="text-white text-[1.1rem] sm:text-[1.35rem]">
+                      At iconic events like SXSW, the Daytona 500, and the Minnesota State Fair, the Roving Reactor will showcase a scale model of a nuclear reactor surrounded by interactive exhibits for visitors of all ages. It's not just a technical display; it's a bold spectacle built to inspire curiosity, spark dialogue, and address concerns head-on.
+                    </p>
+                    <p className="text-white text-[1.1rem] sm:text-[1.35rem]">
+                      It's about connecting with people emotionally, offering a vision of nuclear energy as a safe, transformative solution for our future. Over the next decade, we'll bring this conversation to communities nationwide, building the public support needed to unlock the enormous potential of nuclear energy.
+                    </p>
+                    <p className="text-white text-[1.1rem] sm:text-[1.35rem] font-semibold">
+                      Sign up to receive our quarterly updates.
+                    </p>
                   </div>
 
                   <div className="mt-6 mb-12">
