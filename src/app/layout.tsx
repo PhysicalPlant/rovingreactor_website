@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: 'The Roving Reactor',
     images: [
       {
-        url: '/img/social-share-image.jpg',  // You'll need to add this image
+        url: 'https://rovingreactor.org/img/social-share-image.jpg',  // Using absolute URL
         width: 1200,
         height: 630,
         alt: 'The Roving Reactor - Nuclear Energy Education',
@@ -39,8 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'The Roving Reactor',
     description: 'An ambitious traveling exhibit to celebrate nuclear energy and inspire the next generation.',
-    images: ['/img/social-share-image.jpg'],  // Same image as OG
-   
+    images: ['https://rovingreactor.org/img/social-share-image.jpg'],  // Using absolute URL
   },
 };
 
