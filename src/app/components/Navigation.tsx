@@ -31,6 +31,7 @@ export default function Navigation() {
           <div className="hidden md:flex items-center flex-1 justify-end ml-12 space-x-8">
             <ul className="flex gap-6 font-gabarito uppercase text-sm text-white">
               <li><Link href="/" className="text-white hover:text-gray-300">Home</Link></li>
+              <li><Link href="/exhibits" className="text-white hover:text-gray-300">Exhibits</Link></li>
               <li><Link href="/timeline" className="text-white hover:text-gray-300">Timeline</Link></li>
               <li><Link href="/coalition" className="text-white hover:text-gray-300">Coalition</Link></li>
               <li><Link href="/contact" className="text-white hover:text-gray-300">Contact</Link></li>
@@ -74,6 +75,7 @@ export default function Navigation() {
           <div className="md:hidden bg-slate-800 py-4 shadow-md">
             <ul className="flex flex-col space-y-4 px-4">
               <li><Link href="/" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
+              <li><Link href="/exhibits" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Exhibits</Link></li>
               <li><Link href="/timeline" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Timeline</Link></li>
               <li><Link href="/coalition" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Coalition</Link></li>
               <li><Link href="/contact" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
