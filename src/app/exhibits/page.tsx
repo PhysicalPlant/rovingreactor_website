@@ -8,6 +8,39 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Box } from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 
+const accordionStyles = {
+  backgroundColor: 'transparent',
+  color: 'white',
+  borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+  '&:before': {
+    display: 'none',
+  },
+  '& .MuiAccordionDetails-root': {
+    paddingRight: '16px',
+    paddingTop: '8px',
+    paddingBottom: '16px',
+    paddingLeft: '0',
+  },
+  '& .MuiAccordionSummary-root': {
+    paddingLeft: '0',
+    minHeight: '48px',
+    '&.Mui-expanded': {
+      minHeight: '48px',
+      marginBottom: '0'
+    }
+  },
+  '& .MuiAccordionSummary-content': {
+    margin: '12px 0',
+    '&.Mui-expanded': {
+      margin: '12px 0'
+    }
+  },
+  '&.Mui-expanded': {
+    marginTop: '0',
+    marginBottom: '0'
+  },
+  margin: '0 !important'
+};
 
 export default function Exhibits() {
 
@@ -35,25 +68,7 @@ export default function Exhibits() {
 
 
 
-                    <Accordion
-                      sx={{
-                        backgroundColor: 'transparent',
-                        color: 'white',
-                        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
-                        '&:before': {
-                          display: 'none',
-                        },
-                        '& .MuiAccordionDetails-root': {
-                          paddingRight: '16px',
-                          paddingTop: '16px',
-                          paddingBottom: '16px',
-                          paddingLeft: '0',
-                        },
-                        '& .MuiAccordionSummary-root': {
-                          paddingLeft: '0',
-                        },
-                      }}
-                    >
+                    <Accordion sx={accordionStyles}>
                       <AccordionSummary
                         expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
                         sx={{
@@ -81,25 +96,7 @@ export default function Exhibits() {
                       </AccordionDetails>
                     </Accordion>
 
-                    <Accordion
-                      sx={{
-                        backgroundColor: 'transparent',
-                        color: 'white',
-                        borderTop: '1px solid rgba(149, 97, 97, 0.1)',
-                        '&:before': {
-                          display: 'none',
-                        },
-                        '& .MuiAccordionDetails-root': {
-                          paddingRight: '16px',
-                          paddingTop: '16px',
-                          paddingBottom: '16px',
-                          paddingLeft: '0',
-                        },
-                        '& .MuiAccordionSummary-root': {
-                          paddingLeft: '0',
-                        },
-                      }}
-                    >
+                    <Accordion sx={accordionStyles}>
                       <AccordionSummary
                         expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
                         sx={{
@@ -125,27 +122,9 @@ export default function Exhibits() {
                           </ul>
                         </div>
                       </AccordionDetails>
-                      </Accordion>
+                    </Accordion>
                          {/* virtual reality experience */}
-                    <Accordion
-                      sx={{
-                        backgroundColor: 'transparent',
-                        color: 'white',
-                        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
-                        '&:before': {
-                          display: 'none',
-                        },
-                        '& .MuiAccordionDetails-root': {
-                          paddingRight: '16px',
-                          paddingTop: '16px',
-                          paddingBottom: '16px',
-                          paddingLeft: '0',
-                        },
-                        '& .MuiAccordionSummary-root': {
-                          paddingLeft: '0',
-                        },
-                      }}
-                    >
+                    <Accordion sx={accordionStyles}>
                       <AccordionSummary
                         expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
                         sx={{
@@ -173,25 +152,7 @@ export default function Exhibits() {
                       </AccordionDetails>
                     </Accordion>
     {/* local and global potential */}
-    <Accordion
-                      sx={{
-                        backgroundColor: 'transparent',
-                        color: 'white',
-                        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
-                        '&:before': {
-                          display: 'none',
-                        },
-                        '& .MuiAccordionDetails-root': {
-                          paddingRight: '16px',
-                          paddingTop: '16px',
-                          paddingBottom: '16px',
-                          paddingLeft: '0',
-                        },
-                        '& .MuiAccordionSummary-root': {
-                          paddingLeft: '0',
-                        },
-                      }}
-                    >
+    <Accordion sx={accordionStyles}>
                       <AccordionSummary
                         expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
                         sx={{
@@ -220,25 +181,7 @@ export default function Exhibits() {
                     </Accordion>
                   
                     {/* career pathways */}
-                    <Accordion
-                      sx={{
-                        backgroundColor: 'transparent',
-                        color: 'white',
-                        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
-                        '&:before': {
-                          display: 'none',
-                        },
-                        '& .MuiAccordionDetails-root': {
-                          paddingRight: '16px',
-                          paddingTop: '16px',
-                          paddingBottom: '16px',
-                          paddingLeft: '0',
-                        },
-                        '& .MuiAccordionSummary-root': {
-                          paddingLeft: '0',
-                        },
-                      }}
-                    >
+                    <Accordion sx={accordionStyles}>
                       <AccordionSummary
                         expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
                         sx={{
@@ -268,25 +211,7 @@ export default function Exhibits() {
                 
                  
                     {/* behind the science */}
-                    <Accordion
-                      sx={{
-                        backgroundColor: 'transparent',
-                        color: 'white',
-                        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
-                        '&:before': {
-                          display: 'none',
-                        },
-                        '& .MuiAccordionDetails-root': {
-                          paddingRight: '16px',
-                          paddingTop: '16px',
-                          paddingBottom: '16px',
-                          paddingLeft: '0',
-                        },
-                        '& .MuiAccordionSummary-root': {
-                          paddingLeft: '0',
-                        },
-                      }}
-                    >
+                    <Accordion sx={accordionStyles}>
                       <AccordionSummary
                         expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
                         sx={{
