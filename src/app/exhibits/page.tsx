@@ -27,7 +27,7 @@ export default function Exhibits() {
               <div className="col-span-1 lg:col-span-6">
                 <div className="mb-4 md:mb-6">
 
-                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-white mb-4" style={{ lineHeight: '3rem' }}>Welcome to the Roving Reactor</h1>
+                  <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-white mb-4 ![line-height:2rem] md:![line-height:3rem]">Welcome to the Roving Reactor</h1>
                   <p>Explore the themed zones of the traveling exhibit—interactive displays and hands-on activities that promote nuclear energy and spark future innovators.</p>
 
                   {/*  Accordion Section */}
