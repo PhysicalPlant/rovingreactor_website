@@ -27,57 +27,13 @@ export default function Exhibits() {
               <div className="col-span-1 lg:col-span-6">
                 <div className="mb-4 md:mb-6">
 
-                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-white mb-4">Welcome to the Roving Reactor</h1>
-                  <p>Experience the global energy challenge through interactive displays and hands-on activities. Discover how different energy sources work together to power our world.</p>
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-white mb-4" style={{ lineHeight: '3rem' }}>Welcome to the Roving Reactor</h1>
+                  <p>Explore the themed zones of the traveling exhibit—interactive displays and hands-on activities that promote nuclear energy and spark future innovators.</p>
 
                   {/*  Accordion Section */}
                   <Box sx={{ paddingRight: 2, paddingTop: 0, paddingBottom: 2 }} className="mt-8 mb-8">
 
-                    <Accordion
-                      sx={{
-                        backgroundColor: 'transparent',
-                        color: 'white',
-                        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
-                        '&:before': {
-                          display: 'none',
-                        },
-                        '& .MuiAccordionDetails-root': {
-                          paddingRight: '16px',
-                          paddingTop: '16px',
-                          paddingBottom: '16px',
-                          paddingLeft: '0',
-                        },
-                        '& .MuiAccordionSummary-root': {
-                          paddingLeft: '0',
-                        },
-                      }}
-                    >
-                      <AccordionSummary
-                        expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
-                        sx={{
-                          '& .MuiAccordionSummary-content': {
-                            fontFamily: 'Gabarito',
-                            fontSize: '1.25rem',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '8px'
-                          }
-                        }}
-                      >
-                        <AddIcon sx={{ color: 'white' }} />
-                        Zone 1: Our Energy Landscape
-                      </AccordionSummary>
-                      <AccordionDetails>
-                        <div className="text-white space-y-4">
-                          <p>Experience the global energy challenge through interactive displays and hands-on activities. Discover how different energy sources work together to power our world.</p>
-                          <ul className="list-disc ml-6 mt-4 space-y-2">
-                            <li>Compare energy sources with our interactive world map</li>
-                            <li>Witness the surprising power density of nuclear fuel</li>
-                            <li>Design your own energy grid using our power planning simulator</li>
-                          </ul>
-                        </div>
-                      </AccordionDetails>
-                    </Accordion>
+
 
                     <Accordion
                       sx={{
@@ -111,7 +67,7 @@ export default function Exhibits() {
                         }}
                       >
                         <AddIcon sx={{ color: 'white' }} />
-                        Zone 2: Inside Nuclear Technology
+                        Zone 1: How Nuclear Works
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="text-white space-y-4">
@@ -157,7 +113,7 @@ export default function Exhibits() {
                         }}
                       >
                         <AddIcon sx={{ color: 'white' }} />
-                        Zone 3: Addressing Your Questions
+                        Zone 2: Nuclear Myths & Facts
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="text-white space-y-4">
@@ -169,8 +125,8 @@ export default function Exhibits() {
                           </ul>
                         </div>
                       </AccordionDetails>
-                    </Accordion>
-
+                      </Accordion>
+                         {/* virtual reality experience */}
                     <Accordion
                       sx={{
                         backgroundColor: 'transparent',
@@ -203,99 +159,7 @@ export default function Exhibits() {
                         }}
                       >
                         <AddIcon sx={{ color: 'white' }} />
-                        Zone 4: Career Pathways
-                      </AccordionSummary>
-                      <AccordionDetails>
-                        <div className="text-white space-y-4">
-                          <p>Discover high-impact career opportunities in the nuclear energy sector. From hands-on technical roles to cutting-edge research positions, there's a path for everyone.</p>
-                          <ul className="list-disc ml-6 mt-4 space-y-2">
-                            <li>Explore diverse career paths: operations, engineering, construction, and more</li>
-                            <li>Learn about education and training programs</li>
-                            <li>Connect directly with industry professionals and educational resources</li>
-                          </ul>
-                        </div>
-                      </AccordionDetails>
-                    </Accordion>
-
-                    <Accordion
-                      sx={{
-                        backgroundColor: 'transparent',
-                        color: 'white',
-                        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
-                        '&:before': {
-                          display: 'none',
-                        },
-                        '& .MuiAccordionDetails-root': {
-                          paddingRight: '16px',
-                          paddingTop: '16px',
-                          paddingBottom: '16px',
-                          paddingLeft: '0',
-                        },
-                        '& .MuiAccordionSummary-root': {
-                          paddingLeft: '0',
-                        },
-                      }}
-                    >
-                      <AccordionSummary
-                        expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
-                        sx={{
-                          '& .MuiAccordionSummary-content': {
-                            fontFamily: 'Gabarito',
-                            fontSize: '1.25rem',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '8px'
-                          }
-                        }}
-                      >
-                        <AddIcon sx={{ color: 'white' }} />
-                        Zone 5: Local and Global Potential
-                      </AccordionSummary>
-                      <AccordionDetails>
-                        <div className="text-white space-y-4">
-                          <p>See how nuclear energy can transform communities and conserve natural spaces and ecosystems. Experience a vision of a robust, secure energy future through immersive displays.</p>
-                          <ul className="list-disc ml-6 mt-4 space-y-2">
-                            <li>Explore a full-scale nuclear battery model</li>
-                            <li>View our LED-enhanced mural of a nuclear-powered future</li>
-                            <li>Understand current challenges and solutions in nuclear deployment</li>
-                          </ul>
-                        </div>
-                      </AccordionDetails>
-                    </Accordion>
-
-                    <Accordion
-                      sx={{
-                        backgroundColor: 'transparent',
-                        color: 'white',
-                        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
-                        '&:before': {
-                          display: 'none',
-                        },
-                        '& .MuiAccordionDetails-root': {
-                          paddingRight: '16px',
-                          paddingTop: '16px',
-                          paddingBottom: '16px',
-                          paddingLeft: '0',
-                        },
-                        '& .MuiAccordionSummary-root': {
-                          paddingLeft: '0',
-                        },
-                      }}
-                    >
-                      <AccordionSummary
-                        expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
-                        sx={{
-                          '& .MuiAccordionSummary-content': {
-                            fontFamily: 'Gabarito',
-                            fontSize: '1.25rem',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '8px'
-                          }
-                        }}
-                      >
-                        <AddIcon sx={{ color: 'white' }} />
-                        Zone 6: Virtual Reality Experience
+                        Zone 3: Step Into Nuclear: A VR Experience
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="text-white space-y-4">
@@ -308,7 +172,54 @@ export default function Exhibits() {
                         </div>
                       </AccordionDetails>
                     </Accordion>
-
+    {/* local and global potential */}
+    <Accordion
+                      sx={{
+                        backgroundColor: 'transparent',
+                        color: 'white',
+                        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+                        '&:before': {
+                          display: 'none',
+                        },
+                        '& .MuiAccordionDetails-root': {
+                          paddingRight: '16px',
+                          paddingTop: '16px',
+                          paddingBottom: '16px',
+                          paddingLeft: '0',
+                        },
+                        '& .MuiAccordionSummary-root': {
+                          paddingLeft: '0',
+                        },
+                      }}
+                    >
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
+                        sx={{
+                          '& .MuiAccordionSummary-content': {
+                            fontFamily: 'Gabarito',
+                            fontSize: '1.25rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '8px'
+                          }
+                        }}
+                      >
+                        <AddIcon sx={{ color: 'white' }} />
+                        Zone 4: Powering the World
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <div className="text-white space-y-4">
+                          <p>See how nuclear energy can transform communities and conserve natural spaces and ecosystems. Experience a vision of a robust, secure energy future through immersive displays.</p>
+                          <ul className="list-disc ml-6 mt-4 space-y-2">
+                            <li>Explore a full-scale nuclear battery model</li>
+                            <li>View our LED-enhanced mural of a nuclear-powered future</li>
+                            <li>Understand current challenges and solutions in nuclear deployment</li>
+                          </ul>
+                        </div>
+                      </AccordionDetails>
+                    </Accordion>
+                  
+                    {/* career pathways */}
                     <Accordion
                       sx={{
                         backgroundColor: 'transparent',
@@ -341,7 +252,56 @@ export default function Exhibits() {
                         }}
                       >
                         <AddIcon sx={{ color: 'white' }} />
-                        Zone 7: Behind the Science
+                        Zone 5: Careers in Nuclear
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <div className="text-white space-y-4">
+                          <p>Discover high-impact career opportunities in the nuclear energy sector. From hands-on technical roles to cutting-edge research positions, there's a path for everyone.</p>
+                          <ul className="list-disc ml-6 mt-4 space-y-2">
+                            <li>Explore diverse career paths: operations, engineering, construction, and more</li>
+                            <li>Learn about education and training programs</li>
+                            <li>Connect directly with industry professionals and educational resources</li>
+                          </ul>
+                        </div>
+                      </AccordionDetails>
+                    </Accordion>
+                
+                 
+                    {/* behind the science */}
+                    <Accordion
+                      sx={{
+                        backgroundColor: 'transparent',
+                        color: 'white',
+                        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+                        '&:before': {
+                          display: 'none',
+                        },
+                        '& .MuiAccordionDetails-root': {
+                          paddingRight: '16px',
+                          paddingTop: '16px',
+                          paddingBottom: '16px',
+                          paddingLeft: '0',
+                        },
+                        '& .MuiAccordionSummary-root': {
+                          paddingLeft: '0',
+                        },
+                      }}
+                    >
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
+                        sx={{
+                          '& .MuiAccordionSummary-content': {
+                            fontFamily: 'Gabarito',
+                            fontSize: '1.25rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '8px'
+                          }
+                        }}
+                      >
+                        <AddIcon sx={{ color: 'white' }} />
+                        Zone 6: Our Supporters & Story
+
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="text-white space-y-4">
