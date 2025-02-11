@@ -159,7 +159,7 @@ export default function Exhibits() {
                         }}
                       >
                         <AddIcon sx={{ color: 'white' }} />
-                        Zone 3: Step Into Nuclear: A VR Experience
+                        Zone 3: Step Into Nuclear:<br className="md:hidden" /> A VR Experience
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="text-white space-y-4">
