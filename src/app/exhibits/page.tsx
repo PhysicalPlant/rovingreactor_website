@@ -307,7 +307,7 @@ export default function Exhibits() {
                         <div className="text-white space-y-4">
                           <p>Complete your journey with our documentary about the Roving Reactor project. Learn how this groundbreaking exhibit came to life and meet the supporters who made it possible.</p>
                           <div className="mt-4">
-                            <p className="text-sm text-gray-600">Duration: 15 minutes, shows run continuously</p>
+                            <p className="text-sm text-gray-600">Duration: 5 minutes, shows run continuously</p>
                           </div>
                         </div>
                       </AccordionDetails>
