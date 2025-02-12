@@ -107,7 +107,7 @@ export default function Coalition() {
                   </a>
                 </strong>{" "}
                 &mdash; Senior Media Relations Manager, Nuclear Energy Institute
-                Energy Institute
+               
               </li>
               <li>
                 <strong>
