@@ -132,7 +132,7 @@ export default function Coalition() {
                   </a>
                 </strong>{" "}
                 &mdash; Vice President, Communications, Nuclear Energy Institute
-                Energy Institute
+               
               </li>
             </ul>
             <p className="text-white mb-6 font-bold">
