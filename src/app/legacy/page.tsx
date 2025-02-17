@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "../components/Footer";
 import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -40,6 +40,29 @@ const accordionStyles = {
 };
 
 export default function Legacy() {
+  const [isAccordionOpen, setIsAccordionOpen] = useState(false);
+
+  // Handle hash changes (when user clicks citation links)
+  useEffect(() => {
+    const handleHashChange = () => {
+      if (window.location.hash) {
+        setIsAccordionOpen(true);
+        // Scroll to the citation after a brief delay to allow accordion to open
+        setTimeout(() => {
+          const element = document.querySelector(window.location.hash);
+          element?.scrollIntoView({ behavior: 'smooth' });
+        }, 300);
+      }
+    };
+
+    // Check hash on initial load
+    handleHashChange();
+
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
   return (
     <div className="min-h-[calc(100vh-3.5rem)] flex flex-col">
       <main className="flex-grow relative pt-[calc(3.5rem+1px)] md:pt-14 mt-6 md:mt-8">
@@ -78,7 +101,11 @@ export default function Legacy() {
             <img src="/img/atomsville.png" alt="Atomsville, U.S.A." className="w-full h-auto my-6" />
 
             {/* Replace the citations section with this accordion */}
-            <Accordion sx={accordionStyles}>
+            <Accordion
+              sx={accordionStyles}
+              expanded={isAccordionOpen}
+              onChange={(_, expanded) => setIsAccordionOpen(expanded)}
+            >
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
                 sx={{
