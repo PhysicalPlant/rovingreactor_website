@@ -100,65 +100,62 @@ export default function Coalition() {
                 &mdash; 3rd Vice Chair, Maryland GOP
               </li>
               <li>
-                <li>
-                  <strong>
-                    <a href="https://www.linkedin.com/in/jennifer-hayden-1b341429/">
-                      Jennifer Hayden
-                    </a>
-                  </strong>{" "}
-                  &mdash; President & CEO, National Museum of Nuclear Science &
-                  History (Smithsonian)
-                </li>
-                <li>
-                  <strong>
-                    <a href="https://www.linkedin.com/in/heather-hoff-mom4nuclear/">
-                      Heather Hoff
-                    </a>
-                  </strong>{" "}
-                  &mdash; Co-Founder, Mothers for Nuclear
-                </li>
-                <li>
-                  <strong>
-                    <a href="https://www.linkedin.com/in/jtthoughton/">
-                      Jordan Houghton
-                    </a>
-                  </strong>{" "}
-                  &mdash; Senior Media Relations Manager, Nuclear Energy Institute
-
-                </li>
-                <li>
-                  <strong>
-                    <a href="https://www.linkedin.com/in/eric-g-meyer-44800a50/">
-                      Eric Meyer
-                    </a>
-                  </strong>{" "}
-                  &mdash; Founder & Executive Director, Generation Atomic
-                </li>
-                <li>
-                  <strong>
-                    <a href="https://www.linkedin.com/in/u-ann-m-a8a51613/">
-                      Ann Mehra
-                    </a>
-                  </strong>{" "}
-                  &mdash; US Department of Commerce
-                </li>
-                <li>
-                  <strong>
-                    <a href="https://www.linkedin.com/in/jon-michael-murray/">
-                      Jon-Michael Murray
-                    </a>
-                  </strong>{" "}
-                  &mdash; REPOWER Program Director, Terra Praxis
-                </li>
-                <li>
-                  <strong>
-                    <a href="https://www.linkedin.com/in/jon-wentzel-0a31bb1/">
-                      Jon Wentzel
-                    </a>
-                  </strong>{" "}
-                  &mdash; Vice President, Communications, Nuclear Energy Institute
-
-                </li>
+                <strong>
+                  <a href="https://www.linkedin.com/in/jennifer-hayden-1b341429/">
+                    Jennifer Hayden
+                  </a>
+                </strong>{" "}
+                &mdash; President & CEO, National Museum of Nuclear Science &
+                History (Smithsonian)
+              </li>
+              <li>
+                <strong>
+                  <a href="https://www.linkedin.com/in/heather-hoff-mom4nuclear/">
+                    Heather Hoff
+                  </a>
+                </strong>{" "}
+                &mdash; Co-Founder, Mothers for Nuclear
+              </li>
+              <li>
+                <strong>
+                  <a href="https://www.linkedin.com/in/jtthoughton/">
+                    Jordan Houghton
+                  </a>
+                </strong>{" "}
+                &mdash; Senior Media Relations Manager, Nuclear Energy Institute
+              </li>
+              <li>
+                <strong>
+                  <a href="https://www.linkedin.com/in/eric-g-meyer-44800a50/">
+                    Eric Meyer
+                  </a>
+                </strong>{" "}
+                &mdash; Founder & Executive Director, Generation Atomic
+              </li>
+              <li>
+                <strong>
+                  <a href="https://www.linkedin.com/in/u-ann-m-a8a51613/">
+                    Ann Mehra
+                  </a>
+                </strong>{" "}
+                &mdash; US Department of Commerce
+              </li>
+              <li>
+                <strong>
+                  <a href="https://www.linkedin.com/in/jon-michael-murray/">
+                    Jon-Michael Murray
+                  </a>
+                </strong>{" "}
+                &mdash; REPOWER Program Director, Terra Praxis
+              </li>
+              <li>
+                <strong>
+                  <a href="https://www.linkedin.com/in/jon-wentzel-0a31bb1/">
+                    Jon Wentzel
+                  </a>
+                </strong>{" "}
+                &mdash; Vice President, Communications, Nuclear Energy Institute
+              </li>
             </ul>
             <p className="text-white mb-6 font-bold">
               <b>Arts, Architecture, and Design</b>
