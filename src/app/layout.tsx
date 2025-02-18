@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Navigation from "./components/Navigation";
-import { Comfortaa, Gabarito } from "next/font/google";
+import { Comfortaa, Gabarito, Poppins } from "next/font/google";
 import "./globals.css";
 
 const comfortaa = Comfortaa({
@@ -14,6 +14,13 @@ const gabarito = Gabarito({
   display: "swap",
   variable: "--font-gabarito",
 });
+
+const poppins = Poppins({
+  weight: ['300', '400', '500', '700'],  // Added 700 for bold weight
+  subsets: ['latin'],
+  display: 'swap',
+  variable: "--font-poppins",
+})
 
 export const metadata: Metadata = {
   title: "The Roving Reactor",
@@ -49,7 +56,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${gabarito.variable}`}>
+    <html lang="en" className={`${gabarito.variable} ${poppins.className}`}>
       <body className="m-0 p-0 bg-black">
         <div className={comfortaa.className}>
           <Navigation />

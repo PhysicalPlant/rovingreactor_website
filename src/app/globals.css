@@ -20,8 +20,48 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
+/* Main content styles - include both direct text and sized text */
+main p,
+main ul,
+main ol,
+main li,
+main [class*="text-"]:not(.text-5xl):not(.text-4xl):not(.text-3xl):not(.text-2xl) {
+  /* This will catch the text-[1.1rem] etc classes but exclude headers */
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 400;
   margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+/* Headers should use Comfortaa */
+.text-5xl,
+.text-4xl,
+.text-3xl,
+.text-2xl {
+  font-family: "Comfortaa", sans-serif;
+}
+
+/* Keep accordion text in its original font */
+.MuiAccordionSummary-content {
+  font-family: Gabarito !important;
+}
+
+/* Remove the previous navigation attempts */
+/* Delete these blocks:
+header nav li,
+.navigation li {
+  margin: 0 !important;
+  padding: 0;
+}
+
+[role="navigation"] li {
+  margin: 0 !important;
+  padding: 0;
+}
+*/
+
+strong {
+  font-weight: 700;
 }
 
 #__next {

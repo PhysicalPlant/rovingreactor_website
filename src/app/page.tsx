@@ -149,7 +149,7 @@ export default function Home() {
                   <div
                     className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-white mb-4"
                     style={{
-                      lineHeight: "1.1",
+                      lineHeight: "1",
                       opacity: 0,
                       animation: 'fadeInParagraph 0.8s ease forwards'
                     }}
