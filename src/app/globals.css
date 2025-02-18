@@ -96,6 +96,7 @@ strong {
 
 /* Global link styles */
 a:not(nav a) {
+
   color: #8bb8e8;
 
   /* Light blue - we can adjust this color */

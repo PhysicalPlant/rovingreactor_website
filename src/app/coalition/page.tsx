@@ -5,7 +5,7 @@ export default function Coalition() {
     <div className="min-h-screen">
       <main className="relative pt-[calc(3.5rem+1px)] md:pt-14 mt-6 md:mt-8 pb-0">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-0">
-          <div className="max-w-2xl" style={{fontSize: "1.2rem"}}>
+          <div className="max-w-2xl" style={{ fontSize: "1.2rem" }}>
             <h1 className="text-5xl text-white mb-6">Coalition</h1>
             <p className="text-white mb-6">
               The Roving Reactor Project is building a coalition that includes
@@ -72,6 +72,14 @@ export default function Coalition() {
               </li>
               <li>
                 <strong>
+                  <a href="https://www.linkedin.com/in/riverbennett/">
+                    River Bennett
+                  </a>
+                </strong>{" "}
+                &mdash; Nuclear Engineer, Radiant
+              </li>
+              <li>
+                <strong>
                   <a href="https://web.mit.edu/nse/people/faculty/buongiorno.html">
                     Dr. Jacopo Buongiorno
                   </a>
@@ -85,55 +93,72 @@ export default function Coalition() {
             <ul className="list-disc text-white mb-6 pl-5">
               <li>
                 <strong>
-                  <a href="https://www.linkedin.com/in/jennifer-hayden-1b341429/">
-                    Jennifer Hayden
+                  <a href="https://msa.maryland.gov/msa/mdmanual/40party/html/rep.html">
+                    Richard Collins
                   </a>
                 </strong>{" "}
-                &mdash; President & CEO, National Museum of Nuclear Science &
-                History (Smithsonian)
+                &mdash; 3rd Vice Chair, Maryland GOP
               </li>
               <li>
-                <strong>
-                  <a href="https://www.linkedin.com/in/heather-hoff-mom4nuclear/">
-                    Heather Hoff
-                  </a>
-                </strong>{" "}
-                &mdash; Co-Founder, Mothers for Nuclear
-              </li>
-              <li>
-                <strong>
-                  <a href="https://www.linkedin.com/in/jtthoughton/">
-                    Jordan Houghton
-                  </a>
-                </strong>{" "}
-                &mdash; Senior Media Relations Manager, Nuclear Energy Institute
-               
-              </li>
-              <li>
-                <strong>
-                  <a href="https://www.linkedin.com/in/eric-g-meyer-44800a50/">
-                    Eric Meyer
-                  </a>
-                </strong>{" "}
-                &mdash; Founder & Executive Director, Generation Atomic
-              </li>
-              <li>
-                <strong>
-                  <a href="https://www.linkedin.com/in/jon-michael-murray/">
-                    Jon-Michael Murray
-                  </a>
-                </strong>{" "}
-                &mdash; REPOWER Program Director, Terra Praxis
-              </li>
-              <li>
-                <strong>
-                  <a href="https://www.linkedin.com/in/jon-wentzel-0a31bb1/">
-                    Jon Wentzel
-                  </a>
-                </strong>{" "}
-                &mdash; Vice President, Communications, Nuclear Energy Institute
-               
-              </li>
+                <li>
+                  <strong>
+                    <a href="https://www.linkedin.com/in/jennifer-hayden-1b341429/">
+                      Jennifer Hayden
+                    </a>
+                  </strong>{" "}
+                  &mdash; President & CEO, National Museum of Nuclear Science &
+                  History (Smithsonian)
+                </li>
+                <li>
+                  <strong>
+                    <a href="https://www.linkedin.com/in/heather-hoff-mom4nuclear/">
+                      Heather Hoff
+                    </a>
+                  </strong>{" "}
+                  &mdash; Co-Founder, Mothers for Nuclear
+                </li>
+                <li>
+                  <strong>
+                    <a href="https://www.linkedin.com/in/jtthoughton/">
+                      Jordan Houghton
+                    </a>
+                  </strong>{" "}
+                  &mdash; Senior Media Relations Manager, Nuclear Energy Institute
+
+                </li>
+                <li>
+                  <strong>
+                    <a href="https://www.linkedin.com/in/eric-g-meyer-44800a50/">
+                      Eric Meyer
+                    </a>
+                  </strong>{" "}
+                  &mdash; Founder & Executive Director, Generation Atomic
+                </li>
+                <li>
+                  <strong>
+                    <a href="https://www.linkedin.com/in/u-ann-m-a8a51613/">
+                      Ann Mehra
+                    </a>
+                  </strong>{" "}
+                  &mdash; US Department of Commerce
+                </li>
+                <li>
+                  <strong>
+                    <a href="https://www.linkedin.com/in/jon-michael-murray/">
+                      Jon-Michael Murray
+                    </a>
+                  </strong>{" "}
+                  &mdash; REPOWER Program Director, Terra Praxis
+                </li>
+                <li>
+                  <strong>
+                    <a href="https://www.linkedin.com/in/jon-wentzel-0a31bb1/">
+                      Jon Wentzel
+                    </a>
+                  </strong>{" "}
+                  &mdash; Vice President, Communications, Nuclear Energy Institute
+
+                </li>
             </ul>
             <p className="text-white mb-6 font-bold">
               <b>Arts, Architecture, and Design</b>
