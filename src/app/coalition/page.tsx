@@ -138,7 +138,7 @@ export default function Coalition() {
                     Ann Mehra
                   </a>
                 </strong>{" "}
-                &mdash; US Department of Commerce
+                &mdash; Advisor, U.S. Department of Commerce
               </li>
               <li>
                 <strong>
