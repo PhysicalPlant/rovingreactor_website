@@ -74,7 +74,7 @@ export default function Legacy() {
             <p className="text-white text-xl mb-6">
               In the aftermath of World War II, Americans were understandably anxious about atomic technology, having witnessed its devastating use in Hiroshima and Nagasaki. Yet President Dwight D. Eisenhower—who had led the Allied forces on D-Day—believed nuclear power could foster peace rather than war. At a time when newspapers, radio, and television could have delivered the government's message, his administration instead embraced face-to-face outreach: traveling exhibits that literally met people where they lived.
             </p>
-            <h2 className="text-3xl text-[#8be8d7] mb-6">Traveling Exhibits in the 1950s-60s</h2>
+            <h2 className="text-3xl  mb-6">Traveling Exhibits in the 1950s-60s</h2>
             <p text-white text-xl mb-6>In the 1950s, the U.S. Atomic Energy Commission (AEC) launched multiple traveling programs:</p>
             <img src="/img/YourStakeInTheAtom-interior-cropped.jpg" alt="Your Stake in the Atom" className="w-full h-auto my-6" />
             <ol className="list-decimal list-inside text-white text-xl mb-6">
