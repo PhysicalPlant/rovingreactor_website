@@ -83,15 +83,14 @@ export default function Legacy() {
               </li>
               <li className="my-6"><strong>This Atomic World</strong><br />A high-school lecture and demonstration tour that eventually deployed up to <strong>23 specially equipped vans</strong> across the country. Each mobile unit carried live demonstration gear (reactor models, Geiger counters, cloud chambers) to engage students with hands-on science. At the program's peak in the early-to-mid 1960s, it visited thousands of schools, reaching <strong>over a million students per year</strong> <a href="#this-atomic-world">[2]</a><br />
               </li>
-              <li><strong>Atoms for Peace</strong><br />An umbrella initiative that included traveling trailer exhibits in the U.S. and large-scale international showcases abroad. One such American trailer traveled to libraries and local fairs, featuring scaled models of reactors, interactive panels, and displays of atomic agriculture. Collectively, the AEC's Atoms for Peace projects reached <strong>hundreds of thousands — ultimately millions</strong> — of curious visitors who learned about nuclear energy's peaceful potential. <a href="#atoms-for-peace">[3]</a><br />
+              <li><strong>Atoms for Peace</strong><br />An umbrella initiative that included traveling trailer exhibits in the U.S. and large-scale international showcases abroad. One such American trailer traveled to libraries and local fairs, featuring scaled models of reactors, interactive panels, and displays of atomic agriculture. Collectively, the AEC's Atoms for Peace projects reached <strong>hundreds of thousands — ultimately millions</strong> — of curious visitors who learned about nuclear energy's peaceful potential. <a href="#atoms-for-peace">[3]</a><br /><br />The mobile exhibits complemented larger-scale stationary showcases, such as <em>Atomsville, U.S.A.</em> at the 1964–65 New York World's Fair—a futuristic vision of a nuclear-powered American town.
+
                 <img src="/img/atoms-for-peace-van.jpg" alt="Atoms for Peace" className="w-full h-auto my-6" />
               </li>
             </ol>
+
             <div className="border-t border-white pt-6">
-              <p className="text-white text-xl mb-6"><strong>Atomsville, U.S.A.</strong> at the 1964-65 New York World's Fair<br /> Building on that momentum, the AEC unveiled <strong>Atomsville, U.S.A.</strong> at the 1964–65 New York World's Fair—an event that attracted more than <strong>51 million visitors</strong> overall <a href="#atomsville">[4]</a>. Atomsville took the form of a playful, futuristic town powered by nuclear energy. Children compared their pedal power to the punch of uranium and explored futuristic kitchens and farms designed to spark curiosity rather than fear. Period press coverage noted heavy foot traffic, suggesting that the pavilion likely saw <strong>hundreds of thousands, if not millions</strong> of families during the Fair's two-year run.</p >
-            </div>
-            <div className="border-t border-white pt-6">
-              <h2 className="text-3xl text-white mb-6"><span className="text-[#8be8d7]">What's Next: The Roving Reactor Project</span></h2>
+              <h2 className="text-3xl text-white mb-6"><span>What's Next: The Roving Reactor Project</span></h2>
               <p className="text-white text-xl mb-6">
                 That tradition of direct engagement lives on in the Roving Reactor. We believe honest dialogue happens best when people can see and question new technologies up close. Our traveling exhibit highlights modern innovations—from small-scale reactors to ultra-safe fuel—showcasing how they can strengthen energy security and protect the planet.
               </p>
