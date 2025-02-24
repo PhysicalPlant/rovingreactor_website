@@ -101,7 +101,7 @@ export default function Legacy() {
             <ol className="list-decimal list-inside text-white text-lg mb-6">
               <li className="mb-12">
                 <strong className="text-[#8be8d9]">
-                  Your Stake in the Atom
+                  <a href="/legacy/your-stake-in-the-atom">Your Stake in the Atom</a>
                 </strong>
                 <br />A geodesic-dome exhibit transported by truck to fairs,
                 shopping centers, and other public venues.<br />
@@ -130,7 +130,7 @@ export default function Legacy() {
               />
               <li className="mt-12 mb-16">
 
-                <strong className="text-[#8be8d9]">This Atomic World</strong>
+                <strong className="text-[#8be8d9]"><a href="/legacy/this-atomic-world">This Atomic World</a></strong>
                 <br />A high-school lecture and demonstration tour that
                 eventually deployed up to{" "}
                 <strong className="text-[#8be8d9]">
@@ -153,7 +153,9 @@ export default function Legacy() {
               />
 
               <li className="mt-12 mb-16">
-                <strong className="text-[#8be8d9]">Atoms for Peace</strong>
+                <strong className="text-[#8be8d9]">
+                  <a href="/legacy/atoms-for-peace">Atoms for Peace</a>
+                </strong>
                 <br />
                 An umbrella initiative that included traveling trailer exhibits
                 in the U.S. and large-scale international showcases abroad. One
