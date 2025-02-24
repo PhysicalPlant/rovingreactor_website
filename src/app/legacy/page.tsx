@@ -74,7 +74,13 @@ export default function Legacy() {
             <h2 className="text-3xl text-white mb-6">
               — and Where We're Headed Next
             </h2>
-
+            <Image
+              src="/img/YourStakeInTheAtom2.png"
+              alt="Your Stake in the Atom"
+              className="w-full h-auto my-3"
+              width={1000}
+              height={1000}
+            />
             <p className="text-white text-lg mb-6">
               In the aftermath of World War II, Americans were understandably
               anxious about atomic technology, having witnessed its devastating
@@ -90,7 +96,7 @@ export default function Legacy() {
               </strong>{" "}
               traveling exhibits that literally met people where they lived.
             </p>
-            <h2 className="text-3xl  mb-6">
+            <h2 className="text-3xl  mb-6 mt-8">
               Traveling Exhibits in the 1950s-60s
             </h2>
             <p className="text-white text-lg mb-6">
@@ -104,14 +110,7 @@ export default function Legacy() {
                   <a href="/legacy/your-stake-in-the-atom">Your Stake in the Atom</a>
                 </strong>
                 <br />A geodesic-dome exhibit transported by truck to fairs,
-                shopping centers, and other public venues.<br />
-                <Image
-                  src="/img/YourStakeInTheAtom2.png"
-                  alt="Your Stake in the Atom"
-                  className="w-full h-auto my-3"
-                  width={1000}
-                  height={1000}
-                /> Inside the dome,
+                shopping centers, and other public venues (<em>top image</em>). Inside the dome,
                 visitors could operate robotic "hot-lab" arms to simulate the
                 safe handling of radioactive materials and watch live demos of
                 nuclear science in action. During a single regional tour,{" "}
@@ -124,12 +123,11 @@ export default function Legacy() {
               <Image
                 src="/img/ThisAtomicWorld-cropped.png"
                 alt="This Atomic World"
-                className="w-full h-auto my-6"
+                className="w-full h-auto mb-3"
                 width={1000}
                 height={1000}
               />
-              <li className="mt-12 mb-16">
-
+              <li className="mt-6 mb-14">
                 <strong className="text-[#8be8d9]"><a href="/legacy/this-atomic-world">This Atomic World</a></strong>
                 <br />A high-school lecture and demonstration tour that
                 eventually deployed up to{" "}
@@ -152,7 +150,7 @@ export default function Legacy() {
                 className="w-full h-auto my-6"
               />
 
-              <li className="mt-12 mb-16">
+              <li className="mt-6 mb-16">
                 <strong className="text-[#8be8d9]">
                   <a href="/legacy/atoms-for-peace">Atoms for Peace</a>
                 </strong>
@@ -196,7 +194,7 @@ export default function Legacy() {
                 scientists, engineers, and a skilled workforce ready to drive
                 the future of nuclear energy.
               </p>
-              <div className="my-12"><a href="https://rovingreactor.org/exhibits" className="my-32 border border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:no-underline transition-colors decoration-0">Exhibits</a></div>
+              <div className="my-12"><a href="https://rovingreactor.org/exhibits" className="my-32 border border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:no-underline transition-colors decoration-0">Our Exhibits</a></div>
             </div>
 
             {/* Replace the citations section with this accordion */}

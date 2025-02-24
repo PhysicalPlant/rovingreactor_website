@@ -45,7 +45,7 @@ export default function YourStakeInTheAtom() {
             href="https://rovingreactor.org/exhibits"
             className="my-16 border border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:no-underline transition-colors decoration-0"
           >
-            Exhibits
+            Our Exhibits
           </a>
         </div>
       </main>
