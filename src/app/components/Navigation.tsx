@@ -111,11 +111,11 @@ export default function Navigation() {
             <ul className="flex flex-col space-y-4 px-4">
               <li><Link href="/" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
               <li><Link href="/exhibits" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Exhibits</Link></li>
-              <li><Link href="/legacy" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Overview</Link></li>
+              <li><Link href="/legacy" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Legacy</Link></li>
+              <li className="pl-4"><Link href="/legacy" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Overview</Link></li>
               <li className="pl-4"><Link href="/legacy/your-stake-in-the-atom" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Your Stake in the Atom</Link></li>
               <li className="pl-4"><Link href="/legacy/this-atomic-world" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>This Atomic World</Link></li>
               <li className="pl-4"><Link href="/legacy/atoms-for-peace" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Atoms for Peace</Link></li>
-
               <li><Link href="/timeline" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Timeline</Link></li>
               <li><Link href="/coalition" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Coalition</Link></li>
               <li><Link href="/contact" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
