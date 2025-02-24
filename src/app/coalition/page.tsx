@@ -50,7 +50,7 @@ export default function Coalition() {
               the project.
             </p>
             <p className="text-white mb-6 font-bold">
-              <b>Nuclear Science and Technology</b>
+              Nuclear Science and Technology
             </p>
             <ul className="list-disc text-white mb-6 pl-5">
               <li>
@@ -88,7 +88,7 @@ export default function Coalition() {
               </li>
             </ul>
             <p className="text-white mb-6 font-bold">
-              <b>Nuclear Advocacy</b>
+              Nuclear Advocacy
             </p>
             <ul className="list-disc text-white mb-6 pl-5">
               <li>
@@ -158,7 +158,7 @@ export default function Coalition() {
               </li>
             </ul>
             <p className="text-white mb-6 font-bold">
-              <b>Arts, Architecture, and Design</b>
+              Arts, Architecture, and Design
             </p>
             <ul className="list-disc text-white mb-6 pl-5">
               <li>
@@ -218,7 +218,7 @@ export default function Coalition() {
             </ul>
             <div className="border border-gray-500 my-6"></div>
             <p className="text-white mb-6 font-bold">
-              <b>Roving Reactor Creative Lead</b>
+              Roving Reactor Creative Lead
             </p>
             <p className="text-white mb-6">
               <a href="https://www.linkedin.com/in/steve-moore-0915291/">

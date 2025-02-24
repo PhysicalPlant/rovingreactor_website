@@ -78,18 +78,18 @@ export default function Contact() {
               onChange={handleChange}
               aria-label="Contact and Donate Tabs"
               sx={{
-                '& .MuiTabs-indicator': {
-                  backgroundColor: '#60A5FA', // bright blue color
+                "& .MuiTabs-indicator": {
+                  backgroundColor: "#60A5FA", // bright blue color
                 },
               }}
             >
               <Tab
                 label="Reach Out"
                 sx={{
-                  color: 'white',
-                  fontFamily: 'Gabarito',
-                  '&.Mui-selected': {
-                    color: '#60A5FA', // bright blue color
+                  color: "white",
+                  fontFamily: "Gabarito",
+                  "&.Mui-selected": {
+                    color: "#60A5FA", // bright blue color
                   },
                   "&:hover": {
                     opacity: 0.8,
@@ -99,10 +99,10 @@ export default function Contact() {
               <Tab
                 label="Donate"
                 sx={{
-                  color: 'white',
-                  fontFamily: 'Gabarito',
-                  '&.Mui-selected': {
-                    color: '#60A5FA', // bright blue color
+                  color: "white",
+                  fontFamily: "Gabarito",
+                  "&.Mui-selected": {
+                    color: "#60A5FA", // bright blue color
                   },
                   "&:hover": {
                     opacity: 0.8,

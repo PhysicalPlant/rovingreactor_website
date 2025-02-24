@@ -1,11 +1,26 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import EmailSignup from "./EmailSignup";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLegacyDropdownOpen, setIsLegacyDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLLIElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsLegacyDropdownOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="bg-slate-800 shadow-md w-full fixed top-0 left-0 z-50">
@@ -32,7 +47,25 @@ export default function Navigation() {
             <ul className="flex gap-6 font-gabarito uppercase text-sm text-white">
               <li><Link href="/" className="text-white hover:text-gray-300">Home</Link></li>
               <li><Link href="/exhibits" className="text-white hover:text-gray-300">Exhibits</Link></li>
-              <li><Link href="/legacy" className="text-white hover:text-gray-300">Legacy</Link></li>
+              <li className="relative" ref={dropdownRef}>
+                <button
+                  className="text-white hover:text-gray-300 flex items-center gap-1"
+                  onClick={() => setIsLegacyDropdownOpen(!isLegacyDropdownOpen)}
+                >
+                  LEGACY
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {isLegacyDropdownOpen && (
+                  <div className="absolute top-full left-0 mt-2 w-60 bg-slate-800 shadow-lg rounded-md py-2">
+                    <Link href="/legacy" className="block px-4 py-2 text-white hover:bg-slate-700">Legacy</Link>
+                    <Link href="/legacy/your-stake-in-the-atom" className="block px-4 py-2 text-white hover:bg-slate-700">Your Stake in the Atom</Link>
+                    <Link href="/legacy/atoms-for-peace" className="block px-4 py-2 text-white hover:bg-slate-700">Atoms for Peace</Link>
+                    <Link href="/legacy/this-atomic-world" className="block px-4 py-2 text-white hover:bg-slate-700">This Atomic World</Link>
+                  </div>
+                )}
+              </li>
               <li><Link href="/timeline" className="text-white hover:text-gray-300">Timeline</Link></li>
               <li><Link href="/coalition" className="text-white hover:text-gray-300">Coalition</Link></li>
               <li><Link href="/contact" className="text-white hover:text-gray-300">Contact</Link></li>
@@ -78,6 +111,9 @@ export default function Navigation() {
               <li><Link href="/" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
               <li><Link href="/exhibits" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Exhibits</Link></li>
               <li><Link href="/legacy" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Legacy</Link></li>
+              <li className="pl-4"><Link href="/legacy/your-stake-in-the-atom" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Your Stake in the Atom</Link></li>
+              <li className="pl-4"><Link href="/legacy/atoms-for-peace" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Atoms for Peace</Link></li>
+              <li className="pl-4"><Link href="/legacy/this-atomic-world" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>This Atomic World</Link></li>
               <li><Link href="/timeline" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Timeline</Link></li>
               <li><Link href="/coalition" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Coalition</Link></li>
               <li><Link href="/contact" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>

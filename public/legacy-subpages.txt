@@ -1,0 +1,88 @@
+<!-- Your Stake in the Atom -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Stake in the Atom</title>
+</head>
+<body>
+  <header>
+    <h1>Your Stake in the Atom</h1>
+  </header>
+  <main>
+    <p>The 1960s traveling exhibit <strong>Your Stake in the Atom</strong> introduced the public to nuclear energy immersively. Housed in a futuristic geodesic dome, this mobile showcase brought nuclear science to fairs, malls, and public spaces.</p>
+    <p>Visitors could operate remote-controlled robotic arms, simulating how scientists handle radioactive materials safely. Live demonstrations showcased radiation detection and the power of nuclear reactions, making atomic science more accessible.</p>
+    <p>The exhibit attracted thousands, helping dispel fears and increasing public awareness of nuclear energy’s benefits in power generation, medicine, and industry.</p>
+    <img src="images/TBD.jpg">
+  </main>
+  <footer>
+    <p><a href="exhibits.html">Our Exhibits</a></p>
+  </footer>
+</body>
+</html>
+
+<!-- This Atomic World -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>This Atomic World</title>
+</head>
+<body>
+  <header>
+    <h1>This Atomic World</h1>
+  </header>
+  <main>
+    <p><strong>This Atomic World</strong> was a traveling educational program that brought nuclear science into American high schools. A fleet of vans equipped with scientific instruments toured the country. Students experimented with Geiger counters, cloud chambers, and Van de Graaff generators, making abstract atomic principles tangible.</p>
+    <p>By the early 1960s, the program had reached thousands of schools, inspiring a new generation of scientists and engineers interested in nuclear technology.</p>
+    <img src="images/TBD.jpg">
+  </main>
+  <footer>
+    <p><a href="exhibits.html">Our Exhibits</a></p>
+  </footer>
+</body>
+</html>
+
+<!-- Atoms for Peace -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Atoms for Peace</title>
+</head>
+<body>
+  <header>
+    <h1>Atoms for Peace</h1>
+  </header>
+  <main>
+    <p>In 1953, President Eisenhower launched <strong>Atoms for Peace</strong>, an initiative to promote peaceful nuclear applications worldwide. Mobile exhibit trailers toured the U.S., featuring reactor models, atomic agriculture, and interactive panels on radiation in medicine and industry. International exhibitions reached millions, shifting global perceptions of atomic energy.</p>
+    <p>These efforts positioned nuclear technology as a force for progress, reinforcing global cooperation and public understanding of atomic science.</p>
+    <img src="images/TBD.jpg">
+  </main>
+  <footer>
+    <p><a href="exhibits.html">Our Exhibits</a></p>
+  </footer>
+</body>
+</html>
+
+<!-- Atomsville, U.S.A. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Atomsville, U.S.A.</title>
+</head>
+<body>
+  <header>
+    <h1>Atomsville, U.S.A.</h1>
+  </header>
+  <main>
+    <p>At the 1964–65 New York World’s Fair, <strong>Atomsville, U.S.A.</strong> invited children to explore a futuristic nuclear-powered town. Designed exclusively for young visitors, the exhibit used interactive activities to make atomic energy approachable.</p>
+    <p>Children could manipulate mechanical arms, search for radioactive ore, and ride a bicycle generator to demonstrate the power of nuclear fuel. The kid-focused, open-ended environment helped frame atomic energy as an exciting part of the future.</p>
+    <img src="images/TBD.jpg">
+  </main>
+  <footer>
+    <p><a href="exhibits.html">Our Exhibits</a></p>
+  </footer>
+</body>
+</html>
