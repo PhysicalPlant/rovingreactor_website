@@ -77,7 +77,7 @@ export default function Legacy() {
             <Image
               src="/img/YourStakeInTheAtom2.png"
               alt="Your Stake in the Atom"
-              className="w-full h-auto my-3"
+              className="w-full h-auto my-3 rounded-lg"
               width={1000}
               height={1000}
             />
@@ -123,11 +123,11 @@ export default function Legacy() {
               <Image
                 src="/img/ThisAtomicWorld-cropped.png"
                 alt="This Atomic World"
-                className="w-full h-auto mb-3"
+                className="w-full h-auto rounded-lg"
                 width={1000}
                 height={1000}
               />
-              <li className="mt-6 mb-14">
+              <li className="mt-3 mb-14">
                 <strong className="text-[#8be8d9]"><a href="/legacy/this-atomic-world">This Atomic World</a></strong>
                 <br />A high-school lecture and demonstration tour that
                 eventually deployed up to{" "}
@@ -147,10 +147,10 @@ export default function Legacy() {
               <img
                 src="/img/atoms-for-peace-van.jpg"
                 alt="Atoms for Peace"
-                className="w-full h-auto my-6"
+                className="w-full h-auto mt-6 rounded-lg"
               />
 
-              <li className="mt-6 mb-16">
+              <li className="mt-3 mb-16">
                 <strong className="text-[#8be8d9]">
                   <a href="/legacy/atoms-for-peace">Atoms for Peace</a>
                 </strong>
@@ -169,7 +169,7 @@ export default function Legacy() {
                 <br />
                 <br />
                 These mobile exhibits complemented larger-scale stationary
-                showcases, such as <em>Atomsville, U.S.A.</em> at the 1964–65
+                showcases, such as <em><a href="/legacy/atomsville-usa">Atomsville, U.S.A.</a></em> at the 1964–65
                 New York World's Fair—a futuristic vision of a nuclear-powered
                 American town.
               </li>
@@ -194,7 +194,7 @@ export default function Legacy() {
                 scientists, engineers, and a skilled workforce ready to drive
                 the future of nuclear energy.
               </p>
-              <div className="my-12"><a href="https://rovingreactor.org/exhibits" className="my-32 border border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:no-underline transition-colors decoration-0">Our Exhibits</a></div>
+              <div className="my-12"><a href="https://rovingreactor.org/exhibits" className="my-32 border border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:no-underline transition-colors decoration-0">RR Exhibit Design</a></div>
             </div>
 
             {/* Replace the citations section with this accordion */}

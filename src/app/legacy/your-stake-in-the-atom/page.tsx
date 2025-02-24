@@ -11,7 +11,7 @@ export default function YourStakeInTheAtom() {
             <Image
               src="/img/YourStakeInTheAtom-interior-cropped.jpg"
               alt="Your Stake in the Atom Dome Interior"
-              className="w-full h-auto my-6"
+              className="w-full h-auto my-6 rounded-lg"
               width={1000}
               height={1000}
             />
@@ -36,7 +36,7 @@ export default function YourStakeInTheAtom() {
             <Image
               src="/img/legacy/RR-YourStakeInTheAtom-dome-2.png"
               alt="Your Stake in the Atom Dome exterior"
-              className="w-full h-auto my-6"
+              className="w-full h-auto my-6 rounded-lg"
               width={1000}
               height={1000}
             />
@@ -45,8 +45,9 @@ export default function YourStakeInTheAtom() {
             href="https://rovingreactor.org/exhibits"
             className="my-16 border border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:no-underline transition-colors decoration-0"
           >
-            Our Exhibits
+            RR Exhibit Design
           </a>
+          <br /><br />
         </div>
       </main>
       <Footer />

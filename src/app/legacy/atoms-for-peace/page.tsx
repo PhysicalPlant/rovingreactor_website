@@ -11,7 +11,7 @@ export default function AtomsForPeace() {
             <Image
               src="/img/legacy/RR-AtomsforPeace-van-interior.png"
               alt="Atoms for Peace Exterior"
-              className="w-full h-auto my-6"
+              className="w-full h-auto my-6 rounded-lg"
               width={1000}
               height={1000}
             />
@@ -21,7 +21,7 @@ export default function AtomsForPeace() {
             <Image
               src="/img/legacy/RR-AtomsForPeace-at-nuclear-museum.png"
               alt="Atoms for Peace Exterior"
-              className="w-full h-auto my-6"
+              className="w-full h-auto my-6 rounded-lg"
               width={1000}
               height={1000}
             />
@@ -31,12 +31,13 @@ export default function AtomsForPeace() {
             <Image
               src="/img/legacy/RR-AtomsForPeace-hands.png"
               alt="Atoms for Peace Exterior"
-              className="w-full h-auto my-6"
+              className="w-full h-auto my-6 rounded-lg"
               width={1000}
               height={1000}
             />
           </div>
-          <a href="https://rovingreactor.org/exhibits" className="my-16 border border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:no-underline transition-colors decoration-0">Our Exhibits</a>
+          <a href="https://rovingreactor.org/exhibits" className="my-16 border border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:no-underline transition-colors decoration-0">RR Exhibit Design</a>
+          <br /><br />
         </div>
       </main>
       <Footer />
