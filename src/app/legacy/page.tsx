@@ -225,14 +225,14 @@ export default function Legacy() {
                   <ol className="list-decimal list-inside text-sm">
                     <li id="your-stake-in-the-atom">
                       "Your Stake in the Atom" Dome Exhibit
-                      <ul className="list-disc list-inside ml-4">
-                        <li>
+                      <ul className="list-disc list-inside ml-4 mt-2">
+                        <li className="mb-2">
                           Taylor, Alan (2012).{" "}
                           <em>The Secret City, The Atlantic.</em> Photo essay by
                           Ed Westcott showing the geodesic dome in Oak Ridge,
                           1966.
                         </li>
-                        <li>
+                        <li className="mb-2">
                           McHenry Plaindealer, 26 July 1968, p.4. Mentions "Your
                           Stake in the Atom" touring fairs, attracting tens of
                           thousands of visitors.
@@ -241,8 +241,8 @@ export default function Legacy() {
                     </li>
                     <li id="this-atomic-world" className="mt-4">
                       "This Atomic World" Reach:
-                      <ul className="list-disc list-inside ml-4">
-                        <li>
+                      <ul className="list-disc list-inside ml-4 mt-2">
+                        <li className="mb-2">
                           ED046215, ERIC (1970).{" "}
                           <em>
                             Opportunities for Extending Science Education
@@ -251,7 +251,7 @@ export default function Legacy() {
                           Describes 23 traveling vans, reaching over a million
                           students per year.
                         </li>
-                        <li>
+                        <li className="mb-2">
                           ORAU History (1969).{" "}
                           <em>
                             Atomic Industrial Forum Award for 'This Atomic
@@ -264,8 +264,8 @@ export default function Legacy() {
                     </li>
                     <li id="atoms-for-peace" className="mt-4">
                       Atoms for Peace Travel Exhibits:
-                      <ul className="list-disc list-inside ml-4">
-                        <li>
+                      <ul className="list-disc list-inside ml-4 mt-2">
+                        <li className="mb-2">
                           Brooklyn Public Library Blog (2022).{" "}
                           <em>
                             POTW: Atoms for Peace and Goodbye, Central Library.
@@ -273,7 +273,7 @@ export default function Legacy() {
                           Features a 1950s photo of the traveling trailer parked
                           outside the library.
                         </li>
-                        <li>
+                        <li className="mb-2">
                           Zwigenberg, Ran (2012).{" "}
                           <em>
                             "The Coming of a Second Sun": The 1956 Atoms for
