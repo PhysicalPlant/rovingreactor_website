@@ -118,7 +118,8 @@ export default function Exhibits() {
                           <ul className="list-disc ml-6 mt-4 space-y-2">
                             <li>Interactive Q&A stations with expert responses</li>
                             <li>Clear explanations of safety systems and waste management</li>
-                            <li>Real-world data on nuclear energy's safety record</li>
+                            <li>Real-world data on nuclear energy's safety record, impact, and economics
+                            </li>
                           </ul>
                         </div>
                       </AccordionDetails>
