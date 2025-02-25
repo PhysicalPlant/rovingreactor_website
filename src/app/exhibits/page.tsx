@@ -82,7 +82,7 @@ export default function Exhibits() {
                         }}
                       >
                         <AddIcon sx={{ color: 'white' }} />
-                        Zone 1: How Nuclear Works
+                        <span className="text-[#8be8d9]">Zone 1: How Nuclear Works</span>
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="text-white space-y-4">
@@ -110,7 +110,7 @@ export default function Exhibits() {
                         }}
                       >
                         <AddIcon sx={{ color: 'white' }} />
-                        Zone 2: Nuclear Myths & Facts
+                        <span className="text-[#8be8d9]">Zone 2: Nuclear Myths & Facts</span>
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="text-white space-y-4">
@@ -138,7 +138,7 @@ export default function Exhibits() {
                         }}
                       >
                         <AddIcon sx={{ color: 'white' }} />
-                        Zone 3: Step Into Nuclear:<br className="md:hidden" /> A VR Experience
+                        <span className="text-[#8be8d9]">Zone 3: Step Into Nuclear:<br className="md:hidden" /> A VR Experience</span>
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="text-white space-y-4">
@@ -166,7 +166,7 @@ export default function Exhibits() {
                         }}
                       >
                         <AddIcon sx={{ color: 'white' }} />
-                        Zone 4: Powering the World
+                        <span className="text-[#8be8d9]">Zone 4: Powering the World</span>
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="text-white space-y-4">
@@ -195,7 +195,7 @@ export default function Exhibits() {
                         }}
                       >
                         <AddIcon sx={{ color: 'white' }} />
-                        Zone 5: Nuclear and AI
+                        <span className="text-[#8be8d9]">Zone 5: Nuclear and AI</span>
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="text-white space-y-4">
@@ -224,7 +224,7 @@ export default function Exhibits() {
                         }}
                       >
                         <AddIcon sx={{ color: 'white' }} />
-                        Zone 6: Careers in Nuclear
+                        <span className="text-[#8be8d9]">Zone 6: Careers in Nuclear</span>
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="text-white space-y-4">
@@ -253,7 +253,7 @@ export default function Exhibits() {
                         }}
                       >
                         <AddIcon sx={{ color: 'white' }} />
-                        Zone 7: Our Supporters & Story
+                        <span className="text-[#8be8d9]">Zone 7: Our Supporters & Story</span>
 
                       </AccordionSummary>
                       <AccordionDetails>
