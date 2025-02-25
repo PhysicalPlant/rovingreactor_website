@@ -240,10 +240,9 @@ export default function Contact() {
                     type="submit"
                     disabled={status === "loading"}
                     className={`px-6 py-2 text-white font-medium rounded-md text-sm
-                      ${
-                        status === "loading"
-                          ? "bg-gray-400"
-                          : "bg-transparent border border-white hover:bg-white hover:text-slate-800"
+                      ${status === "loading"
+                        ? "bg-gray-400"
+                        : "bg-transparent border border-white hover:bg-white hover:text-slate-800"
                       }
                       transition-colors duration-200`}
                   >
@@ -259,7 +258,7 @@ export default function Contact() {
                   Please consider donating to the Roving Reactor Project
                 </h1>
                 <p>
-                  Donations are processed through Physical Plant Theater, an
+                  Donations are processed through Physical Plant Arts, an
                   official 501(c)(3) nonprofit in good standing, established in
                   2004. (EIN: 20-0136247.) Donations are tax-deductible.
                 </p>
