@@ -123,7 +123,7 @@ export default function Exhibits() {
                         </div>
                       </AccordionDetails>
                     </Accordion>
-                         {/* virtual reality experience */}
+                    {/* virtual reality experience */}
                     <Accordion sx={accordionStyles}>
                       <AccordionSummary
                         expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
@@ -151,8 +151,8 @@ export default function Exhibits() {
                         </div>
                       </AccordionDetails>
                     </Accordion>
-    {/* local and global potential */}
-    <Accordion sx={accordionStyles}>
+                    {/* local and global potential */}
+                    <Accordion sx={accordionStyles}>
                       <AccordionSummary
                         expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
                         sx={{
@@ -179,7 +179,36 @@ export default function Exhibits() {
                         </div>
                       </AccordionDetails>
                     </Accordion>
-                  
+
+                    {/* nuclear and ai */}
+                    <Accordion sx={accordionStyles}>
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
+                        sx={{
+                          '& .MuiAccordionSummary-content': {
+                            fontFamily: 'Gabarito',
+                            fontSize: '1.25rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '8px'
+                          }
+                        }}
+                      >
+                        <AddIcon sx={{ color: 'white' }} />
+                        Zone 5: Nuclear and AI
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <div className="text-white space-y-4">
+                          <p>Discover how artificial intelligence and nuclear power converge to shape our energy future. See how AI-driven insights boost reactor performance and reduce emissions, while nuclear meets the massive power needs of cutting-edge data centers.</p>
+                          <ul className="list-disc ml-6 mt-4 space-y-2">
+                            <li>Adjust the national and global energy mix in real time to reveal future impacts on temperature, biodiversity, and arable land</li>
+                            <li>Learn how AI-driven reactor analytics and advanced nuclear systems provide 24/7 power for data centers</li>
+                            <li>Meet pioneering teams uniting AI research with nuclear innovation for a cleaner, more resilient world</li>
+                          </ul>
+                        </div>
+                      </AccordionDetails>
+                    </Accordion>
+
                     {/* career pathways */}
                     <Accordion sx={accordionStyles}>
                       <AccordionSummary
@@ -195,7 +224,7 @@ export default function Exhibits() {
                         }}
                       >
                         <AddIcon sx={{ color: 'white' }} />
-                        Zone 5: Careers in Nuclear
+                        Zone 6: Careers in Nuclear
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="text-white space-y-4">
@@ -208,8 +237,7 @@ export default function Exhibits() {
                         </div>
                       </AccordionDetails>
                     </Accordion>
-                
-                 
+
                     {/* behind the science */}
                     <Accordion sx={accordionStyles}>
                       <AccordionSummary
@@ -225,7 +253,7 @@ export default function Exhibits() {
                         }}
                       >
                         <AddIcon sx={{ color: 'white' }} />
-                        Zone 6: Our Supporters & Story
+                        Zone 7: Our Supporters & Story
 
                       </AccordionSummary>
                       <AccordionDetails>

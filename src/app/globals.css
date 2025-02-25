@@ -24,13 +24,25 @@ body {
 main p,
 main ul,
 main ol,
-main li,
-main [class*="text-"]:not(.text-5xl):not(.text-4xl):not(.text-3xl):not(.text-2xl) {
-  /* This will catch the text-[1.1rem] etc classes but exclude headers */
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+main li {
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 400;
+}
+
+/* Add margin to paragraphs but not list items */
+main p {
   margin-bottom: 1em;
-  line-height: 1.5;
+}
+
+/* Add consistent spacing for list items */
+main li {
+  margin-bottom: 0.5em;
+  /* or whatever spacing you prefer */
+}
+
+/* Make sure the last list item doesn't have bottom margin */
+main li:last-child {
+  margin-bottom: 0;
 }
 
 /* Headers should use Comfortaa */
