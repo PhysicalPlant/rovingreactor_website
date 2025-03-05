@@ -55,8 +55,7 @@ export default function Timeline() {
             </p>
             <ul className="list-disc list-inside text-white text-xl">
               <li className="mb-4">
-                <span className="font-bold">January 2025</span> Partnered with
-                Ann Mehra to submit major DoE workforce proposal for Nuclear
+                <span className="font-bold">January 2025</span> Partnered to submit major DoE workforce proposal for Nuclear
                 Reactor Safety Training Program, secured backing from MIT,
                 University of Michigan, and two multi-state nuclear consortia to
                 address 350,000-job sector shortage. Advanced technical

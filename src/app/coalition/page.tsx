@@ -91,14 +91,7 @@ export default function Coalition() {
               Nuclear Advocacy
             </p>
             <ul className="list-disc text-white mb-6 pl-5">
-              <li>
-                <strong>
-                  <a href="https://msa.maryland.gov/msa/mdmanual/40party/html/rep.html">
-                    Richard Collins
-                  </a>
-                </strong>{" "}
-                &mdash; 3rd Vice Chair, Maryland GOP
-              </li>
+
               <li>
                 <strong>
                   <a href="https://www.linkedin.com/in/jennifer-hayden-1b341429/">
@@ -132,14 +125,7 @@ export default function Coalition() {
                 </strong>{" "}
                 &mdash; Founder & Executive Director, Generation Atomic
               </li>
-              <li>
-                <strong>
-                  <a href="https://www.linkedin.com/in/u-ann-m-a8a51613/">
-                    Ann Mehra
-                  </a>
-                </strong>{" "}
-                &mdash; Advisor, U.S. Department of Commerce
-              </li>
+
               <li>
                 <strong>
                   <a href="https://www.linkedin.com/in/jon-michael-murray/">
