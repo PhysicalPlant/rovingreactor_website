@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import EmailSignup from "./EmailSignup";
 
 const SHOW_SOUP_SECTION = process.env.NEXT_PUBLIC_SHOW_SOUP_SECTION === 'true';
 
@@ -52,8 +51,6 @@ export default function Navigation() {
                             <li><Link href="/coalition" className="text-white hover:text-gray-300">Coalition</Link></li>
                             <li><Link href="/contact" className="text-white hover:text-gray-300">Contact</Link></li>
                         </ul>
-
-                        {/* ... Email signup ... */}
                     </div>
 
                     {/* ... Hamburger button ... */}
@@ -78,7 +75,6 @@ export default function Navigation() {
                             <li><Link href="/timeline" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Timeline</Link></li>
                             <li><Link href="/coalition" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Coalition</Link></li>
                             <li><Link href="/contact" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
-                            {/* ... Email signup ... */}
                         </ul>
                     </div>
                 )}
