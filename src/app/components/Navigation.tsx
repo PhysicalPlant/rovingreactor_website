@@ -7,12 +7,17 @@ import EmailSignup from "./EmailSignup";
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLegacyDropdownOpen, setIsLegacyDropdownOpen] = useState(false);
-  const dropdownRef = useRef<HTMLLIElement>(null);
+  const [isSoupDropdownOpen, setIsSoupDropdownOpen] = useState(false);
+  const legacyDropdownRef = useRef<HTMLLIElement>(null);
+  const soupDropdownRef = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (legacyDropdownRef.current && !legacyDropdownRef.current.contains(event.target as Node)) {
         setIsLegacyDropdownOpen(false);
+      }
+      if (soupDropdownRef.current && !soupDropdownRef.current.contains(event.target as Node)) {
+        setIsSoupDropdownOpen(false);
       }
     }
 
@@ -47,7 +52,7 @@ export default function Navigation() {
             <ul className="flex gap-6 font-gabarito uppercase text-sm text-white">
               <li><Link href="/" className="text-white hover:text-gray-300">Home</Link></li>
               <li><Link href="/exhibits" className="text-white hover:text-gray-300">Exhibits</Link></li>
-              <li className="relative" ref={dropdownRef}>
+              <li className="relative" ref={legacyDropdownRef}>
                 <button
                   className="text-white hover:text-gray-300 flex items-center gap-1"
                   onClick={() => setIsLegacyDropdownOpen(!isLegacyDropdownOpen)}
@@ -64,6 +69,25 @@ export default function Navigation() {
                     <Link href="/legacy/this-atomic-world" className="block px-4 py-2 text-white hover:bg-slate-700">This Atomic World</Link>
                     <Link href="/legacy/atoms-for-peace" className="block px-4 py-2 text-white hover:bg-slate-700">Atoms for Peace</Link>
 
+                  </div>
+                )}
+              </li>
+              <li className="relative" ref={soupDropdownRef}>
+                <button
+                  className="text-white hover:text-gray-300 flex items-center gap-1"
+                  onClick={() => setIsSoupDropdownOpen(!isSoupDropdownOpen)}
+                >
+                  SOUP
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {isSoupDropdownOpen && (
+                  <div className="absolute top-full left-0 mt-2 w-48 bg-slate-800 shadow-lg rounded-md py-2">
+                    <Link href="/soup" className="block px-4 py-2 text-white hover:bg-slate-700">Overview</Link>
+                    <Link href="/soup/attending" className="block px-4 py-2 text-white hover:bg-slate-700">Attending</Link>
+                    <Link href="/soup/hosting" className="block px-4 py-2 text-white hover:bg-slate-700">Hosting</Link>
+                    <Link href="/soup/faq" className="block px-4 py-2 text-white hover:bg-slate-700">FAQ</Link>
                   </div>
                 )}
               </li>
@@ -116,6 +140,11 @@ export default function Navigation() {
               <li className="pl-4"><Link href="/legacy/your-stake-in-the-atom" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Your Stake in the Atom</Link></li>
               <li className="pl-4"><Link href="/legacy/this-atomic-world" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>This Atomic World</Link></li>
               <li className="pl-4"><Link href="/legacy/atoms-for-peace" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Atoms for Peace</Link></li>
+              <li><Link href="/soup" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Soup</Link></li>
+              <li className="pl-4"><Link href="/soup" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Overview</Link></li>
+              <li className="pl-4"><Link href="/soup/attending" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Attending</Link></li>
+              <li className="pl-4"><Link href="/soup/hosting" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Hosting</Link></li>
+              <li className="pl-4"><Link href="/soup/faq" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>FAQ</Link></li>
               <li><Link href="/timeline" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Timeline</Link></li>
               <li><Link href="/coalition" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Coalition</Link></li>
               <li><Link href="/contact" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>

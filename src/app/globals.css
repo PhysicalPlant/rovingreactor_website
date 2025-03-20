@@ -21,10 +21,10 @@ body {
 }
 
 /* Main content styles - include both direct text and sized text */
-main p,
-main ul,
-main ol,
-main li {
+main:not(.soup-section) p,
+main:not(.soup-section) ul,
+main:not(.soup-section) ol,
+main:not(.soup-section) li {
   font-family: "Poppins", Arial, sans-serif;
   font-weight: 400;
 }
@@ -45,12 +45,21 @@ main li:last-child {
   margin-bottom: 0;
 }
 
-/* Headers should use Comfortaa */
-.text-5xl,
-.text-4xl,
-.text-3xl,
-.text-2xl {
+/* Headers should use Comfortaa except in Soup section */
+main:not(.soup-section) .text-5xl,
+main:not(.soup-section) .text-4xl,
+main:not(.soup-section) .text-3xl,
+main:not(.soup-section) .text-2xl {
   font-family: "Comfortaa", sans-serif;
+}
+
+/* Add specific styles for soup section if needed */
+.soup-section h1,
+.soup-section h2,
+.soup-section h3,
+.soup-section p,
+.soup-section details {
+  font-family: "Bona Nova", serif !important;
 }
 
 /* Keep accordion text in its original font */
