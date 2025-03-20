@@ -3,7 +3,9 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
-const SHOW_SOUP_SECTION = process.env.NEXT_PUBLIC_SHOW_SOUP_SECTION === 'true';
+const SHOW_SOUP_SECTION = process.env.NEXT_PUBLIC_SHOW_SOUP_SECTION ? process.env.NEXT_PUBLIC_SHOW_SOUP_SECTION === 'true' : false;
+
+console.log('SHOW_SOUP_SECTION:', process.env.NEXT_PUBLIC_SHOW_SOUP_SECTION);
 
 export default function Navigation() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +28,7 @@ export default function Navigation() {
                             <li><Link href="/" className="text-white hover:text-gray-300">Home</Link></li>
                             <li><Link href="/exhibits" className="text-white hover:text-gray-300">Exhibits</Link></li>
                             {/* Legacy dropdown ... */}
-                            {SHOW_SOUP_SECTION && (
+                            {(SHOW_SOUP_SECTION === true) && (
                                 <li className="relative" ref={soupDropdownRef}>
                                     <button
                                         className="text-white hover:text-gray-300 flex items-center gap-1"
@@ -63,7 +65,7 @@ export default function Navigation() {
                             <li><Link href="/" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
                             <li><Link href="/exhibits" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Exhibits</Link></li>
                             {/* ... Legacy items ... */}
-                            {SHOW_SOUP_SECTION && (
+                            {(SHOW_SOUP_SECTION === true) && (
                                 <>
                                     <li><Link href="/soup" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Soup</Link></li>
                                     <li className="pl-4"><Link href="/soup" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Overview</Link></li>
