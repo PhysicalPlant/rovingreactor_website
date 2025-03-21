@@ -10,8 +10,8 @@ import { Box } from "@mui/material";
 export default function Hosting() {
     return (
         <ThemeProvider theme={theme}>
-            <h1 className="text-5xl text-slate-800 mb-6 font-normal">Hosting a Soup</h1>
-            <h2 className="text-4xl text-slate-700 my-6 font-normal">
+            <h1 className="text-5xl text-orange-900 mb-6 font-normal">Hosting a Soup</h1>
+            <h2 className="text-4xl text-orange-950 my-6 font-normal">
                 The Host Experience
             </h2>
             <div className="text-xl text-slate-700 mb-3 font-normal">
@@ -20,40 +20,8 @@ export default function Hosting() {
                 </p >
             </div>
 
-            <div className="text-xl text-slate-700 mb-3 font-normal">
+            <div className="text-xl text-orange-950 mb-3 font-normal">
                 <Box sx={{ paddingRight: 2 }} className="mb-4">
-
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon sx={{ color: "rgb(30 41 59)" }} />}
-                            sx={{
-                                '& .MuiAccordionSummary-content': {
-                                    fontSize: '1.25rem',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: '8px',
-                                    fontFamily: 'Bona Nova, serif !important',
-                                    fontWeight: 'bold'
-                                }
-                            }}
-                        >
-                            <AddIcon sx={{ color: "rgb(30 41 59)" }} />
-                            What You Provide
-                        </AccordionSummary>
-                        <AccordionDetails
-                            sx={{
-                                paddingLeft: '32px'
-                            }}
-                        >
-                            <div className="text-slate-700">
-                                <ul className="list-disc list-inside">
-                                    <li><strong>Your Home:</strong> Space for 6-7 people to dine comfortably</li>
-                                    <li><strong>Your Time:</strong> Welcome guests on Wednesday, October 22, 2025</li>
-                                    <li><strong>Your Perspective:</strong> Share your nuclear energy viewpoint</li>
-                                </ul>
-                            </div>
-                        </AccordionDetails>
-                    </Accordion>
                     <Accordion>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon sx={{ color: "rgb(30 41 59)" }} />}
@@ -88,6 +56,38 @@ export default function Hosting() {
                             </div>
                         </AccordionDetails>
                     </Accordion>
+                    <Accordion>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon sx={{ color: "rgb(30 41 59)" }} />}
+                            sx={{
+                                '& .MuiAccordionSummary-content': {
+                                    fontSize: '1.25rem',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: '8px',
+                                    fontFamily: 'Bona Nova, serif !important',
+                                    fontWeight: 'bold'
+                                }
+                            }}
+                        >
+                            <AddIcon sx={{ color: "rgb(30 41 59)" }} />
+                            What We Ask That You Provide
+                        </AccordionSummary>
+                        <AccordionDetails
+                            sx={{
+                                paddingLeft: '32px'
+                            }}
+                        >
+                            <div className="text-slate-700">
+                                <ul className="list-disc list-inside">
+                                    <li><strong>Your Home:</strong> Space for 6-7 people to dine comfortably</li>
+                                    <li><strong>Your Time:</strong> Welcome guests on Wednesday, October 22, 2025</li>
+                                    <li><strong>Your Perspective:</strong> Share your nuclear energy viewpoint</li>
+                                </ul>
+                            </div>
+                        </AccordionDetails>
+                    </Accordion>
+
                     <Accordion>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon sx={{ color: "rgb(30 41 59)" }} />}
@@ -210,10 +210,15 @@ export default function Hosting() {
                     </Accordion>
                 </Box>
             </div>
-            <div className="text-xl text-slate-700 mb-3 font-normal">
-                <p>
-                    <a href="/contact"><strong>Contact Us</strong></a>
-                </p>
+            <div className="text-xl  mb-3 font-normal">
+
+                <a
+                    href="/contact"
+                    className="inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
+                >
+                    Contact Us
+                </a>
+
             </div>
         </ThemeProvider>
     );

@@ -13,7 +13,7 @@ export default function SoupLayout({
     children: React.ReactNode
 }) {
     return (
-        <div className={`min-h-screen bg-white flex flex-col ${bonaNova.className}`}>
+        <div className={`min-h-screen bg-orange-50 flex flex-col ${bonaNova.className}`}>
             <main className="soup-section relative pt-[calc(3.5rem+1px)] md:pt-14 mt-6 md:mt-8 flex-grow">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="max-w-2xl">

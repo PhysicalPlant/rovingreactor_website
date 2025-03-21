@@ -6,9 +6,10 @@ import { theme } from "./shared/theme";  // Import the theme
 
 export default function Soup() {
     return (
+
         <ThemeProvider theme={theme}>
-            <h1 className="text-5xl text-slate-800 mb-3 font-normal">National Nuclear Soup Night</h1>
-            <h3 className="text-3xl text-slate-700 mb-6 font-normal">Wednesday, October 22, 2025</h3>
+            <h1 className="text-5xl text-orange-900 mb-3 font-normal">National Nuclear Soup Night</h1>
+            <h3 className="text-3xl text-orange-950 mb-6 font-normal">Wednesday, October 22, 2025</h3>
 
             <div className="text-xl text-slate-700 mb-3 font-normal">
                 <Accordion>
@@ -115,15 +116,33 @@ export default function Soup() {
                 </Accordion>
             </div>
 
-            <h2 className="text-4xl text-slate-700 my-6 font-normal">Join Us</h2>
+            <h2 className="text-4xl text-orange-950 my-6 font-normal">Join Us</h2>
             <div className="text-xl text-slate-700 mb-3 font-normal">
                 <p className="mb-4">
                     Whether you're in research, regulation, industry, investment, advocacy, or education—we want to bring nuclear's many voices to the table.
                 </p>
-                <p>
-                    <a href="/soup/attending">Learn more about attending</a> • <a href="/soup/hosting">Interested in Hosting?</a> • <a href="/soup/faq">FAQ</a>
-                </p>
+                <div className="flex flex-col gap-4 max-w-md">
+                    <a
+                        href="/soup/attending"
+                        className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
+                    >
+                        Learn more about attending
+                    </a>
+                    <a
+                        href="/soup/hosting"
+                        className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
+                    >
+                        Interested in Hosting?
+                    </a>
+                    <a
+                        href="/soup/faq"
+                        className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
+                    >
+                        FAQ
+                    </a>
+                </div>
             </div>
         </ThemeProvider>
+
     );
 } 

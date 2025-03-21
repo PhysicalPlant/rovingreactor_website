@@ -3,11 +3,14 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import EmailSignup from "./EmailSignup";
+import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLegacyDropdownOpen, setIsLegacyDropdownOpen] = useState(false);
   const legacyDropdownRef = useRef<HTMLLIElement>(null);
+  const pathname = usePathname();
+  const isSoupPage = pathname?.startsWith('/soup');
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -23,7 +26,7 @@ export default function Navigation() {
   }, []);
 
   return (
-    <nav className="bg-slate-800 shadow-md w-full fixed top-0 left-0 z-50">
+    <nav className={`${isSoupPage ? 'bg-orange-800' : 'bg-slate-800'} shadow-md w-full fixed top-0 left-0 z-50`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-14">
         <div className="flex items-center justify-between h-full">
           {/* Logo and company name */}
@@ -58,12 +61,11 @@ export default function Navigation() {
                   </svg>
                 </button>
                 {isLegacyDropdownOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-60 bg-slate-800 shadow-lg rounded-md py-2">
+                  <div className={`absolute top-full left-0 mt-2 w-60 ${isSoupPage ? 'bg-orange-800' : 'bg-slate-800'} shadow-lg rounded-md py-2`}>
                     <Link href="/legacy" className="block px-4 py-2 text-white hover:bg-slate-700">Overview</Link>
                     <Link href="/legacy/your-stake-in-the-atom" className="block px-4 py-2 text-white hover:bg-slate-700">Your Stake in the Atom</Link>
                     <Link href="/legacy/this-atomic-world" className="block px-4 py-2 text-white hover:bg-slate-700">This Atomic World</Link>
                     <Link href="/legacy/atoms-for-peace" className="block px-4 py-2 text-white hover:bg-slate-700">Atoms for Peace</Link>
-
                   </div>
                 )}
               </li>
@@ -107,7 +109,7 @@ export default function Navigation() {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-slate-800 py-4 shadow-md">
+          <div className={`md:hidden ${isSoupPage ? 'bg-orange-800' : 'bg-slate-800'} py-4 shadow-md`}>
             <ul className="flex flex-col space-y-4 px-4">
               <li><Link href="/" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
               <li><Link href="/exhibits" className="block text-white hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>Exhibits</Link></li>
