@@ -3,6 +3,7 @@ import { Accordion, AccordionSummary, AccordionDetails, ThemeProvider } from "@m
 import AddIcon from "@mui/icons-material/Add";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { theme } from "./shared/theme";  // Import the theme
+import Image from "next/image";
 
 export default function Soup() {
     return (
@@ -10,7 +11,13 @@ export default function Soup() {
         <ThemeProvider theme={theme}>
             <h1 className="text-5xl text-orange-900 mb-3 font-normal">National Nuclear Soup Night</h1>
             <h3 className="text-3xl text-orange-950 mb-6 font-normal">Wednesday, October 22, 2025</h3>
-
+            <Image
+                src="/img/roving-reactor-soup-logo.svg"
+                alt="Nuclear Soup Night"
+                width={750}
+                height={750}
+                className="w-full max-w-[750px] h-auto"  // This makes it responsive
+            />
             <div className="text-xl text-orange-950 mb-3 font-normal">
                 <Accordion>
                     <AccordionSummary

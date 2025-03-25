@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 664.84 565.45">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #050505;
+      }
+
+      .st1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 9px;
+      }
+
+      .st2 {
+        fill: #f9f7f7;
+      }
+
+      .st3 {
+        fill-rule: evenodd;
+      }
+
+      .st4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <circle class="st0" cx="281.64" cy="281.64" r="274.64"/>
+  <circle class="st2" cx="281.64" cy="281.64" r="220.23"/>
+  <circle cx="281.64" cy="281.64" r="211.63"/>
+  <g>
+    <ellipse class="st1" cx="282.11" cy="281.6" rx="72.91" ry="163.96"/>
+    <ellipse class="st1" cx="282.11" cy="281.6" rx="72.91" ry="163.96" transform="translate(-102.82 385.12) rotate(-60)"/>
+    <ellipse class="st1" cx="282.11" cy="281.6" rx="163.96" ry="72.91" transform="translate(-103.01 178.78) rotate(-30)"/>
+    <circle class="st4" cx="282.11" cy="279.62" r="23.47"/>
+  </g>
+  <path class="st3" d="M597.2,465.95c-6.92-43.9,23.56-224.08,8.57-233.23-10.84-6.62-14.19-8.01-21.32-18.5-5.39-7.94-8.5-15.49-10.08-23.04-5.4-25.82,5.07-78.79,37.54-90.9,2.12-.75,5.03-.79,7.2.1,32.25,12.3,42.65,65.04,37.26,90.79-1.58,7.56-4.69,15.1-10.08,23.04-7.12,10.5-10.48,11.89-21.31,18.5-14.99,9.16,15.58,189.34,8.57,233.23-5.14,32.18-30.02,40.25-36.36,0Z"/>
+</svg>
