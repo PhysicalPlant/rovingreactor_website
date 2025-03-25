@@ -11,32 +11,33 @@ export default function Hosting() {
     return (
         <ThemeProvider theme={theme}>
             <h1 className="text-5xl text-orange-900 mb-6 font-normal">Hosting a Soup</h1>
-            <h2 className="text-4xl text-orange-950 my-6 font-normal">
+            <h2 className="text-4xl text-orange-950 mb-6 font-normal">
                 The Host Experience
             </h2>
-            <div className="text-xl text-slate-700 mb-3 font-normal">
-                <p >
+            <div className="text-xl text-orange-950 mb-3 font-normal">
+                <p>
                     Hosting a National Nuclear Soup Night is simple—provide the space, and we'll handle the rest.
-                </p >
+                </p>
             </div>
 
             <div className="text-xl text-orange-950 mb-3 font-normal">
                 <Box sx={{ paddingRight: 2 }} className="mb-4">
                     <Accordion>
                         <AccordionSummary
-                            expandIcon={<ExpandMoreIcon sx={{ color: "rgb(30 41 59)" }} />}
+                            expandIcon={<ExpandMoreIcon sx={{ color: "rgb(124 45 18)" }} />}
                             sx={{
                                 '& .MuiAccordionSummary-content': {
+                                    margin: '0 !important',
+                                    fontFamily: 'Bona Nova, serif !important',
                                     fontSize: '1.25rem',
+                                    fontWeight: 'bold',
                                     display: 'flex',
                                     alignItems: 'center',
-                                    gap: '8px',
-                                    fontFamily: 'Bona Nova, serif !important',
-                                    fontWeight: 'bold'
+                                    gap: '8px'
                                 }
                             }}
                         >
-                            <AddIcon sx={{ color: "rgb(30 41 59)" }} />
+                            <AddIcon sx={{ color: "rgb(124 45 18)" }} />
                             What We Provide
                         </AccordionSummary>
                         <AccordionDetails
@@ -44,7 +45,7 @@ export default function Hosting() {
                                 paddingLeft: '32px'
                             }}
                         >
-                            <div className="text-slate-700">
+                            <div className="text-orange-950">
                                 <ul className="list-disc list-inside">
                                     <li><strong>Complete Meal:</strong> Ready-to-serve soup, bread, vegetables, dessert, and drinks delivered to your door</li>
                                     <li><strong>All Supplies:</strong> Eco-friendly disposable tableware</li>
@@ -58,19 +59,20 @@ export default function Hosting() {
                     </Accordion>
                     <Accordion>
                         <AccordionSummary
-                            expandIcon={<ExpandMoreIcon sx={{ color: "rgb(30 41 59)" }} />}
+                            expandIcon={<ExpandMoreIcon sx={{ color: "rgb(124 45 18)" }} />}
                             sx={{
                                 '& .MuiAccordionSummary-content': {
+                                    margin: '0 !important',
+                                    fontFamily: 'Bona Nova, serif !important',
                                     fontSize: '1.25rem',
+                                    fontWeight: 'bold',
                                     display: 'flex',
                                     alignItems: 'center',
-                                    gap: '8px',
-                                    fontFamily: 'Bona Nova, serif !important',
-                                    fontWeight: 'bold'
+                                    gap: '8px'
                                 }
                             }}
                         >
-                            <AddIcon sx={{ color: "rgb(30 41 59)" }} />
+                            <AddIcon sx={{ color: "rgb(124 45 18)" }} />
                             What We Ask That You Provide
                         </AccordionSummary>
                         <AccordionDetails
@@ -78,7 +80,7 @@ export default function Hosting() {
                                 paddingLeft: '32px'
                             }}
                         >
-                            <div className="text-slate-700">
+                            <div className="text-orange-950">
                                 <ul className="list-disc list-inside">
                                     <li><strong>Your Home:</strong> Space for 6-7 people to dine comfortably</li>
                                     <li><strong>Your Time:</strong> Welcome guests on Wednesday, October 22, 2025</li>
@@ -90,19 +92,20 @@ export default function Hosting() {
 
                     <Accordion>
                         <AccordionSummary
-                            expandIcon={<ExpandMoreIcon sx={{ color: "rgb(30 41 59)" }} />}
+                            expandIcon={<ExpandMoreIcon sx={{ color: "rgb(124 45 18)" }} />}
                             sx={{
                                 '& .MuiAccordionSummary-content': {
+                                    margin: '0 !important',
+                                    fontFamily: 'Bona Nova, serif !important',
                                     fontSize: '1.25rem',
+                                    fontWeight: 'bold',
                                     display: 'flex',
                                     alignItems: 'center',
-                                    gap: '8px',
-                                    fontFamily: 'Bona Nova, serif !important',
-                                    fontWeight: 'bold'
+                                    gap: '8px'
                                 }
                             }}
                         >
-                            <AddIcon sx={{ color: "rgb(30 41 59)" }} />
+                            <AddIcon sx={{ color: "rgb(124 45 18)" }} />
                             Cities Where We're Hosting
                         </AccordionSummary>
                         <AccordionDetails
@@ -110,7 +113,7 @@ export default function Hosting() {
                                 paddingLeft: '32px'
                             }}
                         >
-                            <div className="text-slate-700">
+                            <div className="text-orange-950">
                                 <p>We're focusing on 20 cities with strong nuclear workforce presence, but welcome interest from other locations.
                                 </p>
                                 <p className="mt-4 mb-1"><strong>West</strong></p>
@@ -150,19 +153,20 @@ export default function Hosting() {
                     </Accordion>
                     <Accordion>
                         <AccordionSummary
-                            expandIcon={<ExpandMoreIcon sx={{ color: "rgb(30 41 59)" }} />}
+                            expandIcon={<ExpandMoreIcon sx={{ color: "rgb(124 45 18)" }} />}
                             sx={{
                                 '& .MuiAccordionSummary-content': {
+                                    margin: '0 !important',
+                                    fontFamily: 'Bona Nova, serif !important',
                                     fontSize: '1.25rem',
+                                    fontWeight: 'bold',
                                     display: 'flex',
                                     alignItems: 'center',
-                                    gap: '8px',
-                                    fontFamily: 'Bona Nova, serif !important',
-                                    fontWeight: 'bold'
+                                    gap: '8px'
                                 }
                             }}
                         >
-                            <AddIcon sx={{ color: "rgb(30 41 59)" }} />
+                            <AddIcon sx={{ color: "rgb(124 45 18)" }} />
                             Community Approach
                         </AccordionSummary>
                         <AccordionDetails
@@ -170,7 +174,7 @@ export default function Hosting() {
                                 paddingLeft: '32px'
                             }}
                         >
-                            <div className="text-slate-700">
+                            <div className="text-orange-950">
                                 <ul className="list-disc list-inside">
                                     <li>If we receive more than 20 hosting requests, we'll seek additional sponsorship</li>
                                     <li>If fewer than 20, each gathering gets more lavish</li>
@@ -181,19 +185,20 @@ export default function Hosting() {
                     </Accordion>
                     <Accordion>
                         <AccordionSummary
-                            expandIcon={<ExpandMoreIcon sx={{ color: "rgb(30 41 59)" }} />}
+                            expandIcon={<ExpandMoreIcon sx={{ color: "rgb(124 45 18)" }} />}
                             sx={{
                                 '& .MuiAccordionSummary-content': {
+                                    margin: '0 !important',
+                                    fontFamily: 'Bona Nova, serif !important',
                                     fontSize: '1.25rem',
+                                    fontWeight: 'bold',
                                     display: 'flex',
                                     alignItems: 'center',
-                                    gap: '8px',
-                                    fontFamily: 'Bona Nova, serif !important',
-                                    fontWeight: 'bold'
+                                    gap: '8px'
                                 }
                             }}
                         >
-                            <AddIcon sx={{ color: "rgb(30 41 59)" }} />
+                            <AddIcon sx={{ color: "rgb(124 45 18)" }} />
                             Become a Host
                         </AccordionSummary>
                         <AccordionDetails
@@ -201,7 +206,7 @@ export default function Hosting() {
                                 paddingLeft: '32px'
                             }}
                         >
-                            <div className="text-slate-700">
+                            <div className="text-orange-950">
                                 <p>
                                     Open your home for this first-of-its-kind gathering that brings together diverse perspectives on nuclear energy's future.
                                 </p>
@@ -213,7 +218,7 @@ export default function Hosting() {
             <div className="text-xl  mb-3 font-normal">
 
                 <a
-                    href="/contact"
+                    href="/soup/contact"
                     className="inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
                 >
                     Contact Us

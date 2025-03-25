@@ -14,7 +14,7 @@ export const theme = createTheme({
                         margin: '0 !important',
                     },
                     backgroundColor: 'transparent',
-                    color: 'rgb(30 41 59)',
+                    color: 'rgb(124 45 18)',
                     margin: '0 !important',
                 }
             }
@@ -26,13 +26,15 @@ export const theme = createTheme({
                     minHeight: '48px !important',
                     '&.Mui-expanded': {
                         minHeight: '48px !important',
-                    }
+                    },
+                    color: 'rgb(124 45 18)'
                 },
                 content: {
                     margin: '0 !important',
                     '&.Mui-expanded': {
                         margin: '0 !important'
-                    }
+                    },
+                    color: 'rgb(124 45 18)'
                 }
             }
         }

@@ -11,10 +11,10 @@ export default function Soup() {
             <h1 className="text-5xl text-orange-900 mb-3 font-normal">National Nuclear Soup Night</h1>
             <h3 className="text-3xl text-orange-950 mb-6 font-normal">Wednesday, October 22, 2025</h3>
 
-            <div className="text-xl text-slate-700 mb-3 font-normal">
+            <div className="text-xl text-orange-950 mb-3 font-normal">
                 <Accordion>
                     <AccordionSummary
-                        expandIcon={<ExpandMoreIcon sx={{ color: "rgb(30 41 59)" }} />}
+                        expandIcon={<ExpandMoreIcon sx={{ color: "rgb(124 45 18)" }} />}
                         sx={{
                             '& .MuiAccordionSummary-content': {
                                 margin: '0 !important',
@@ -27,7 +27,7 @@ export default function Soup() {
                             }
                         }}
                     >
-                        <AddIcon sx={{ color: "rgb(30 41 59)" }} />
+                        <AddIcon sx={{ color: "rgb(124 45 18)" }} />
                         The Concept
                     </AccordionSummary>
                     <AccordionDetails
@@ -35,7 +35,7 @@ export default function Soup() {
                             paddingLeft: '32px'
                         }}
                     >
-                        <div className="text-slate-700">
+                        <div className="text-orange-950">
                             <p className="text-xl mb-4">
                                 On the Wednesday of this year's Nuclear Science Week, we want to fill 20 dining rooms across America with thoughtful people from the nuclear energy ecosystem for an evening of hot soup and meaningful conversation about where nuclear energy is headed and how to tell its story.
                             </p>
@@ -48,7 +48,7 @@ export default function Soup() {
 
                 <Accordion>
                     <AccordionSummary
-                        expandIcon={<ExpandMoreIcon sx={{ color: "rgb(30 41 59)" }} />}
+                        expandIcon={<ExpandMoreIcon sx={{ color: "rgb(124 45 18)" }} />}
                         sx={{
                             '& .MuiAccordionSummary-content': {
                                 margin: '0 !important',
@@ -61,7 +61,7 @@ export default function Soup() {
                             }
                         }}
                     >
-                        <AddIcon sx={{ color: "rgb(30 41 59)" }} />
+                        <AddIcon sx={{ color: "rgb(124 45 18)" }} />
                         How It Works
                     </AccordionSummary>
                     <AccordionDetails
@@ -69,7 +69,7 @@ export default function Soup() {
                             paddingLeft: '32px'
                         }}
                     >
-                        <div className="text-slate-700">
+                        <div className="text-orange-950">
                             <ul className="text-xl list-disc list-inside">
                                 <li>20 simultaneous soup nights in 20 cities hosted in private homes nationwide</li>
                                 <li>6 attendees per gathering, spanning different nuclear energy expertise</li>
@@ -82,7 +82,7 @@ export default function Soup() {
 
                 <Accordion>
                     <AccordionSummary
-                        expandIcon={<ExpandMoreIcon sx={{ color: "rgb(30 41 59)" }} />}
+                        expandIcon={<ExpandMoreIcon sx={{ color: "rgb(124 45 18)" }} />}
                         sx={{
                             '& .MuiAccordionSummary-content': {
                                 margin: '0 !important',
@@ -95,7 +95,7 @@ export default function Soup() {
                             }
                         }}
                     >
-                        <AddIcon sx={{ color: "rgb(30 41 59)" }} />
+                        <AddIcon sx={{ color: "rgb(124 45 18)" }} />
                         The Experience
                     </AccordionSummary>
                     <AccordionDetails
@@ -103,7 +103,7 @@ export default function Soup() {
                             paddingLeft: '32px'
                         }}
                     >
-                        <div className="text-slate-700">
+                        <div className="text-orange-950">
                             <p className="text-xl mb-4">When you arrive, you'll find:</p>
                             <ul className="text-xl list-disc list-inside">
                                 <li>Food - Homemade soup, homemade bread, and roasted vegetables</li>
@@ -117,7 +117,7 @@ export default function Soup() {
             </div>
 
             <h2 className="text-4xl text-orange-950 my-6 font-normal">Join Us</h2>
-            <div className="text-xl text-slate-700 mb-3 font-normal">
+            <div className="text-xl text-orange-950 mb-3 font-normal">
                 <p className="mb-4">
                     Whether you're in research, regulation, industry, investment, advocacy, or education—we want to bring nuclear's many voices to the table.
                 </p>
@@ -139,6 +139,12 @@ export default function Soup() {
                         className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
                     >
                         FAQ
+                    </a>
+                    <a
+                        href="/soup/contact"
+                        className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
+                    >
+                        Contact Us
                     </a>
                 </div>
             </div>
