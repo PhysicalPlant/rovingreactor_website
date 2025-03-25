@@ -66,10 +66,7 @@ export default function Contact() {
 
                     <>
                         <h1 className="text-5xl text-orange-900 mb-6 text-orange-900" >Get in Touch About a Nuclear Soup Event</h1>
-                        <p className="text-xl text-orange-900 mb-6 max-w-2xl">
-                            Have questions, suggestions, or partnership ideas for the
-                            Roving Reactor? Use the form below to connect with us.
-                        </p>
+
 
                         {/* Contact Form */}
                         <form

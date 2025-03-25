@@ -47,12 +47,12 @@ export default function Hosting() {
                         >
                             <div className="text-orange-950">
                                 <ul className="list-disc list-inside">
-                                    <li><strong>Complete Meal:</strong> Ready-to-serve soup, bread, vegetables, dessert, and drinks delivered to your door</li>
-                                    <li><strong>All Supplies:</strong> Eco-friendly disposable tableware</li>
-                                    <li><strong>Guest Coordination:</strong> We handle invitations, RSVPs, and dietary needs</li>
-                                    <li><strong>Easy Cleanup:</strong> Everything you need for quick post-dinner tidying</li>
-                                    <li><strong>Transportation:</strong> Rideshare credits for all guests</li>
-                                    <li><strong>Host Gift:</strong> A token of appreciation for sharing your home</li>
+                                    <li><strong>Full Dinner Package:</strong> Soup, bread, vegetables, dessert, and drinks delivered to your door</li>
+                                    <li><strong>Eco-Friendly Supplies:</strong> All tableware included</li>
+                                    <li><strong>Guest Management:</strong> We handle invitations, RSVPs, and dietary needs</li>
+                                    <li><strong>Simple Cleanup:</strong> Post-dinner tidying supplies provided</li>
+                                    <li><strong>Transportation:</strong> Rideshare credits for guests</li>
+                                    <li><strong>Host Gift:</strong> A thank-you for sharing your home</li>
                                 </ul>
                             </div>
                         </AccordionDetails>
@@ -113,42 +113,146 @@ export default function Hosting() {
                                 paddingLeft: '32px'
                             }}
                         >
-                            <div className="text-orange-950">
-                                <p>We're focusing on 20 cities with strong nuclear workforce presence, but welcome interest from other locations.
-                                </p>
-                                <p className="mt-4 mb-1"><strong>West</strong></p>
-                                <ul className="list-disc list-inside">
-                                    <li>Richland, WA</li>
-                                    <li>Idaho Falls, ID</li>
-                                    <li>Albuquerque, NM</li>
-                                    <li>Los Angeles, CA</li>
-                                    <li>Phoenix, AZ</li>
-                                </ul>
-                                <p className="mt-4 mb-1"><strong>Midwest</strong></p>
-                                <ul className="list-disc list-inside">
-                                    <li>Chicago, IL</li>
-                                    <li>Minneapolis, MN</li>
-                                    <li>Columbus, OH</li>
-                                    <li>Knoxville/Oak Ridge, TN</li>
-                                    <li>St. Louis, MO</li>
-                                </ul>
-                                <p className="mt-4 mb-1"><strong>South</strong></p>
-                                <ul className="list-disc list-inside">
-                                    <li>Houston, TX</li>
-                                    <li>Austin, TX</li>
-                                    <li>Aiken, SC</li>
-                                    <li>Huntsville, AL</li>
-                                    <li>Charlotte, NC</li>
-                                </ul>
-                                <p className="mt-4 mb-1"><strong>Northeast</strong></p>
-                                <ul className="list-disc list-inside">
-                                    <li>Boston, MA</li>
-                                    <li>Pittsburgh, PA</li>
-                                    <li>Washington, D.C.</li>
-                                    <li>Schenectady, NY</li>
-                                    <li>Wilmington, NC</li>
-                                </ul>
-                            </div>
+                            <Accordion>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon sx={{ color: "rgb(124 45 18)" }} />}
+                                    sx={{
+                                        '& .MuiAccordionSummary-content': {
+                                            margin: '0 !important',
+                                            fontFamily: 'Bona Nova, serif !important',
+                                            fontSize: '1.25rem',
+                                            fontWeight: 'bold',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: '8px'
+                                        }
+                                    }}
+                                >
+                                    <AddIcon sx={{ color: "rgb(124 45 18)" }} />
+                                    <strong>West</strong>
+                                </AccordionSummary>
+                                <AccordionDetails
+                                    sx={{
+                                        paddingLeft: '32px'
+                                    }}
+                                >
+                                    <div className="text-orange-950">
+                                        <ul className="list-disc list-inside">
+                                            <li>Richland, WA</li>
+                                            <li>Idaho Falls, ID</li>
+                                            <li>Albuquerque, NM</li>
+                                            <li>Los Angeles, CA</li>
+                                            <li>Phoenix, AZ</li>
+                                        </ul>
+
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon sx={{ color: "rgb(124 45 18)" }} />}
+                                    sx={{
+                                        '& .MuiAccordionSummary-content': {
+                                            margin: '0 !important',
+                                            fontFamily: 'Bona Nova, serif !important',
+                                            fontSize: '1.25rem',
+                                            fontWeight: 'bold',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: '8px'
+                                        }
+                                    }}
+                                >
+                                    <AddIcon sx={{ color: "rgb(124 45 18)" }} />
+                                    <strong>Midwest</strong>
+                                </AccordionSummary>
+                                <AccordionDetails
+                                    sx={{
+                                        paddingLeft: '32px'
+                                    }}
+                                >
+                                    <div className="text-orange-950">
+                                        <ul className="list-disc list-inside">
+                                            <li>Chicago, IL</li>
+                                            <li>Minneapolis, MN</li>
+                                            <li>Columbus, OH</li>
+                                            <li>Knoxville/Oak Ridge, TN</li>
+                                            <li>St. Louis, MO</li>
+                                        </ul>
+
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon sx={{ color: "rgb(124 45 18)" }} />}
+                                    sx={{
+                                        '& .MuiAccordionSummary-content': {
+                                            margin: '0 !important',
+                                            fontFamily: 'Bona Nova, serif !important',
+                                            fontSize: '1.25rem',
+                                            fontWeight: 'bold',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: '8px'
+                                        }
+                                    }}
+                                >
+                                    <AddIcon sx={{ color: "rgb(124 45 18)" }} />
+                                    <strong>South</strong>
+                                </AccordionSummary>
+                                <AccordionDetails
+                                    sx={{
+                                        paddingLeft: '32px'
+                                    }}
+                                >
+                                    <div className="text-orange-950">
+                                        <ul className="list-disc list-inside">
+                                            <li>Houston, TX</li>
+                                            <li>Austin, TX</li>
+                                            <li>Aiken, SC</li>
+                                            <li>Huntsville, AL</li>
+                                            <li>Charlotte, NC</li>
+                                        </ul>
+
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon sx={{ color: "rgb(124 45 18)" }} />}
+                                    sx={{
+                                        '& .MuiAccordionSummary-content': {
+                                            margin: '0 !important',
+                                            fontFamily: 'Bona Nova, serif !important',
+                                            fontSize: '1.25rem',
+                                            fontWeight: 'bold',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: '8px'
+                                        }
+                                    }}
+                                >
+                                    <AddIcon sx={{ color: "rgb(124 45 18)" }} />
+                                    <strong>Northeast</strong>
+                                </AccordionSummary>
+                                <AccordionDetails
+                                    sx={{
+                                        paddingLeft: '32px'
+                                    }}
+                                >
+                                    <div className="text-orange-950">
+                                        <ul className="list-disc list-inside">
+                                            <li>Boston, MA</li>
+                                            <li>Pittsburgh, PA</li>
+                                            <li>Washington, D.C.</li>
+                                            <li>Schenectady, NY</li>
+                                            <li>Wilmington, NC</li>
+                                        </ul>
+
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion>
@@ -167,7 +271,7 @@ export default function Hosting() {
                             }}
                         >
                             <AddIcon sx={{ color: "rgb(124 45 18)" }} />
-                            Community Approach
+                            Logistics
                         </AccordionSummary>
                         <AccordionDetails
                             sx={{
@@ -183,45 +287,19 @@ export default function Hosting() {
                             </div>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon sx={{ color: "rgb(124 45 18)" }} />}
-                            sx={{
-                                '& .MuiAccordionSummary-content': {
-                                    margin: '0 !important',
-                                    fontFamily: 'Bona Nova, serif !important',
-                                    fontSize: '1.25rem',
-                                    fontWeight: 'bold',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: '8px'
-                                }
-                            }}
-                        >
-                            <AddIcon sx={{ color: "rgb(124 45 18)" }} />
-                            Become a Host
-                        </AccordionSummary>
-                        <AccordionDetails
-                            sx={{
-                                paddingLeft: '32px'
-                            }}
-                        >
-                            <div className="text-orange-950">
-                                <p>
-                                    Open your home for this first-of-its-kind gathering that brings together diverse perspectives on nuclear energy's future.
-                                </p>
-                            </div>
-                        </AccordionDetails>
-                    </Accordion>
+
                 </Box>
             </div>
             <div className="text-xl  mb-3 font-normal">
-
+                <p className="text-orange-950 mb-6 text-4xl">Become a Host</p>
+                <p className="text-orange-950">
+                    Open your home for this first-of-its-kind gathering that brings together diverse perspectives on nuclear energy's future.
+                </p>
                 <a
                     href="/soup/contact"
                     className="inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
                 >
-                    Contact Us
+                    Sign Up to Host
                 </a>
 
             </div>

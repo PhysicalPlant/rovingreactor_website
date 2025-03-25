@@ -12,11 +12,11 @@ export default function Soup() {
             <h1 className="text-5xl text-orange-900 mb-3 font-normal">National Nuclear Soup Night</h1>
             <h3 className="text-3xl text-orange-950 mb-6 font-normal">Wednesday, October 22, 2025</h3>
             <Image
-                src="/img/roving-reactor-soup-logo.svg"
+                src="/img/roving-reactor-soup-logo2.svg"
                 alt="Nuclear Soup Night"
-                width={750}
-                height={750}
-                className="w-full max-w-[750px] h-auto"  // This makes it responsive
+                width={250}
+                height={250}
+                className="w-full max-w-[250px] h-auto mx-auto"  // This makes it responsive
             />
             <div className="text-xl text-orange-950 mb-3 font-normal">
                 <Accordion>

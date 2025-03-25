@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 359.96 384">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #050505;
+      }
+
+      .st1 {
+        stroke: #020202;
+        stroke-width: 9px;
+      }
+
+      .st1, .st2 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .st3 {
+        fill: #657ea5;
+      }
+
+      .st4 {
+        fill: #8e3b1f;
+      }
+
+      .st2 {
+        stroke: #000;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="st3" d="M242.3,193.89c0,22.42-25.7,39.28-60.15,39.28s-61.49-16.87-61.49-39.28"/>
+    <ellipse class="st0" cx="181.49" cy="193.89" rx="60.82" ry="19.7"/>
+    <ellipse class="st4" cx="181.49" cy="197.14" rx="46.86" ry="15.18"/>
+  </g>
+  <g>
+    <ellipse class="st1" cx="181.49" cy="190.66" rx="81.88" ry="184.13"/>
+    <ellipse class="st1" cx="181.49" cy="190.66" rx="81.88" ry="184.13" transform="translate(-74.38 252.5) rotate(-60)"/>
+    <ellipse class="st1" cx="181.49" cy="190.66" rx="184.13" ry="81.88" transform="translate(-71.02 116.29) rotate(-30)"/>
+  </g>
+  <g id="qKh1ZG.tif">
+    <image id="Layer_0" width="102" height="104" transform="translate(142.13 -275.17) scale(.5)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGcAAABoCAYAAADsF+4sAAAACXBIWXMAABYlAAAWJQFJUiTwAAABPklEQVR4nO3WsU0EQRBFQWa280DCwjyfrAiErPAxsU4ikrsA0Nr7jKoIvvSM7vX18fp4Iefz+2/tq0dwTpwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLECRMnTJwwccLW/ffncfUI/nt7v62Zmat3cGKO47h6Ayfm2OJUzYw4VbO3h63KzQmbvdfVGzjxBISoCRnLTbvDAAAAAElFTkSuQmCC"/>
+  </g>
+  <g id="uHbgow.tif">
+    <image id="Layer_01" data-name="Layer_0" width="92" height="54" transform="translate(-19.72 -156.28) scale(.5)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF0AAAA2CAYAAAClQpVaAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAl0lEQVR4nO3QQRGAMBDAwAMl/dYC/n2BC/LoroJMrpmZtZ93+M1dB5zI9IDpAdMDpgdMD5geMD1gesD0gOkB0wOmB0wPmB4wPWB6wPSA6QHTA6YHTA+YHjA9YHrA9IDpAdMDpgdMD5geMD1gesD0gOkB0wOmB0wPmB4wPWB6wPSA6QHTA6YHTA+YHjA9YHrA9IDpAdM5wweDmQHsqzD8ygAAAABJRU5ErkJggg=="/>
+  </g>
+  <path class="st2" d="M154.57,172.33c2.58-2.33,5.67-5.8,4.94-9.06-1.1-4.89-9.95-5.56-10.3-9.47-.14-1.56,1.04-3.98,7.83-7.41"/>
+  <path class="st2" d="M179.69,170.44c3.31-2.99,7.27-7.43,6.34-11.61-1.4-6.27-12.75-7.13-13.2-12.14-.18-2,1.33-5.1,10.03-9.5"/>
+  <path class="st2" d="M205.86,172.33c2.58-2.33,5.67-5.8,4.94-9.06-1.1-4.89-9.95-5.56-10.3-9.47-.14-1.56,1.04-3.98,7.83-7.41"/>
+</svg>
