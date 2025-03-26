@@ -83,7 +83,7 @@ export default function Hosting() {
                             <div className="text-orange-950">
                                 <ul className="list-disc list-inside">
                                     <li><strong>Your Home:</strong> Space for 6-7 people to dine comfortably</li>
-                                    <li><strong>Your Time:</strong> Welcome guests on Wednesday, October 22, 2025</li>
+                                    <li><strong>Your Time:</strong> Welcome guests on Wednesday, November 12th, 2025</li>
                                     <li><strong>Your Perspective:</strong> Share your nuclear energy viewpoint</li>
                                 </ul>
                             </div>

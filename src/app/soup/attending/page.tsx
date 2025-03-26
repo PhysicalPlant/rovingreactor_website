@@ -286,7 +286,7 @@ export default function Attending() {
                                 <li><strong>Review:</strong> Our team selects diverse participants (within 2 weeks)</li>
                                 <li><strong>Invitation:</strong> We send you an invitation and a preference survey (vegetarian, etc)</li>
                                 <li><strong>Details:</strong> One week before dinner, we send the location and some info about your soupmates. </li>
-                                <li><strong>Attend:</strong> Join us October 22nd for food and conversation!</li>
+                                <li><strong>Attend:</strong> Join us November 12thfor food and conversation!</li>
                                 <li><strong>Not selected?</strong> We'll keep you on next year's list.</li>
 
                             </ul>
