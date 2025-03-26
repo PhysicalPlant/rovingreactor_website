@@ -10,14 +10,30 @@ export default function Soup() {
 
         <ThemeProvider theme={theme}>
             <h1 className="text-5xl text-orange-900 mb-3 font-normal">National Nuclear Soup Night</h1>
-            <h3 className="text-3xl text-orange-950 mb-6 font-normal">Wednesday, October 22, 2025</h3>
-            <Image
-                src="/img/roving-reactor-soup-logo2.svg"
-                alt="Nuclear Soup Night"
-                width={250}
-                height={250}
-                className="w-full max-w-[250px] h-auto mx-auto"  // This makes it responsive
-            />
+            <h3 className="text-3xl text-orange-950 mb-6 font-normal">Wednesday, November 12, 2025</h3>
+            <div className="flex flex-col md:flex-row gap-8 md:gap-4 items-center justify-between mb-6 max-w-2xl">
+                <Image
+                    src="/img/roving-reactor-soup-logo2.svg"
+                    alt="Roving Reactor Logo"
+                    width={160}
+                    height={160}
+                    className="w-auto h-[140px] object-contain"
+                />
+                <Image
+                    src="/img/gen-atomic-logo.png"
+                    alt="Generation Atomic Logo"
+                    width={160}
+                    height={160}
+                    className="w-auto h-[52px] object-contain"
+                />
+                <Image
+                    src="/img/PGE_Mothers_Nuclear_logo-FULL.png"
+                    alt="Mothers for Nuclear Logo"
+                    width={160}
+                    height={160}
+                    className="w-auto h-[140px] object-contain"
+                />
+            </div>
             <div className="text-xl text-orange-950 mb-3 font-normal">
                 <Accordion>
                     <AccordionSummary
@@ -44,7 +60,7 @@ export default function Soup() {
                     >
                         <div className="text-orange-950">
                             <p className="text-xl mb-4">
-                                On the Wednesday of this year's Nuclear Science Week, we want to fill 20 dining rooms across America with thoughtful people from the nuclear energy ecosystem for an evening of hot soup and meaningful conversation about where nuclear energy is headed and how to tell its story.
+                                On a Wednesday evening this November, Generation Atomic, Mothers for Nuclear and The Roving Reactor Project want to fill 20 dining rooms across America with thoughtful people from the nuclear energy ecosystem for an evening of hot soup and meaningful conversation about where nuclear energy is headed and how to tell its story.
                             </p>
                             <p className="text-xl">
                                 Also it's a chance for people from different habitats of nuclear to meet each other: A night to connect with fellow travelers from research, regulation, builders & operators (from welders to CEOs), investment, advocacy, and education, and a chance to explore common ground while respectfully acknowledging different perspectives on nuclear's future.

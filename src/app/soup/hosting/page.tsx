@@ -140,9 +140,9 @@ export default function Hosting() {
                                         <ul className="list-disc list-inside">
                                             <li>Richland, WA</li>
                                             <li>Idaho Falls, ID</li>
-                                            <li>Albuquerque, NM</li>
+                                            <li>Santa Fe, NM</li>
                                             <li>Los Angeles, CA</li>
-                                            <li>Phoenix, AZ</li>
+                                            <li>San Luis Obispo, CA</li>
                                         </ul>
 
                                     </div>
@@ -174,7 +174,7 @@ export default function Hosting() {
                                     <div className="text-orange-950">
                                         <ul className="list-disc list-inside">
                                             <li>Chicago, IL</li>
-                                            <li>Minneapolis, MN</li>
+                                            <li>St. Paul, MN</li>
                                             <li>Columbus, OH</li>
                                             <li>Knoxville/Oak Ridge, TN</li>
                                             <li>St. Louis, MO</li>
