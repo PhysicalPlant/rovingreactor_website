@@ -11,27 +11,41 @@ export default function Soup() {
         <ThemeProvider theme={theme}>
             <h1 className="text-5xl text-orange-900 mb-3 font-normal">National Nuclear Soup Night</h1>
             <h3 className="text-3xl text-orange-950 mb-6 font-normal">Wednesday, November 12, 2025</h3>
-            <div className="flex flex-col md:flex-row gap-8 md:gap-4 items-center justify-between mb-6 max-w-2xl">
+            <div className="flex flex-row gap-2 items-center justify-between mb-6 max-w-2xl">
                 <Image
-                    src="/img/roving-reactor-soup-logo2.svg"
-                    alt="Roving Reactor Logo"
-                    width={160}
-                    height={160}
-                    className="w-auto h-[140px] object-contain"
-                />
-                <Image
-                    src="/img/gen-atomic-logo.png"
+                    src="/img/gen-atomic-transparent-logo.png"
                     alt="Generation Atomic Logo"
                     width={160}
                     height={160}
-                    className="w-auto h-[52px] object-contain"
+                    className="w-auto h-[80px] md:h-[140px] object-contain"
                 />
+                <AddIcon sx={{
+                    color: "rgb(124 45 18)",
+                    fontSize: "3rem",
+                    '@media (max-width: 768px)': {
+                        fontSize: "2.25rem"
+                    }
+                }} />
                 <Image
                     src="/img/PGE_Mothers_Nuclear_logo-FULL.png"
                     alt="Mothers for Nuclear Logo"
                     width={160}
                     height={160}
-                    className="w-auto h-[140px] object-contain"
+                    className="w-auto h-[80px] md:h-[140px] object-contain"
+                />
+                <AddIcon sx={{
+                    color: "rgb(124 45 18)",
+                    fontSize: "3rem",
+                    '@media (max-width: 768px)': {
+                        fontSize: "2.25rem"
+                    }
+                }} />
+                <Image
+                    src="/img/RR-logo-vector-black.svg"
+                    alt="Roving Reactor Logo"
+                    width={160}
+                    height={160}
+                    className="w-auto h-[80px] md:h-[140px] object-contain"
                 />
             </div>
             <div className="text-xl text-orange-950 mb-3 font-normal">
@@ -60,7 +74,7 @@ export default function Soup() {
                     >
                         <div className="text-orange-950">
                             <p className="text-xl mb-4">
-                                On a Wednesday evening this November, Generation Atomic, Mothers for Nuclear and The Roving Reactor Project want to fill 20 dining rooms across America with thoughtful people from the nuclear energy ecosystem for an evening of hot soup and meaningful conversation about where nuclear energy is headed and how to tell its story.
+                                On a Wednesday evening this November, <a href="https://www.generationatomic.org/" rel="noopener noreferrer" className="text-orange-900">Generation Atomic</a>, <a href="https://www.mothersfornuclear.org/" rel="noopener noreferrer" className="text-orange-900">Mothers for Nuclear</a>, and the <a href="https://www.rovingreactor.org/" rel="noopener noreferrer" className="text-orange-900">Roving Reactor Project</a> want to fill 20 dining rooms across America with thoughtful people from the nuclear energy ecosystem for an evening of hot soup and meaningful conversation about where nuclear energy is headed and how to tell its story.
                             </p>
                             <p className="text-xl">
                                 Also it's a chance for people from different habitats of nuclear to meet each other: A night to connect with fellow travelers from research, regulation, builders & operators (from welders to CEOs), investment, advocacy, and education, and a chance to explore common ground while respectfully acknowledging different perspectives on nuclear's future.

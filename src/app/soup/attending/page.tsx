@@ -42,7 +42,7 @@ export default function Attending() {
                             <ul className="text-xl list-disc list-inside">
                                 <li><strong>Full Meal & Drinks:</strong> Soup, bread, vegetables, dessert, wine, beer, and non-alcoholic options</li>
                                 <li><strong>Engaging Discussion:</strong> Share diverse perspectives on nuclear's future</li>
-                                <li><strong>Convenience:</strong> No cleanup, rideshare credits, and take-home food options</li>
+                                <li><strong>Convenience:</strong> Rideshare credits for all guests — and easy clean-up for hosts</li>
                             </ul>
                         </div>
                     </AccordionDetails>
