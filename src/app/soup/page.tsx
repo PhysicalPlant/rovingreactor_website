@@ -11,19 +11,19 @@ export default function Soup() {
         <ThemeProvider theme={theme}>
             <h1 className="text-5xl text-orange-900 mb-3 font-normal">National Nuclear Soup Night</h1>
             <h3 className="text-3xl text-orange-950 mb-6 font-normal">Wednesday, November 12, 2025</h3>
-            <div className="flex flex-row gap-2 items-center justify-between mb-6 max-w-2xl">
+            <div className="flex flex-row gap-1 md:gap-2 items-center justify-between mb-6 max-w-2xl">
                 <Image
                     src="/img/gen-atomic-transparent-logo.png"
                     alt="Generation Atomic Logo"
                     width={160}
                     height={160}
-                    className="w-auto h-[80px] md:h-[140px] object-contain"
+                    className="w-auto h-[60px] md:h-[140px] object-contain"
                 />
                 <AddIcon sx={{
                     color: "rgb(124 45 18)",
                     fontSize: "3rem",
                     '@media (max-width: 768px)': {
-                        fontSize: "2.25rem"
+                        fontSize: "1.75rem"
                     }
                 }} />
                 <Image
@@ -31,13 +31,13 @@ export default function Soup() {
                     alt="Mothers for Nuclear Logo"
                     width={160}
                     height={160}
-                    className="w-auto h-[80px] md:h-[140px] object-contain"
+                    className="w-auto h-[60px] md:h-[140px] object-contain"
                 />
                 <AddIcon sx={{
                     color: "rgb(124 45 18)",
                     fontSize: "3rem",
                     '@media (max-width: 768px)': {
-                        fontSize: "2.25rem"
+                        fontSize: "1.75rem"
                     }
                 }} />
                 <Image
@@ -45,7 +45,7 @@ export default function Soup() {
                     alt="Roving Reactor Logo"
                     width={160}
                     height={160}
-                    className="w-auto h-[80px] md:h-[140px] object-contain"
+                    className="w-auto h-[60px] md:h-[140px] object-contain"
                 />
             </div>
             <div className="text-xl text-orange-950 mb-3 font-normal">
