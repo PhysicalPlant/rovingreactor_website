@@ -73,7 +73,7 @@ export default function Attending() {
                     >
                         <div className="text-orange-950">
                             <p className="text-xl mb-4">
-                                We bring together people from across the nuclear energy ecosystem:
+                                We hope to bring together people from across the nuclear energy ecosystem:
 
                             </p>
                             <ul className="text-xl list-disc list-inside">
