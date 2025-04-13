@@ -35,7 +35,7 @@ export default function FAQ() {
                         }}
                     >
                         <div className="text-orange-950">
-                            See <a href="/soup/attending" className="text-orange-950 hover:underline">Attending Page</a>
+                            See <a href="/soup/attending" className="text-orange-700 hover:underline">Attending Page</a>
                         </div>
                     </AccordionDetails>
                 </Accordion>
@@ -63,7 +63,7 @@ export default function FAQ() {
                         }}
                     >
                         <div className="text-orange-950">
-                            See <a href="/soup/hosting" className="text-orange-950 hover:underline">Hosting Page</a>
+                            See <a href="/soup/hosting" className="text-orange-700 hover:underline">Hosting Page</a>
                         </div>
                     </AccordionDetails>
                 </Accordion>

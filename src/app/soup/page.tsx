@@ -4,6 +4,7 @@ import AddIcon from "@mui/icons-material/Add";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { theme } from "./shared/theme";  // Import the theme
 import Image from "next/image";
+import InfoPopover from "@/app/components/InfoPopover";
 
 export default function Soup() {
     return (
@@ -12,13 +13,25 @@ export default function Soup() {
             <h1 className="text-5xl text-orange-900 mb-3 font-normal">National Nuclear Soup Night</h1>
             <h3 className="text-3xl text-orange-950 mb-6 font-normal">Wednesday, November 12, 2025</h3>
             <div className="flex flex-row gap-1 md:gap-2 items-center justify-between mb-6 max-w-2xl">
-                <Image
-                    src="/img/gen-atomic-transparent-logo.png"
-                    alt="Generation Atomic Logo"
-                    width={160}
-                    height={160}
-                    className="w-auto h-[60px] md:h-[140px] object-contain"
-                />
+                <InfoPopover
+                    content={
+                        <div>
+                            <p>Generation Atomic is a non-profit organization dedicated to educating and inspiring the public about nuclear energy.</p>
+                        </div>
+                    }
+                    linkText="Visit Website"
+                    linkHref="https://www.generationatomic.org"
+                >
+                    <div className="cursor-pointer w-[160px] flex items-center justify-center">
+                        <Image
+                            src="/img/gen-atomic-transparent-logo.png"
+                            alt="Generation Atomic Logo"
+                            width={160}
+                            height={160}
+                            className="w-auto h-[60px] md:h-[140px] object-contain"
+                        />
+                    </div>
+                </InfoPopover>
                 <AddIcon sx={{
                     color: "rgb(124 45 18)",
                     fontSize: "3rem",
@@ -26,13 +39,25 @@ export default function Soup() {
                         fontSize: "1.75rem"
                     }
                 }} />
-                <Image
-                    src="/img/PGE_Mothers_Nuclear_logo-FULL.png"
-                    alt="Mothers for Nuclear Logo"
-                    width={160}
-                    height={160}
-                    className="w-auto h-[60px] md:h-[140px] object-contain"
-                />
+                <InfoPopover
+                    content={
+                        <div>
+                            <p>Mothers for Nuclear is a community of mothers advocating for nuclear power as a crucial tool for protecting our children's future.</p>
+                        </div>
+                    }
+                    linkText="Visit Website"
+                    linkHref="https://www.mothersfornuclear.org"
+                >
+                    <div className="cursor-pointer">
+                        <Image
+                            src="/img/PGE_Mothers_Nuclear_logo-FULL.png"
+                            alt="Mothers for Nuclear Logo"
+                            width={160}
+                            height={160}
+                            className="w-auto h-[60px] md:h-[140px] object-contain"
+                        />
+                    </div>
+                </InfoPopover>
                 <AddIcon sx={{
                     color: "rgb(124 45 18)",
                     fontSize: "3rem",
@@ -40,13 +65,25 @@ export default function Soup() {
                         fontSize: "1.75rem"
                     }
                 }} />
-                <Image
-                    src="/img/RR-logo-vector-black.svg"
-                    alt="Roving Reactor Logo"
-                    width={160}
-                    height={160}
-                    className="w-auto h-[60px] md:h-[140px] object-contain"
-                />
+                <InfoPopover
+                    content={
+                        <div>
+                            <p>The Roving Reactor Project is a traveling exhibit designed to educate and encourage action on nuclear energy.</p>
+                        </div>
+                    }
+                    linkText="Visit Website"
+                    linkHref="/about"
+                >
+                    <div className="cursor-pointer">
+                        <Image
+                            src="/img/RR-logo-vector-black.svg"
+                            alt="Roving Reactor Logo"
+                            width={160}
+                            height={160}
+                            className="w-auto h-[60px] md:h-[140px] object-contain"
+                        />
+                    </div>
+                </InfoPopover>
             </div>
             <div className="text-xl text-orange-950 mb-3 font-normal">
                 <Accordion>
@@ -74,7 +111,7 @@ export default function Soup() {
                     >
                         <div className="text-orange-950">
                             <p className="text-xl mb-4">
-                                On a Wednesday evening this November, <a href="https://www.generationatomic.org/" rel="noopener noreferrer" className="text-orange-900">Generation Atomic</a>, <a href="https://www.mothersfornuclear.org/" rel="noopener noreferrer" className="text-orange-900">Mothers for Nuclear</a>, and the <a href="https://www.rovingreactor.org/" rel="noopener noreferrer" className="text-orange-900">Roving Reactor Project</a> want to fill 20 dining rooms across America with thoughtful people from the nuclear energy ecosystem for an evening of hot soup and meaningful conversation about where nuclear energy is headed and how to tell its story.
+                                On a Wednesday evening this November, <a href="https://www.generationatomic.org/" rel="noopener noreferrer" className="text-orange-700 hover:text-orange-900 no-underline hover:underline">Generation Atomic</a>, <a href="https://www.mothersfornuclear.org/" rel="noopener noreferrer" className="text-orange-700 hover:text-orange-900 no-underline hover:underline">Mothers for Nuclear</a>, and the <a href="https://www.rovingreactor.org/" rel="noopener noreferrer" className="text-orange-700 hover:text-orange-900 no-underline hover:underline">Roving Reactor Project</a> want to fill 20 dining rooms across America with thoughtful people from the nuclear energy ecosystem for an evening of hot soup and meaningful conversation about where nuclear energy is headed and how to tell its story.
                             </p>
                             <p className="text-xl">
                                 Also it's a chance for people from different habitats of nuclear to meet each other: A night to connect with fellow travelers from research, regulation, builders & operators (from welders to CEOs), investment, advocacy, and education, and a chance to explore common ground while respectfully acknowledging different perspectives on nuclear's future.
@@ -111,7 +148,7 @@ export default function Soup() {
                                 <li>20 simultaneous soup nights in 20 cities hosted in private homes nationwide</li>
                                 <li>6 attendees per gathering, spanning different nuclear energy expertise</li>
                                 <li>All food, drinks, and transportation provided</li>
-                                <li>No hassle for hosts—we handle everything</li>
+                                <li>Interested in hosting? See below.</li>
                             </ul>
                         </div>
                     </AccordionDetails>
@@ -156,7 +193,7 @@ export default function Soup() {
             <h2 className="text-4xl text-orange-950 my-6 font-normal">Join Us</h2>
             <div className="text-xl text-orange-950 mb-3 font-normal">
                 <p className="mb-4">
-                    Whether you're in research, regulation, industry, investment, advocacy, or education—we want to bring nuclear's many voices to the table.
+                    Whether you're in <strong>research, regulation, industry, investment, advocacy,</strong> or <strong>education</strong>—we want to bring nuclear's many voices to the table.
                 </p>
                 <div className="flex flex-col gap-4 max-w-md">
                     <a

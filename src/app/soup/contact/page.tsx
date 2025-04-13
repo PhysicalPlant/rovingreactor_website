@@ -1,7 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useSearchParams } from 'next/navigation';
+import HdrStrongIcon from '@mui/icons-material/HdrStrong';
 
 export default function Contact() {
+    const searchParams = useSearchParams();
+
+    // Initialize formData with default values
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -10,6 +15,22 @@ export default function Contact() {
         message: "",
         subscribe: false,
     });
+
+    // Set initial subject based on the 'from' parameter
+    useEffect(() => {
+        const from = searchParams.get('from');
+        if (from === 'hosting') {
+            setFormData(prev => ({
+                ...prev,
+                subject: "Hosting a Nuclear Soup"
+            }));
+        } else if (from === 'attending') {
+            setFormData(prev => ({
+                ...prev,
+                subject: "Attending a Nuclear Soup"
+            }));
+        }
+    }, [searchParams]);
 
     const [status, setStatus] = useState<
         "idle" | "loading" | "success" | "error"
