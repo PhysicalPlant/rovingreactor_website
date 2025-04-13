@@ -12,7 +12,7 @@ export default function Soup() {
         <ThemeProvider theme={theme}>
             <h1 className="text-5xl text-orange-900 mb-3 font-normal">National Nuclear Soup Night</h1>
             <h3 className="text-3xl text-orange-950 mb-6 font-normal">Wednesday, November 12, 2025</h3>
-            <div className="flex flex-row gap-1 md:gap-2 items-center justify-between mb-6 max-w-2xl">
+            <div className="flex flex-row items-center justify-center gap-2 md:gap-4 mb-6 mx-auto">
                 <InfoPopover
                     content={
                         <div>
@@ -22,21 +22,21 @@ export default function Soup() {
                     linkText="Visit Website"
                     linkHref="https://www.generationatomic.org"
                 >
-                    <div className="cursor-pointer w-[160px] flex items-center justify-center">
+                    <div className="cursor-pointer w-[100px] md:w-[160px] flex items-center justify-center">
                         <Image
                             src="/img/gen-atomic-transparent-logo.png"
                             alt="Generation Atomic Logo"
                             width={160}
                             height={160}
-                            className="w-auto h-[60px] md:h-[140px] object-contain"
+                            className="w-auto h-[50px] md:h-[140px] object-contain"
                         />
                     </div>
                 </InfoPopover>
                 <AddIcon sx={{
                     color: "rgb(124 45 18)",
-                    fontSize: "3rem",
-                    '@media (max-width: 768px)': {
-                        fontSize: "1.75rem"
+                    fontSize: "2rem",
+                    '@media (min-width: 768px)': {
+                        fontSize: "3rem"
                     }
                 }} />
                 <InfoPopover
@@ -48,21 +48,21 @@ export default function Soup() {
                     linkText="Visit Website"
                     linkHref="https://www.mothersfornuclear.org"
                 >
-                    <div className="cursor-pointer">
+                    <div className="cursor-pointer w-[100px] md:w-[160px] flex items-center justify-center">
                         <Image
                             src="/img/PGE_Mothers_Nuclear_logo-FULL.png"
                             alt="Mothers for Nuclear Logo"
                             width={160}
                             height={160}
-                            className="w-auto h-[60px] md:h-[140px] object-contain"
+                            className="w-auto h-[50px] md:h-[140px] object-contain"
                         />
                     </div>
                 </InfoPopover>
                 <AddIcon sx={{
                     color: "rgb(124 45 18)",
-                    fontSize: "3rem",
-                    '@media (max-width: 768px)': {
-                        fontSize: "1.75rem"
+                    fontSize: "2rem",
+                    '@media (min-width: 768px)': {
+                        fontSize: "3rem"
                     }
                 }} />
                 <InfoPopover
@@ -74,13 +74,13 @@ export default function Soup() {
                     linkText="Visit Website"
                     linkHref="/about"
                 >
-                    <div className="cursor-pointer">
+                    <div className="cursor-pointer w-[100px] md:w-[160px] flex items-center justify-center">
                         <Image
                             src="/img/RR-logo-vector-black.svg"
                             alt="Roving Reactor Logo"
                             width={160}
                             height={160}
-                            className="w-auto h-[60px] md:h-[140px] object-contain"
+                            className="w-auto h-[50px] md:h-[140px] object-contain"
                         />
                     </div>
                 </InfoPopover>
