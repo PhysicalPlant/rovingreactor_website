@@ -190,6 +190,8 @@ export default function Hosting() {
                                                                 </p>
                                                             </div>
                                                         }
+                                                        linkText="Want to attend?"
+                                                        linkHref="/soup/contact?from=attending&city=San Luis Obispo"
                                                     >
                                                         San Luis Obispo, CA
                                                     </InfoPopover>
@@ -255,6 +257,8 @@ export default function Hosting() {
                                                                 </p>
                                                             </div>
                                                         }
+                                                        linkText="Want to attend?"
+                                                        linkHref="/soup/contact?from=attending&city=St. Paul"
                                                     >
                                                         St. Paul, MN
                                                     </InfoPopover>
@@ -344,6 +348,8 @@ export default function Hosting() {
                                                                 </p>
                                                             </div>
                                                         }
+                                                        linkText="Want to attend?"
+                                                        linkHref="/soup/contact?from=attending&city=Austin"
                                                     >
                                                         Austin, TX
                                                     </InfoPopover>
