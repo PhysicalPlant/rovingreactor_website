@@ -15,18 +15,20 @@ function ContactForm() {
         subscribe: false,
     });
 
-    // Set initial subject based on the 'from' parameter
+    // Set initial subject based on the 'from' parameter and city
     useEffect(() => {
         const from = searchParams.get('from');
+        const city = searchParams.get('city');
+
         if (from === 'hosting') {
             setFormData(prev => ({
                 ...prev,
-                subject: "Hosting a Nuclear Soup"
+                subject: city ? `Hosting a Nuclear Soup - ${city}` : "Hosting a Nuclear Soup"
             }));
         } else if (from === 'attending') {
             setFormData(prev => ({
                 ...prev,
-                subject: "Attending a Nuclear Soup"
+                subject: city ? `Attending a Nuclear Soup - ${city}` : "Attending a Nuclear Soup"
             }));
         }
     }, [searchParams]);
@@ -72,12 +74,27 @@ function ContactForm() {
         }
     };
 
-    const subjectOptions = [
-        "Attending a Nuclear Soup",
-        "Hosting a Nuclear Soup",
-        "Nuclear Soup Media Request",
-        "Nuclear Soup -  Other",
-    ];
+    // Update the subject options to include city-specific options
+    const getSubjectOptions = () => {
+        const city = searchParams.get('city');
+        const baseOptions = [
+            "Attending a Nuclear Soup",
+            "Hosting a Nuclear Soup",
+            "Nuclear Soup Media Request",
+            "Nuclear Soup - Other"
+        ];
+
+        if (city) {
+            // Add city-specific options at the beginning of the array
+            return [
+                `Attending a Nuclear Soup - ${city}`,
+                `Hosting a Nuclear Soup - ${city}`,
+                ...baseOptions
+            ];
+        }
+
+        return baseOptions;
+    };
 
     return (
         <form
@@ -159,7 +176,7 @@ function ContactForm() {
                     }
                 >
                     <option value="">Select a subject</option>
-                    {subjectOptions.map((option) => (
+                    {getSubjectOptions().map((option) => (
                         <option key={option} value={option}>
                             {option}
                         </option>

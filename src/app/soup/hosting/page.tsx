@@ -145,7 +145,7 @@ export default function Hosting() {
                                                 header="Richland, WA"
                                                 content="Home to the Pacific Northwest National Laboratory and a hub for nuclear research and innovation."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=Richland"
                                             >
                                                 Richland, WA
                                             </InfoPopover></li>
@@ -153,7 +153,7 @@ export default function Hosting() {
                                                 header="Idaho Falls, ID"
                                                 content="Location of the Idaho National Laboratory and a center for nuclear energy research and development."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=Idaho Falls"
                                             >
                                                 Idaho Falls, ID
                                             </InfoPopover></li>
@@ -161,7 +161,7 @@ export default function Hosting() {
                                                 header="Santa Fe, NM"
                                                 content="A city in New Mexico known for its nuclear research facilities."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=Santa Fe"
                                             >
                                                 Santa Fe, NM
                                             </InfoPopover></li>
@@ -169,7 +169,7 @@ export default function Hosting() {
                                                 header="Los Angeles, CA"
                                                 content="A city in California known for its university and proximity to the Pacific Ocean."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=Los Angeles"
                                             >
                                                 Los Angeles, CA
                                             </InfoPopover></li>
@@ -234,7 +234,7 @@ export default function Hosting() {
                                                 header="Chicago, IL"
                                                 content="A city in Illinois known for its university and proximity to the Mississippi River."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=Chicago"
                                             >
                                                 Chicago, IL
                                             </InfoPopover></li>
@@ -269,7 +269,7 @@ export default function Hosting() {
                                                 header="Columbus, OH"
                                                 content="A city in Ohio known for its university and proximity to the Ohio River."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=Columbus"
                                             >
                                                 Columbus, OH
                                             </InfoPopover></li>
@@ -277,7 +277,7 @@ export default function Hosting() {
                                                 header="Knoxville/Oak Ridge, TN"
                                                 content="A city in Tennessee known for its proximity to the Great Smoky Mountains."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=Knoxville"
                                             >
                                                 Knoxville/Oak Ridge, TN
                                             </InfoPopover></li>
@@ -285,7 +285,7 @@ export default function Hosting() {
                                                 header="St. Louis, MO"
                                                 content="A city in Missouri known for its university and proximity to the Mississippi River."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=St. Louis"
                                             >
                                                 St. Louis, MO
                                             </InfoPopover></li>
@@ -323,7 +323,7 @@ export default function Hosting() {
                                                 header="Houston, TX"
                                                 content="A city in Texas known for its energy industry and proximity to the Gulf of Mexico."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=Houston"
                                             >
                                                 Houston, TX
                                             </InfoPopover></li>
@@ -358,7 +358,7 @@ export default function Hosting() {
                                                 header="Aiken, SC"
                                                 content="A city in South Carolina known for its university and proximity to the Atlantic Ocean."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=Aiken"
                                             >
                                                 Aiken, SC
                                             </InfoPopover></li>
@@ -366,7 +366,7 @@ export default function Hosting() {
                                                 header="Huntsville, AL"
                                                 content="A city in Alabama known for its proximity to the Appalachian Mountains."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=Huntsville"
                                             >
                                                 Huntsville, AL
                                             </InfoPopover></li>
@@ -374,7 +374,7 @@ export default function Hosting() {
                                                 header="Charlotte, NC"
                                                 content="A city in North Carolina known for its university and proximity to the Atlantic Ocean."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=Charlotte"
                                             >
                                                 Charlotte, NC
                                             </InfoPopover></li>
@@ -412,7 +412,7 @@ export default function Hosting() {
                                                 header="Boston, MA"
                                                 content="A city in Massachusetts known for its university and proximity to the Atlantic Ocean."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=Boston"
                                             >
                                                 Boston, MA
                                             </InfoPopover></li>
@@ -420,7 +420,7 @@ export default function Hosting() {
                                                 header="Pittsburgh, PA"
                                                 content="A city in Pennsylvania known for its university and proximity to the Allegheny Mountains."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=Pittsburgh"
                                             >
                                                 Pittsburgh, PA
                                             </InfoPopover></li>
@@ -428,7 +428,7 @@ export default function Hosting() {
                                                 header="Washington, D.C."
                                                 content="A city in the District of Columbia known for its proximity to the Potomac River."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=Washington"
                                             >
                                                 Washington, D.C.
                                             </InfoPopover></li>
@@ -436,7 +436,7 @@ export default function Hosting() {
                                                 header="Schenectady, NY"
                                                 content="A city in New York known for its proximity to the Hudson River."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=Schenectady"
                                             >
                                                 Schenectady, NY
                                             </InfoPopover></li>
@@ -444,7 +444,7 @@ export default function Hosting() {
                                                 header="Wilmington, NC"
                                                 content="A city in North Carolina known for its university and proximity to the Atlantic Ocean."
                                                 linkText="Interested in hosting?"
-                                                linkHref="/soup/contact?from=hosting"
+                                                linkHref="/soup/contact?from=hosting&city=Wilmington"
                                             >
                                                 Wilmington, NC
                                             </InfoPopover></li>

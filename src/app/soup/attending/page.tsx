@@ -147,7 +147,7 @@ export default function Attending() {
                                             header="Richland, WA"
                                             content="Home to the Pacific Northwest National Laboratory and a hub for nuclear research and innovation."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=Richland"
                                         >
                                             Richland, WA
                                         </InfoPopover></li>
@@ -155,7 +155,7 @@ export default function Attending() {
                                             header="Idaho Falls, ID"
                                             content="Location of the Idaho National Laboratory and a center for nuclear energy research and development."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=Idaho Falls"
                                         >
                                             Idaho Falls, ID
                                         </InfoPopover></li>
@@ -163,7 +163,7 @@ export default function Attending() {
                                             header="Santa Fe, NM"
                                             content="A city in New Mexico known for its nuclear research facilities."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=Santa Fe"
                                         >
                                             Santa Fe, NM
                                         </InfoPopover></li>
@@ -171,7 +171,7 @@ export default function Attending() {
                                             header="Los Angeles, CA"
                                             content="A city in California known for its university and proximity to the Pacific Ocean."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=Los Angeles"
                                         >
                                             Los Angeles, CA
                                         </InfoPopover></li>
@@ -192,6 +192,8 @@ export default function Attending() {
                                                             </p>
                                                         </div>
                                                     }
+                                                    linkText="Want to attend?"
+                                                    linkHref="/soup/contact?from=attending&city=San Luis Obispo"
                                                 >
                                                     San Luis Obispo, CA
                                                 </InfoPopover>
@@ -231,7 +233,7 @@ export default function Attending() {
                                             header="Chicago, IL"
                                             content="A city in Illinois known for its university and proximity to the Mississippi River."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=Chicago"
                                         >
                                             Chicago, IL
                                         </InfoPopover></li>
@@ -252,6 +254,8 @@ export default function Attending() {
                                                             </p>
                                                         </div>
                                                     }
+                                                    linkText="Want to attend?"
+                                                    linkHref="/soup/contact?from=attending&city=St. Paul"
                                                 >
                                                     St. Paul, MN
                                                 </InfoPopover>
@@ -261,7 +265,7 @@ export default function Attending() {
                                             header="Columbus, OH"
                                             content="A city in Ohio known for its university and proximity to the Ohio River."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=Columbus"
                                         >
                                             Columbus, OH
                                         </InfoPopover></li>
@@ -269,7 +273,7 @@ export default function Attending() {
                                             header="Knoxville/Oak Ridge, TN"
                                             content="A city in Tennessee known for its proximity to the Great Smoky Mountains."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=Knoxville"
                                         >
                                             Knoxville/Oak Ridge, TN
                                         </InfoPopover></li>
@@ -277,7 +281,7 @@ export default function Attending() {
                                             header="St. Louis, MO"
                                             content="A city in Missouri known for its university and proximity to the Mississippi River."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=St. Louis"
                                         >
                                             St. Louis, MO
                                         </InfoPopover></li>
@@ -315,7 +319,7 @@ export default function Attending() {
                                             header="Houston, TX"
                                             content="A city in Texas known for its energy industry and proximity to the Gulf of Mexico."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=Houston"
                                         >
                                             Houston, TX
                                         </InfoPopover></li>
@@ -336,6 +340,8 @@ export default function Attending() {
                                                             </p>
                                                         </div>
                                                     }
+                                                    linkText="Want to attend?"
+                                                    linkHref="/soup/contact?from=attending&city=Austin"
                                                 >
                                                     Austin, TX
                                                 </InfoPopover>
@@ -345,7 +351,7 @@ export default function Attending() {
                                             header="Aiken, SC"
                                             content="A city in South Carolina known for its university and proximity to the Atlantic Ocean."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=Aiken"
                                         >
                                             Aiken, SC
                                         </InfoPopover></li>
@@ -353,7 +359,7 @@ export default function Attending() {
                                             header="Huntsville, AL"
                                             content="A city in Alabama known for its proximity to the Appalachian Mountains."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=Huntsville"
                                         >
                                             Huntsville, AL
                                         </InfoPopover></li>
@@ -361,7 +367,7 @@ export default function Attending() {
                                             header="Charlotte, NC"
                                             content="A city in North Carolina known for its university and proximity to the Atlantic Ocean."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=Charlotte"
                                         >
                                             Charlotte, NC
                                         </InfoPopover></li>
@@ -399,7 +405,7 @@ export default function Attending() {
                                             header="Boston, MA"
                                             content="A city in Massachusetts known for its university and proximity to the Atlantic Ocean."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=Boston"
                                         >
                                             Boston, MA
                                         </InfoPopover></li>
@@ -407,7 +413,7 @@ export default function Attending() {
                                             header="Pittsburgh, PA"
                                             content="A city in Pennsylvania known for its university and proximity to the Allegheny Mountains."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=Pittsburgh"
                                         >
                                             Pittsburgh, PA
                                         </InfoPopover></li>
@@ -415,7 +421,7 @@ export default function Attending() {
                                             header="Washington, D.C."
                                             content="A city in the District of Columbia known for its proximity to the Potomac River."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=Washington"
                                         >
                                             Washington, D.C.
                                         </InfoPopover></li>
@@ -423,7 +429,7 @@ export default function Attending() {
                                             header="Schenectady, NY"
                                             content="A city in New York known for its proximity to the Hudson River."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=Schenectady"
                                         >
                                             Schenectady, NY
                                         </InfoPopover></li>
@@ -431,7 +437,7 @@ export default function Attending() {
                                             header="Wilmington, NC"
                                             content="A city in North Carolina known for its university and proximity to the Atlantic Ocean."
                                             linkText="Want to attend?"
-                                            linkHref="/soup/contact?from=attending"
+                                            linkHref="/soup/contact?from=attending&city=Wilmington"
                                         >
                                             Wilmington, NC
                                         </InfoPopover></li>
