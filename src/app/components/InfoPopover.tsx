@@ -88,6 +88,7 @@ export default function InfoPopover({
                                 marginTop: '0.75rem',
                                 color: 'rgb(124 45 18)',
                                 borderColor: 'rgb(124 45 18)',
+                                textTransform: 'none',
                                 '&:hover': {
                                     backgroundColor: 'rgb(124 45 18)',
                                     color: 'white',

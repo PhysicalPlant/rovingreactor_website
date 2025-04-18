@@ -174,7 +174,26 @@ export default function Hosting() {
                                                 Los Angeles, CA
                                             </InfoPopover></li>
                                             <li className="flex items-center gap-2">
-                                                San Luis Obispo, CA
+                                                <div className="cursor-pointer">
+                                                    <InfoPopover
+                                                        header="San Luis Obispo, CA"
+                                                        content={
+                                                            <div>
+                                                                <p>Our first confirmed Nuclear Soup location! Join us in this beautiful Central California city, home to Diablo Canyon Power Plant.</p>
+                                                                <p className="flex items-center gap-2 mt-4">
+                                                                    <FontAwesomeIcon
+                                                                        icon={faCircleH}
+                                                                        className="text-orange-900"
+                                                                        style={{ fontSize: '1rem' }}
+                                                                    />
+                                                                    This city already has a host
+                                                                </p>
+                                                            </div>
+                                                        }
+                                                    >
+                                                        San Luis Obispo, CA
+                                                    </InfoPopover>
+                                                </div>
                                                 <FontAwesomeIcon
                                                     icon={faCircleH}
                                                     className="text-orange-900"
@@ -219,7 +238,33 @@ export default function Hosting() {
                                             >
                                                 Chicago, IL
                                             </InfoPopover></li>
-                                            <li className="flex items-center gap-2">St. Paul, MN <FontAwesomeIcon icon={faCircleH} className="text-orange-900" style={{ fontSize: '1rem' }} /></li>
+                                            <li className="flex items-center gap-2">
+                                                <div className="cursor-pointer">
+                                                    <InfoPopover
+                                                        header="St. Paul, MN"
+                                                        content={
+                                                            <div>
+                                                                <p>Join us in Minnesota's capital city for an evening of engaging nuclear energy discussion and delicious soup.</p>
+                                                                <p className="flex items-center gap-2 mt-4">
+                                                                    <FontAwesomeIcon
+                                                                        icon={faCircleH}
+                                                                        className="text-orange-900"
+                                                                        style={{ fontSize: '1rem' }}
+                                                                    />
+                                                                    This city already has a host
+                                                                </p>
+                                                            </div>
+                                                        }
+                                                    >
+                                                        St. Paul, MN
+                                                    </InfoPopover>
+                                                </div>
+                                                <FontAwesomeIcon
+                                                    icon={faCircleH}
+                                                    className="text-orange-900"
+                                                    style={{ fontSize: '1rem' }}
+                                                />
+                                            </li>
                                             <li><InfoPopover
                                                 header="Columbus, OH"
                                                 content="A city in Ohio known for its university and proximity to the Ohio River."
@@ -282,7 +327,33 @@ export default function Hosting() {
                                             >
                                                 Houston, TX
                                             </InfoPopover></li>
-                                            <li className="flex items-center gap-2">Austin, TX <FontAwesomeIcon icon={faCircleH} className="text-orange-900" style={{ fontSize: '1rem' }} /></li>
+                                            <li className="flex items-center gap-2">
+                                                <div className="cursor-pointer">
+                                                    <InfoPopover
+                                                        header="Austin, TX"
+                                                        content={
+                                                            <div>
+                                                                <p>Experience Nuclear Soup in the heart of Texas! Join us in this vibrant city known for innovation and technology.</p>
+                                                                <p className="flex items-center gap-2 mt-4">
+                                                                    <FontAwesomeIcon
+                                                                        icon={faCircleH}
+                                                                        className="text-orange-900"
+                                                                        style={{ fontSize: '1rem' }}
+                                                                    />
+                                                                    This city already has a host
+                                                                </p>
+                                                            </div>
+                                                        }
+                                                    >
+                                                        Austin, TX
+                                                    </InfoPopover>
+                                                </div>
+                                                <FontAwesomeIcon
+                                                    icon={faCircleH}
+                                                    className="text-orange-900"
+                                                    style={{ fontSize: '1rem' }}
+                                                />
+                                            </li>
                                             <li><InfoPopover
                                                 header="Aiken, SC"
                                                 content="A city in South Carolina known for its university and proximity to the Atlantic Ocean."

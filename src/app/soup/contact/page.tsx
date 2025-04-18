@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from 'next/navigation';
-import HdrStrongIcon from '@mui/icons-material/HdrStrong';
 
 function ContactForm() {
     const searchParams = useSearchParams();
