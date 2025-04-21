@@ -45,9 +45,9 @@ export default function Attending() {
 
                             </p>
                             <ul className="text-xl list-disc list-inside">
-                                <li><strong>Full Meal & Drinks:</strong> Soup, bread, vegetables, dessert, wine, beer, and non-alcoholic options</li>
-                                <li><strong>Engaging Discussion:</strong> Share diverse perspectives on nuclear's future</li>
-                                <li><strong>Convenience:</strong> Rideshare credits for all guests — and easy clean-up for hosts</li>
+                                <li><strong>A Full Meal</strong> Soup, bread, vegetables, wine, beer, and non-alcoholic options</li>
+                                <li><strong>Conversation:</strong> Share diverse perspectives on nuclear's future</li>
+                                <li><strong>Convenience:</strong> No need to bring anything — we'll make attending and hosting easy and fun. Rideshare credits available.</li>
                             </ul>
                         </div>
                     </AccordionDetails>
@@ -111,7 +111,7 @@ export default function Attending() {
                         }}
                     >
                         <AddIcon sx={{ color: "rgb(124 45 18)" }} />
-                        Participating Cities
+                        Our 20 Soup Cities
                     </AccordionSummary>
                     <AccordionDetails
                         sx={{
@@ -149,7 +149,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Richland"
                                         >
-                                            Richland, WA
+                                            <span className="text-orange-700">Richland, WA</span>
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Idaho Falls, ID"
@@ -157,7 +157,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Idaho Falls"
                                         >
-                                            Idaho Falls, ID
+                                            <span className="text-orange-700">Idaho Falls, ID</span>
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Santa Fe, NM"
@@ -165,7 +165,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Santa Fe"
                                         >
-                                            Santa Fe, NM
+                                            <span className="text-orange-700">Santa Fe, NM</span>
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Los Angeles, CA"
@@ -173,7 +173,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Los Angeles"
                                         >
-                                            Los Angeles, CA
+                                            <span className="text-orange-700">Los Angeles, CA</span>
                                         </InfoPopover></li>
                                         <li className="flex items-center gap-2">
                                             <div className="cursor-pointer">
@@ -188,14 +188,14 @@ export default function Attending() {
                                                                     className="text-orange-900"
                                                                     style={{ fontSize: '1rem' }}
                                                                 />
-                                                                This city already has a host
+                                                                <span className="text-orange-700">This city already has a host</span>
                                                             </p>
                                                         </div>
                                                     }
                                                     linkText="Want to attend?"
                                                     linkHref="/soup/contact?from=attending&city=San Luis Obispo"
                                                 >
-                                                    San Luis Obispo, CA
+                                                    <span className="text-orange-700">San Luis Obispo, CA</span>
                                                 </InfoPopover>
                                             </div>
                                         </li>
@@ -235,7 +235,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Chicago"
                                         >
-                                            Chicago, IL
+                                            <span className="text-orange-700">Chicago, IL</span>
                                         </InfoPopover></li>
                                         <li className="flex items-center gap-2">
                                             <div className="cursor-pointer">
@@ -250,14 +250,14 @@ export default function Attending() {
                                                                     className="text-orange-900"
                                                                     style={{ fontSize: '1rem' }}
                                                                 />
-                                                                This city already has a host
+                                                                <span className="text-orange-700">This city already has a host</span>
                                                             </p>
                                                         </div>
                                                     }
                                                     linkText="Want to attend?"
                                                     linkHref="/soup/contact?from=attending&city=St. Paul"
                                                 >
-                                                    St. Paul, MN
+                                                    <span className="text-orange-700">St. Paul, MN</span>
                                                 </InfoPopover>
                                             </div>
                                         </li>
@@ -267,7 +267,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Columbus"
                                         >
-                                            Columbus, OH
+                                            <span className="text-orange-700">Columbus, OH</span>
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Knoxville/Oak Ridge, TN"
@@ -275,7 +275,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Knoxville"
                                         >
-                                            Knoxville/Oak Ridge, TN
+                                            <span className="text-orange-700">Knoxville/Oak Ridge, TN</span>
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="St. Louis, MO"
@@ -283,7 +283,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=St. Louis"
                                         >
-                                            St. Louis, MO
+                                            <span className="text-orange-700">St. Louis, MO</span>
                                         </InfoPopover></li>
                                     </ul>
 
@@ -321,7 +321,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Houston"
                                         >
-                                            Houston, TX
+                                            <span className="text-orange-700">Houston, TX</span>
                                         </InfoPopover></li>
                                         <li className="flex items-center gap-2">
                                             <div className="cursor-pointer">
@@ -336,14 +336,14 @@ export default function Attending() {
                                                                     className="text-orange-900"
                                                                     style={{ fontSize: '1rem' }}
                                                                 />
-                                                                This city already has a host
+                                                                <span className="text-orange-700">This city already has a host</span>
                                                             </p>
                                                         </div>
                                                     }
                                                     linkText="Want to attend?"
                                                     linkHref="/soup/contact?from=attending&city=Austin"
                                                 >
-                                                    Austin, TX
+                                                    <span className="text-orange-700">Austin, TX</span>
                                                 </InfoPopover>
                                             </div>
                                         </li>
@@ -353,7 +353,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Aiken"
                                         >
-                                            Aiken, SC
+                                            <span className="text-orange-700">Aiken, SC</span>
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Huntsville, AL"
@@ -361,7 +361,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Huntsville"
                                         >
-                                            Huntsville, AL
+                                            <span className="text-orange-700">Huntsville, AL</span>
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Charlotte, NC"
@@ -369,7 +369,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Charlotte"
                                         >
-                                            Charlotte, NC
+                                            <span className="text-orange-700">Charlotte, NC</span>
                                         </InfoPopover></li>
                                     </ul>
 
@@ -407,7 +407,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Boston"
                                         >
-                                            Boston, MA
+                                            <span className="text-orange-700">Boston, MA</span>
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Pittsburgh, PA"
@@ -415,7 +415,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Pittsburgh"
                                         >
-                                            Pittsburgh, PA
+                                            <span className="text-orange-700">Pittsburgh, PA</span>
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Washington, D.C."
@@ -423,7 +423,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Washington"
                                         >
-                                            Washington, D.C.
+                                            <span className="text-orange-700">Washington, D.C.</span>
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Schenectady, NY"
@@ -431,7 +431,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Schenectady"
                                         >
-                                            Schenectady, NY
+                                            <span className="text-orange-700">Schenectady, NY</span>
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Wilmington, NC"
@@ -439,7 +439,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Wilmington"
                                         >
-                                            Wilmington, NC
+                                            <span className="text-orange-700">Wilmington, NC</span>
                                         </InfoPopover></li>
                                     </ul>
 
@@ -471,16 +471,14 @@ export default function Attending() {
                             paddingLeft: '32px'
                         }}
                     >
-                        <p className="mt-4 mb-4 text-orange-950"><strong>If you're interested...</strong>
-                        </p>
                         <div className="text-orange-950">
                             <ul className="list-disc list-inside text-orange-950">
-                                <li><strong>Submit Information:</strong> Complete our form about your nuclear role and location. (Link below)</li>
+                                <li><strong>Let us know:</strong> In the response form, let us know a bit about yourself and which soup city works for you. (Button below)</li>
                                 <li><strong>Review:</strong> Our team selects diverse participants (within 2 weeks)</li>
                                 <li><strong>Invitation:</strong> We send you an invitation and a preference survey (vegetarian, etc)</li>
                                 <li><strong>Details:</strong> One week before dinner, we send the location and some info about your soupmates. </li>
                                 <li><strong>Attend:</strong> Join us November 12th for food and conversation!</li>
-                                <li><strong>Not available?</strong> We'll keep you on next year's list.</li>
+                                <li><strong>Not available?</strong> Reach out anyway and we'll send an invite for next year.</li>
 
                             </ul>
 
@@ -496,16 +494,22 @@ export default function Attending() {
                 </p>
 
             </div>
-            <div className="text-xl  mb-3 font-normal">
-
+            <div className="text-xl mb-3 font-normal">
                 <a
                     href="/soup/contact?from=attending"
-                    className="inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
+                    className="inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline mr-4"
                 >
                     Count Me In
                 </a>
+                <a
+                    href="/soup/contact?from=hosting"
+                    className="inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
+                >
+                    Interested in Hosting?
+                </a>
 
             </div>
+
         </ThemeProvider>
 
     );

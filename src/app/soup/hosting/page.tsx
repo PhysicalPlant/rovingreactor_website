@@ -147,7 +147,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Richland"
                                             >
-                                                Richland, WA
+                                                <span className="text-orange-700">Richland, WA</span>
                                             </InfoPopover></li>
                                             <li><InfoPopover
                                                 header="Idaho Falls, ID"
@@ -155,7 +155,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Idaho Falls"
                                             >
-                                                Idaho Falls, ID
+                                                <span className="text-orange-700">Idaho Falls, ID</span>
                                             </InfoPopover></li>
                                             <li><InfoPopover
                                                 header="Santa Fe, NM"
@@ -163,7 +163,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Santa Fe"
                                             >
-                                                Santa Fe, NM
+                                                <span className="text-orange-700">Santa Fe, NM</span>
                                             </InfoPopover></li>
                                             <li><InfoPopover
                                                 header="Los Angeles, CA"
@@ -171,7 +171,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Los Angeles"
                                             >
-                                                Los Angeles, CA
+                                                <span className="text-orange-700">Los Angeles, CA</span>
                                             </InfoPopover></li>
                                             <li className="flex items-center gap-2">
                                                 <div className="cursor-pointer">
@@ -193,7 +193,7 @@ export default function Hosting() {
                                                         linkText="Want to attend?"
                                                         linkHref="/soup/contact?from=attending&city=San Luis Obispo"
                                                     >
-                                                        San Luis Obispo, CA
+                                                        <span className="text-orange-700">San Luis Obispo, CA</span>
                                                     </InfoPopover>
                                                 </div>
                                                 <FontAwesomeIcon
@@ -238,7 +238,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Chicago"
                                             >
-                                                Chicago, IL
+                                                <span className="text-orange-700">Chicago, IL</span>
                                             </InfoPopover></li>
                                             <li className="flex items-center gap-2">
                                                 <div className="cursor-pointer">
@@ -260,7 +260,7 @@ export default function Hosting() {
                                                         linkText="Want to attend?"
                                                         linkHref="/soup/contact?from=attending&city=St. Paul"
                                                     >
-                                                        St. Paul, MN
+                                                        <span className="text-orange-700">St. Paul, MN</span>
                                                     </InfoPopover>
                                                 </div>
                                                 <FontAwesomeIcon
@@ -275,7 +275,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Columbus"
                                             >
-                                                Columbus, OH
+                                                <span className="text-orange-700">Columbus, OH</span>
                                             </InfoPopover></li>
                                             <li><InfoPopover
                                                 header="Knoxville/Oak Ridge, TN"
@@ -283,7 +283,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Knoxville"
                                             >
-                                                Knoxville/Oak Ridge, TN
+                                                <span className="text-orange-700">Knoxville/Oak Ridge, TN</span>
                                             </InfoPopover></li>
                                             <li><InfoPopover
                                                 header="St. Louis, MO"
@@ -291,7 +291,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=St. Louis"
                                             >
-                                                St. Louis, MO
+                                                <span className="text-orange-700">St. Louis, MO</span>
                                             </InfoPopover></li>
                                         </ul>
 
@@ -329,7 +329,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Houston"
                                             >
-                                                Houston, TX
+                                                <span className="text-orange-700">Houston, TX</span>
                                             </InfoPopover></li>
                                             <li className="flex items-center gap-2">
                                                 <div className="cursor-pointer">
@@ -351,7 +351,7 @@ export default function Hosting() {
                                                         linkText="Want to attend?"
                                                         linkHref="/soup/contact?from=attending&city=Austin"
                                                     >
-                                                        Austin, TX
+                                                        <span className="text-orange-700">Austin, TX</span>
                                                     </InfoPopover>
                                                 </div>
                                                 <FontAwesomeIcon
@@ -366,7 +366,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Aiken"
                                             >
-                                                Aiken, SC
+                                                <span className="text-orange-700">Aiken, SC</span>
                                             </InfoPopover></li>
                                             <li><InfoPopover
                                                 header="Huntsville, AL"
@@ -374,7 +374,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Huntsville"
                                             >
-                                                Huntsville, AL
+                                                <span className="text-orange-700">Huntsville, AL</span>
                                             </InfoPopover></li>
                                             <li><InfoPopover
                                                 header="Charlotte, NC"
@@ -382,7 +382,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Charlotte"
                                             >
-                                                Charlotte, NC
+                                                <span className="text-orange-700">Charlotte, NC</span>
                                             </InfoPopover></li>
                                         </ul>
 
@@ -420,7 +420,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Boston"
                                             >
-                                                Boston, MA
+                                                <span className="text-orange-700">Boston, MA</span>
                                             </InfoPopover></li>
                                             <li><InfoPopover
                                                 header="Pittsburgh, PA"
@@ -428,7 +428,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Pittsburgh"
                                             >
-                                                Pittsburgh, PA
+                                                <span className="text-orange-700">Pittsburgh, PA</span>
                                             </InfoPopover></li>
                                             <li><InfoPopover
                                                 header="Washington, D.C."
@@ -436,7 +436,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Washington"
                                             >
-                                                Washington, D.C.
+                                                <span className="text-orange-700">Washington, D.C.</span>
                                             </InfoPopover></li>
                                             <li><InfoPopover
                                                 header="Schenectady, NY"
@@ -444,7 +444,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Schenectady"
                                             >
-                                                Schenectady, NY
+                                                <span className="text-orange-700">Schenectady, NY</span>
                                             </InfoPopover></li>
                                             <li><InfoPopover
                                                 header="Wilmington, NC"
@@ -452,7 +452,7 @@ export default function Hosting() {
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Wilmington"
                                             >
-                                                Wilmington, NC
+                                                <span className="text-orange-700">Wilmington, NC</span>
                                             </InfoPopover></li>
                                         </ul>
 
