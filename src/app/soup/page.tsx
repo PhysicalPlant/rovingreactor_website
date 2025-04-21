@@ -8,83 +8,10 @@ import InfoPopover from "@/app/components/InfoPopover";
 
 export default function Soup() {
     return (
-
         <ThemeProvider theme={theme}>
             <h1 className="text-5xl text-orange-900 mb-3 font-normal">National Nuclear Soup Night</h1>
             <h3 className="text-3xl text-orange-950 mb-6 font-normal">Wednesday, November 12, 2025</h3>
-            <div className="flex flex-row items-center justify-center gap-2 md:gap-4 mb-6 mx-auto">
-                <InfoPopover
-                    content={
-                        <div>
-                            <p>Generation Atomic is a non-profit organization dedicated to educating and inspiring the public about nuclear energy.</p>
-                        </div>
-                    }
-                    linkText="Visit Website"
-                    linkHref="https://www.generationatomic.org"
-                >
-                    <div className="cursor-pointer w-[100px] md:w-[160px] flex items-center justify-center">
-                        <Image
-                            src="/img/gen-atomic-transparent-logo.png"
-                            alt="Generation Atomic Logo"
-                            width={160}
-                            height={160}
-                            className="w-auto h-[50px] md:h-[140px] object-contain"
-                        />
-                    </div>
-                </InfoPopover>
-                <AddIcon sx={{
-                    color: "rgb(124 45 18)",
-                    fontSize: "2rem",
-                    '@media (min-width: 768px)': {
-                        fontSize: "3rem"
-                    }
-                }} />
-                <InfoPopover
-                    content={
-                        <div>
-                            <p>Mothers for Nuclear is a community of mothers advocating for nuclear power as a crucial tool for protecting our children's future.</p>
-                        </div>
-                    }
-                    linkText="Visit Website"
-                    linkHref="https://www.mothersfornuclear.org"
-                >
-                    <div className="cursor-pointer w-[100px] md:w-[160px] flex items-center justify-center">
-                        <Image
-                            src="/img/PGE_Mothers_Nuclear_logo-FULL.png"
-                            alt="Mothers for Nuclear Logo"
-                            width={160}
-                            height={160}
-                            className="w-auto h-[50px] md:h-[140px] object-contain"
-                        />
-                    </div>
-                </InfoPopover>
-                <AddIcon sx={{
-                    color: "rgb(124 45 18)",
-                    fontSize: "2rem",
-                    '@media (min-width: 768px)': {
-                        fontSize: "3rem"
-                    }
-                }} />
-                <InfoPopover
-                    content={
-                        <div>
-                            <p>The Roving Reactor Project is a traveling exhibit designed to educate and encourage action on nuclear energy.</p>
-                        </div>
-                    }
-                    linkText="Visit Website"
-                    linkHref="/about"
-                >
-                    <div className="cursor-pointer w-[100px] md:w-[160px] flex items-center justify-center">
-                        <Image
-                            src="/img/RR-logo-vector-black.svg"
-                            alt="Roving Reactor Logo"
-                            width={160}
-                            height={160}
-                            className="w-auto h-[50px] md:h-[140px] object-contain"
-                        />
-                    </div>
-                </InfoPopover>
-            </div>
+
             <div className="text-xl text-orange-950 mb-3 font-normal">
                 <Accordion>
                     <AccordionSummary
@@ -111,11 +38,9 @@ export default function Soup() {
                     >
                         <div className="text-orange-950">
                             <p className="text-xl mb-4">
-                                On a Wednesday evening this November, <a href="https://www.generationatomic.org/" rel="noopener noreferrer" className="text-orange-700 hover:text-orange-900 no-underline hover:underline">Generation Atomic</a>, <a href="https://www.mothersfornuclear.org/" rel="noopener noreferrer" className="text-orange-700 hover:text-orange-900 no-underline hover:underline">Mothers for Nuclear</a>, and the <a href="https://www.rovingreactor.org/" rel="noopener noreferrer" className="text-orange-700 hover:text-orange-900 no-underline hover:underline">Roving Reactor Project</a> want to fill 20 dining rooms across America with thoughtful people from the nuclear energy ecosystem for an evening of hot soup and meaningful conversation about where nuclear energy is headed and how to tell its story.
+                                On a Wednesday evening this November, <a href="https://www.generationatomic.org/" rel="noopener noreferrer" className="text-orange-700 hover:text-orange-900 no-underline hover:underline">Generation Atomic</a>, <a href="https://www.mothersfornuclear.org/" rel="noopener noreferrer" className="text-orange-700 hover:text-orange-900 no-underline hover:underline">Mothers for Nuclear</a>, and the <a href="https://www.rovingreactor.org/" rel="noopener noreferrer" className="text-orange-700 hover:text-orange-900 no-underline hover:underline">Roving Reactor Project</a> want to fill 20 dining rooms across America with thoughtful people from the nuclear energy ecosystem for an evening of hot soup and conversation about where nuclear energy is headed and how to tell its story.
                             </p>
-                            <p className="text-xl">
-                                Also it's a chance for people from different habitats of nuclear to meet each other: A night to connect with fellow travelers from research, regulation, builders & operators (from welders to CEOs), investment, advocacy, and education, and a chance to explore common ground while respectfully acknowledging different perspectives on nuclear's future.
-                            </p>
+
                         </div>
                     </AccordionDetails>
                 </Accordion>
@@ -146,8 +71,8 @@ export default function Soup() {
                         <div className="text-orange-950">
                             <ul className="text-xl list-disc list-inside">
                                 <li>20 simultaneous soup nights in 20 cities hosted in private homes nationwide</li>
-                                <li>6 attendees per gathering, spanning different nuclear energy expertise</li>
-                                <li>All food, drinks, and transportation provided</li>
+                                <li>Six to eight attendees per gathering, from across nuclear energy disciplines</li>
+                                <li>Food, drink, and transportation provided</li>
                                 <li>Interested in hosting? See below.</li>
                             </ul>
                         </div>
@@ -180,7 +105,7 @@ export default function Soup() {
                         <div className="text-orange-950">
                             <p className="text-xl mb-4">When you arrive, you'll find:</p>
                             <ul className="text-xl list-disc list-inside">
-                                <li>Food - Homemade soup, homemade bread, and roasted vegetables</li>
+                                <li>Food - Hearty soup, bread, and vegetables</li>
                                 <li>Drinks - Alcoholic and non-alcoholic</li>
                                 <li>An open forum for conversation with a range of nuclear energy perspectives</li>
                                 <li>A keepsake to remember the evening</li>
@@ -222,7 +147,84 @@ export default function Soup() {
                     </a>
                 </div>
             </div>
-        </ThemeProvider>
 
+            {/* Wrap the header and logo row in a bordered container */}
+            <div className="border border-orange-800 rounded-lg p-6 mt-12">
+                <h3 className="text-3xl text-orange-800 mb-6 font-normal">Brought to you by...</h3>
+                <div className="flex flex-row items-center justify-center gap-2 md:gap-4 mx-auto">
+                    <InfoPopover
+                        content={
+                            <div>
+                                <p>Generation Atomic inspires and mobilizes advocates to build a cultural movement supporting a clean future powered by nuclear energy.</p>
+                            </div>
+                        }
+                        linkText="Visit Website"
+                        linkHref="https://www.generationatomic.org"
+                    >
+                        <div className="cursor-pointer w-[100px] md:w-[160px] flex items-center justify-center">
+                            <Image
+                                src="/img/gen-atomic-transparent-logo.png"
+                                alt="Generation Atomic Logo"
+                                width={160}
+                                height={160}
+                                className="w-auto h-[50px] md:h-[140px] object-contain"
+                            />
+                        </div>
+                    </InfoPopover>
+                    <AddIcon sx={{
+                        color: "rgb(124 45 18)",
+                        fontSize: "2rem",
+                        '@media (min-width: 768px)': {
+                            fontSize: "3rem"
+                        }
+                    }} />
+                    <InfoPopover
+                        content={
+                            <div>
+                                <p>Mothers for Nuclear champions nuclear energy as a vital solution to climate change, air pollution, and energy poverty, driven by moms protecting their children's future.</p>
+                            </div>
+                        }
+                        linkText="Visit Website"
+                        linkHref="https://www.mothersfornuclear.org"
+                    >
+                        <div className="cursor-pointer w-[100px] md:w-[160px] flex items-center justify-center">
+                            <Image
+                                src="/img/PGE_Mothers_Nuclear_logo-FULL.png"
+                                alt="Mothers for Nuclear Logo"
+                                width={160}
+                                height={160}
+                                className="w-auto h-[50px] md:h-[140px] object-contain"
+                            />
+                        </div>
+                    </InfoPopover>
+                    <AddIcon sx={{
+                        color: "rgb(124 45 18)",
+                        fontSize: "2rem",
+                        '@media (min-width: 768px)': {
+                            fontSize: "3rem"
+                        }
+                    }} />
+                    <InfoPopover
+                        content={
+                            <div>
+                                <p>The Roving Reactor Project is a traveling exhibit designed to educate and encourage action on nuclear energy.</p>
+                            </div>
+                        }
+                        linkText="Visit Website"
+                        linkHref="/about"
+                    >
+                        <div className="cursor-pointer w-[100px] md:w-[160px] flex items-center justify-center">
+                            <Image
+                                src="/img/RR-logo-vector-black.svg"
+                                alt="Roving Reactor Logo"
+                                width={160}
+                                height={160}
+                                className="w-auto h-[50px] md:h-[140px] object-contain"
+                            />
+                        </div>
+                    </InfoPopover>
+                </div>
+            </div>
+        </ThemeProvider>
     );
 } 
