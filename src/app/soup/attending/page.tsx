@@ -145,7 +145,7 @@ export default function Attending() {
                                     <ul className="list-none list-inside">
                                         <li><InfoPopover
                                             header="Richland, WA"
-                                            content="Home to the Pacific Northwest National Laboratory and a hub for nuclear research and innovation."
+                                            content="Richland drives nuclear progress with Columbia Generating Station and an Energy Northwest–Amazon small modular reactor project advancing innovation in carbon-free energy."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Richland"
                                         >
@@ -153,7 +153,7 @@ export default function Attending() {
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Idaho Falls, ID"
-                                            content="Location of the Idaho National Laboratory and a center for nuclear energy research and development."
+                                            content="Idaho Falls spearheads nuclear innovation with Idaho National Laboratory, building on EBR-I, the first reactor to generate electricity, and advancing new reactor technologies."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Idaho Falls"
                                         >
@@ -161,7 +161,8 @@ export default function Attending() {
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Santa Fe, NM"
-                                            content="A city in New Mexico known for its nuclear research facilities."
+                                            content="Santa Fe fosters nuclear policy dialogue and innovation, bridging advocacy, education, and collaboration with nearby Los Alamos and Sandia National Laboratories.
+"
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Santa Fe"
                                         >
@@ -169,7 +170,7 @@ export default function Attending() {
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Los Angeles, CA"
-                                            content="A city in California known for its university and proximity to the Pacific Ocean."
+                                            content="Los Angeles shaped early nuclear progress with 1950s reactor experiments at Santa Susana and now explores advanced reactors to meet modern clean energy goals."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Los Angeles"
                                         >
@@ -181,14 +182,14 @@ export default function Attending() {
                                                     header="San Luis Obispo, CA"
                                                     content={
                                                         <div>
-                                                            <p>Our first confirmed Nuclear Soup location! Join us in this beautiful Central California city, home to Diablo Canyon Power Plant.</p>
+                                                            <p>San Luis Obispo is home to Mothers for Nuclear, as well as Diablo Canyon, California's last operating nuclear plant, central to nuclear energy research, innovation, and policy discussions.</p>
                                                             <p className="flex items-center gap-2 mt-4">
                                                                 <FontAwesomeIcon
                                                                     icon={faCircleH}
                                                                     className="text-orange-900"
                                                                     style={{ fontSize: '1rem' }}
                                                                 />
-                                                                <span className="text-orange-700">This city already has a host</span>
+                                                                <span className="text-orange-700">This city already has a host.</span>
                                                             </p>
                                                         </div>
                                                     }
@@ -231,7 +232,7 @@ export default function Attending() {
                                     <ul className="list-none list-inside">
                                         <li><InfoPopover
                                             header="Chicago, IL"
-                                            content="A city in Illinois known for its university and proximity to the Mississippi River."
+                                            content="Chicago launched the nuclear age with the first self-sustained chain reaction in 1942 and continues to innovate via Argonne National Lab and industry leadership."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Chicago"
                                         >
@@ -243,14 +244,15 @@ export default function Attending() {
                                                     header="St. Paul, MN"
                                                     content={
                                                         <div>
-                                                            <p>Join us in Minnesota's capital city for an evening of engaging nuclear energy discussion and delicious soup.</p>
+                                                            <p>St. Paul leverages nuclear power through Xcel Energy's Prairie Island and Monticello plants to support the region's clean energy goals and grid reliability. It's also home to Generation Atomic.
+                                                            </p>
                                                             <p className="flex items-center gap-2 mt-4">
                                                                 <FontAwesomeIcon
                                                                     icon={faCircleH}
                                                                     className="text-orange-900"
                                                                     style={{ fontSize: '1rem' }}
                                                                 />
-                                                                <span className="text-orange-700">This city already has a host</span>
+                                                                <span className="text-orange-700">This city already has a host.</span>
                                                             </p>
                                                         </div>
                                                     }
@@ -263,7 +265,7 @@ export default function Attending() {
                                         </li>
                                         <li><InfoPopover
                                             header="Columbus, OH"
-                                            content="A city in Ohio known for its university and proximity to the Ohio River."
+                                            content="Columbus contributes to nuclear advancement through Battelle's national lab management and Ohio State University's reactor program, uniting industry innovation with academic training."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Columbus"
                                         >
@@ -271,7 +273,8 @@ export default function Attending() {
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Knoxville/Oak Ridge, TN"
-                                            content="A city in Tennessee known for its proximity to the Great Smoky Mountains."
+                                            content="Knoxville-Oak Ridge anchors nuclear research and industry with Oak Ridge National Lab's advanced reactor and isotope programs and TVA's pursuit of small modular reactors.
+"
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Knoxville"
                                         >
@@ -279,7 +282,7 @@ export default function Attending() {
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="St. Louis, MO"
-                                            content="A city in Missouri known for its university and proximity to the Mississippi River."
+                                            content="St. Louis bolsters nuclear energy through Ameren's Callaway plant and plans for next-generation reactors, expanding Missouri's commitment to clean, reliable power."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=St. Louis"
                                         >
@@ -317,7 +320,7 @@ export default function Attending() {
                                     <ul className="list-none list-inside">
                                         <li><InfoPopover
                                             header="Houston, TX"
-                                            content="A city in Texas known for its energy industry and proximity to the Gulf of Mexico."
+                                            content="Houston extends its energy leadership to nuclear power, integrating the South Texas Project's steady output and pursuing advanced reactors for deep decarbonization."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Houston"
                                         >
@@ -329,14 +332,14 @@ export default function Attending() {
                                                     header="Austin, TX"
                                                     content={
                                                         <div>
-                                                            <p>Experience Nuclear Soup in the heart of Texas! Join us in this vibrant city known for innovation and technology.</p>
+                                                            <p>Austin blends nuclear research and energy leadership, operating a TRIGA research reactor at UT Austin - and currently home to the Texas Nuclear Alliance, Aalo Atomics, and the Roving Reactor project.</p>
                                                             <p className="flex items-center gap-2 mt-4">
                                                                 <FontAwesomeIcon
                                                                     icon={faCircleH}
                                                                     className="text-orange-900"
                                                                     style={{ fontSize: '1rem' }}
                                                                 />
-                                                                <span className="text-orange-700">This city already has a host</span>
+                                                                <span className="text-orange-700">This city already has a host.</span>
                                                             </p>
                                                         </div>
                                                     }
@@ -349,7 +352,7 @@ export default function Attending() {
                                         </li>
                                         <li><InfoPopover
                                             header="Aiken, SC"
-                                            content="A city in South Carolina known for its university and proximity to the Atlantic Ocean."
+                                            content="Aiken plays a pivotal role at the Savannah River Site, where a national lab drives materials management, environmental cleanup, and innovation in reactor technology."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Aiken"
                                         >
@@ -357,7 +360,7 @@ export default function Attending() {
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Huntsville, AL"
-                                            content="A city in Alabama known for its proximity to the Appalachian Mountains."
+                                            content="Huntsville propels nuclear technology for space exploration at NASA's Marshall Space Flight Center, developing nuclear propulsion and power systems that bridge aerospace and energy."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Huntsville"
                                         >
@@ -365,7 +368,7 @@ export default function Attending() {
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Charlotte, NC"
-                                            content="A city in North Carolina known for its university and proximity to the Atlantic Ocean."
+                                            content="Charlotte serves as a nuclear industry hub, with Duke Energy's nuclear headquarters and a cluster of engineering firms driving modern reactor design and operations."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Charlotte"
                                         >
@@ -403,7 +406,7 @@ export default function Attending() {
                                     <ul className="list-none list-inside">
                                         <li><InfoPopover
                                             header="Boston, MA"
-                                            content="A city in Massachusetts known for its university and proximity to the Atlantic Ocean."
+                                            content="Boston cultivates nuclear innovation with MIT's research reactor and engineering programs, alongside startups and policy initiatives advancing reactor technology and clean energy strategies."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Boston"
                                         >
@@ -411,7 +414,7 @@ export default function Attending() {
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Pittsburgh, PA"
-                                            content="A city in Pennsylvania known for its university and proximity to the Allegheny Mountains."
+                                            content="Pittsburgh fuels nuclear innovation with Westinghouse's reactor technology headquarters, nearby Penn State, and the legacy of Shippingport, America's first commercial nuclear power plant."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Pittsburgh"
                                         >
@@ -419,7 +422,7 @@ export default function Attending() {
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Washington, D.C."
-                                            content="A city in the District of Columbia known for its proximity to the Potomac River."
+                                            content="Washington, D.C. shapes nuclear policy and regulation, with federal agencies and industry organizations guiding safety standards, innovation, and deployment nationwide."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Washington"
                                         >
@@ -427,7 +430,7 @@ export default function Attending() {
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Schenectady, NY"
-                                            content="A city in New York known for its proximity to the Hudson River."
+                                            content=" Schenectady pioneered civilian nuclear power through General Electric's early reactor projects and continues contributing via Knolls Atomic Power Lab's naval reactor development."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Schenectady"
                                         >
@@ -435,7 +438,7 @@ export default function Attending() {
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Wilmington, NC"
-                                            content="A city in North Carolina known for its university and proximity to the Atlantic Ocean."
+                                            content="Wilmington, NC leads in nuclear technology as GE Hitachi's headquarters, where advanced reactor designs and fuel innovations are developed for global carbon-free power."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Wilmington"
                                         >

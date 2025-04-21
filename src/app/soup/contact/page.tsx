@@ -30,6 +30,11 @@ function ContactForm() {
                 ...prev,
                 subject: city ? `Attending a Nuclear Soup - ${city}` : "Attending a Nuclear Soup"
             }));
+        } else if (from === 'sponsors') {
+            setFormData(prev => ({
+                ...prev,
+                subject: "Sponsoring a Nuclear Soup"
+            }));
         }
     }, [searchParams]);
 
@@ -80,6 +85,7 @@ function ContactForm() {
         const baseOptions = [
             "Attending a Nuclear Soup",
             "Hosting a Nuclear Soup",
+            "Sponsoring a Nuclear Soup",
             "Nuclear Soup Media Request",
             "Nuclear Soup - Other"
         ];

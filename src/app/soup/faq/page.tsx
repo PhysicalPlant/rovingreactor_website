@@ -99,7 +99,7 @@ export default function FAQ() {
                             <p className="text-xl mb-4 font-bold">
                                 How does transportation work?
                             </p>
-                            <p className="text-xl mb-4">We'll provide rideshare credits for all participants.
+                            <p className="text-xl mb-4">If you can't drive to the host's home, let us know and we'll cover your rideshare.
                             </p>
                             <p className="text-xl mb-4 font-bold">
                                 What about dietary restrictions?
