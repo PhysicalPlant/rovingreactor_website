@@ -125,13 +125,19 @@ export default function Soup() {
                         href="/soup/attending"
                         className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
                     >
-                        Learn more about attending
+                        Learn More About Attending
                     </a>
                     <a
                         href="/soup/hosting"
                         className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
                     >
                         Interested in Hosting?
+                    </a>
+                    <a
+                        href="/soup/sponsors"
+                        className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
+                    >
+                        Our Sponsors
                     </a>
                     <a
                         href="/soup/faq"
@@ -149,9 +155,9 @@ export default function Soup() {
             </div>
 
             {/* Wrap the header and logo row in a bordered container */}
-            <div className="border border-orange-800 rounded-lg p-6 mt-12">
-                <h3 className="text-3xl text-orange-800 mb-6 font-normal">Brought to you by...</h3>
-                <div className="flex flex-row items-center justify-center gap-2 md:gap-4 mx-auto">
+            <div className="border border-orange-800 rounded-lg p-4 md:p-6 mt-12">
+                <h3 className="text-xl text-orange-800 mb-4 md:mb-6 font-normal">Brought to you by...</h3>
+                <div className="flex flex-row items-center justify-center gap-1 md:gap-4 mx-auto px-2 md:px-0">
                     <InfoPopover
                         content={
                             <div>
@@ -161,19 +167,19 @@ export default function Soup() {
                         linkText="Visit Website"
                         linkHref="https://www.generationatomic.org"
                     >
-                        <div className="cursor-pointer w-[100px] md:w-[160px] flex items-center justify-center">
+                        <div className="cursor-pointer w-[80px] md:w-[160px] flex items-center justify-center">
                             <Image
                                 src="/img/gen-atomic-transparent-logo.png"
                                 alt="Generation Atomic Logo"
                                 width={160}
                                 height={160}
-                                className="w-auto h-[50px] md:h-[140px] object-contain"
+                                className="w-auto h-[40px] md:h-[140px] object-contain"
                             />
                         </div>
                     </InfoPopover>
                     <AddIcon sx={{
                         color: "rgb(124 45 18)",
-                        fontSize: "2rem",
+                        fontSize: "1.5rem",
                         '@media (min-width: 768px)': {
                             fontSize: "3rem"
                         }
@@ -187,19 +193,19 @@ export default function Soup() {
                         linkText="Visit Website"
                         linkHref="https://www.mothersfornuclear.org"
                     >
-                        <div className="cursor-pointer w-[100px] md:w-[160px] flex items-center justify-center">
+                        <div className="cursor-pointer w-[80px] md:w-[160px] flex items-center justify-center">
                             <Image
                                 src="/img/PGE_Mothers_Nuclear_logo-FULL.png"
                                 alt="Mothers for Nuclear Logo"
                                 width={160}
                                 height={160}
-                                className="w-auto h-[50px] md:h-[140px] object-contain"
+                                className="w-auto h-[40px] md:h-[140px] object-contain"
                             />
                         </div>
                     </InfoPopover>
                     <AddIcon sx={{
                         color: "rgb(124 45 18)",
-                        fontSize: "2rem",
+                        fontSize: "1.5rem",
                         '@media (min-width: 768px)': {
                             fontSize: "3rem"
                         }
@@ -213,13 +219,13 @@ export default function Soup() {
                         linkText="Visit Website"
                         linkHref="/about"
                     >
-                        <div className="cursor-pointer w-[100px] md:w-[160px] flex items-center justify-center">
+                        <div className="cursor-pointer w-[80px] md:w-[160px] flex items-center justify-center">
                             <Image
                                 src="/img/RR-logo-vector-black.svg"
                                 alt="Roving Reactor Logo"
                                 width={160}
                                 height={160}
-                                className="w-auto h-[50px] md:h-[140px] object-contain"
+                                className="w-auto h-[40px] md:h-[140px] object-contain"
                             />
                         </div>
                     </InfoPopover>
