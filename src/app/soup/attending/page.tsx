@@ -500,13 +500,13 @@ export default function Attending() {
             <div className="text-xl mb-3 font-normal">
                 <a
                     href="/soup/contact?from=attending"
-                    className="inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline mr-4"
+                    className="inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline mr-4 my-2"
                 >
                     Count Me In
                 </a>
                 <a
                     href="/soup/hosting"
-                    className="inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
+                    className="inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline my-2"
                 >
                     Interested in Hosting?
                 </a>
