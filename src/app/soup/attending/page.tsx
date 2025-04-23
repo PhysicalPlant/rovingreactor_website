@@ -88,6 +88,7 @@ export default function Attending() {
                                 <li><strong>Investment:</strong> Funders, developers, and project managers</li>
                                 <li><strong>Advocacy:</strong> Communicators, organizers, and champions</li>
                                 <li><strong>Education:</strong> Teachers and workforce developers</li>
+                                <li><strong>Students:</strong> Interested learners of any age</li>
 
                             </ul>
 
@@ -422,7 +423,7 @@ export default function Attending() {
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Washington, D.C."
-                                            content="Washington, D.C. shapes nuclear policy and regulation, with federal agencies and industry organizations guiding safety standards, innovation, and deployment nationwide."
+                                            content="Washington shapes nuclear policy and regulation, with federal agencies and industry organizations guiding safety standards, innovation, and deployment nationwide."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Washington"
                                         >
@@ -438,7 +439,7 @@ export default function Attending() {
                                         </InfoPopover></li>
                                         <li><InfoPopover
                                             header="Wilmington, NC"
-                                            content="Wilmington, NC leads in nuclear technology as GE Hitachi's headquarters, where advanced reactor designs and fuel innovations are developed for global carbon-free power."
+                                            content="Wilmington leads in nuclear technology as GE Hitachi's headquarters, where advanced reactor designs and fuel innovations are developed for global carbon-free power."
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Wilmington"
                                         >

@@ -118,7 +118,7 @@ export default function Soup() {
             <h2 className="text-4xl text-orange-950 my-6 font-normal">Join Us</h2>
             <div className="text-xl text-orange-950 mb-3 font-normal">
                 <p className="mb-4">
-                    Whether you're in <strong>research, regulation, industry, investment, advocacy,</strong> or <strong>education</strong>—we want to bring nuclear's many voices to the table.
+                    Whether you're in <strong>research, regulation, industry, investment, advocacy, education</strong> - or whether you're a <strong>student!</strong> - we want to bring nuclear's many voices to the table.
                 </p>
                 <div className="flex flex-col gap-4 max-w-md">
                     <a

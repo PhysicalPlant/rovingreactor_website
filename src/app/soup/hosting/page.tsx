@@ -430,7 +430,7 @@ export default function Hosting() {
                                             </InfoPopover></li>
                                             <li><InfoPopover
                                                 header="Washington, D.C."
-                                                content="Washington, D.C. shapes nuclear policy and regulation, with federal agencies and industry organizations guiding safety standards, innovation, and deployment nationwide."
+                                                content="Washington shapes nuclear policy and regulation, with federal agencies and industry organizations guiding safety standards, innovation, and deployment nationwide."
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Washington"
                                             >
@@ -446,7 +446,7 @@ export default function Hosting() {
                                             </InfoPopover></li>
                                             <li><InfoPopover
                                                 header="Wilmington, NC"
-                                                content="Wilmington, NC leads in nuclear technology as GE Hitachi's headquarters, where advanced reactor designs and fuel innovations are developed for global carbon-free power."
+                                                content="Wilmington leads in nuclear technology as GE Hitachi's headquarters, where advanced reactor designs and fuel innovations are developed for global carbon-free power."
                                                 linkText="Interested in hosting?"
                                                 linkHref="/soup/contact?from=hosting&city=Wilmington"
                                             >
@@ -497,7 +497,7 @@ export default function Hosting() {
             <div className="text-xl  mb-3 font-normal">
                 <p className="text-orange-950 mb-6 text-4xl">Become a Host</p>
                 <p className="text-orange-950">
-                    Open your home for this first-of-its-kind gathering that brings together diverse perspectives on the future of nuclear energy
+                    Open your home for this first-of-its-kind gathering that brings together diverse perspectives on the future of nuclear energy.
                 </p>
                 <a
                     href="/soup/contact?from=hosting"
