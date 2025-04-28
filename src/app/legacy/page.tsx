@@ -84,15 +84,17 @@ export default function Legacy() {
             <p className="text-white text-lg mb-6">
               In the aftermath of World War II, Americans were understandably
               anxious about atomic technology, having witnessed its devastating
-              use in Hiroshima and Nagasaki. Yet President
-              Eisenhower—who had led the Allied forces on D-Day—believed nuclear
-              power could foster peace rather than war.
+              use in Hiroshima and Nagasaki. Yet President Eisenhower—who had
+              led the Allied forces on D-Day—believed nuclear power could foster
+              peace rather than war.
             </p>
             <p className="text-white text-lg mb-6">
               <strong className="text-[#8be8d9]">
-                At a time when the government could have relied on newspapers, radio, and television to broadcast their message, leaders chose a more direct approach: traveling exhibits that met people face-to-face.
+                At a time when the government could have relied on newspapers,
+                radio, and television to broadcast their message, leaders chose
+                a more direct approach: traveling exhibits that met people
+                face-to-face.
               </strong>{" "}
-
             </p>
             <h2 className="text-3xl  mb-6 mt-8">
               Traveling Exhibits in the 1950s-60s
@@ -105,18 +107,20 @@ export default function Legacy() {
             <ol className="list-decimal list-inside text-white text-lg mb-6">
               <li className="mb-12">
                 <strong className="text-[#8be8d9]">
-                  <a href="/legacy/your-stake-in-the-atom">Your Stake in the Atom</a>
+                  <a href="/legacy/your-stake-in-the-atom">
+                    Your Stake in the Atom
+                  </a>
                 </strong>
                 <br />A geodesic-dome exhibit transported by truck to fairs,
-                shopping centers, and other public venues (<em>top image</em>). Inside the dome,
-                visitors could operate robotic "hot-lab" arms to simulate the
-                safe handling of radioactive materials and watch live demos of
-                nuclear science in action. During a single regional tour,{" "}
+                shopping centers, and other public venues (<em>top image</em>).
+                Inside the dome, visitors could operate robotic "hot-lab" arms
+                to simulate the safe handling of radioactive materials and watch
+                live demos of nuclear science in action. During a single
+                regional tour,{" "}
                 <strong className="text-[#8be8d9]">tens of thousands</strong> of
                 people would often visit within just a few months.{" "}
                 <a href="#your-stake-in-the-atom">[1]</a>
                 <br />
-
               </li>
               <Image
                 src="/img/ThisAtomicWorld-cropped.png"
@@ -126,7 +130,9 @@ export default function Legacy() {
                 height={1000}
               />
               <li className="mt-3 mb-14">
-                <strong className="text-[#8be8d9]"><a href="/legacy/this-atomic-world">This Atomic World</a></strong>
+                <strong className="text-[#8be8d9]">
+                  <a href="/legacy/this-atomic-world">This Atomic World</a>
+                </strong>
                 <br />A high-school lecture and demonstration tour that
                 eventually deployed up to{" "}
                 <strong className="text-[#8be8d9]">
@@ -167,9 +173,12 @@ export default function Legacy() {
                 <br />
                 <br />
                 These mobile exhibits complemented larger-scale stationary
-                showcases, such as <em><a href="/legacy/atomsville-usa">Atomsville, U.S.A.</a></em> at the 1964–65
-                New York World's Fair—a futuristic vision of a nuclear-powered
-                American town.
+                showcases, such as{" "}
+                <em>
+                  <a href="/legacy/atomsville-usa">Atomsville, U.S.A.</a>
+                </em>{" "}
+                at the 1964–65 New York World's Fair—a futuristic vision of a
+                nuclear-powered American town.
               </li>
             </ol>
 
@@ -192,7 +201,14 @@ export default function Legacy() {
                 scientists, engineers, and a skilled workforce ready to drive
                 the future of nuclear energy.
               </p>
-              <div className="my-12"><a href="https://rovingreactor.org/exhibits" className="my-32 border border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:no-underline transition-colors decoration-0">RR Exhibit Design</a></div>
+              <div className="my-12">
+                <a
+                  href="https://rovingreactor.org/exhibits"
+                  className="my-32 border border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:no-underline transition-colors decoration-0"
+                >
+                  RR Exhibit Design
+                </a>
+              </div>
             </div>
 
             {/* Replace the citations section with this accordion */}
@@ -284,12 +300,10 @@ export default function Legacy() {
                 </div>
               </AccordionDetails>
             </Accordion>
-
           </div>
-
         </div>
-      </main >
+      </main>
       <Footer />
-    </div >
+    </div>
   );
 }

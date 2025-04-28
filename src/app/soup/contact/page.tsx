@@ -102,6 +102,21 @@ function ContactForm() {
         return baseOptions;
     };
 
+    // Function to determine the message label based on the subject
+    const getMessageLabel = () => {
+        const subject = formData.subject.toLowerCase();
+
+        if (subject.includes('hosting') || subject.includes('attending')) {
+            return "Hi! Where are you from and what's your connection to nuclear energy?";
+        } else if (subject.includes('sponsoring')) {
+            return "Thanks for your interest in supporting a soup night. Tell us a bit about yourself and your organization.";
+        } else if (subject.includes('media')) {
+            return "Great to connect! What's your outlet and what aspects of this event interest you?";
+        } else {
+            return "Message";
+        }
+    };
+
     return (
         <form
             onSubmit={handleSubmit}
@@ -195,7 +210,7 @@ function ContactForm() {
                     htmlFor="message"
                     className="block text-sm font-medium text-orange-950 mb-1"
                 >
-                    Message <span className="text-red-500">*</span>
+                    {getMessageLabel()} <span className="text-red-500">*</span>
                 </label>
                 <textarea
                     id="message"

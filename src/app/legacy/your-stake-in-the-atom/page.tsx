@@ -47,7 +47,8 @@ export default function YourStakeInTheAtom() {
           >
             RR Exhibit Design
           </a>
-          <br /><br />
+          <br />
+          <br />
         </div>
       </main>
       <Footer />
