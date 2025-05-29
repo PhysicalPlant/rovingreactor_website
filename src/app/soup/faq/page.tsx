@@ -83,6 +83,34 @@ export default function FAQ() {
                         }}
                     >
                         <AddIcon sx={{ color: "rgb(124 45 18)" }} />
+                        Sponsorship
+                    </AccordionSummary>
+                    <AccordionDetails
+                        sx={{
+                            paddingLeft: '32px'
+                        }}
+                    >
+                        <div className="text-orange-950">
+                            See <a href="/soup/sponsors" className="text-orange-700 hover:underline">Sponsors Page</a>
+                        </div>
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon sx={{ color: "rgb(124 45 18)" }} />}
+                        sx={{
+                            '& .MuiAccordionSummary-content': {
+                                margin: '0 !important',
+                                fontFamily: 'Bona Nova, serif !important',
+                                fontSize: '1.25rem',
+                                fontWeight: 'bold',
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '8px'
+                            }
+                        }}
+                    >
+                        <AddIcon sx={{ color: "rgb(124 45 18)" }} />
                         Logistics
                     </AccordionSummary>
                     <AccordionDetails

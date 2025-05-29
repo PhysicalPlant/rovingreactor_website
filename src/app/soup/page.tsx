@@ -10,6 +10,7 @@ export default function Soup() {
     return (
         <ThemeProvider theme={theme}>
             <h1 className="text-5xl text-orange-900 mb-3 font-normal">National Nuclear Soup Night</h1>
+            <h3 className="text-3xl text-orange-950 mb-3 font-normal">Bringing nuclear energy's many voices to the table</h3>
             <h3 className="text-3xl text-orange-950 mb-6 font-normal">Wednesday, November 12, 2025</h3>
 
             <div className="text-xl text-orange-950 mb-3 font-normal">
@@ -70,7 +71,7 @@ export default function Soup() {
                     >
                         <div className="text-orange-950">
                             <ul className="text-xl list-disc list-inside">
-                                <li>20 simultaneous soup nights in 20 cities hosted in private homes nationwide</li>
+                                <li>Four simultaneous soup nights in 4 cities</li>
                                 <li>Six to eight attendees per gathering, from across nuclear energy disciplines</li>
                                 <li>Food, drink, and transportation provided</li>
                                 <li>Interested in hosting? See below.</li>
@@ -120,24 +121,27 @@ export default function Soup() {
                 <p className="mb-4">
                     Whether you're in <strong>research, regulation, industry, investment, advocacy, education</strong> - or whether you're a <strong>student!</strong> - we want to bring nuclear's many voices to the table.
                 </p>
-                <div className="flex flex-col gap-4 max-w-md">
+                <p className="mb-4">
+                    Year 1 is a small-scale prototype; we'll grow based on what we learn.
+                </p>
+                <div className="flex  gap-2  max-w-md">
                     <a
                         href="/soup/attending"
                         className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
                     >
-                        Learn More About Attending
+                        Attend
                     </a>
                     <a
                         href="/soup/hosting"
                         className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
                     >
-                        Interested in Hosting?
+                        Host
                     </a>
                     <a
                         href="/soup/sponsors"
                         className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
                     >
-                        Our Sponsors
+                        Sponsor
                     </a>
                     <a
                         href="/soup/faq"
@@ -149,7 +153,7 @@ export default function Soup() {
                         href="/soup/contact"
                         className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
                     >
-                        Contact Us
+                        Contact
                     </a>
                 </div>
             </div>

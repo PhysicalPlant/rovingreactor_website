@@ -48,7 +48,13 @@ export default function Hosting() {
                         >
                             <div className="text-orange-950">
                                 <ul className="list-disc list-inside">
-                                    <li><strong>Help with Dinner:</strong> Each meal ideally includes soup, bread, veggies, and drinks. We can provide as much of that as you like.</li>
+                                    <li><strong>Help with Dinner:</strong> Each meal ideally includes soup, bread, veggies, and drinks. Choose from three “support packages”:
+                                        <ol className="list-decimal list-inside">
+                                            <li>We ship you everything.</li>
+                                            <li>We help you find a local caterer.</li>
+                                            <li>You do it yourself (with a stipend from us).</li>
+                                        </ol>
+                                        We estimate the total commitment is ≈ 6 hrs total.</li>
                                     <li><strong>Guest Management:</strong> We handle invitations, RSVPs, and dietary needs</li>
                                     <li><strong>Transportation:</strong> Rideshare credits for guests, on request</li>
                                     <li><strong>Host Gift:</strong> A thank-you for sharing your home</li>
@@ -82,7 +88,7 @@ export default function Hosting() {
                             <div className="text-orange-950">
                                 <ul className="list-disc list-inside">
                                     <li><strong>Your Home:</strong> Space for 6-8 people to dine comfortably</li>
-                                    <li><strong>Your Time:</strong> Welcome guests on Wednesday, November 12th, 2025</li>
+                                    <li><strong>Your Time:</strong> Welcome guests at 7pm local time on Wednesday, November 12th, 2025</li>
                                     <li><strong>Your Perspective:</strong> Share your nuclear energy viewpoint</li>
                                 </ul>
                             </div>
@@ -134,7 +140,7 @@ export default function Hosting() {
                                                 linkText="Want to attend?"
                                                 linkHref="/soup/contact?from=attending&city=San Luis Obispo"
                                             >
-                                                <span className="text-orange-700">San Luis Obispo, CA</span>
+                                                <span className="text-orange-700">San Luis Obispo, CA (West)</span>
                                             </InfoPopover>
                                         </div>
                                         <FontAwesomeIcon
@@ -163,7 +169,7 @@ export default function Hosting() {
                                                 linkText="Want to attend?"
                                                 linkHref="/soup/contact?from=attending&city=St. Paul"
                                             >
-                                                <span className="text-orange-700">St. Paul, MN</span>
+                                                <span className="text-orange-700">St. Paul, MN (Midwest)</span>
                                             </InfoPopover>
                                         </div>
                                         <FontAwesomeIcon
@@ -192,7 +198,7 @@ export default function Hosting() {
                                                 linkText="Want to attend?"
                                                 linkHref="/soup/contact?from=attending&city=Austin"
                                             >
-                                                <span className="text-orange-700">Austin, TX</span>
+                                                <span className="text-orange-700">Austin, TX (South)</span>
                                             </InfoPopover>
                                         </div>
                                         <FontAwesomeIcon
@@ -207,7 +213,7 @@ export default function Hosting() {
                                         linkText="Interested in hosting?"
                                         linkHref="/soup/contact?from=hosting&city=Washington"
                                     >
-                                        <span className="text-orange-700">Washington, D.C.</span>
+                                        <span className="text-orange-700">Washington, D.C. (Northeast)</span>
                                     </InfoPopover></li>
                                 </ul>
                             </div>
@@ -238,8 +244,7 @@ export default function Hosting() {
                         >
                             <div className="text-orange-950">
                                 <ul className="list-disc list-inside">
-                                    <li>If we receive more than 20 hosting requests, we'll seek additional sponsorship</li>
-                                    <li>If fewer than 20, each gathering gets more lavish</li>
+
                                     <li>Exact addresses shared only with confirmed attendees one week before</li>
                                 </ul>
                             </div>

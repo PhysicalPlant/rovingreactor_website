@@ -10,11 +10,47 @@ export default function Sponsors() {
         <div>
             <h1 className="text-5xl text-orange-900 mb-3 font-normal">Our Sponsors</h1>
             <p className="text-xl text-orange-950 mb-3 font-normal">
-                Generation Atomic, Mothers for Nuclear, and the Roving Reactor are proud to collaborate with organizations that share our commitment to fostering dialogue, understanding, and excitement around nuclear energy. The sponsors below are generously supporting one or more of our 20 dinners.
+                Generation Atomic, Mothers for Nuclear, and the Roving Reactor are proud to collaborate with organizations that share our commitment to fostering dialogue, understanding, and excitement around nuclear energy. The sponsors below are generously supporting one or more of our 4 dinners.
             </p>
             <p className="text-xl text-orange-950 mb-3 font-normal">
                 We thank them for their support!
             </p>
+            <ThemeProvider theme={theme}>
+                <Accordion>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon sx={{ color: "rgb(124 45 18)" }} />}
+                        sx={{
+                            '& .MuiAccordionSummary-content': {
+                                margin: '0 !important',
+                                fontFamily: 'Bona Nova, serif !important',
+                                fontSize: '1.25rem',
+                                fontWeight: 'bold',
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '8px'
+                            }
+                        }}
+                    >
+                        <AddIcon sx={{ color: "rgb(124 45 18)" }} />
+                        Sponsorship Details
+                    </AccordionSummary>
+                    <AccordionDetails
+                        sx={{
+                            paddingLeft: '32px'
+                        }}
+                    >
+                        <div className="text-orange-950">
+                            <ul className="list-disc list-inside">
+                                <li>All Soup Night materials will prominently feature sponsor names and logos.</li>
+                                <li>We're seeking $2K -$3K for each city-level event.</li>
+                                <li>After the event, we'll send each sponsor a deck to recap the evening, including photos, impact and metrics, information about how their brand was showcased, and the roadmap for expanding to 20 cities next year.
+                                </li>
+
+                            </ul>
+                        </div>
+                    </AccordionDetails>
+                </Accordion>
+            </ThemeProvider>
             <p className="text-xl text-orange-950 mb-3 font-normal">
                 Interested in becoming a sponsor? We'd love to hear from you.
 

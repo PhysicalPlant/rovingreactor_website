@@ -2,8 +2,7 @@
 import { Accordion, AccordionSummary, AccordionDetails, ThemeProvider } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import HdrStrongIcon from '@mui/icons-material/HdrStrong';
-import HotelIcon from '@mui/icons-material/Hotel';
+
 import { theme } from "../shared/theme";  // Import the theme
 import InfoPopover from '../../components/InfoPopover';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -41,7 +40,7 @@ export default function Attending() {
                     >
                         <div className="text-orange-950">
                             <p className="text-xl mb-4">
-                                Join us Wednesday, November 12, 2025, for an evening connecting with nuclear energy peers. Enjoy:
+                                Join us Wednesday, November 12, 2025 at 7pm local time, for two hours connecting with nuclear energy peers. Enjoy:
 
                             </p>
                             <ul className="text-xl list-disc list-inside">
@@ -141,7 +140,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=San Luis Obispo"
                                         >
-                                            <span className="text-orange-700">San Luis Obispo, CA</span>
+                                            <span className="text-orange-700">San Luis Obispo, CA (West)</span>
                                         </InfoPopover>
                                     </div>
                                 </li>
@@ -165,7 +164,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=St. Paul"
                                         >
-                                            <span className="text-orange-700">St. Paul, MN</span>
+                                            <span className="text-orange-700">St. Paul, MN (Midwest)</span>
                                         </InfoPopover>
                                     </div>
                                 </li>
@@ -189,7 +188,7 @@ export default function Attending() {
                                             linkText="Want to attend?"
                                             linkHref="/soup/contact?from=attending&city=Austin"
                                         >
-                                            <span className="text-orange-700">Austin, TX</span>
+                                            <span className="text-orange-700">Austin, TX (South)</span>
                                         </InfoPopover>
                                     </div>
                                 </li>
@@ -199,7 +198,7 @@ export default function Attending() {
                                     linkText="Want to attend?"
                                     linkHref="/soup/contact?from=attending&city=Washington"
                                 >
-                                    <span className="text-orange-700">Washington, D.C.</span>
+                                    <span className="text-orange-700">Washington, D.C. (Northeast)</span>
                                 </InfoPopover></li>
                             </ul>
                         </div>
