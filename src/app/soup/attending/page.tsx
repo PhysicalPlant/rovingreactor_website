@@ -40,10 +40,10 @@ export default function Attending() {
                     >
                         <div className="text-orange-950">
                             <p className="text-xl mb-4">
-                                Join us Wednesday, November 12, 2025 at 7pm local time, for two hours connecting with nuclear energy peers. Enjoy:
+                                Join us Wednesday, November 12, 2025, for an evening connecting with nuclear energy peers. Enjoy:
 
                             </p>
-                            <ul className="text-xl list-disc list-inside">
+                            <ul className="text-xl list-disc list-outside ml-6">
                                 <li><strong>A Full Meal</strong> Soup, bread, vegetables, wine, beer, and non-alcoholic options</li>
                                 <li><strong>Conversation:</strong> Share diverse perspectives on nuclear's future</li>
                                 <li><strong>Convenience:</strong> No need to bring anything — we'll make attending and hosting easy and fun. Rideshare credits available.</li>
@@ -80,7 +80,7 @@ export default function Attending() {
                                 We hope to bring together people from across the nuclear energy ecosystem:
 
                             </p>
-                            <ul className="text-xl list-disc list-inside">
+                            <ul className="text-xl list-disc list-outside ml-6">
                                 <li><strong>Research:</strong> Scientists, engineers, and lab techs</li>
                                 <li><strong>Regulation:</strong> Policy experts and regulatory professionals</li>
                                 <li><strong>Builders & Operators:</strong> From welders to CEOs</li>
@@ -228,7 +228,7 @@ export default function Attending() {
                         }}
                     >
                         <div className="text-orange-950">
-                            <ul className="list-disc list-inside text-orange-950">
+                            <ul className="list-disc list-outside ml-6 text-orange-950">
                                 <li><strong>Let us know:</strong> In the response form, let us know a bit about yourself and which soup city works for you. (Button below)</li>
                                 <li><strong>Review:</strong> Our team selects diverse participants (within 2 weeks)</li>
                                 <li><strong>Invitation:</strong> We send you an invitation and a preference survey (vegetarian, etc)</li>

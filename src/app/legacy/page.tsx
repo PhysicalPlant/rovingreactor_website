@@ -104,7 +104,7 @@ export default function Legacy() {
               three separate traveling programs:
             </p>
 
-            <ol className="list-decimal list-inside text-white text-lg mb-6">
+            <ol className="list-decimal list-outside ml-6 text-white text-lg mb-6">
               <li className="mb-12">
                 <strong className="text-[#8be8d9]">
                   <a href="/legacy/your-stake-in-the-atom">
@@ -234,10 +234,10 @@ export default function Legacy() {
               </AccordionSummary>
               <AccordionDetails>
                 <div className="text-white">
-                  <ol className="list-decimal list-inside text-sm">
+                  <ol className="list-decimal list-outside ml-6 text-sm">
                     <li id="your-stake-in-the-atom">
                       "Your Stake in the Atom" Dome Exhibit
-                      <ul className="list-disc list-inside ml-4 mt-2">
+                      <ul className="list-disc list-outside ml-10 mt-2">
                         <li className="mb-2">
                           Taylor, Alan (2012).{" "}
                           <em>The Secret City, The Atlantic.</em> Photo essay by
@@ -253,7 +253,7 @@ export default function Legacy() {
                     </li>
                     <li id="this-atomic-world" className="mt-4">
                       "This Atomic World" Reach:
-                      <ul className="list-disc list-inside ml-4 mt-2">
+                      <ul className="list-disc list-outside ml-10 mt-2">
                         <li className="mb-2">
                           ED046215, ERIC (1970).{" "}
                           <em>
@@ -276,7 +276,7 @@ export default function Legacy() {
                     </li>
                     <li id="atoms-for-peace" className="mt-4">
                       Atoms for Peace Travel Exhibits:
-                      <ul className="list-disc list-inside ml-4 mt-2">
+                      <ul className="list-disc list-outside ml-10 mt-2">
                         <li className="mb-2">
                           Brooklyn Public Library Blog (2022).{" "}
                           <em>

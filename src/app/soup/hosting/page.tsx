@@ -47,14 +47,14 @@ export default function Hosting() {
                             }}
                         >
                             <div className="text-orange-950">
-                                <ul className="list-disc list-inside">
-                                    <li><strong>Help with Dinner:</strong> Each meal ideally includes soup, bread, veggies, and drinks. Choose from three “support packages”:
-                                        <ol className="list-decimal list-inside">
+                                <ul className="list-disc list-outside ml-6">
+                                    <li><strong>Help with Dinner:</strong> Each meal ideally includes soup, bread, veggies, and drinks. Choose from three &quot;support packages&quot;:
+                                        <ol className="list-decimal list-outside ml-6">
                                             <li>We ship you everything.</li>
                                             <li>We help you find a local caterer.</li>
                                             <li>You do it yourself (with a stipend from us).</li>
                                         </ol>
-                                        We estimate the total commitment is ≈ 6 hrs total.</li>
+                                        We estimate the total commitment is ≈ 6 hrs.</li>
                                     <li><strong>Guest Management:</strong> We handle invitations, RSVPs, and dietary needs</li>
                                     <li><strong>Transportation:</strong> Rideshare credits for guests, on request</li>
                                     <li><strong>Host Gift:</strong> A thank-you for sharing your home</li>
@@ -86,7 +86,7 @@ export default function Hosting() {
                             }}
                         >
                             <div className="text-orange-950">
-                                <ul className="list-disc list-inside">
+                                <ul className="list-disc list-outside ml-6">
                                     <li><strong>Your Home:</strong> Space for 6-8 people to dine comfortably</li>
                                     <li><strong>Your Time:</strong> Welcome guests at 7pm local time on Wednesday, November 12th, 2025</li>
                                     <li><strong>Your Perspective:</strong> Share your nuclear energy viewpoint</li>
@@ -243,7 +243,7 @@ export default function Hosting() {
                             }}
                         >
                             <div className="text-orange-950">
-                                <ul className="list-disc list-inside">
+                                <ul className="list-disc list-outside ml-6">
 
                                     <li>Exact addresses shared only with confirmed attendees one week before</li>
                                 </ul>

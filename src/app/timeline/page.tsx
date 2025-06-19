@@ -13,7 +13,7 @@ export default function Timeline() {
               ensuring Roving Reactor&apos;s growth as a nationwide initiative
               for nuclear energy awareness.
             </p>
-            <ul className="list-disc list-inside text-white text-xl">
+            <ul className="list-disc list-outside ml-6 text-white text-xl">
               <li className="mb-4">
                 <span className="font-bold">Year 1 - Foundation</span> Initial
                 project development, securing early funding, and establishing
@@ -53,7 +53,7 @@ export default function Timeline() {
               Recent milestones that showcase the growth and support behind
               Roving Reactor.
             </p>
-            <ul className="list-disc list-inside text-white text-xl">
+            <ul className="list-disc list-outside ml-6 text-white text-xl">
               <li className="mb-4">
                 <span className="font-bold">January 2025</span> Partnered to submit major DoE workforce proposal for Nuclear
                 Reactor Safety Training Program, secured backing from MIT,

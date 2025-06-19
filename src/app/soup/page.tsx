@@ -10,7 +10,7 @@ export default function Soup() {
     return (
         <ThemeProvider theme={theme}>
             <h1 className="text-5xl text-orange-900 mb-3 font-normal">National Nuclear Soup Night</h1>
-            <h3 className="text-3xl text-orange-950 mb-3 font-normal">Bringing nuclear energy's many voices to the table</h3>
+            <h3 className="text-3xl text-orange-900 mb-3 font-normal italic">Bringing nuclear energy&apos;s many voices to the table</h3>
             <h3 className="text-3xl text-orange-950 mb-6 font-normal">Wednesday, November 12, 2025</h3>
 
             <div className="text-xl text-orange-950 mb-3 font-normal">
@@ -39,7 +39,7 @@ export default function Soup() {
                     >
                         <div className="text-orange-950">
                             <p className="text-xl mb-4">
-                                On a Wednesday evening this November, <a href="https://www.generationatomic.org/" rel="noopener noreferrer" className="text-orange-700 hover:text-orange-900 no-underline hover:underline">Generation Atomic</a>, <a href="https://www.mothersfornuclear.org/" rel="noopener noreferrer" className="text-orange-700 hover:text-orange-900 no-underline hover:underline">Mothers for Nuclear</a>, and the <a href="https://www.rovingreactor.org/" rel="noopener noreferrer" className="text-orange-700 hover:text-orange-900 no-underline hover:underline">Roving Reactor Project</a> want to fill 20 dining rooms across America with thoughtful people from the nuclear energy ecosystem for an evening of hot soup and conversation about where nuclear energy is headed and how to tell its story.
+                                On a Wednesday evening this November, <a href="https://www.generationatomic.org/" rel="noopener noreferrer" className="text-orange-700 hover:text-orange-900 no-underline hover:underline">Generation Atomic</a>, <a href="https://www.mothersfornuclear.org/" rel="noopener noreferrer" className="text-orange-700 hover:text-orange-900 no-underline hover:underline">Mothers for Nuclear</a>, and the <a href="https://www.rovingreactor.org/" rel="noopener noreferrer" className="text-orange-700 hover:text-orange-900 no-underline hover:underline">Roving Reactor Project</a> want to fill 4 dining rooms across America with thoughtful people from the nuclear energy ecosystem for an evening of hot soup and conversation about where nuclear energy is headed and how to tell its story.
                             </p>
 
                         </div>
@@ -70,7 +70,7 @@ export default function Soup() {
                         }}
                     >
                         <div className="text-orange-950">
-                            <ul className="text-xl list-disc list-inside">
+                            <ul className="text-xl list-disc list-outside ml-6">
                                 <li>Four simultaneous soup nights in 4 cities</li>
                                 <li>Six to eight attendees per gathering, from across nuclear energy disciplines</li>
                                 <li>Food, drink, and transportation provided</li>
@@ -105,7 +105,7 @@ export default function Soup() {
                     >
                         <div className="text-orange-950">
                             <p className="text-xl mb-4">When you arrive, you'll find:</p>
-                            <ul className="text-xl list-disc list-inside">
+                            <ul className="text-xl list-disc list-outside ml-6">
                                 <li>Food - Hearty soup, bread, and vegetables</li>
                                 <li>Drinks - Alcoholic and non-alcoholic</li>
                                 <li>An open forum for conversation with a range of nuclear energy perspectives</li>

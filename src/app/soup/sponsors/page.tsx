@@ -40,7 +40,7 @@ export default function Sponsors() {
                         }}
                     >
                         <div className="text-orange-950">
-                            <ul className="list-disc list-inside">
+                            <ul className="list-disc list-outside ml-6">
                                 <li>All Soup Night materials will prominently feature sponsor names and logos.</li>
                                 <li>We're seeking $2K -$3K for each city-level event.</li>
                                 <li>After the event, we'll send each sponsor a deck to recap the evening, including photos, impact and metrics, information about how their brand was showcased, and the roadmap for expanding to 20 cities next year.
@@ -64,7 +64,7 @@ export default function Sponsors() {
             <div className="my-4 border-t border-orange-900"></div>
             <p className="text-xl text-orange-950 mb-3 font-normal">
                 We're grateful to these wonderful organizations:            </p>
-            <ul className="list-disc list-inside text-orange-900">
+            <ul className="list-disc list-outside ml-6 text-orange-900">
                 <li>
                     <a href="https://anthropoceneinstitute.com/" className="text-orange-900 text-xl">Anthropocene Institute</a>
                 </li>

@@ -10,31 +10,33 @@ function ContactForm() {
         name: "",
         email: "",
         organization: "",
+        city: "",
         subject: "",
         message: "",
         subscribe: false,
     });
 
-    // Set initial subject based on the 'from' parameter and city
+    // Set initial subject and city based on URL parameters
     useEffect(() => {
         const from = searchParams.get('from');
         const city = searchParams.get('city');
 
+        const updates: { subject?: string; city?: string } = {};
+
         if (from === 'hosting') {
-            setFormData(prev => ({
-                ...prev,
-                subject: city ? `Hosting a Nuclear Soup - ${city}` : "Hosting a Nuclear Soup"
-            }));
+            updates.subject = "Hosting a Nuclear Soup";
         } else if (from === 'attending') {
-            setFormData(prev => ({
-                ...prev,
-                subject: city ? `Attending a Nuclear Soup - ${city}` : "Attending a Nuclear Soup"
-            }));
+            updates.subject = "Attending a Nuclear Soup";
         } else if (from === 'sponsors') {
-            setFormData(prev => ({
-                ...prev,
-                subject: "Sponsoring a Nuclear Soup"
-            }));
+            updates.subject = "Sponsoring a Nuclear Soup";
+        }
+
+        if (city) {
+            updates.city = city;
+        }
+
+        if (Object.keys(updates).length > 0) {
+            setFormData(prev => ({ ...prev, ...updates }));
         }
     }, [searchParams]);
 
@@ -66,6 +68,7 @@ function ContactForm() {
                     name: "",
                     email: "",
                     organization: "",
+                    city: "",
                     subject: "",
                     message: "",
                     subscribe: false,
@@ -79,9 +82,28 @@ function ContactForm() {
         }
     };
 
+    const getCityOptions = () => {
+        const city = searchParams.get('city');
+        const baseOptions = [
+            "Austin, TX",
+            "Washington, DC",
+            "Saint Paul, MN",
+            "San Luis Obispo, CA",
+        ];
+
+        if (city && !baseOptions.includes(city)) {
+            // Add city-specific options at the beginning of the array
+            return [
+                city,
+                ...baseOptions
+            ];
+        }
+
+        return baseOptions;
+    };
+
     // Update the subject options to include city-specific options
     const getSubjectOptions = () => {
-        const city = searchParams.get('city');
         const baseOptions = [
             "Attending a Nuclear Soup",
             "Hosting a Nuclear Soup",
@@ -89,16 +111,6 @@ function ContactForm() {
             "Nuclear Soup Media Request",
             "Nuclear Soup - Other"
         ];
-
-        if (city) {
-            // Add city-specific options at the beginning of the array
-            return [
-                `Attending a Nuclear Soup - ${city}`,
-                `Hosting a Nuclear Soup - ${city}`,
-                ...baseOptions
-            ];
-        }
-
         return baseOptions;
     };
 
@@ -107,7 +119,7 @@ function ContactForm() {
         const subject = formData.subject.toLowerCase();
 
         if (subject.includes('hosting') || subject.includes('attending')) {
-            return "Hi! Where are you from and what's your connection to nuclear energy?";
+            return "Please include your connection to nuclear energy.";
         } else if (subject.includes('sponsoring')) {
             return "Thanks for your interest in supporting a soup night. Tell us a bit about yourself and your organization.";
         } else if (subject.includes('media')) {
@@ -179,6 +191,30 @@ function ContactForm() {
                         })
                     }
                 />
+            </div>
+
+            <div>
+                <label
+                    htmlFor="city"
+                    className="block text-sm font-medium text-orange-950 mb-1"
+                >
+                    City you're interested in
+                </label>
+                <select
+                    id="city"
+                    className="w-full px-4 py-2 bg-gray-200 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800"
+                    value={formData.city}
+                    onChange={(e) =>
+                        setFormData({ ...formData, city: e.target.value })
+                    }
+                >
+                    <option value="">Select a city</option>
+                    {getCityOptions().map((option) => (
+                        <option key={option} value={option}>
+                            {option}
+                        </option>
+                    ))}
+                </select>
             </div>
 
             <div>

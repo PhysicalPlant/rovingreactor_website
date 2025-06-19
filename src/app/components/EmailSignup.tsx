@@ -1,5 +1,5 @@
 "use client";
-import {useState} from "react";
+import { useState } from "react";
 
 interface EmailSignupProps {
   buttonText: string;
@@ -85,10 +85,9 @@ export default function EmailSignup({
                   status === "error" ? errorMessage : placeholderText
                 }
                 className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm text-gray-800 bg-gray-200 font-gabarito
-                  ${
-                    status === "error"
-                      ? "border-red-500 placeholder-red-500"
-                      : "border-gray-300"
+                  ${status === "error"
+                    ? "border-red-500 placeholder-red-500"
+                    : "border-gray-300"
                   }`}
                 disabled={status === "loading"}
               />
@@ -100,10 +99,9 @@ export default function EmailSignup({
             type="submit"
             disabled={status === "loading"}
             className={`px-6 py-2 text-white font-medium rounded-md text-sm font-gabarito
-              ${
-                status === "loading"
-                  ? "bg-transparent border border-gray-400 text-gray-400"
-                  : "bg-transparent border border-white hover:bg-white hover:text-slate-800"
+              ${status === "loading"
+                ? "bg-transparent border border-gray-400 text-gray-400"
+                : "bg-transparent border border-white hover:bg-white hover:text-slate-800"
               } 
               transition-colors duration-200`}>
             {status === "loading" ? "Sending..." : buttonText}
