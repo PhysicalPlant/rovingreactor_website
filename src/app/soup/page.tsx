@@ -124,34 +124,34 @@ export default function Soup() {
                 <p className="mb-4">
                     Year 1 is a small-scale prototype; we'll grow based on what we learn.
                 </p>
-                <div className="flex  gap-2  max-w-md">
+                <div className="mt-4 pt-4 flex flex-wrap md:flex-nowrap gap-1">
                     <a
                         href="/soup/attending"
-                        className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
+                        className="flex-1 md:flex-initial md:w-[150px] text-center inline-block border-2 border-orange-900 text-orange-900 px-4 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
                     >
                         Attend
                     </a>
                     <a
                         href="/soup/hosting"
-                        className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
+                        className="flex-1 md:flex-initial md:w-[150px] text-center inline-block border-2 border-orange-900 text-orange-900 px-4 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
                     >
                         Host
                     </a>
                     <a
                         href="/soup/sponsors"
-                        className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
+                        className="flex-1 md:flex-initial md:w-[150px] text-center inline-block border-2 border-orange-900 text-orange-900 px-4 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
                     >
                         Sponsor
                     </a>
                     <a
                         href="/soup/faq"
-                        className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
+                        className="flex-1 md:flex-initial md:w-[150px] text-center inline-block border-2 border-orange-900 text-orange-900 px-4 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
                     >
                         FAQ
                     </a>
                     <a
                         href="/soup/contact"
-                        className="w-full text-center inline-block border-2 border-orange-900 text-orange-900 px-6 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
+                        className="flex-1 md:flex-initial md:w-[150px] text-center inline-block border-2 border-orange-900 text-orange-900 px-4 py-2 rounded-lg hover:bg-orange-900 hover:text-white transition-colors duration-200 no-underline hover:no-underline"
                     >
                         Contact
                     </a>
