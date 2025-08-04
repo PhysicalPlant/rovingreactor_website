@@ -61,7 +61,7 @@ export default function Exhibits() {
                 <div className="mb-4 md:mb-6">
 
                   <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-white mb-4 ![line-height:2rem] md:![line-height:3rem]">Roving Reactor Exhibits</h1>
-                  <p>Explore the themed zones of the traveling exhibit—interactive displays and hands-on activities that promote nuclear energy and spark future innovators.</p>
+                  <p className="text-white">Explore the themed zones of the traveling exhibit—interactive displays and hands-on activities that promote nuclear energy and spark future innovators.</p>
 
                   {/*  Accordion Section */}
                   <Box sx={{ paddingRight: 2, paddingTop: 0, paddingBottom: 2 }} className="mt-8 mb-8">
