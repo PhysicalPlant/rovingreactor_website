@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import VideoPlayer from "./components/VideoPlayer";
+import Image from "next/image";
 import Footer from "./components/Footer";
 import EmailSignup from "./components/EmailSignup";
 import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
@@ -155,7 +155,7 @@ export default function Home() {
                     }}
                   >
                     The Roving Reactor is an ambitious traveling exhibit to
-                    celebrate nuclear energy.
+                    celebrate nuclear energy as humanity's next chapter.
                   </div>
 
                   <div
@@ -168,38 +168,41 @@ export default function Home() {
                           : "none",
                     }}
                   >
-                    It's time for nuclear energy to come out of the shadows.
-                    It's time to let people see it up close, to understand the
-                    problems it can solve, and to imagine the future it enables.
+                    <p>
+                      Nuclear energy needs a new story — one told through bold
+                      spectacle built to inspire curiosity and conversation in
+                      communities across the country. The backdrop to those
+                      conversations is a free and open exhibit – anchored by a
+                      25-foot pavilion housing hand-built interactive stations
+                      that offer the fundamentals of reactor operation, safety,
+                      fuel cycles, and integration with the grid, as well as
+                      direct connections to the stable, high-paying jobs across
+                      the nuclear ecosystem.
+                    </p>
+                    <p>
+                      Visitors handle scale reactor models, load electricity
+                      onto a model grid, and activate the safety systems that
+                      evolved from past accidents. The whole exhibit is built
+                      with biogenic materials that feel futuristic yet natural —
+                      mass timber, straw, stone, and canvas. The exhibits
+                      themselves embody the prosperous and sustainable future
+                      nuclear energy can help to build.
+                    </p>
                   </div>
-
                   <div
-                    className="text-[1.1rem] sm:text-[1.35rem] text-white mb-4"
+                    className="mt-8 space-y-4"
                     style={{
-                      opacity: 0,
-                      animation:
-                        currentStep >= 2
-                          ? "fadeInParagraph 1s ease forwards"
-                          : "none",
+                      opacity: currentStep >= 3 ? 1 : 0,
+                      transition: "opacity 1s ease",
                     }}
                   >
-                    This 15-minute video tells the story of the project and its
-                    origins...
+                    <Image
+                      src="/img/2025-img/RR_B_color_1200.jpg"
+                      alt="Roving Reactor All Facets of Our Work"
+                      width={1000}
+                      height={1000}
+                    />
                   </div>
-                </div>
-
-                <div
-                  className="mt-4 md:mt-4"
-                  style={{
-                    opacity: currentStep >= 3 ? 1 : 0,
-                    transition: "opacity 1s ease",
-                  }}
-                >
-                  <VideoPlayer
-                    thumbnailSrc="/img/video-thumb.jpg"
-                    videoId="2FRqVq971qU"
-                  />
-
                   <div
                     className="mt-8 space-y-4"
                     style={{
@@ -208,26 +211,17 @@ export default function Home() {
                     }}
                   >
                     <p className="text-white text-[1.1rem] sm:text-[1.35rem]">
-                      Nuclear energy is abundant, reliable, and uses minimal
-                      land and water — yet it faces public skepticism rooted in
-                      fear and misunderstanding. That's why we're creating the
-                      Roving Reactor.{" "}
+                      We're launching a decade-long journey across campuses,
+                      museums, and communities, fostering the public
+                      conversations – and the next-generation workforce – that
+                      nuclear energy needs.
                     </p>
                     <p className="text-white text-[1.1rem] sm:text-[1.35rem]">
-                      Traveling across the country, the Roving Reactor will
-                      showcase a scale model of a nuclear reactor surrounded by
-                      interactive exhibits for visitors of all ages. It's not
-                      just a technical display; it's a bold spectacle built to
-                      inspire curiosity, spark dialogue, and address concerns
-                      head-on.
+                      Nuclear is our most concentrated clean power source, but
+                      it’s abstract and distant to most people.
                     </p>
                     <p className="text-white text-[1.1rem] sm:text-[1.35rem]">
-                      It's about connecting with people emotionally, offering a
-                      vision of nuclear energy as a safe, transformative
-                      solution for our future. Over the next decade, we'll bring
-                      this conversation to communities nationwide, building the
-                      public support needed to unlock the enormous potential of
-                      nuclear energy.
+                      The Roving Reactor is changing that.
                     </p>
                     <p className="text-white text-[1.1rem] sm:text-[1.35rem] font-semibold">
                       Sign up to receive our quarterly updates.
