@@ -106,7 +106,7 @@ export default function Home() {
         <div
           className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-0"
           style={{
-            backgroundImage: "url('/img/rr-hero-image-fixed.jpg')",
+            backgroundImage: "url('/img/rovingreactor.jpg')",
             animation: "fadeIn 13s ease-in forwards",
             zIndex: -20,
             backgroundAttachment: "fixed",
@@ -179,7 +179,13 @@ export default function Home() {
                       direct connections to the stable, high-paying jobs across
                       the nuclear ecosystem.
                     </p>
-                    <p>
+                    <Image
+                      src="/img/2025-img/RR_B_color_1200.jpg"
+                      alt="Roving Reactor All Facets of Our Work"
+                      width={1000}
+                      height={1000}
+                    />
+                    <p className="mt-8">
                       Visitors handle scale reactor models, load electricity
                       onto a model grid, and activate the safety systems that
                       evolved from past accidents. The whole exhibit is built
@@ -189,20 +195,7 @@ export default function Home() {
                       nuclear energy can help to build.
                     </p>
                   </div>
-                  <div
-                    className="mt-8 space-y-4"
-                    style={{
-                      opacity: currentStep >= 3 ? 1 : 0,
-                      transition: "opacity 1s ease",
-                    }}
-                  >
-                    <Image
-                      src="/img/2025-img/RR_B_color_1200.jpg"
-                      alt="Roving Reactor All Facets of Our Work"
-                      width={1000}
-                      height={1000}
-                    />
-                  </div>
+
                   <div
                     className="mt-8 space-y-4"
                     style={{
