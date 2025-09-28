@@ -169,14 +169,17 @@ export default function Home() {
                     }}
                   >
                     <p>
-                      Despite the name, it contains no actual reactor — instead,
-                      hands-on exhibits that make nuclear energy{" "}
-                      <strong>approachable, intuitive</strong>, and{" "}
-                      <strong>tangible</strong>. Visitors adjust reactor control
-                      rods while watching power levels respond, examine real
-                      fuel cask materials, deploy energy onto a model grid, and
-                      discover career paths in nuclear — all through interactive
-                      stations inspired by the world's best science museums.
+                      Despite the name, it contains no actual reactor, only
+                      hands-on exhibits that make nuclear energy
+                      <strong> approachable, intuitive,</strong> and{" "}
+                      <strong>tangible</strong>.
+                    </p>
+                    <p>
+                      Visitors adjust reactor control rods while watching power
+                      levels respond, examine real fuel cask materials, deploy
+                      energy onto a model grid, and discover career paths in
+                      nuclear — all through interactive stations inspired by the
+                      world's best science museums.
                     </p>
                     <Image
                       src="/img/2025-img/RR_B_color_1200.jpg"
@@ -389,29 +392,19 @@ export default function Home() {
                       <AccordionDetails>
                         <div className="text-white space-y-4">
                           <p className="text-[1.15rem]">
-                            This initiative brings nuclear energy education
-                            directly to communities across the country. Drawing
-                            inspiration from portable microreactor designs, the
-                            Roving Reactor helps people explore nuclear
-                            technology through interactive exhibits, including
-                            Augmented Reality (AR) and Virtual Reality (VR) that
-                            let visitors experience reactor operations
-                            firsthand.
+                            We don't actually travel with a real reactor, but we
+                            do bring nuclear energy education directly to
+                            communities across the country.
                           </p>
                           <p>
-                            {" "}
-                            These hands-on demonstrations not only showcase{" "}
-                            <a
-                              href="https://www.energy.gov/sites/prod/files/2020/01/f70/011620%20Advanced%20Reactor%20Types%20Factsheet.pdf"
-                              className="hover:opacity-90"
-                            >
-                              different reactor types
+                            Drawing inspiration from similar{" "}
+                            <a href="/exhibits" className="hover:opacity-90">
+                              in-person programs
                             </a>{" "}
-                            - from large-scale to compact modular designs - but
-                            also introduce visitors to the diverse career
-                            opportunities in nuclear technology, from
-                            engineering and operations to maintenance and safety
-                            oversight.
+                            in the '50s, '60s, and '70s, the Roving Reactor lets
+                            visitors develop their own intuitions through
+                            hands-on stations that each explore a different
+                            aspect of nuclear energy.
                           </p>
                           <p>
                             The timing is right: Public support has reached{" "}
@@ -423,6 +416,9 @@ export default function Home() {
                             </a>{" "}
                             and continues to rise, with communities increasingly
                             open to nuclear power to meet their energy needs.
+                            Yet, lack of understanding still breeds mistrust.
+                            The nuclear energy community will need to make its
+                            case thoughtfully &mdash; and in person.
                           </p>
                         </div>
                       </AccordionDetails>
