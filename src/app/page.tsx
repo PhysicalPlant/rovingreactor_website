@@ -154,8 +154,8 @@ export default function Home() {
                       animation: "fadeInParagraph 0.8s ease forwards",
                     }}
                   >
-                    The Roving Reactor is an ambitious traveling exhibit to
-                    celebrate nuclear energy as humanity's next chapter.
+                    The Roving Reactor is an ambitious traveling science museum
+                    about nuclear energy.
                   </div>
 
                   <div
@@ -169,15 +169,14 @@ export default function Home() {
                     }}
                   >
                     <p>
-                      Nuclear energy needs a new story — one told through bold
-                      spectacle built to inspire curiosity and conversation in
-                      communities across the country. The backdrop to those
-                      conversations is a free and open exhibit – anchored by a
-                      25-foot pavilion housing hand-built interactive stations
-                      that offer the fundamentals of reactor operation, safety,
-                      fuel cycles, and integration with the grid, as well as
-                      direct connections to the stable, high-paying jobs across
-                      the nuclear ecosystem.
+                      Despite the name, it contains no actual reactor — instead,
+                      hands-on exhibits that make nuclear energy{" "}
+                      <strong>approachable, intuitive</strong>, and{" "}
+                      <strong>tangible</strong>. Visitors adjust reactor control
+                      rods while watching power levels respond, examine real
+                      fuel cask materials, deploy energy onto a model grid, and
+                      discover career paths in nuclear — all through interactive
+                      stations inspired by the world's best science museums.
                     </p>
                     <Image
                       src="/img/2025-img/RR_B_color_1200.jpg"
@@ -186,13 +185,13 @@ export default function Home() {
                       height={1000}
                     />
                     <p className="mt-8">
-                      Visitors handle scale reactor models, load electricity
-                      onto a model grid, and activate the safety systems that
-                      evolved from past accidents. The whole exhibit is built
-                      with biogenic materials that feel futuristic yet natural —
-                      mass timber, straw, stone, and canvas. The exhibits
-                      themselves embody the prosperous and sustainable future
-                      nuclear energy can help to build.
+                      <strong>Why now?</strong> The U.S. plans to triple nuclear
+                      capacity by 2050, adding reactors in over 100 cities. But
+                      while millions see wind turbines and solar panels daily,
+                      nuclear remains invisible and misunderstood. We're
+                      bridging that gap by bringing nuclear science directly to
+                      state fairs, college campuses, and music festivals —
+                      meeting people where they already gather.
                     </p>
                   </div>
 
@@ -204,17 +203,22 @@ export default function Home() {
                     }}
                   >
                     <p className="text-white text-[1.1rem] sm:text-[1.35rem]">
-                      We're launching a decade-long journey across campuses,
-                      museums, and communities, fostering the public
-                      conversations – and the next-generation workforce – that
-                      nuclear energy needs.
+                      <strong>The experience:</strong> Seven exhibit stations
+                      with working models and real materials explore reactor
+                      mechanics, safety systems, spent fuel storage, and grid
+                      integration. Video interviews showcase diverse nuclear
+                      careers. A companion app connects visitors to training
+                      programs and job opportunities.
                     </p>
                     <p className="text-white text-[1.1rem] sm:text-[1.35rem]">
-                      Nuclear is our most concentrated clean power source, but
-                      it’s abstract and distant to most people.
+                      <strong>The mission:</strong> Transform abstract nuclear
+                      concepts into physical experiences. Build intuitions.
+                      Spark careers. Create the public understanding needed for
+                      America's clean energy future.
                     </p>
                     <p className="text-white text-[1.1rem] sm:text-[1.35rem]">
-                      The Roving Reactor is changing that.
+                      Prototype launch: 2027. Currently seeking partners and
+                      advisors.
                     </p>
                     <p className="text-white text-[1.1rem] sm:text-[1.35rem] font-semibold">
                       Sign up to receive our quarterly updates.

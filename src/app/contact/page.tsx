@@ -62,6 +62,7 @@ export default function Contact() {
 
   const subjectOptions = [
     "General Inquiry",
+    "Brainstorming Session - Nov 5",
     "Partnership Opportunity",
     "Media Request",
     "Other",
@@ -240,9 +241,10 @@ export default function Contact() {
                     type="submit"
                     disabled={status === "loading"}
                     className={`px-6 py-2 text-white font-medium rounded-md text-sm
-                      ${status === "loading"
-                        ? "bg-gray-400"
-                        : "bg-transparent border border-white hover:bg-white hover:text-slate-800"
+                      ${
+                        status === "loading"
+                          ? "bg-gray-400"
+                          : "bg-transparent border border-white hover:bg-white hover:text-slate-800"
                       }
                       transition-colors duration-200`}
                   >

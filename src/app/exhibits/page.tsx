@@ -159,7 +159,7 @@ export default function Exhibits() {
                       </div>
                     </AccordionDetails>
                   </Accordion>
-                  {/* virtual reality experience */}
+                  {/* Zone 3: Nuclear Safety - Hands-on safety demonstrations */}
                   <Accordion sx={accordionStyles}>
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
@@ -175,26 +175,32 @@ export default function Exhibits() {
                     >
                       <AddIcon sx={{ color: "white" }} />
                       <span className="text-[#8be8d9]">
-                        Zone 3: Step Into Nuclear:
-                        <br className="md:hidden" /> A VR Experience
+                        Zone 3: Nuclear Safety
                       </span>
                     </AccordionSummary>
                     <AccordionDetails>
                       <div className="text-white space-y-4">
                         <p>
-                          Step inside a nuclear facility through our
-                          state-of-the-art VR experience. Take control of
-                          reactor operations and see nuclear fission up close.
+                          Understand nuclear's safety systems through hands-on
+                          demonstrations and real materials.
                         </p>
                         <ul className="list-disc ml-6 mt-4 space-y-2">
-                          <li>Operate a virtual control room</li>
-                          <li>Walk through a microreactor system</li>
-                          <li>Watch nuclear fission in action</li>
+                          <li>
+                            Explore a full-scale cross-section of a spent fuel
+                            cask, showing containment barriers
+                          </li>
+                          <li>
+                            Compare scale models of Three Mile Island,
+                            Chernobyl, and Fukushima with their safety lessons
+                          </li>
+                          <li>
+                            Measure everyday radiation with detection equipment
+                          </li>
                         </ul>
                       </div>
                     </AccordionDetails>
                   </Accordion>
-                  {/* local and global potential */}
+                  {/* Zone 4: Grid Integration - Interactive electrical grid simulation */}
                   <Accordion sx={accordionStyles}>
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
@@ -210,7 +216,50 @@ export default function Exhibits() {
                     >
                       <AddIcon sx={{ color: "white" }} />
                       <span className="text-[#8be8d9]">
-                        Zone 4: Powering the World
+                        Zone 4: Grid Integration
+                      </span>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <div className="text-white space-y-4">
+                        <p>
+                          Deploy nuclear plants onto a working model of the
+                          electrical grid and balance supply with demand.
+                        </p>
+                        <ul className="list-disc ml-6 mt-4 space-y-2">
+                          <li>
+                            Add reactors, renewables, and batteries to power
+                            cities in real-time
+                          </li>
+                          <li>
+                            Watch demand spike during heat waves — and try to
+                            keep the lights on
+                          </li>
+                          <li>
+                            Track availability and electricity prices as you
+                            adjust the energy mix
+                          </li>
+                        </ul>
+                      </div>
+                    </AccordionDetails>
+                  </Accordion>
+
+                  {/* Zone 5: Powering the World - Nuclear energy's environmental and community impact */}
+                  <Accordion sx={accordionStyles}>
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
+                      sx={{
+                        "& .MuiAccordionSummary-content": {
+                          fontFamily: "Gabarito",
+                          fontSize: "1.25rem",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "8px",
+                        },
+                      }}
+                    >
+                      <AddIcon sx={{ color: "white" }} />
+                      <span className="text-[#8be8d9]">
+                        Zone 5: Powering the World
                       </span>
                     </AccordionSummary>
                     <AccordionDetails>
@@ -236,55 +285,7 @@ export default function Exhibits() {
                     </AccordionDetails>
                   </Accordion>
 
-                  {/* nuclear and ai */}
-                  <Accordion sx={accordionStyles}>
-                    <AccordionSummary
-                      expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
-                      sx={{
-                        "& .MuiAccordionSummary-content": {
-                          fontFamily: "Gabarito",
-                          fontSize: "1.25rem",
-                          display: "flex",
-                          alignItems: "center",
-                          gap: "8px",
-                        },
-                      }}
-                    >
-                      <AddIcon sx={{ color: "white" }} />
-                      <span className="text-[#8be8d9]">
-                        Zone 5: Nuclear and AI
-                      </span>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                      <div className="text-white space-y-4">
-                        <p>
-                          Discover how artificial intelligence and nuclear power
-                          converge to shape our energy future. See how AI-driven
-                          insights boost reactor performance and reduce
-                          emissions, while nuclear meets the massive power needs
-                          of cutting-edge data centers.
-                        </p>
-                        <ul className="list-disc ml-6 mt-4 space-y-2">
-                          <li>
-                            Adjust the national and global energy mix in real
-                            time to reveal future impacts on temperature,
-                            biodiversity, and arable land
-                          </li>
-                          <li>
-                            Learn how AI-driven reactor analytics and advanced
-                            nuclear systems provide 24/7 power for data centers
-                          </li>
-                          <li>
-                            Meet pioneering teams uniting AI research with
-                            nuclear innovation for a cleaner, more resilient
-                            world
-                          </li>
-                        </ul>
-                      </div>
-                    </AccordionDetails>
-                  </Accordion>
-
-                  {/* career pathways */}
+                  {/* Zone 6: Careers in Nuclear - Career exploration and industry connections */}
                   <Accordion sx={accordionStyles}>
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
@@ -326,7 +327,7 @@ export default function Exhibits() {
                     </AccordionDetails>
                   </Accordion>
 
-                  {/* behind the science */}
+                  {/* Zone 7: Our Supporters & Story - Documentary about the Roving Reactor project */}
                   <Accordion sx={accordionStyles}>
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
