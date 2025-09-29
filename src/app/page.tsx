@@ -106,7 +106,7 @@ export default function Home() {
         <div
           className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-0"
           style={{
-            backgroundImage: "url('/img/rr-bridge.jpg')",
+            backgroundImage: "url('/img/rr-bridge-bg.jpg')",
             animation: "fadeIn 13s ease-in forwards",
             zIndex: -20,
             backgroundAttachment: "fixed",
