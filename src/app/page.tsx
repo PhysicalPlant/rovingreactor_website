@@ -106,7 +106,7 @@ export default function Home() {
         <div
           className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-0"
           style={{
-            backgroundImage: "url('/img/rovingreactor.jpg')",
+            backgroundImage: "url('/img/rr-bridge.jpg')",
             animation: "fadeIn 13s ease-in forwards",
             zIndex: -20,
             backgroundAttachment: "fixed",
@@ -182,7 +182,7 @@ export default function Home() {
                       world's best science museums.
                     </p>
                     <Image
-                      src="/img/2025-img/RR_B_color_1200.jpg"
+                      src="/img/rr-bridge.jpg"
                       alt="Roving Reactor All Facets of Our Work"
                       width={1000}
                       height={1000}
