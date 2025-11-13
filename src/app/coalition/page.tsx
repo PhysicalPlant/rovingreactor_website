@@ -33,17 +33,7 @@ export default function Coalition() {
               </a>
               .
             </p>
-            <p className="text-white mb-6">
-              The list below is aspirational. We&apos;ll continue to reach out
-              to these phenomenal institutions in the coming months.
-            </p>
-            <Image
-              src="/img/wishlist-coalition.png"
-              className="my-8 rounded-lg"
-              alt="Coalition"
-              width={1000}
-              height={1000}
-            />
+
             <p className="text-white mb-6">
               Our advisory board includes a diverse and respected group of
               leaders from various sectors who provide invaluable guidance to
@@ -87,11 +77,8 @@ export default function Coalition() {
                 &mdash; Professor of Nuclear Engineering, MIT
               </li>
             </ul>
-            <p className="text-white mb-6 font-bold">
-              Nuclear Advocacy
-            </p>
+            <p className="text-white mb-6 font-bold">Nuclear Advocacy</p>
             <ul className="list-disc text-white mb-6 pl-5">
-
               <li>
                 <strong>
                   <a href="https://www.linkedin.com/in/jennifer-hayden-1b341429/">

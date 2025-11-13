@@ -6,6 +6,20 @@ export default function YourStakeInTheAtom() {
     <div className="min-h-[calc(100vh-3.5rem)] flex flex-col">
       <main className="flex-grow relative pt-[calc(3.5rem+1px)] md:pt-14 mt-6 md:mt-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Subnav for Legacy Pages */}
+          <nav className="mb-6 border-b border-white/20 pb-4">
+            <ul className="flex flex-col md:flex-row gap-3 md:gap-6 text-white text-sm md:text-base">
+              <li>
+                <a
+                  href="/legacy"
+                  className="text-[#8be8d9] hover:text-white transition-colors"
+                >
+                  Legacy home
+                </a>
+              </li>
+            </ul>
+          </nav>
+
           <div className="max-w-2xl mb-8">
             <h1 className="text-5xl text-white mb-6">Your Stake in the Atom</h1>
             <Image

@@ -67,6 +67,36 @@ export default function Legacy() {
     <div className="min-h-[calc(100vh-3.5rem)] flex flex-col">
       <main className="flex-grow relative pt-[calc(3.5rem+1px)] md:pt-14 mt-6 md:mt-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Subnav for Legacy Pages */}
+          <nav className="mb-6 border-b border-white/20 pb-4">
+            <ul className="flex flex-col md:flex-row gap-3 md:gap-6 text-white text-sm md:text-base">
+              <li>
+                <a
+                  href="/legacy/your-stake-in-the-atom"
+                  className="text-[#8be8d9] hover:text-white transition-colors"
+                >
+                  Your Stake in the Atom
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/legacy/this-atomic-world"
+                  className="text-[#8be8d9] hover:text-white transition-colors"
+                >
+                  This Atomic World
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/legacy/atoms-for-peace"
+                  className="text-[#8be8d9] hover:text-white transition-colors"
+                >
+                  Atoms for Peace
+                </a>
+              </li>
+            </ul>
+          </nav>
+
           <div className="max-w-2xl">
             <h1 className="text-5xl text-white mb-6">
               A Look Back at Traveling Nuclear Exhibits

@@ -3,22 +3,23 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import EmailSignup from "./EmailSignup";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLegacyDropdownOpen, setIsLegacyDropdownOpen] = useState(false);
-  const legacyDropdownRef = useRef<HTMLLIElement>(null);
+  const [isExhibitsDropdownOpen, setIsExhibitsDropdownOpen] = useState(false);
+  const exhibitsDropdownRef = useRef<HTMLLIElement>(null);
   const pathname = usePathname();
+  const router = useRouter();
   const isSoupPage = pathname?.startsWith("/soup");
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (
-        legacyDropdownRef.current &&
-        !legacyDropdownRef.current.contains(event.target as Node)
+        exhibitsDropdownRef.current &&
+        !exhibitsDropdownRef.current.contains(event.target as Node)
       ) {
-        setIsLegacyDropdownOpen(false);
+        setIsExhibitsDropdownOpen(false);
       }
     }
 
@@ -44,13 +45,10 @@ export default function Navigation() {
             <Image
               src="/img/RR-logo-vector.svg"
               alt="Roving Reactor Logo"
-              width={40}
+              width={250}
               height={40}
               className="transition-all duration-300 group-hover:filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] drop-shadow-[-2px_-2px_0px_rgba(0,0,0,0.5)]"
             />
-            <span className="text-white text-2xl font-gabarito uppercase whitespace-nowrap lg:inline-block md:hidden">
-              Roving Reactor
-            </span>
           </Link>
 
           {/* Desktop navigation */}
@@ -61,20 +59,14 @@ export default function Navigation() {
                   Home
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/exhibits"
-                  className="text-white hover:text-gray-300"
-                >
-                  Exhibits
-                </Link>
-              </li>
-              <li className="relative" ref={legacyDropdownRef}>
+              <li className="relative" ref={exhibitsDropdownRef}>
                 <button
                   className="text-white hover:text-gray-300 flex items-center gap-1"
-                  onClick={() => setIsLegacyDropdownOpen(!isLegacyDropdownOpen)}
+                  onClick={() =>
+                    setIsExhibitsDropdownOpen(!isExhibitsDropdownOpen)
+                  }
                 >
-                  LEGACY
+                  EXHIBITS
                   <svg
                     className="w-4 h-4"
                     fill="none"
@@ -89,38 +81,34 @@ export default function Navigation() {
                     />
                   </svg>
                 </button>
-                {isLegacyDropdownOpen && (
+                {isExhibitsDropdownOpen && (
                   <div
                     className={`absolute top-full left-0 mt-2 w-60 ${
                       isSoupPage ? "bg-orange-800" : "bg-slate-800"
                     } shadow-lg rounded-md py-2`}
                   >
                     <Link
-                      href="/legacy"
+                      href="/exhibits"
                       className="block px-4 py-2 text-white hover:bg-slate-700"
                     >
                       Overview
                     </Link>
                     <Link
-                      href="/legacy/your-stake-in-the-atom"
+                      href="/legacy"
                       className="block px-4 py-2 text-white hover:bg-slate-700"
                     >
-                      Your Stake in the Atom
-                    </Link>
-                    <Link
-                      href="/legacy/this-atomic-world"
-                      className="block px-4 py-2 text-white hover:bg-slate-700"
-                    >
-                      This Atomic World
-                    </Link>
-                    <Link
-                      href="/legacy/atoms-for-peace"
-                      className="block px-4 py-2 text-white hover:bg-slate-700"
-                    >
-                      Atoms for Peace
+                      Legacy
                     </Link>
                   </div>
                 )}
+              </li>
+              <li>
+                <Link
+                  href="/principles"
+                  className="text-white hover:text-gray-300"
+                >
+                  Principles
+                </Link>
               </li>
               <li>
                 <Link
@@ -206,7 +194,7 @@ export default function Navigation() {
                   className="block text-white hover:text-gray-300"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Exhibits
+                  Exhibits - Overview
                 </Link>
               </li>
               <li>
@@ -215,7 +203,16 @@ export default function Navigation() {
                   className="block text-white hover:text-gray-300"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Legacy
+                  Exhibits - Legacy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/principles"
+                  className="block text-white hover:text-gray-300"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Principles
                 </Link>
               </li>
               <li>
