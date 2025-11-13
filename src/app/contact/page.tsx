@@ -255,7 +255,7 @@ export default function Contact() {
             )}
 
             {tabIndex === 1 && (
-              <div className="max-w-2xl pb-5">
+              <div className="max-w-2xl pb-5 text-white">
                 <h1 className="text-4xl mb-6">
                   Please consider donating to the Roving Reactor Project
                 </h1>
