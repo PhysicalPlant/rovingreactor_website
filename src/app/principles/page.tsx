@@ -8,35 +8,58 @@ export default function PrinciplesPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
             <h1 className="text-5xl text-white mb-6">Principles</h1>
-            
+
             <p className="text-white text-xl mb-6">
-              Everything about the Roving Reactor, from the pavilion design to the exhibit stations and the way we host visitors, is guided by a few core principles:
+              Everything about the Roving Reactor, from the pavilion design to
+              the exhibit stations and the way we host visitors, is guided by a
+              few core principles:
             </p>
 
             <ol className="list-decimal list-outside ml-6 text-white text-xl space-y-4 mb-6">
               <li>
-                <span className="font-bold">Approachable, Tangible, Intuitive</span> — Hands-on first; no jargon walls.
+                <span className="font-bold italic">
+                  Approachable, Tangible, Intuitive
+                </span>{" "}
+                — Hands-on first; no jargon walls.
               </li>
               <li>
-                <span className="font-bold">Informational, Nonpartisan, Trustworthy</span> — Neutral tone, cite sources, avoid promotion.
+                <span className="font-bold italic">
+                  Informational, Nonpartisan, Trustworthy
+                </span>{" "}
+                — Neutral tone, cite sources, avoid promotion.
               </li>
               <li>
-                <span className="font-bold">Big, Beautiful, Free, In-Person</span> — A public spectacle that travels to its visitors.
+                <span className="font-bold italic">
+                  Big, Beautiful, Free, In-Person
+                </span>{" "}
+                — A public spectacle that travels to its visitors.
               </li>
               <li>
-                <span className="font-bold">Maximum Hospitality</span> — Welcoming, calm, human pace, great wayfinding.
+                <span className="font-bold italic">Maximum Hospitality</span> —
+                Welcoming, calm, human pace, great wayfinding.
               </li>
               <li>
-                <span className="font-bold">Name the Concerns</span> — Safety, waste, weapons, cost: address directly.
+                <span className="font-bold italic">Name the Concerns</span> —
+                Safety, waste, weapons, cost: address directly.
               </li>
               <li>
-                <span className="font-bold">Local Voices, Local Relevance</span> — Feature neighbors, jobs, and benefits nearby.
+                <span className="font-bold italic">
+                  Local Voices, Local Relevance
+                </span>{" "}
+                — Feature neighbors, jobs, and benefits nearby.
               </li>
               <li>
-                <span className="font-bold">Measure What Matters</span> — Curiosity sparked, attitudes shifted, sign-ups made.
+                <span className="font-bold italic">Measure What Matters</span> —
+                Curiosity sparked, attitudes shifted, sign-ups made.
               </li>
               <li>
-                <span className="font-bold">Align with the Nuclear Ecosystem</span> — Be useful to all stakeholders (first to the public and their communities, and from there be useful to unions, utilities, developers, regulators, and local leaders) without endorsing any one agenda.
+                <span className="font-bold italic">
+                  Align with the Nuclear Ecosystem
+                </span>{" "}
+                — Be useful to all stakeholders (first to the public and their
+                communities, and from there be useful to unions, utilities,
+                developers, regulators, and local leaders) without endorsing any
+                one agenda.
               </li>
             </ol>
           </div>
@@ -46,4 +69,3 @@ export default function PrinciplesPage() {
     </div>
   );
 }
-
