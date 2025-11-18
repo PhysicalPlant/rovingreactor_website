@@ -26,6 +26,15 @@ export const metadata: Metadata = {
   title: "The Roving Reactor",
   description: "An ambitious traveling exhibit to celebrate nuclear energy and inspire the next generation.",
   metadataBase: new URL('https://rovingreactor.org'),
+  icons: {
+    icon: [
+      { url: '/rr-favicons/rr-fav-16x16.ico', sizes: '16x16', type: 'image/x-icon' },
+      { url: '/rr-favicons/rr-fav-32x32.ico', sizes: '32x32', type: 'image/x-icon' },
+      { url: '/rr-favicons/rr-fav512x512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    shortcut: '/rr-favicons/rr-fav-32x32.ico',
+    apple: '/rr-favicons/rr-fav512x512.png',
+  },
   openGraph: {
     title: 'The Roving Reactor',
     description: 'An ambitious traveling exhibit to celebrate nuclear energy and inspire the next generation.',
