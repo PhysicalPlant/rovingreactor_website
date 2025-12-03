@@ -9,7 +9,7 @@ export default function PrinciplesPage() {
           <div className="max-w-2xl">
             <h1 className="text-5xl text-white mb-6">Principles</h1>
 
-            <p className="text-white text-xl mb-6 hidden">
+            <p className="text-white text-xl mb-6 ">
               Everything about the Roving Reactor, from the pavilion design to
               the exhibit stations and the way we host visitors, is guided by a
               few core principles:
