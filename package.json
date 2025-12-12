@@ -18,7 +18,7 @@
     "@mui/icons-material": "^6.4.2",
     "@mui/material": "^6.4.2",
     "framer-motion": "^11.11.17",
-    "next": "15.5.7",
+    "next": "15.5.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-simple-typewriter": "^5.0.1",
@@ -33,7 +33,7 @@
     "@types/react-dom": "^18",
     "autoprefixer": "^10.x.x",
     "eslint": "^8",
-    "eslint-config-next": "15.5.7",
+    "eslint-config-next": "15.5.9",
     "postcss": "^8.x.x",
     "typescript": "5.7.2"
   }
