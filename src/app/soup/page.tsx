@@ -21,7 +21,7 @@ export default function Soup() {
         Bringing nuclear energy&apos;s many voices to the table
       </h3>
       <h3 className="text-3xl text-orange-950 mb-6 font-normal">
-        Wednesday, November 12, 2025
+        Date and time TBD
       </h3>
 
       <div className="text-xl text-orange-950 mb-3 font-normal">

@@ -8,7 +8,9 @@ import { usePathname, useRouter } from "next/navigation";
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isExhibitsDropdownOpen, setIsExhibitsDropdownOpen] = useState(false);
+  const [isHomeDropdownOpen, setIsHomeDropdownOpen] = useState(false);
   const exhibitsDropdownRef = useRef<HTMLLIElement>(null);
+  const homeDropdownRef = useRef<HTMLLIElement>(null);
   const pathname = usePathname();
   const router = useRouter();
   const isSoupPage = pathname?.startsWith("/soup");
@@ -20,6 +22,12 @@ export default function Navigation() {
         !exhibitsDropdownRef.current.contains(event.target as Node)
       ) {
         setIsExhibitsDropdownOpen(false);
+      }
+      if (
+        homeDropdownRef.current &&
+        !homeDropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsHomeDropdownOpen(false);
       }
     }
 
@@ -54,10 +62,46 @@ export default function Navigation() {
           {/* Desktop navigation */}
           <div className="hidden md:flex items-center flex-1 justify-end ml-12 space-x-8">
             <ul className="flex gap-6 font-gabarito uppercase text-sm text-white">
-              <li>
-                <Link href="/" className="text-white hover:text-gray-300">
-                  Home
-                </Link>
+              <li className="relative" ref={homeDropdownRef}>
+                <button
+                  className="text-white hover:text-gray-300 flex items-center gap-1"
+                  onClick={() => setIsHomeDropdownOpen(!isHomeDropdownOpen)}
+                >
+                  HOME
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                {isHomeDropdownOpen && (
+                  <div
+                    className={`absolute top-full left-0 mt-2 w-60 ${
+                      isSoupPage ? "bg-orange-800" : "bg-slate-800"
+                    } shadow-lg rounded-md py-2`}
+                  >
+                    <Link
+                      href="/"
+                      className="block px-4 py-2 text-white hover:bg-slate-700"
+                    >
+                      Home
+                    </Link>
+                    <Link
+                      href="/news"
+                      className="block px-4 py-2 text-white hover:bg-slate-700"
+                    >
+                      News
+                    </Link>
+                  </div>
+                )}
               </li>
               <li className="relative" ref={exhibitsDropdownRef}>
                 <button
@@ -186,6 +230,15 @@ export default function Navigation() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/news"
+                  className="block text-white hover:text-gray-300"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  News
                 </Link>
               </li>
               <li>
