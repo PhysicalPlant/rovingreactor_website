@@ -50,7 +50,7 @@ export default function Soup() {
           >
             <div className="text-orange-950">
               <p className="text-xl mb-4">
-                On a Wednesday evening this November,{" "}
+                On an evening TBD,{" "}
                 <a
                   href="https://www.generationatomic.org/"
                   rel="noopener noreferrer"
