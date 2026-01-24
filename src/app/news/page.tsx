@@ -7,6 +7,8 @@ import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Box } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
+import Image from "next/image";
+import { urlFor } from "@/sanity/lib/image";
 
 const accordionStyles = {
   backgroundColor: "transparent",
@@ -48,6 +50,32 @@ interface Update {
   date: string;
   content: any[];
 }
+
+const portableTextComponents = {
+  types: {
+    image: ({ value }: any) => {
+      if (!value?.asset?._ref) {
+        return null;
+      }
+      return (
+        <div className="my-6">
+          <Image
+            src={urlFor(value).url()}
+            alt={value.alt || "Image"}
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-lg"
+          />
+          {value.caption && (
+            <p className="text-gray-400 text-sm mt-2 text-center">
+              {value.caption}
+            </p>
+          )}
+        </div>
+      );
+    },
+  },
+};
 
 export default function NewsPage() {
   const [updates, setUpdates] = useState<Update[]>([]);
@@ -118,7 +146,10 @@ export default function NewsPage() {
                     </AccordionSummary>
                     <AccordionDetails>
                       <div className="text-white space-y-4">
-                        <PortableText value={update.content} />
+                        <PortableText 
+                          value={update.content} 
+                          components={portableTextComponents}
+                        />
                       </div>
                     </AccordionDetails>
                   </Accordion>
