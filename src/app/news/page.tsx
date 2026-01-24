@@ -75,6 +75,25 @@ const portableTextComponents = {
       );
     },
   },
+  list: {
+    bullet: ({ children }: any) => (
+      <ul className="list-disc list-outside ml-6 space-y-2 my-4">{children}</ul>
+    ),
+    number: ({ children }: any) => (
+      <ol className="list-decimal list-outside ml-6 space-y-2 my-4">{children}</ol>
+    ),
+  },
+  listItem: {
+    bullet: ({ children }: any) => <li className="text-white">{children}</li>,
+    number: ({ children }: any) => <li className="text-white">{children}</li>,
+  },
+  block: {
+    normal: ({ children }: any) => <p className="mb-4">{children}</p>,
+    h1: ({ children }: any) => <h1 className="text-3xl font-bold mb-4">{children}</h1>,
+    h2: ({ children }: any) => <h2 className="text-2xl font-bold mb-3">{children}</h2>,
+    h3: ({ children }: any) => <h3 className="text-xl font-bold mb-2">{children}</h3>,
+    h4: ({ children }: any) => <h4 className="text-lg font-bold mb-2">{children}</h4>,
+  },
 };
 
 export default function NewsPage() {
@@ -106,8 +125,7 @@ export default function NewsPage() {
             <h1 className="text-5xl text-white mb-6">News</h1>
 
             <p className="text-white text-xl mb-6">
-              Stay up to date with the latest news and updates from the Roving
-              Reactor project.
+              Stay up to date with the latest news. Subscribe to get quarterly updates.
             </p>
 
             {/* News items from Sanity */}
@@ -133,16 +151,7 @@ export default function NewsPage() {
                       }}
                     >
                       <AddIcon sx={{ color: "white" }} />
-                      <div className="flex flex-col gap-1">
-                        <span className="text-[#8be8d9]">{update.title}</span>
-                        <span className="text-gray-400 text-sm">
-                          {new Date(update.date).toLocaleDateString("en-US", {
-                            year: "numeric",
-                            month: "long",
-                            day: "numeric",
-                          })}
-                        </span>
-                      </div>
+                      <span className="text-[#8be8d9]">{update.title}</span>
                     </AccordionSummary>
                     <AccordionDetails>
                       <div className="text-white space-y-4">
