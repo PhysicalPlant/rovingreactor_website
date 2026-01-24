@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         hostname: "www.paypalobjects.com",
         pathname: "/en_US/i/btn/**",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        pathname: "/images/**",
+      },
     ],
   },
 };
