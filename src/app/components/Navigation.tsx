@@ -62,11 +62,6 @@ export default function Navigation() {
           {/* Desktop navigation */}
           <div className="hidden md:flex items-center flex-1 justify-end ml-12 space-x-8">
             <ul className="flex gap-6 font-gabarito uppercase text-sm text-white">
-              <li>
-                <Link href="/" className="text-white hover:text-gray-300">
-                  Home
-                </Link>
-              </li>
               <li className="relative" ref={exhibitsDropdownRef}>
                 <button
                   className="text-white hover:text-gray-300 flex items-center gap-1"
@@ -136,6 +131,14 @@ export default function Navigation() {
               </li>
               <li>
                 <Link
+                  href="/news"
+                  className="text-white hover:text-gray-300"
+                >
+                  News
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/contact"
                   className="text-white hover:text-gray-300"
                 >
@@ -189,15 +192,6 @@ export default function Navigation() {
             <ul className="flex flex-col space-y-4 px-4">
               <li>
                 <Link
-                  href="/"
-                  className="block text-white hover:text-gray-300"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/exhibits"
                   className="block text-white hover:text-gray-300"
                   onClick={() => setIsMenuOpen(false)}
@@ -239,6 +233,15 @@ export default function Navigation() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Coalition
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/news"
+                  className="block text-white hover:text-gray-300"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  News
                 </Link>
               </li>
               <li>
