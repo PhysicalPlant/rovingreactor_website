@@ -140,9 +140,9 @@ export default function Navigation() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-white hover:text-gray-300"
+                  className="bg-white text-blue-600 hover:bg-gray-100 px-4 py-2 rounded-md font-medium transition-colors"
                 >
-                  Contact
+                  DONATE
                 </Link>
               </li>
             </ul>
@@ -247,10 +247,10 @@ export default function Navigation() {
               <li>
                 <Link
                   href="/contact"
-                  className="block text-white hover:text-gray-300"
+                  className="block bg-white text-blue-600 hover:bg-gray-100 px-4 py-2 rounded-md font-medium transition-colors text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Contact
+                  DONATE
                 </Link>
               </li>
               <li className="pt-2">
