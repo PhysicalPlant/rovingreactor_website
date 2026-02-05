@@ -139,7 +139,7 @@ export default function Navigation() {
               </li>
               <li>
                 <Link
-                  href="/contact?tab=donate"
+                  href="/contact#donate"
                   className="bg-white text-blue-600 hover:bg-gray-100 px-4 py-2 rounded-md font-medium transition-colors"
                 >
                   DONATE
@@ -246,7 +246,7 @@ export default function Navigation() {
               </li>
               <li>
                 <Link
-                  href="/contact?tab=donate"
+                  href="/contact#donate"
                   className="block bg-white text-blue-600 hover:bg-gray-100 px-4 py-2 rounded-md font-medium transition-colors text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >

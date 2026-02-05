@@ -3,11 +3,8 @@ import React, { useState, useEffect } from "react";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import { Tabs, Tab, Box } from "@mui/material";
-import { useSearchParams } from "next/navigation";
 
 export default function Contact() {
-  const searchParams = useSearchParams();
-  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -24,17 +21,27 @@ export default function Contact() {
   const [tabIndex, setTabIndex] = useState(0); // Tracks active tab
 
   useEffect(() => {
-    // Update tab based on URL parameter on mount and when it changes
-    const tab = searchParams.get("tab");
-    if (tab === "donate") {
+    // Check hash on mount
+    const hash = window.location.hash;
+    if (hash === "#donate") {
       setTabIndex(1);
-    } else if (tab === "contact") {
-      setTabIndex(0);
-    } else if (!tab) {
-      // Default to contact tab if no parameter
+    } else if (hash === "#contact") {
       setTabIndex(0);
     }
-  }, [searchParams]);
+
+    // Listen for hash changes
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash === "#donate") {
+        setTabIndex(1);
+      } else if (hash === "#contact") {
+        setTabIndex(0);
+      }
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
 
   const handleChange = (event: React.SyntheticEvent, newIndex: number) => {
     setTabIndex(newIndex);
