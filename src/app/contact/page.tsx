@@ -18,24 +18,25 @@ export default function Contact() {
     "idle" | "loading" | "success" | "error"
   >("idle");
   const [errorMessage, setErrorMessage] = useState("");
-  const [tabIndex, setTabIndex] = useState(0); // Tracks active tab
+  const [tabIndex, setTabIndex] = useState(1); // Default to Donate tab (index 1)
 
   useEffect(() => {
-    // Check hash on mount
+    // Check hash on mount - only switch to Contact if explicitly requested
     const hash = window.location.hash;
-    if (hash === "#donate") {
-      setTabIndex(1);
-    } else if (hash === "#contact") {
+    if (hash === "#contact") {
       setTabIndex(0);
+    } else {
+      // Default to Donate tab for all other cases (including #donate or no hash)
+      setTabIndex(1);
     }
 
     // Listen for hash changes
     const handleHashChange = () => {
       const hash = window.location.hash;
-      if (hash === "#donate") {
-        setTabIndex(1);
-      } else if (hash === "#contact") {
+      if (hash === "#contact") {
         setTabIndex(0);
+      } else {
+        setTabIndex(1);
       }
     };
 
