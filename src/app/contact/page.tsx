@@ -7,7 +7,6 @@ import { useSearchParams } from "next/navigation";
 
 export default function Contact() {
   const searchParams = useSearchParams();
-  const tab = searchParams.get("tab");
   
   const [formData, setFormData] = useState({
     name: "",
@@ -22,16 +21,20 @@ export default function Contact() {
     "idle" | "loading" | "success" | "error"
   >("idle");
   const [errorMessage, setErrorMessage] = useState("");
-  const [tabIndex, setTabIndex] = useState(tab === "donate" ? 1 : 0); // Tracks active tab
+  const [tabIndex, setTabIndex] = useState(0); // Tracks active tab
 
   useEffect(() => {
-    // Update tab when URL parameter changes
+    // Update tab based on URL parameter on mount and when it changes
+    const tab = searchParams.get("tab");
     if (tab === "donate") {
       setTabIndex(1);
     } else if (tab === "contact") {
       setTabIndex(0);
+    } else if (!tab) {
+      // Default to contact tab if no parameter
+      setTabIndex(0);
     }
-  }, [tab]);
+  }, [searchParams]);
 
   const handleChange = (event: React.SyntheticEvent, newIndex: number) => {
     setTabIndex(newIndex);
