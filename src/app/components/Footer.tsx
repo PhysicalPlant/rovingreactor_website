@@ -14,7 +14,7 @@ export default function Footer() {
           </p>
           <div className="mb-4">
             <Link 
-              href="/contact" 
+              href="/contact?tab=contact" 
               className="text-[#8be8d9] hover:text-white transition-colors text-sm"
             >
               Contact
