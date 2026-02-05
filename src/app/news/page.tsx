@@ -151,7 +151,16 @@ export default function NewsPage() {
                       }}
                     >
                       <AddIcon sx={{ color: "white" }} />
-                      <span className="text-[#8be8d9]">{update.title}</span>
+                      <div className="flex flex-col gap-1">
+                        <span className="text-[#8be8d9]">{update.title}</span>
+                        <span className="text-gray-400 text-sm">
+                          {new Date(update.date).toLocaleDateString("en-US", {
+                            year: "numeric",
+                            month: "long",
+                            day: "numeric",
+                          })}
+                        </span>
+                      </div>
                     </AccordionSummary>
                     <AccordionDetails>
                       <div className="text-white space-y-4">
