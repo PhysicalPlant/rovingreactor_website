@@ -14,7 +14,7 @@ function DonateForm() {
   const [error, setError] = useState("");
 
   // Preset amounts based on frequency
-  const oneTimeAmounts = [50, 100, 250, 500, 1000, 5000];
+  const oneTimeAmounts = [25, 50, 100, 500, 1000];
   const monthlyAmounts = [5, 25, 50, 100];
 
   const amounts = frequency === "one_time" ? oneTimeAmounts : monthlyAmounts;
@@ -42,6 +42,15 @@ function DonateForm() {
       finalAmount = parseFloat(customAmount);
       if (isNaN(finalAmount) || !Number.isFinite(finalAmount)) {
         setError("Please enter a valid amount");
+        return;
+      }
+      // Validate min/max for custom amounts
+      if (finalAmount < 5) {
+        setError("Minimum donation amount is $5");
+        return;
+      }
+      if (finalAmount > 10000) {
+        setError("Maximum donation amount is $10,000");
         return;
       }
     } else {

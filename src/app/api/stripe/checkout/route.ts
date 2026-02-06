@@ -73,7 +73,6 @@ export async function POST(req: NextRequest) {
         submit_type: "donate",
         customer_creation: "if_required",
         billing_address_collection: "auto",
-        payment_method_collection: "if_required",
         automatic_tax: { enabled: false },
         line_items: [
           {
@@ -121,7 +120,6 @@ export async function POST(req: NextRequest) {
       const session = await stripe.checkout.sessions.create({
         mode: "subscription",
         submit_type: "donate",
-        customer_creation: "if_required",
         billing_address_collection: "auto",
         payment_method_collection: "if_required",
         automatic_tax: { enabled: false },
@@ -149,8 +147,10 @@ export async function POST(req: NextRequest) {
     );
   } catch (err) {
     console.error("Stripe Checkout error:", err);
+    const errorMessage = err instanceof Error ? err.message : "Unknown error";
+    console.error("Error details:", errorMessage);
     return NextResponse.json(
-      { error: "Failed to create checkout session" },
+      { error: "Failed to create checkout session", details: errorMessage },
       { status: 500 }
     );
   }
