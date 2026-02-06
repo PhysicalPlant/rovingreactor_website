@@ -488,8 +488,7 @@ export default function Contact() {
                       to communities across the country.
                     </p>
                     <p className="text-white">
-                      You should receive a confirmation email shortly. If you have any questions, 
-                      please don&apos;t hesitate to{" "}
+                      If you have any questions, please don&apos;t hesitate to{" "}
                       <a 
                         href="/contact#contact" 
                         className="text-[#8be8d9] hover:text-white underline"
