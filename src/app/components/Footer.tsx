@@ -6,11 +6,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-gray-400 text-sm mb-4">
-            The Roving Reactor is a traveling, hands-on science museum about nuclear energy.
-            Despite the name, it contains no actual reactor. 🙂
-          </p>
-          <p className="text-gray-400 text-sm mb-4">
-            Nonpartisan. Evidence-based. Community-grounded.
+            The Roving Reactor is a traveling, hands-on science museum about nuclear energy. Nonpartisan. Evidence-based. Community-grounded.
           </p>
           <div className="mb-4">
             <Link 
