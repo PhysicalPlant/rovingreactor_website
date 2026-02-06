@@ -4,6 +4,183 @@ import Footer from "../components/Footer";
 import Image from "next/image";
 import { Tabs, Tab, Box } from "@mui/material";
 
+function DonateForm() {
+  const [frequency, setFrequency] = useState<"one_time" | "monthly">(
+    "one_time",
+  );
+  const [selectedAmount, setSelectedAmount] = useState<number | null>(null);
+  const [customAmount, setCustomAmount] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  // Preset amounts based on frequency
+  const oneTimeAmounts = [50, 100, 250, 500, 1000, 5000];
+  const monthlyAmounts = [5, 25, 50, 100];
+
+  const amounts = frequency === "one_time" ? oneTimeAmounts : monthlyAmounts;
+
+  const handleAmountClick = (amount: number) => {
+    setSelectedAmount(amount);
+    setCustomAmount("");
+    setError("");
+  };
+
+  const handleCustomAmountChange = (value: string) => {
+    setCustomAmount(value);
+    setSelectedAmount(null);
+    setError("");
+  };
+
+  const handleDonate = async () => {
+    setError("");
+
+    // Determine final amount
+    let finalAmount: number;
+    if (selectedAmount) {
+      finalAmount = selectedAmount;
+    } else if (customAmount) {
+      finalAmount = parseFloat(customAmount);
+      if (isNaN(finalAmount) || !Number.isFinite(finalAmount)) {
+        setError("Please enter a valid amount");
+        return;
+      }
+    } else {
+      setError("Please select or enter an amount");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const response = await fetch("/api/stripe/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: frequency,
+          amount: frequency === "one_time" ? finalAmount : undefined,
+          tier: frequency === "monthly" ? finalAmount : undefined,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to create checkout session");
+      }
+
+      // Redirect to Stripe Checkout
+      if (data.url) {
+        window.location.href = data.url;
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong");
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="max-w-2xl pb-5">
+      <h1 className="text-4xl text-white mb-6">Your Donation</h1>
+
+      <p className="text-white mb-6">
+        Donations are processed through Physical Plant Arts, an official
+        501(c)(3) nonprofit in good standing, established in 2004. (EIN:
+        20-0136247.) Donations are tax-deductible.
+      </p>
+
+      {/* Frequency Selection */}
+      <div className="mb-6">
+        <h2 className="text-white text-lg font-medium mb-3">Frequency</h2>
+        <div className="grid grid-cols-2 gap-4">
+          <button
+            type="button"
+            onClick={() => {
+              setFrequency("one_time");
+              setSelectedAmount(null);
+              setCustomAmount("");
+            }}
+            className={`px-6 py-3 rounded-md font-medium transition-colors ${
+              frequency === "one_time"
+                ? "bg-white text-slate-800"
+                : "bg-transparent border border-white text-white hover:bg-white/10"
+            }`}
+          >
+            One-Time
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setFrequency("monthly");
+              setSelectedAmount(null);
+              setCustomAmount("");
+            }}
+            className={`px-6 py-3 rounded-md font-medium transition-colors ${
+              frequency === "monthly"
+                ? "bg-white text-slate-800"
+                : "bg-transparent border border-white text-white hover:bg-white/10"
+            }`}
+          >
+            Monthly
+          </button>
+        </div>
+      </div>
+
+      {/* Amount Selection */}
+      <div className="mb-6">
+        <h2 className="text-white text-lg font-medium mb-3">Amount (USD)</h2>
+        <div className="grid grid-cols-3 gap-4 mb-4">
+          {amounts.map((amount) => (
+            <button
+              key={amount}
+              type="button"
+              onClick={() => handleAmountClick(amount)}
+              className={`px-6 py-3 rounded-md font-medium transition-colors ${
+                selectedAmount === amount
+                  ? "bg-white text-slate-800"
+                  : "bg-transparent border border-white text-white hover:bg-white/10"
+              }`}
+            >
+              ${amount}
+            </button>
+          ))}
+        </div>
+
+        {/* Custom Amount - Only for One-Time */}
+        {frequency === "one_time" && (
+          <div>
+            <input
+              type="number"
+              placeholder="$Other"
+              value={customAmount}
+              onChange={(e) => handleCustomAmountChange(e.target.value)}
+              className="w-full px-4 py-3 bg-transparent border border-white rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
+              min="5"
+              max="10000"
+            />
+          </div>
+        )}
+      </div>
+
+      {/* Error Message */}
+      {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
+
+      {/* Donate Button */}
+      <button
+        type="button"
+        onClick={handleDonate}
+        disabled={loading}
+        className={`w-full px-6 py-4 rounded-md font-medium text-lg transition-colors ${
+          loading
+            ? "bg-gray-400 text-gray-700 cursor-not-allowed"
+            : "bg-[#B8860B] text-white hover:bg-[#9A7209]"
+        }`}
+      >
+        {loading ? "Processing..." : "Donate"}
+      </button>
+    </div>
+  );
+}
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -278,37 +455,7 @@ export default function Contact() {
               </>
             )}
 
-            {tabIndex === 1 && (
-              <div className="max-w-2xl pb-5 text-white">
-                <h1 className="text-4xl mb-6">
-                  Please consider donating to the Roving Reactor Project
-                </h1>
-                <p>
-                  Donations are processed through Physical Plant Arts, an
-                  official 501(c)(3) nonprofit in good standing, established in
-                  2004. (EIN: 20-0136247.) Donations are tax-deductible.
-                </p>
-
-                <button
-                  onClick={() =>
-                    window.open(
-                      "https://www.paypal.com/donate/?hosted_button_id=M2WV38SP76D5Y",
-                      "_blank"
-                    )
-                  }
-                  className="flex items-center justify-center px-12 py-2 mt-8 mb-3 text-[#012991] font-sans font-bold rounded-full bg-[#ffd140] hover:bg-white hover:text-[#012991] transition-colors duration-200"
-                >
-                  <Image
-                    src="/img/paypal-mark-color.svg"
-                    alt="PayPal Logo"
-                    width={20}
-                    height={20}
-                    className="mr-2"
-                  />
-                  Donate with PayPal
-                </button>
-              </div>
-            )}
+            {tabIndex === 1 && <DonateForm />}
           </Box>
         </div>
 
