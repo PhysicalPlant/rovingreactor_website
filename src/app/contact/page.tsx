@@ -205,15 +205,27 @@ export default function Contact() {
   >("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const [tabIndex, setTabIndex] = useState(1); // Default to Donate tab (index 1)
+  const [showDonationSuccess, setShowDonationSuccess] = useState(false);
 
   useEffect(() => {
-    // Check hash on mount - only switch to Contact if explicitly requested
-    const hash = window.location.hash;
-    if (hash === "#contact") {
-      setTabIndex(0);
+    // Check for donation success parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("success") === "true") {
+      setShowDonationSuccess(true);
+      setTabIndex(1); // Show Donate tab
+      // Clean up URL after a brief delay to ensure state is set
+      setTimeout(() => {
+        window.history.replaceState({}, "", "/contact#donate");
+      }, 100);
     } else {
-      // Default to Donate tab for all other cases (including #donate or no hash)
-      setTabIndex(1);
+      // Check hash on mount - only switch to Contact if explicitly requested
+      const hash = window.location.hash;
+      if (hash === "#contact") {
+        setTabIndex(0);
+      } else {
+        // Default to Donate tab for all other cases (including #donate or no hash)
+        setTabIndex(1);
+      }
     }
 
     // Listen for hash changes
@@ -464,7 +476,38 @@ export default function Contact() {
               </>
             )}
 
-            {tabIndex === 1 && <DonateForm />}
+            {tabIndex === 1 && (
+              <>
+                {showDonationSuccess && (
+                  <div className="bg-green-900/30 border border-green-500 rounded-md p-6 mb-6">
+                    <h2 className="text-2xl text-white font-bold mb-3">
+                      Thank you for your donation!
+                    </h2>
+                    <p className="text-white mb-2">
+                      Your generous support helps Physical Plant Arts bring the Roving Reactor 
+                      to communities across the country.
+                    </p>
+                    <p className="text-white">
+                      You should receive a confirmation email shortly. If you have any questions, 
+                      please don&apos;t hesitate to{" "}
+                      <a 
+                        href="/contact#contact" 
+                        className="text-[#8be8d9] hover:text-white underline"
+                      >
+                        contact us
+                      </a>.
+                    </p>
+                    <button
+                      onClick={() => setShowDonationSuccess(false)}
+                      className="mt-4 text-sm text-gray-300 hover:text-white underline"
+                    >
+                      Make another donation
+                    </button>
+                  </div>
+                )}
+                {!showDonationSuccess && <DonateForm />}
+              </>
+            )}
           </Box>
         </div>
 
