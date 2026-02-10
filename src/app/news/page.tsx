@@ -143,7 +143,8 @@ export default function NewsPage() {
                       sx={{
                         "& .MuiAccordionSummary-content": {
                           fontFamily: "Gabarito",
-                          fontSize: "1.25rem",
+                          fontSize: "1.188rem",
+                          fontWeight: 400,
                           display: "flex",
                           alignItems: "center",
                           gap: "8px",
@@ -152,7 +153,7 @@ export default function NewsPage() {
                     >
                       <AddIcon sx={{ color: "white" }} />
                       <div className="flex flex-col gap-1">
-                        <span className="text-[#8be8d9]">{update.title}</span>
+                        <span className="text-[#8be8d9] font-light">{update.title}</span>
                         <span className="text-gray-400 text-sm">
                           {new Date(update.date).toLocaleDateString("en-US", {
                             year: "numeric",

@@ -484,24 +484,19 @@ export default function Contact() {
                       Thank you for your donation!
                     </h2>
                     <p className="text-white mb-2">
-                      Your generous support helps Physical Plant Arts bring the Roving Reactor 
-                      to communities across the country.
+                      Your generous support helps Physical Plant Arts bring the
+                      Roving Reactor to communities across the country.
                     </p>
                     <p className="text-white">
                       If you have any questions, please don&apos;t hesitate to{" "}
-                      <a 
-                        href="/contact#contact" 
+                      <a
+                        href="/contact#contact"
                         className="text-[#8be8d9] hover:text-white underline"
                       >
                         contact us
-                      </a>.
+                      </a>
+                      .
                     </p>
-                    <button
-                      onClick={() => setShowDonationSuccess(false)}
-                      className="mt-4 text-sm text-gray-300 hover:text-white underline"
-                    >
-                      Make another donation
-                    </button>
                   </div>
                 )}
                 {!showDonationSuccess && <DonateForm />}
