@@ -148,6 +148,7 @@ export default function Home() {
                       alt="Roving Reactor All Facets of Our Work"
                       width={1000}
                       height={1000}
+                      className="rounded-md"
                     />
                     <p className="mt-8">
                       <strong>Why now?</strong> The U.S. plans to triple nuclear
