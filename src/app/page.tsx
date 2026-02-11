@@ -102,44 +102,6 @@ export default function Home() {
         {fadeInAnimation}
       </style>
       <div className="h-screen overflow-auto">
-        {/* Background elements remain the same */}
-        <div
-          className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-0"
-          style={{
-            backgroundImage: "url('/img/rr-bridge-bg.jpg')",
-            animation: "fadeIn 13s ease-in forwards",
-            zIndex: -20,
-            backgroundAttachment: "fixed",
-            transform: "translate3d(0,0,0)",
-            WebkitBackfaceVisibility: "hidden",
-            WebkitPerspective: 1000,
-            WebkitTransform: "translate3d(0,0,0)",
-          }}
-        />
-
-        {/* Mobile gradient (darker) */}
-        <div
-          className="fixed inset-0 w-full h-full -z-10 md:hidden"
-          style={{
-            background: `linear-gradient(90deg, 
-              rgba(0,0,0,0.85) 0%, 
-              rgba(0,0,0,0.75) 65%, 
-              rgba(0,0,0,0.65) 100%
-            )`,
-          }}
-        />
-
-        {/* Desktop gradient (original) */}
-        <div
-          className="fixed inset-0 w-full h-full -z-10 hidden md:block"
-          style={{
-            background: `linear-gradient(90deg, 
-              rgba(0,0,0,0.9) 0%, 
-              rgba(0,0,0,0.7) 50%, 
-              transparent 100%
-            )`,
-          }}
-        />
 
         <main className="relative pt-[calc(3.5rem+1px)] md:pt-14 mt-6 md:mt-8 pb-0">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-0">
